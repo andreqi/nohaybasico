@@ -1,0 +1,12 @@
+include header.html
+#main-wrapper
+  .container
+    .row
+      .12u
+        section
+          header.major 
+            h2 Menus
+          .row
+            each rest in restaurants
+              include restaurant
+include footer.html

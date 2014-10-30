@@ -1,0 +1,7 @@
+{
+  'name': 'nohaybasico.com',
+  'dependencies': {
+    'express': '*',
+    'jade': '*',
+  }
+}
