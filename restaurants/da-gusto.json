@@ -1,0 +1,12 @@
+{
+  "name": "Da Gusto",
+  "especialidad": "Arroz duro",
+  "descripcion": "la vale",
+  "menu": [
+    "arroz duro",
+    "arroz suave",
+    "pollo al panko",
+    "pescado al panko"
+  ],
+  "precio": "12.5"
+}
