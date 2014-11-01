@@ -1,6 +1,7 @@
 var express = require('express'); 
 var app = express(); 
 var fs = require('fs');
+var YAML = require('yamljs');
 
 var port = 4321;
 app.listen(port);
@@ -11,17 +12,35 @@ app.get('/', function(req, res) {
   });
 });
 
+app.get('/:id', function(req, res) {
+  var id = req.params.id;
+  // render restaurant
+  res.send('Hello' + id);
+});
+
+app.get('/restaurants/banner/:id', function(req, res) {
+  var id = req.params.id; 
+  fs.readFile('./restaurants/'+ id +'/banner.jpg', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'image/gif'});
+    res.end(data, 'binary');
+  });
+});
+
 app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 
 function get_restaurants(callback) {
   fs.readdir('./restaurants', function(err, files) {
-    files = files.filter(function(name) {return name[0] != '.'});
-    var payback = files.map(function(data) {
-      var strFile = fs.readFileSync('./restaurants/' + data, 'utf8');
-      return JSON.parse(strFile); 
-    });
+    var rests = files.filter(function(name) {return name[0] != '.'});
+    var payback = rests.map(get_restaurant);
     callback(payback);
   });
+}
+
+function get_restaurant(id) {
+  var path = './restaurants/' + id + '/info.yml';
+  var info = YAML.load(path);
+  info.bannerURL = '/restaurants/banner/' + id;
+  return info;
 }

@@ -1,7 +1,8 @@
 {
-  'name': 'nohaybasico.com',
-  'dependencies': {
-    'express': '*',
-    'jade': '*',
+  "name": "nohaybasico.com",
+  "dependencies": {
+    "express": "*",
+    "jade": "*",
+    "yamljs": "*"
   }
 }
