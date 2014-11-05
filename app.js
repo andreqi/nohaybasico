@@ -14,8 +14,9 @@ app.get('/', function(req, res) {
 
 app.get('/:id', function(req, res) {
   var id = req.params.id;
+  var restaurant = get_restaurant(id);
   // render restaurant
-  res.send('Hello' + id);
+  res.render('restaurant-info', {restaurant: restaurant});
 });
 
 app.get('/restaurants/banner/:id', function(req, res) {
@@ -42,5 +43,6 @@ function get_restaurant(id) {
   var path = './restaurants/' + id + '/info.yml';
   var info = YAML.load(path);
   info.bannerURL = '/restaurants/banner/' + id;
+  info.homeURL = id;
   return info;
 }

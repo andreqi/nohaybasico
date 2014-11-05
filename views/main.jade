@@ -1,5 +1,15 @@
-include header.html
-#main-wrapper
+extends ./main-template.jade
+
+block title
+  #header-wrapper
+    #header
+      include title
+      section#banner
+        header
+          h2 No hay basico. Sobrevive
+          p Checkea que puedes comer hoy cerca
+
+block content
   .container
     .row
       .12u
@@ -9,4 +19,3 @@ include header.html
           .row
             each rest in restaurants
               include restaurant
-include footer.html
