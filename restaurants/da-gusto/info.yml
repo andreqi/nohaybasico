@@ -1,9 +1,39 @@
 name: Da Gusto
 especialidad: Arroz duro
 descripcion: la vale
-menu: 
-  - arroz duro
-  - arroz suave
-  - pollo al panko
-  - pescado al panko
-precio: 12.5
+last_update: 
+time_open: de 10 a 12 y de lunes a viernes
+tipos_menu: 
+  - 
+    name: universitario
+    id: nv
+    price: 9.5
+  - 
+    name: ejecutivo 
+    id: ex 
+    price: 12.5
+dish: 
+  intro:
+    - 
+      name: arroz duro
+      in_menu: 
+        - nv
+        - ex
+  main:
+    - 
+      name: arroz suave
+      in_menu: 
+        - nv
+        - ex
+  dessert_juice: 
+    - 
+      name: arroz medio
+      in_menu: 
+        - nv
+        - ex
+carta: 
+  - 
+    name: plato carta 1
+    price: 12.4
+    tag: no la vale
+
