@@ -46,3 +46,5 @@ function get_restaurant(id) {
   info.homeURL = id;
   return info;
 }
+
+console.log('Listenning '+port);
