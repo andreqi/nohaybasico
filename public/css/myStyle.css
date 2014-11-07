@@ -1,0 +1,46 @@
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.menu-price {
+  width: 100%;
+}
+.menu-box {
+  padding-left: 10px;
+}
+.yellow {
+  background-color: yellow;
+}
+.black {
+  background-color: black;
+}
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+.same-line {
+  display: inline-block;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.tag {
+  margin: 0 4px;
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1em;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 10px;
+}

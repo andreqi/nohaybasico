@@ -4,5 +4,8 @@
     "express": "*",
     "jade": "*",
     "yamljs": "*"
+  },
+  "scripts": {
+	"start": "node app.js"  	
   }
 }
