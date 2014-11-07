@@ -8,10 +8,8 @@ block title
 block content
   - colors = ['red', 'yellow', 'black', 'blue']
   - map = {}
-  - i = 0
-  each menu in restaurant.tipos_menu
-    - map[menu.id] = colors[i]
-    - i = i + 1
+  each menu, index in restaurant.tipos_menu
+    - map[menu.id] = colors[index]
   .container
     .row
       div(class='6u -2u')
@@ -37,6 +35,6 @@ block content
               each menu in restaurant.tipos_menu
                 li(class='menu-price')
                   div(class='pull-left')
-                    span(class='tag ' + map[menu.id]) #{menu.id}
+                    span(class='tag #{map[menu.id]}') #{menu.id}
                     span #{menu.name}
                   .pull-right #{menu.price}      

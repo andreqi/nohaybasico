@@ -5,8 +5,9 @@ li.box
     each dish in dishBlock.dishes
       li.6u
         span #{dish.name}
-        - i = 0
         ul.same-line
           each tag in dish.in_menu
-            li(class='tag '+ map[tag]) #{tag}
-            - i = i + 1
+            li(class='tag #{map[tag]}') #{tag}
+
+  
+       
