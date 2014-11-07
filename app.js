@@ -12,16 +12,29 @@ app.get('/', function(req, res) {
   });
 });
 
-app.get('/:id', function(req, res) {
+app.get('/:id/menu', function(req, res) {
   var id = req.params.id;
   var restaurant = get_restaurant(id);
   // render restaurant
-  res.render('restaurant-info', {restaurant: restaurant});
+  res.render('restaurant-info', {
+    restaurant: restaurant,
+    active_tab: 'menu',
+  });
+});
+
+app.get('/:id/contacto', function(req, res) {
+  var id = req.params.id;
+  var restaurant = get_restaurant(id);
+  res.render('restaurant-contact', {
+    restaurant: restaurant,
+    active_tab: 'contacto',
+  });
 });
 
 app.get('/restaurants/banner/:id', function(req, res) {
   var id = req.params.id; 
-  fs.readFile('./restaurants/'+ id +'/banner.jpg', function(err, data) {
+  var restaurant_path = './restaurants/'+ id +'/banner.jpg';
+  fs.readFile(restaurant_path, function(err, data) {
     res.writeHead(200, {'Content-Type': 'image/gif'});
     res.end(data, 'binary');
   });
