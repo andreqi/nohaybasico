@@ -1,28 +1,25 @@
-.pull-left {
-  float: left;
-}
-
-.pull-right {
-  float: right;
-}
-
 .menu-price {
+  clear: both;
   width: 100%;
 }
-.menu-box {
-  padding-left: 10px;
+.dishes-block {
+  padding-bottom: 0px !important;
+}
+.dishes {
+  list-style: disc;
+  list-style-position: inside;
 }
 .yellow {
   background-color: yellow;
 }
 .black {
-  background-color: black;
+  background-color: #2c3e50;
 }
 .blue {
-  background-color: blue;
+  background-color: #2980b9;
 }
 .red {
-  background-color: red;
+  background-color: #27ae60;
 }
 .same-line {
   display: inline-block;
