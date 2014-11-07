@@ -43,6 +43,8 @@ function get_restaurant(id) {
   var path = './restaurants/' + id + '/info.yml';
   var info = YAML.load(path);
   info.bannerURL = '/restaurants/banner/' + id;
-  info.homeURL = id;
+  info.homeID = id;
   return info;
 }
+
+console.log('Listenning '+port);
