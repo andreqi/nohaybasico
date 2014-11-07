@@ -3,11 +3,11 @@ h1
 
 nav#nav
   ul
-    li.current 
-      a(href='#{restaurant.homeID}/menu') Menu
-    li
-      a(href='#{restaurant.homeID}/carta') Carta
-    li
-      a(href='#{restaurant.homeID}/contacto') Contacto
+    - var tabs = ['menu', 'carta', 'contacto']
+    each tab in tabs
+      - var tabname = tab.charAt(0).toUpperCase() + tab.slice(1)
+      - var liclass = tab == active_tab ? 'current' : ''; 
+      li(class='#{liclass}') 
+        a(href='/#{restaurant.homeID}/#{tab}') #{tabname}
     li
       a(href='/') Atrás
