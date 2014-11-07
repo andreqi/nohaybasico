@@ -31,6 +31,15 @@ app.get('/:id/contacto', function(req, res) {
   });
 });
 
+app.get('/:id/carta', function(req, res) {
+  var id = req.params.id;
+  var restaurant = get_restaurant(id);
+  res.render('restaurant-dishes', {
+    restaurant: restaurant,
+    active_tab: 'carta',
+  });
+});
+
 app.get('/restaurants/banner/:id', function(req, res) {
   var id = req.params.id; 
   var restaurant_path = './restaurants/'+ id +'/banner.jpg';
