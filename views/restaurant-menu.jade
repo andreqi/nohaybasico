@@ -9,18 +9,14 @@ block content
     .row
       div(class='7u -1u')
           ul
-            - dishBlock = {}
-            - dishBlock.name = 'Entradas'
-            - dishBlock.dishes = restaurant.dishes.intro
-            include menu-block
-
-            - dishBlock.name = 'Segundos'
-            - dishBlock.dishes = restaurant.dishes.main
-            include menu-block
-
-            - dishBlock.name = 'Refresco y/o postre'
-            - dishBlock.dishes = restaurant.dishes.extras
-            include menu-block
+            mixin menu_section(name, dishes)
+              - dishBlock = {}
+              - dishBlock.name = name
+              - dishBlock.dishes = dishes 
+              include menu-block
+            +menu_section('Entradas', restaurant.dishes.intro)
+            +menu_section('Segundos', restaurant.dishes.main)
+            +menu_section('Refrescos y/o postre', restaurant.dishes.extras)
 
       div(class='3u menu-box')
         .box
@@ -32,4 +28,4 @@ block content
                 div(class='pull-left')
                   span(class='tag #{map[menu.id]}') #{menu.id}
                   span #{menu.name}
-                div(class='pull-right') #{menu.price}
+                div(class='pull-right') S/. #{menu.price}

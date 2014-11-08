@@ -16,7 +16,7 @@ app.get('/:id/menu', function(req, res) {
   var id = req.params.id;
   var restaurant = get_restaurant(id);
   // render restaurant
-  res.render('restaurant-info', {
+  res.render('restaurant-menu', {
     restaurant: restaurant,
     active_tab: 'menu',
   });

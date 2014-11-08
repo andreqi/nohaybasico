@@ -7,9 +7,8 @@ block content
         .box
           header
             h3 Platos a la carta
-          ul
+          ul.dishes
             each dish in restaurant.carta
               li(class='block-left-right')
-                div(class='pull-left')
-                  span #{dish.name}
+                span #{dish.name}
                 div(class='pull-right') S/. #{dish.price}                
