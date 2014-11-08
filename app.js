@@ -22,12 +22,12 @@ app.get('/:id/menu', function(req, res) {
   });
 });
 
-app.get('/:id/contacto', function(req, res) {
+app.get('/:id/info', function(req, res) {
   var id = req.params.id;
   var restaurant = get_restaurant(id);
-  res.render('restaurant-contact', {
+  res.render('restaurant-info', {
     restaurant: restaurant,
-    active_tab: 'contacto',
+    active_tab: 'info',
   });
 });
 

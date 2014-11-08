@@ -3,7 +3,7 @@ h1
 
 nav#nav
   ul
-    - var tabs = ['menu', 'carta', 'contacto']
+    - var tabs = ['menu', 'carta', 'info']
     each tab in tabs
       - var tabname = tab.charAt(0).toUpperCase() + tab.slice(1)
       - var liclass = tab == active_tab ? 'current' : ''; 
