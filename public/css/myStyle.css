@@ -9,17 +9,17 @@
   list-style: disc;
   list-style-position: inside;
 }
-.yellow {
-  background-color: yellow;
+.menu-1 {
+  background-color: #C4D6A4;
 }
-.black {
-  background-color: #2c3e50;
+.menu-2 {
+  background-color: #8A9E9C;
 }
-.blue {
-  background-color: #2980b9;
+.menu-3 {
+  background-color: #74757D;
 }
-.red {
-  background-color: #27ae60;
+.menu-4 {
+  background-color: #AD7990;
 }
 .same-line {
   display: inline-block;
@@ -40,4 +40,14 @@
   white-space: nowrap;
   vertical-align: middle;
   border-radius: 10px;
+}
+
+/* - checkmark -  */
+.circle {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px; 
+  background: green;
+  margin-left: 10px;
+  margin-right: 10px;
 }
