@@ -1,35 +1,9 @@
 extends ./restaurant-template.jade
 
 block content
-  - colors = ['red', 'black', 'blue', 'yellow']
-  - map = {}
-  each menu, index in restaurant.tipos_menu
-    - map[menu.id] = colors[index]
   .container
     .row
-      div(class='7u -1u')
-          ul
-            - dishBlock = {}
-            - dishBlock.name = 'Entradas'
-            - dishBlock.dishes = restaurant.dishes.intro
-            include menu-block
-
-            - dishBlock.name = 'Segundos'
-            - dishBlock.dishes = restaurant.dishes.main
-            include menu-block
-
-            - dishBlock.name = 'Refresco y/o postre'
-            - dishBlock.dishes = restaurant.dishes.extras
-            include menu-block
-
-      div(class='3u menu-box')
-        .box
+      .12u
+        section.box
           header
-            h3 Menus
-          ul
-            each menu in restaurant.tipos_menu
-              li(class='block-left-right')
-                div(class='pull-left')
-                  span(class='tag #{map[menu.id]}') #{menu.id}
-                  span #{menu.name}
-                div(class='pull-right') #{menu.price}
+            h3 #{restaurant.name}
