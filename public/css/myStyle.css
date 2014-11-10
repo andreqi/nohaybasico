@@ -2,9 +2,7 @@
   clear: both;
   width: 100%;
 }
-.dishes-block {
-  padding-bottom: 0px !important;
-}
+
 .dishes {
   list-style: disc;
   list-style-position: inside;
@@ -27,6 +25,11 @@
   padding: 0 0;
 }
 
+.box-separator {
+  height: 10px;
+  background: #858484;
+}
+
 .tag {
   margin: 0 4px;
   display: inline-block;
@@ -44,10 +47,10 @@
 
 /* - checkmark -  */
 .circle {
-  border-radius: 50%;
-  width: 10px;
-  height: 10px; 
   background: green;
+  border-radius: 50%;
+  height: 10px; 
   margin-left: 10px;
   margin-right: 10px;
+  width: 10px;
 }

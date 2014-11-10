@@ -1,18 +1,19 @@
 .4u  
   section.box
     a(class='image featured')
-      img(src=rest.bannerURL)
+      .box-separator
     header
       div.same-line
         h3.same-line #{rest.name}
         div(class='circle same-line')
         span.same-line abierto
       div S/. 5 - 15
-    ul(class='row dishes')
-      li.12u Plato con nombre largo 1
-      li.12u Plato con nombre largo 1
-      li.12u Plato 2
-      li.12u Plato 3
-      li.12u Plato 3
+    .row
+      ul(class='row dishes')
+        li.12u Plato con nombre largo 1
+        li.12u Plato con nombre largo 1
+        li.12u Plato 2
+        li.12u Plato 3
+        li.12u Plato 3
     footer
       a(class='button alt', href='#{rest.homeID}/menu') Ver más
