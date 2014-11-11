@@ -18,14 +18,15 @@ block content
             +menu_section('Segundos', restaurant.dishes.main)
             +menu_section('Refrescos y/o postre', restaurant.dishes.extras)
 
-      div(class='3u menu-box')
+      div(class='3u')
         .box
           header
             h3 Menus
-          ul
-            each menu in restaurant.tipos_menu
-              li(class='block-left-right')
-                div(class='pull-left')
-                  span(class='tag #{map[menu.id]}') #{menu.id}
-                  span #{menu.name}
-                div(class='pull-right') S/. #{menu.price}
+          .row
+            ul
+              each menu in restaurant.tipos_menu
+                li(class='block-left-right')
+                  div(class='pull-left')
+                    span(class='tag #{map[menu.id]}') #{menu.id}
+                    span #{menu.name}
+                  div(class='pull-right') S/. #{menu.price}

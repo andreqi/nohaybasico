@@ -1,5 +1,6 @@
 var express = require('express'); 
 var app = express(); 
+var mapsAPI = require('./mapsAPI.js');
 var fs = require('fs');
 var YAML = require('yamljs');
 
@@ -40,13 +41,11 @@ app.get('/:id/carta', function(req, res) {
   });
 });
 
-app.get('/restaurants/banner/:id', function(req, res) {
+app.get('/restaurant/map/:id', function(req, res) {
   var id = req.params.id; 
-  var restaurant_path = './restaurants/'+ id +'/banner.jpg';
-  fs.readFile(restaurant_path, function(err, data) {
-    res.writeHead(200, {'Content-Type': 'image/gif'});
-    res.end(data, 'binary');
-  });
+  var rest = get_restaurant(id);
+  var coords = rest.coordinates;
+  mapsAPI.createReadStream(coords.lat, coords.lng, null, 15).pipe(res);
 });
 
 app.use(express.static(__dirname + '/public'));
@@ -64,8 +63,10 @@ function get_restaurants(callback) {
 function get_restaurant(id) {
   var path = './restaurants/' + id + '/info.yml';
   var info = YAML.load(path);
+  var coords = info.coordinates;
   info.bannerURL = '/restaurants/banner/' + id;
   info.homeID = id;
+  info.mapsURL = coords ? mapsAPI.getMapsRedirectURL(coords.lat, coords.lng) : '';
   return info;
 }
 
