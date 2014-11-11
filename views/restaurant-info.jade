@@ -3,7 +3,33 @@ extends ./restaurant-template.jade
 block content
   .container
     .row
-      .12u
-        section.box
-          header
-            h3 #{restaurant.name}
+        .6u
+          .box
+            h3.info
+              i(class='icon fa-clock-o')
+              span Horario de atención
+            p L - V   8 - 10
+            h3.info
+              i(class='icon fa-map-marker')
+              span Dirección
+            p Jato del fap
+            a(class='view-google-maps', href='#', target='_blank') Ver en google maps  
+            h3.info
+              i(class='icon fa-phone')
+              span Contacto
+            p Llamanos al 999-555-444 
+            footer
+              ul.social-info
+                li
+                  a(class="fa fa-facebook")
+                    label f
+                li
+                  a(class="fa fa-twitter")
+                    label f
+                li
+                  a(class="fa fa-google-plus")
+                    label f
+
+        .6u
+          .box
+            img(class='img-responsive', src='https://maps.googleapis.com/maps/api/staticmap?center=%28-11,-12%29,l&zoom=15&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Clabel:C%7C40.718217,-73.998284')
