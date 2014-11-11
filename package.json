@@ -3,7 +3,8 @@
   "dependencies": {
     "express": "*",
     "jade": "*",
-    "yamljs": "*"
+    "yamljs": "*",
+    "request": "*"
   },
   "scripts": {
 	"start": "node app.js"  	

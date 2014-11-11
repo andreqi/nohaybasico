@@ -16,4 +16,5 @@
         li.12u Plato 3
         li.12u Plato 3
     footer
-      a(class='button alt', href='#{rest.homeID}/menu') Ver más
+      - var redirect = rest.dishes ? 'menu' : 'carta';
+      a(class='button alt', href='#{rest.homeID}/#{redirect}') Ver más

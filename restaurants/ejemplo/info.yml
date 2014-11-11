@@ -1,6 +1,16 @@
 name: Menu ejemplo
 last_update: ayer 
 time_open: de 10 a 12 y de lunes a viernes
+address: Jr. Costa Rica 146, Jesus Maria
+coordinates: 
+  lat: -11.9540293
+  lng: -77.052672
+contact_msg: Contáctanos en 999-666-21
+social_media:
+  facebook: www.facebook.com/juanchi_kun 
+  twitter: juanchicienta  
+  instagram: juanchisexypics
+  pinterest: sexualjuanchi
 tipos_menu: 
   - 
     name: basico
@@ -129,4 +139,3 @@ carta:
     name: plato carta 1
     price: 12.4
     tag: no la vale
-
