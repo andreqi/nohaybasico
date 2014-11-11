@@ -2,7 +2,57 @@
   clear: both;
   width: 100%;
 }
+.info {
+  margin-bottom: 5px;
+  margin-top: 15px;
+  position: relative;
+}
+.view-google-maps {
+  text-decoration: none;
+  background-color: rgb(213, 35, 73);  
+  color: white;
+  padding: 4px 1em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.info span {
+  left: 1.2em;
+  position: absolute;
+}
+.social-info {
+  margin-top: 10px;
+}
+.img-responsive {
+  height: auto;
+  width: 100%;
+}
+.social-info li{
+  display: inline-block;
+  font-size: 2em;
+  text-align: center;
+  width: 1.5em;
+}
+.social-info li a {
+  color: gray;
+  cursor: pointer;
+  text-decoration:none;
+}
+.social-info li a label{
+  display: none;
+}
 
+.social-info .fa-facebook:hover {
+  color: #3c5a98;
+}
+
+.social-info .fa-twitter:hover {
+  color: #3dbaf4;
+}
+.social-info .fa-google-plus:hover {
+  color: #da2713;
+}
 .dishes {
   list-style: disc;
   list-style-position: inside;
@@ -26,23 +76,23 @@
 }
 
 .box-separator {
-  height: 10px;
   background: #858484;
+  height: 10px;
 }
 
 .tag {
-  margin: 0 4px;
+  border-radius: 10px;
+  color: #fff;
   display: inline-block;
-  min-width: 10px;
-  padding: 3px 7px;
   font-size: 12px;
   font-weight: 900;
   line-height: 1em;
-  color: #fff;
+  margin: 0 4px;
+  min-width: 10px;
+  padding: 3px 7px;
   text-align: center;
-  white-space: nowrap;
   vertical-align: middle;
-  border-radius: 10px;
+  white-space: nowrap;
 }
 
 /* - checkmark -  */
