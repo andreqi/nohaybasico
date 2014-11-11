@@ -8,27 +8,30 @@ block content
             h3.info
               i(class='icon fa-clock-o')
               span Horario de atención
-            p L - V   8 - 10
+            p #{restaurant.time_open}
             h3.info
               i(class='icon fa-map-marker')
               span Dirección
-            p Jato del fap
+            p #{restaurant.address}
             a(class='view-google-maps', href='#', target='_blank') Ver en google maps  
             h3.info
               i(class='icon fa-phone')
               span Contacto
-            p Llamanos al 999-555-444 
+            p #{restaurant.contact_msg}
             footer
+              - var socialLinks = []
+              - var sm = restaurant.social_media;
+              - sm.facebook ? socialLinks.push({url: sm.facebook, icon: 'fa-facebook'} ): null;
+              - sm.twitter ? socialLinks.push({url: sm.twitter, icon: 'fa-twitter'} ): null;
+              - sm.instagram ? socialLinks.push({url: sm.instagram, icon: 'fa-instagram'} ): null
+              - sm.googlePlus ? socialLinks.push({url: sm.googlePlus, icon: 'fa-google-plus'} ): null
+              - sm.pinterest ? socialLinks.push({url: sm.pinterest, icon: 'fa-pinterest'} ): null
               ul.social-info
-                li
-                  a(class="fa fa-facebook")
-                    label f
-                li
-                  a(class="fa fa-twitter")
-                    label f
-                li
-                  a(class="fa fa-google-plus")
-                    label f
+                each link in socialLinks
+                  li
+                    a(target='_blank', class="fa #{link.icon}",
+                      href='#{link.url}')
+                      label gg
 
         .6u
           .box
