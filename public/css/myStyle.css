@@ -46,12 +46,20 @@
 .social-info .fa-facebook:hover {
   color: #3c5a98;
 }
-
 .social-info .fa-twitter:hover {
   color: #3dbaf4;
 }
 .social-info .fa-google-plus:hover {
   color: #da2713;
+}
+.social-info .fa-instagram:hover {
+  color: #517fa4;
+}
+.social-info .fa-pinterest:hover {
+  color: #cb2027;
+}
+.menu-price {
+  width: 100%;
 }
 .dishes {
   list-style: disc;
