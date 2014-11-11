@@ -45,7 +45,14 @@ app.get('/restaurant/map/:id', function(req, res) {
   var id = req.params.id; 
   var rest = get_restaurant(id);
   var coords = rest.coordinates;
-  mapsAPI.createReadStream(coords.lat, coords.lng, null, 15).pipe(res);
+  mapsAPI
+    .createReadStream(
+      coords.lat, 
+      coords.lng, 
+      { width:600,
+        height:400 }, 
+      16)
+    .pipe(res);
 });
 
 app.use(express.static(__dirname + '/public'));

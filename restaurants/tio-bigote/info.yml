@@ -1,9 +1,141 @@
-name: Tio bigote
-especialidad: Hamburgesas
-descripcion: la vale
-menu: 
-  - royal
-  - chorizo
-  - con huevo
-  - sin huevo
-precio: 4.5
+name: Menu ejemplo
+last_update: ayer 
+time_open: de 10 a 12 y de lunes a viernes
+address: Jr. Costa Rica 146, Jesus Maria
+coordinates: 
+  lat: -11.9540293
+  lng: -77.052672
+contact_msg: Contáctanos en 999-666-21
+social_media:
+  facebook: www.facebook.com/juanchi_kun 
+  twitter: juanchicienta  
+  instagram: juanchisexypics
+  pinterest: sexualjuanchi
+tipos_menu: 
+  - 
+    name: basico
+    id: bs
+    price: 4.5
+  - 
+    name: universitario
+    id: nv
+    price: 9.5
+  - 
+    name: ejecutivo 
+    id: ex 
+    price: 12.5
+dishes: 
+  intro:
+    - 
+      name: Ceviche
+      in_menu: 
+        - nv
+        - ex
+    -
+      name: Papa a la Ocopa
+      in_menu:
+        - bs
+        - nv
+    -
+      name: Papa a la Huancaina
+      in_menu:
+        - bs
+        - nv
+    -
+      name: Crema de Esparragos
+      in_menu:
+        - bs
+        - nv
+    -
+      name: Sopa Wantan
+      in_menu:
+        - bs
+        - ex
+    -
+      name: Pañuelitos Saludables
+      in_menu:
+        - bs
+        - ex
+  main:
+    - 
+      name: Aji de Gallina
+      in_menu: 
+        - nv
+        - ex
+    - 
+      name: Tallarin Saltado
+      in_menu: 
+        - bs
+    - 
+      name: Arroz Chaufa
+      in_menu: 
+        - bs
+        - nv
+        - ex
+    - 
+      name: Lomo Saltado
+      in_menu: 
+        - bs
+        - nv
+        - ex
+    - 
+      name: Carapulcra
+      in_menu: 
+        - bs
+        - nv
+    - 
+      name: Arroz con Pollo
+      in_menu: 
+        - bs
+        - nv
+    - 
+      name: Tallarin Saltado
+      in_menu: 
+        - nv
+        - ex
+    - 
+      name: Patita con Mani
+      in_menu: 
+        - ex
+    - 
+      name: Cau Cau
+      in_menu: 
+        - bs
+        - ex
+    - 
+      name: Pollo a la Brasa
+      in_menu: 
+        - bs
+        - ex
+  extras: 
+    -
+      name: Chicha Morada
+      in_menu:
+        - bs
+        - ex
+    -
+      name: Limonada
+      in_menu:
+        - ex
+    -
+      name: Pie de Limon
+      in_menu:
+        - nv
+    -
+      name: Crema Volteada
+      in_menu:
+        - ex
+    -
+      name: Flan
+      in_menu:
+        - nv  
+        - ex
+    -
+      name: Torta de Chocolate
+      in_menu:
+        - ex
+carta: 
+  - 
+    name: plato carta 1
+    price: 12.4
+    tag: no la vale
