@@ -3,7 +3,10 @@ h1
 
 nav#nav
   ul
-    - var tabs = ['menu', 'carta', 'info']
+    - var tabs = []
+    - restaurant.dishes ? tabs.push('menu') : null;  
+    - restaurant.carta  ? tabs.push('carta') : null;
+    - tabs.push('info');
     each tab in tabs
       - var tabname = tab.charAt(0).toUpperCase() + tab.slice(1)
       - var liclass = tab == active_tab ? 'current' : ''; 
