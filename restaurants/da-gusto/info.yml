@@ -1,7 +1,8 @@
-name: Menu ejemplo
+name: Da Gusto
 last_update: ayer 
 time_open: de 10 a 12 y de lunes a viernes
 address: Jr. Costa Rica 146, Jesus Maria
+price_range: 4.5 - 12.5
 coordinates: 
   lat: -11.9540293
   lng: -77.052672
