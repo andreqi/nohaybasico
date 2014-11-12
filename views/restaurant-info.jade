@@ -19,13 +19,13 @@ block content
               span Contacto
             p #{restaurant.contact_msg}
             footer
-              - var socialLinks = []
+              - var socialLinks = [];
               - var sm = restaurant.social_media;
               - sm.facebook ? socialLinks.push({url: sm.facebook, icon: 'fa-facebook'} ): null;
               - sm.twitter ? socialLinks.push({url: sm.twitter, icon: 'fa-twitter'} ): null;
-              - sm.instagram ? socialLinks.push({url: sm.instagram, icon: 'fa-instagram'} ): null
-              - sm.googlePlus ? socialLinks.push({url: sm.googlePlus, icon: 'fa-google-plus'} ): null
-              - sm.pinterest ? socialLinks.push({url: sm.pinterest, icon: 'fa-pinterest'} ): null
+              - sm.instagram ? socialLinks.push({url: sm.instagram, icon: 'fa-instagram'} ): null;
+              - sm.googlePlus ? socialLinks.push({url: sm.googlePlus, icon: 'fa-google-plus'} ): null;
+              - sm.pinterest ? socialLinks.push({url: sm.pinterest, icon: 'fa-pinterest'} ): null;
               ul.social-info
                 each link in socialLinks
                   li
