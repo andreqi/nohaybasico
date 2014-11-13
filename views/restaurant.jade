@@ -5,16 +5,11 @@
     header
       div.same-line
         h3.same-line #{rest.name}
-        div(class='circle same-line')
-        span.same-line abierto
-      div S/. 5 - 15
+      div S/. #{rest.price_range}
     .row
       ul(class='row dishes')
-        li.12u Plato con nombre largo 1
-        li.12u Plato con nombre largo 1
-        li.12u Plato 2
-        li.12u Plato 3
-        li.12u Plato 3
+        each dish in rest.dish_preview
+          li.12u #{dish.name}
     footer
       - var redirect = rest.dishes ? 'menu' : 'carta';
       a(class='button alt', href='#{rest.homeID}/#{redirect}') Ver más

@@ -45,7 +45,14 @@ app.get('/restaurant/map/:id', function(req, res) {
   var id = req.params.id; 
   var rest = get_restaurant(id);
   var coords = rest.coordinates;
-  mapsAPI.createReadStream(coords.lat, coords.lng, null, 15).pipe(res);
+  mapsAPI
+    .createReadStream(
+      coords.lat, 
+      coords.lng, 
+      { width:600,
+        height:400 }, 
+      16)
+    .pipe(res);
 });
 
 app.use(express.static(__dirname + '/public'));
@@ -56,18 +63,46 @@ function get_restaurants(callback) {
   fs.readdir('./restaurants', function(err, files) {
     var rests = files.filter(function(name) {return name[0] != '.'});
     var payback = rests.map(get_restaurant);
-    callback(payback);
+    callback(shuffle(payback));
   });
 }
 
 function get_restaurant(id) {
   var path = './restaurants/' + id + '/info.yml';
-  var info = YAML.load(path);
+  var info;
+  try {
+    info = YAML.load(path);
+  } catch (ex) {
+    info = YAML.load('./restaurants/ejemplo/info.yml');
+    info.name = id;
+  }
   var coords = info.coordinates;
   info.bannerURL = '/restaurants/banner/' + id;
   info.homeID = id;
-  info.mapsURL = coords ? mapsAPI.getMapsRedirectURL(coords.lat, coords.lng) : '';
+  info.dish_preview = get_dish_preview(info);
+  info.mapsURL = 
+    coords ? mapsAPI.getMapsRedirectURL(coords.lat, coords.lng) : '';
   return info;
 }
+
+function has_menu(rest) {
+  return rest.dishes != undefined;
+}
+
+function get_dish_preview(rest) {
+  var dish_list = [];
+  if (has_menu(rest)) {
+    dish_list = rest.dishes.main;
+  } else {
+    dish_list = rest.carta;
+  }
+  return dish_list.slice(1, 6);
+}
+function shuffle(o, size){ 
+  for(var j, x, i = o.length; i; 
+    j = Math.floor(Math.random() * i), 
+    x = o[--i], o[i] = o[j], o[j] = x);
+  return o;
+};
 
 console.log('Listenning '+port);
