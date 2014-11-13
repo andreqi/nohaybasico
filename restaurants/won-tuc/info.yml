@@ -1,0 +1,102 @@
+name: Chifa Won Tuc
+last_update: ayer 
+time_open: Lunes a Domingo desde las 11:00am
+price_range: 8.0 - 12.0
+coordinates: 
+  lat: -12.0679212
+  lng: -77.0740198
+social_media:
+  facebook: # 
+carta: 
+  - 
+    name: Sopa Wantan de Menú
+    price: 3.50
+    tag: Carta
+  - 
+    name: Chaufa de Pollo
+    price: 8.00
+    tag: Carta
+  - 
+    name: Tallarín con Pollo
+    price: 8.00
+    tag: Carta
+  - 
+    name: Chaufa con Chancho
+    price: 8.50
+    tag: Carta
+  - 
+    name: Tallarín con Chancho
+    price: 8.50
+    tag: Carta
+  - 
+    name: Aeropuerto
+    price: 8.50
+    tag: Carta
+  - 
+    name: Combinado
+    price: 9.00
+    tag: Carta
+  - 
+    name: Tortilla con Pollo
+    price: 9.50
+    tag: Carta
+  - 
+    name: Pollo con verduras
+    price: 9.50
+    tag: Carta
+  - 
+    name: Pollo enrollado con salsa Ostión
+    price: 10.00
+    tag: Carta
+  - 
+    name: Pollo enrollado con salsa Tamarindo
+    price: 10.00
+    tag: Carta
+  - 
+    name: Pollo con Tamarindo
+    price: 9.50
+    tag: Carta
+  - 
+    name: Pollo con Frijolito Chino
+    price: 10.00
+    tag: Carta
+  - 
+    name: Tallarín con Pollo en Trozos
+    price: 10.00
+    tag: Carta
+  - 
+    name: Lomo Saltado
+    price: 10.00
+    tag: Carta
+  - 
+    name: Chijaukay 
+    price: 10.00
+    tag: Carta
+  - 
+    name: Tipakay
+    price: 10.00
+    tag: Carta
+  -
+    name: Pollo con Almendras
+    price: 10.00
+    tag: Carta
+  -
+    name: Chancho con Verduras
+    price: 10.00
+    tag: Carta
+  -
+    name: Carne con Verduras
+    price: 10.00
+    tag: Carta
+  -
+    name: Chicharron de Pollo
+    price: 10.00
+    tag: Carta
+  -
+    name: Pescado con Tamarindo
+    price: 10.00
+    tag: Carta
+  -
+    name: Todo sale con sopa wantan o wantan frito
+    price: 0.0
+    tag: Adicionales

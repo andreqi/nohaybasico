@@ -1,0 +1,83 @@
+name: Doña Victoria
+last_update: ayer 
+time_open:  L-V 3pm a 10.30pm
+price_range: 5.0 - 8.0
+coordinates: 
+  lat: -12.0709446
+  lng: -77.0752511
+contact_msg: Llamanos al 669-7538
+social_media:
+  facebook: https://www.facebook.com/donavictoriasangucheria 
+carta: 
+  - 
+    name: Sanguche de Chicharrón
+    price: 8.50
+    tag: Los de Ayer
+  - 
+    name: Sanguche de Pavo
+    price: 8.50
+    tag: Los de Ayer
+  - 
+    name: Sanguche de Asado
+    price: 8.50
+    tag: Los de Ayer
+  - 
+    name: Sanguche de Lechon
+    price: 8.50
+    tag: Los de Ayer
+  - 
+    name: Sanguche de Jamón del País
+    price: 7.50
+    tag: Los de Ayer
+  - 
+    name: Sanguche de Pollo
+    price: 7.50
+    tag: Los de Hoy
+  - 
+    name: Sanguche de Chorizo
+    price: 7.50
+    tag: Los de Hoy
+  - 
+    name: Hamburguesa
+    price: 7.50
+    tag: Los de Hoy
+  - 
+    name: Jugo de Piña
+    price: 5.00
+    tag: Jugos
+  - 
+    name: Jugo de Papaya
+    price: 5.00
+    tag: Jugos
+  - 
+    name: Jugo de Fresa 
+    price: 5.00
+    tag: Jugos
+  - 
+    name: Jugo Surtido 
+    price: 6.00
+    tag: Jugos
+  - 
+    name: Leche adicional
+    price: 2.50
+    tag: Jugos
+  - 
+    name: Café 
+    price: 3.00
+    tag: Bebidas
+  - 
+    name: Café con Leche
+    price: 4.00
+    tag: Bebidas
+  - 
+    name: Infusión 
+    price: 2.00
+    tag: Bebidas
+  - 
+    name: Chicha Morada
+    price: 2.50
+    tag: Bebidas
+  -
+    name: Combo (Hamburguesa + Chicha)
+    price: 6.00
+    tag: Promos
