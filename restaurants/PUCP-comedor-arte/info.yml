@@ -1,0 +1,82 @@
+display: true
+name: PUCP Comedor arte
+last_update: ayer 
+time_open: Lunes a Sábado de 11.30am a 6pm
+address: PUCP
+price_range: 1.5 - 7.5
+coordinates: 
+  lat: -12.068076
+  lng: -77.077604
+contact_msg: -
+social_media:
+  facebook: 
+tipos_menu: 
+  - 
+    name: 'económico'
+    id: ec
+    price: 1.5
+  - 
+    name: 'básico'
+    id: ba
+    price: 3.6
+  - 
+    name: 'básico + entrada'
+    id: be
+    price: 5.1
+  - 
+    name: 'menú'
+    id: me
+    price: 7.5
+dishes: 
+  intro:
+    - 
+      name: Ensalada mixta
+      in_menu: 
+        - be
+    - 
+      name: Ensalada fresca
+      in_menu: 
+        - me
+  main:
+    - 
+      name: Carne a la reina, yuca, arroz
+      in_menu: 
+        - ba
+        - be
+    - 
+      name: Albóndigas a las finas hierbas, papa, arroz
+      in_menu: 
+        - me
+    - 
+      name: Carapulcra con cerdo, salsa criolla, arroz
+      in_menu: 
+        - me
+    - 
+      name: Estofado de pollo, papa, arroz
+      in_menu: 
+        - ba
+    - 
+      name: Tortilla de verduras, arroz
+      in_menu: 
+        - ec
+  extras:
+    - 
+      name: 'Pan'
+      in_menu: 
+        - ba
+        - be
+        - ec
+        - me
+    - 
+      name: 'Refresco o Leche'
+      in_menu: 
+        - ba
+        - be
+        - ec
+        - me
+    - 
+      name: Piña almíbar
+      in_menu:
+        - me
+carta: 
+
