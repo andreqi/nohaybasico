@@ -1,9 +1,9 @@
-display: false
+display: true
 name: Da Gusto
 last_update:  4-12
 time_open: Lunes a Sábado de 12pm a 5pm
 address: Av. Mariano Cornejo 2286, Pueblo Libre
-price_range: Por actualizar
+price_range: 4 - 11
 coordinates: 
   lat: -12.068178
   lng: -77.076751
@@ -25,6 +25,61 @@ tipos_menu:
     price: 4.0
 dishes: 
   intro:
+    -
+      name: Sopa de pollo
+      in_menu: 
+        - mc
+        - en
+    -
+      name: Papa a la huancaina
+      in_menu: 
+        - mc
+        - en
+    -
+      name: Ensalada fresca
+      in_menu: 
+        - mc
+        - en
   main:
+    -
+      name: Lentejas con adobo de res
+      in_menu: 
+        - mc
+        - fo    
+    -
+      name: Pollo al horno
+      in_menu: 
+        - mc
+        - fo    
+    -
+      name: Enrollado de pollo
+      in_menu: 
+        - mc
+        - fo    
+    -
+      name: Milanesa con papas fritas
+      in_menu: 
+        - mc
+        - fo    
+    -
+      name: Filete a la plancha con arroz 
+      in_menu: 
+        - mc
+        - fo    
+    -
+      name: Bistec con puré y arroz
+      in_menu: 
+        - mc
+        - fo    
+    -
+      name: Pescado al panko
+      in_menu: 
+        - mc
+        - fo    
   extras: 
+    -
+      name: Refresco infinito
+      in_menu:
+        - mc
+        - fo
 carta:
