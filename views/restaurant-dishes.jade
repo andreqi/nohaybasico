@@ -8,7 +8,9 @@ block content
           header
             h3 Platos a la carta
           ul.dishes
-            each dish in restaurant.carta
-              li(class='block-left-right')
-                span #{dish.name}
-                span.pull-right S/. #{dish.price}                
+            each dishes, key in restaurant.grouped_by_carta
+              h4 #{key}
+              each dish in dishes
+                li(class='block-left-right')
+                  span #{dish.name}
+                  span.pull-right S/. #{dish.price}                
