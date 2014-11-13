@@ -16,7 +16,7 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa de cemola
+      name: Sopa de semola
       in_menu:
         - mn
     - 
@@ -37,7 +37,7 @@ dishes:
       in_menu:
         - mn   
     -
-      name: Alverjitas Partidas con Pescado Frito 
+      name: Arvejitas Partidas con Pescado Frito 
       in_menu:
         - mn   
     -
