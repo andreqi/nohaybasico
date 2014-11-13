@@ -83,7 +83,7 @@ function get_restaurant(id) {
   try {
     info = YAML.load(path);
   } catch (ex) {
-    info = YAML.load('./restaurants/ejemplo/info.yml');
+    info = YAML.load('./restaurants/.ejemplo/info.yml');
     info.name = id;
   }
   var coords = info.coordinates;
