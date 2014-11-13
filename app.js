@@ -72,7 +72,9 @@ app.set('view engine', 'jade');
 function get_restaurants(callback) {
   fs.readdir('./restaurants', function(err, files) {
     var rests = files.filter(function(name) {return name[0] != '.'});
-    var payback = rests.map(get_restaurant);
+    var payback = rests.map(get_restaurant).filter(function(rest) {
+      return rest.display == undefined || rest.display == true;
+    });
     callback(shuffle(payback));
   });
 }
