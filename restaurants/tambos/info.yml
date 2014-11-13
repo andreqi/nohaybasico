@@ -2,7 +2,7 @@ name: Tambos
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 9pm , cena 6.30pm a 10.30pm
 address: Avenida Universitaria, Pueblo Libre
-price_range: TODO
+price_range: 6.5 - 8.5
 coordinates: 
   lat: -12.068076
   lng: -77.077604
@@ -11,126 +11,77 @@ social_media:
   facebook: 
 tipos_menu: 
   - 
-    name: basico
-    id: bs
-    price: 4.5
+    name: 'ejecutivo'
+    id: ej
+    price: 8.5
   - 
-    name: universitario
-    id: nv
-    price: 9.5
+    name: 'universitario'
+    id: un
+    price: 7.5
   - 
-    name: ejecutivo 
-    id: ex 
-    price: 12.5
+    name: 'económico'
+    id: ec
+    price: 6.5
 dishes: 
   intro:
     - 
-      name: Ceviche
+      name: Sopa crema de alverjas
       in_menu: 
-        - nv
-        - ex
-    -
-      name: Papa a la Ocopa
-      in_menu:
-        - bs
-        - nv
-    -
-      name: Papa a la Huancaina
-      in_menu:
-        - bs
-        - nv
-    -
-      name: Crema de Esparragos
-      in_menu:
-        - bs
-        - nv
-    -
-      name: Sopa Wantan
-      in_menu:
-        - bs
-        - ex
-    -
-      name: Pañuelitos Saludables
-      in_menu:
-        - bs
-        - ex
+        - ej
+        - un
+    - 
+      name: Ocopa arequipeña
+      in_menu: 
+        - ej
+        - un
+    - 
+      name: Tamales con salsa criolla
+      in_menu: 
+        - ej
+        - un
   main:
     - 
-      name: Aji de Gallina
+      name: Filete de pollo + p. fritas + ens.
       in_menu: 
-        - nv
-        - ex
+        - ej
     - 
-      name: Tallarin Saltado
+      name: Asado de res con puré
       in_menu: 
-        - bs
+        - ej
     - 
-      name: Arroz Chaufa
+      name: Lomo saltado de res
       in_menu: 
-        - bs
-        - nv
-        - ex
+        - ej
     - 
-      name: Lomo Saltado
+      name: Lomo vegetariano
       in_menu: 
-        - bs
-        - nv
-        - ex
+        - ej
     - 
-      name: Carapulcra
+      name: Pollo saltado + p. fritas
       in_menu: 
-        - bs
-        - nv
+        - un
+        - ec
     - 
-      name: Arroz con Pollo
+      name: Frejol con seco de res
       in_menu: 
-        - bs
-        - nv
+        - un
+        - ec
     - 
-      name: Tallarin Saltado
+      name: Arroz a la cubana
       in_menu: 
-        - nv
-        - ex
+        - un
+        - ec
+  extras:
     - 
-      name: Patita con Mani
+      name: 'Maracuya'
       in_menu: 
-        - ex
+        - ej
+        - un
+        - ec
     - 
-      name: Cau Cau
+      name: 'Postre'
       in_menu: 
-        - bs
-        - ex
-    - 
-      name: Pollo a la Brasa
-      in_menu: 
-        - bs
-        - ex
-  extras: 
-    -
-      name: Chicha Morada
-      in_menu:
-        - bs
-        - ex
-    -
-      name: Limonada
-      in_menu:
-        - ex
-    -
-      name: Pie de Limon
-      in_menu:
-        - nv
-    -
-      name: Crema Volteada
-      in_menu:
-        - ex
-    -
-      name: Flan
-      in_menu:
-        - nv  
-        - ex
-    -
-      name: Torta de Chocolate
-      in_menu:
-        - ex
+        - ej
+        - un
 carta: 
 

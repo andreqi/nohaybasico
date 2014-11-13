@@ -1,8 +1,8 @@
 name: Da Gusto
-last_update: ayer 
+last_update:  4-12
 time_open: Lunes a Sábado de 12pm a 5pm
 address: Av. Mariano Cornejo 2286, Pueblo Libre
-price_range: 4.0 - 12.0
+price_range: Por actualizar
 coordinates: 
   lat: -12.068178
   lng: -77.076751
@@ -24,112 +24,6 @@ tipos_menu:
     price: 4.0
 dishes: 
   intro:
-    - 
-      name: Ceviche
-      in_menu: 
-        - nv
-        - ex
-    -
-      name: Papa a la Ocopa
-      in_menu:
-        - bs
-        - nv
-    -
-      name: Papa a la Huancaina
-      in_menu:
-        - bs
-        - nv
-    -
-      name: Crema de Esparragos
-      in_menu:
-        - bs
-        - nv
-    -
-      name: Sopa Wantan
-      in_menu:
-        - bs
-        - ex
-    -
-      name: Pañuelitos Saludables
-      in_menu:
-        - bs
-        - ex
   main:
-    - 
-      name: Aji de Gallina
-      in_menu: 
-        - nv
-        - ex
-    - 
-      name: Tallarin Saltado
-      in_menu: 
-        - bs
-    - 
-      name: Arroz Chaufa
-      in_menu: 
-        - bs
-        - nv
-        - ex
-    - 
-      name: Lomo Saltado
-      in_menu: 
-        - bs
-        - nv
-        - ex
-    - 
-      name: Carapulcra
-      in_menu: 
-        - bs
-        - nv
-    - 
-      name: Arroz con Pollo
-      in_menu: 
-        - bs
-        - nv
-    - 
-      name: Tallarin Saltado
-      in_menu: 
-        - nv
-        - ex
-    - 
-      name: Patita con Mani
-      in_menu: 
-        - ex
-    - 
-      name: Cau Cau
-      in_menu: 
-        - bs
-        - ex
-    - 
-      name: Pollo a la Brasa
-      in_menu: 
-        - bs
-        - ex
   extras: 
-    -
-      name: Chicha Morada
-      in_menu:
-        - bs
-        - ex
-    -
-      name: Limonada
-      in_menu:
-        - ex
-    -
-      name: Pie de Limon
-      in_menu:
-        - nv
-    -
-      name: Crema Volteada
-      in_menu:
-        - ex
-    -
-      name: Flan
-      in_menu:
-        - nv  
-        - ex
-    -
-      name: Torta de Chocolate
-      in_menu:
-        - ex
 carta:

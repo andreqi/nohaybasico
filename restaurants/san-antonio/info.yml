@@ -10,7 +10,7 @@ coordinates:
 social_media:
 tipos_menu:
   -
-    name: menu
+    name: '-'
     id: mn
     price: 6.00
 dishes: 

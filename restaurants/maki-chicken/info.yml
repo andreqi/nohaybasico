@@ -11,27 +11,27 @@ social_media:
   facebook: # 
 carta: 
   - 
-    name: 1/4 de pollo + papas + ensalada
+    name: 1/4 de pollo + papas + ens.
     price: 14.00
     tag: Carta
   - 
-    name: 1/2 de pollo + papas + ensalada
+    name: 1/2 de pollo + papas + ens.
     price: 25.00
     tag: Carta
   - 
-    name: 1 de pollo + papas + ensalada
+    name: 1 de pollo + papas + ens.
     price: 42.00
     tag: Carta
   - 
-    name: 1 pollo + papas + ensalada + gaseosa 1.5L
+    name: 1 pollo + papas + ens. + gaseosa 1.5L
     price: 45.00
     tag: Carta
   - 
-    name: 1 1/4 de pollo + papas + ensalada
+    name: 1 1/4 de pollo + papas + ens.
     price: 47.00
     tag: Carta
   - 
-    name: 1 1/2 de pollo + papas + ensalada
+    name: 1 1/2 de pollo + papas + ens.
     price: 58.00
     tag: Carta
   - 
