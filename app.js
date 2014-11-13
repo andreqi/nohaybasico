@@ -13,6 +13,16 @@ app.get('/', function(req, res) {
   });
 });
 
+app.get('/:id', function(req, res) {
+  var id = req.params.id;
+  var restaurant = get_restaurant(id);
+  if (has_menu(restaurant)) {
+    res.redirect('/'+id+'/menu');
+  } else {
+    res.redirect('/'+id+'/carta');
+  }
+});
+
 app.get('/:id/menu', function(req, res) {
   var id = req.params.id;
   var restaurant = get_restaurant(id);
@@ -80,9 +90,27 @@ function get_restaurant(id) {
   info.bannerURL = '/restaurants/banner/' + id;
   info.homeID = id;
   info.dish_preview = get_dish_preview(info);
-  info.mapsURL = 
-    coords ? mapsAPI.getMapsRedirectURL(coords.lat, coords.lng) : '';
+  info.mapsURL = coords ? 
+    mapsAPI.getMapsRedirectURL(coords.lat, coords.lng) : '';
+  info.grouped_by_carta = group_by(info.carta, function(e) {
+    return e.tag;
+  });
+  console.log(info.grouped_by_carta);
   return info;
+}
+
+function group_by(values, get_key) {
+  var grouped = {};
+  for (var idx = 0, len = values.length; idx < len; idx++) {
+    var val = values[idx];
+    var key = get_key(val);
+    if (grouped[key]) {
+      grouped[key].push(val);
+    } else {
+      grouped[key] = [val];
+    }
+  }
+  return grouped;
 }
 
 function has_menu(rest) {
