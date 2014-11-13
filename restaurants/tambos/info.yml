@@ -133,7 +133,4 @@ dishes:
       in_menu:
         - ex
 carta: 
-  - 
-    name: SACAR
-    price: 12.4
-    tag: SACAR
+

@@ -101,6 +101,7 @@ function get_restaurant(id) {
 
 function group_by(values, get_key) {
   var grouped = {};
+  values = values || [];
   for (var idx = 0, len = values.length; idx < len; idx++) {
     var val = values[idx];
     var key = get_key(val);

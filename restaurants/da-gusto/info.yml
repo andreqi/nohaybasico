@@ -132,8 +132,4 @@ dishes:
       name: Torta de Chocolate
       in_menu:
         - ex
-carta: 
-  - 
-    name: plato carta 1
-    price: 12.4
-    tag: Pueblo Libre
+carta:

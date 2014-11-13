@@ -59,7 +59,3 @@ dishes:
       in_menu:
         - nv
 carta: 
-  - 
-    name: plato carta 1
-    price: 12.4
-    tag: Pueblo Libre
