@@ -29,19 +29,19 @@ carta:
   - 
     name: Hamburguesa Royal
     price: 5.0
-    tag: no la vale
+    tag: si la vale
   - 
     name: Hamburguesa Royal con Huevo
     price: 5.0
-    tag: no la vale
+    tag: si la vale
   - 
     name: Hamburguesa sin Carne
     price: 5.0
-    tag: no la vale
+    tag: si la vale
   - 
     name: Hamburguesa de Carton
     price: 5.0
-    tag: no la vale
+    tag: si la vale
   - 
     name: Pan con Salchichon
     price: 5.0
