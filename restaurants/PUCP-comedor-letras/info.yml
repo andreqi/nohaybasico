@@ -1,0 +1,91 @@
+display: true
+name: PUCP Comedor letras
+last_update: ayer 
+time_open: Lunes a Sábado de 11.30am a 6pm
+address: PUCP
+price_range: 1.5 - 7.5
+coordinates: 
+  lat: -12.068076
+  lng: -77.077604
+contact_msg: -
+social_media:
+  facebook: 
+tipos_menu: 
+  - 
+    name: 'vegetariano'
+    id: ve
+    price: 3.6
+  - 
+    name: 'económico'
+    id: ec
+    price: 1.5
+  - 
+    name: 'básico'
+    id: ba
+    price: 3.6
+  - 
+    name: 'básico + entrada'
+    id: be
+    price: 5.1
+  - 
+    name: 'menú'
+    id: me
+    price: 7.5
+dishes: 
+  intro:
+    - 
+      name: Ensalada fresca
+      in_menu: 
+        - be
+    - 
+      name: Escabeche de vegetales
+      in_menu: 
+        - me
+  main:
+    - 
+      name: Pescado en salsa de rocoto, yuca, arroz
+      in_menu: 
+        - ba
+        - be
+    - 
+      name: Pollo adobado, arveja verde, arroz
+      in_menu: 
+        - me
+    - 
+      name: Pastel de carne, papa al perejil, arroz
+      in_menu: 
+        - me
+    - 
+      name: Cerdo en miel de kion, papa, arroz
+      in_menu: 
+        - ba
+    - 
+      name: Alverjita verde, arroz
+      in_menu: 
+        - ec
+    - 
+      name: Albóndiga vegetal en salsa de rocoto, yuca, arroz
+      in_menu: 
+        - ve
+  extras:
+    - 
+      name: 'Pan'
+      in_menu: 
+        - ba
+        - be
+        - ec
+        - me
+    - 
+      name: 'Refresco o Leche'
+      in_menu: 
+        - ve
+        - ba
+        - be
+        - ec
+        - me
+    - 
+      name: Macedonia de frutas
+      in_menu:
+        - me
+carta: 
+
