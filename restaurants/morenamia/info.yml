@@ -2,7 +2,7 @@ name: Morena Mía
 last_update: ayer 
 time_open: Lunes a domingo de 11am a 6pm
 address: Av. Marina Cornejo 2038 -2042 (ex-28 de Julio) Pueblo Libre
-price_range: TODO
+price_range: Por actualizar
 coordinates: 
   lat: -12.067812
   lng: -77.0742381
@@ -11,53 +11,25 @@ social_media:
   facebook: https://www.facebook.com/pages/MORENA-MIA/148974938498156
 tipos_menu: 
   - 
-    name: basico
+    name: '-'
     id: bs
     price: 4.5
-  - 
-    name: universitario
-    id: nv
-    price: 9.5
-  - 
-    name: ejecutivo 
-    id: ex 
-    price: 12.5
 dishes: 
   intro:
     - 
-      name: Ceviche
+      name: '-'
       in_menu: 
-        - nv
-        - ex
-    -
-      name: Papa a la Ocopa
-      in_menu:
-        - bs
         - nv
   main:
     - 
-      name: Aji de Gallina
+      name: '-'
       in_menu: 
         - nv
-        - ex
-    - 
-      name: Tallarin Saltado
-      in_menu: 
-        - bs
-    - 
-      name: Tallarin Saltado
-      in_menu: 
-        - bs
-    - 
-      name: Tallarin Saltado
-      in_menu: 
-        - bs
   extras: 
     -
-      name: Chicha Morada
+      name: '-'
       in_menu:
         - bs
-        - ex
 carta: 
   - 
     name: 1/4 Pollo al cilindro + papa + ensalada
