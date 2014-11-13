@@ -16,7 +16,7 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa de cemola
+      name: Sopa de semola
       in_menu:
         - mn
     - 

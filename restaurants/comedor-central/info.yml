@@ -1,0 +1,91 @@
+display: true
+name: Comedor central
+last_update: ayer 
+time_open: Lunes a Sábado de 11.30am a 6pm
+address: PUCP
+price_range: 6.5 - 8.5
+coordinates: 
+  lat: -12.068076
+  lng: -77.077604
+contact_msg: -
+social_media:
+  facebook: 
+tipos_menu: 
+  - 
+    name: 'vegetariano'
+    id: ve
+    price: 3.6
+  - 
+    name: 'económico'
+    id: ec
+    price: 1.5
+  - 
+    name: 'básico'
+    id: ba
+    price: 3.6
+  - 
+    name: 'básico + entrada'
+    id: be
+    price: 5.1
+  - 
+    name: 'menú'
+    id: me
+    price: 7.5
+dishes: 
+  intro:
+    - 
+      name: Ensalada de verde
+      in_menu: 
+        - be
+    - 
+      name: Huevo en salsa de ají
+      in_menu: 
+        - me
+  main:
+    - 
+      name: Carne a la reina, yuca, arroz
+      in_menu: 
+        - ba
+        - be
+    - 
+      name: Mondonguito a la italiana, arroz
+      in_menu: 
+        - me
+    - 
+      name: Pescado al limón, legumbres, arroz
+      in_menu: 
+        - me
+    - 
+      name: Cerdo en miel de kion, papa, arroz
+      in_menu: 
+        - ba
+    - 
+      name: Huevo frito y arroz
+      in_menu: 
+        - ec
+    - 
+      name: Carne vegetal en miel de kion, papa, arroz
+      in_menu: 
+        - ve
+  extras:
+    - 
+      name: 'Pan'
+      in_menu: 
+        - ba
+        - be
+        - ec
+        - me
+    - 
+      name: 'Refresco o Leche'
+      in_menu: 
+        - ve
+        - ba
+        - be
+        - ec
+        - me
+    - 
+      name: Delicia de fruta
+      in_menu:
+        - me
+carta: 
+
