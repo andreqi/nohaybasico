@@ -14,4 +14,38 @@ tipos_menu:
     price: 6.00
 dishes: 
   intro:
+    - 
+      name: Sopa de cemola
+      in_menu:
+        - mn
+    - 
+      name: Ocopa
+      in_menu: 
+        - mn
+    - 
+      name: Ensalada de Verduras
+      in_menu:
+        - mn
   main:
+    -
+      name: Pollo al Horno
+      in_menu:
+        - mn   
+    -
+      name: Pavita al Vino
+      in_menu:
+        - mn   
+    -
+      name: Alverjitas Partidas con Pescado Frito 
+      in_menu:
+        - mn   
+    -
+      name: Churrasco a la Chorrillana
+      in_menu:
+        - mn   
+  extras:
+    - 
+      name: Emoliente 
+      in_menu:
+        - mn
+    

@@ -123,6 +123,8 @@ function get_dish_preview(rest) {
   var dish_list = [];
   if (has_menu(rest)) {
     dish_list = rest.dishes.main;
+    dish_list = dish_list || [];
+    dish_list = dish_list.concat(rest.dishes.intro)
   } else {
     dish_list = rest.carta;
   }
