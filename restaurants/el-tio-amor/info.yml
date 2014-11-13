@@ -1,8 +1,8 @@
 name: El tío amor
 last_update: ayer 
-time_open: -
-address: -
-price_range: 4.5 - 12.5
+time_open: Lunes a Viernes de 11.30am hasta las últimas, sábados 11.30am a 5pm 
+address: Av. Mariano Cornejo
+price_range: 4.0 - 7.5
 coordinates: 
   lat: -12.068592
   lng: -77.077468
@@ -14,28 +14,84 @@ tipos_menu:
     name: basico
     id: bs
     price: 4.5
-  - 
-    name: universitario
-    id: nv
-    price: 9.5
-  - 
-    name: ejecutivo 
-    id: ex 
-    price: 12.5
 carta: 
   - 
-    name: Hamburguesa Royal
-    price: 5.0
-    tag: si la vale
+    name: Hamburguesa de carne
+    price: 3.5
+    tag: Carne
   - 
-    name: Hamburguesa Royal con Huevo
-    price: 5.0
-    tag: si la vale
+    name: Hamburguesa con queso o huevo
+    price: 4.0
+    tag: Carne
   - 
-    name: Hamburguesa sin Carne
+    name: Hamburguesa royal
     price: 5.0
-    tag: si la vale
+    tag: Carne
   - 
-    name: Hamburguesa de Carton
+    name: Hamburguesa royal americano
+    price: 6.5
+    tag: Carne
+  - 
+    name: Pollo deshilachado
+    price: 4.0
+    tag: Pollo
+  - 
+    name: Pollo con queso o huevo
+    price: 4.5
+    tag: Pollo
+  - 
+    name: Pollo royal
     price: 5.0
-    tag: si la vale
+    tag: Pollo
+  - 
+    name: Pollo royal americano
+    price: 7.5
+    tag: Pollo
+  - 
+    name: Filete de pollo
+    price: 4.0
+    tag: Filete
+  - 
+    name: Filete de pollo con queso o huevo
+    price: 4.5
+    tag: Filete
+  - 
+    name: Filete royal
+    price: 5.0
+    tag: Filete
+  - 
+    name: Filete royal americano
+    price: 7.5
+    tag: Filete
+  - 
+    name: Milanesa o suprema de pollo
+    price: 4.0
+    tag: Milanesa o suprema
+  - 
+    name: Milanesa o suprema con queso o huevo
+    price: 4.5
+    tag: Milanesa o suprema
+  - 
+    name: Milanesa o suprema royal
+    price: 5.0
+    tag: Milanesa o suprema
+  - 
+    name: Milanesa o suprema royal americano
+    price: 7.5
+    tag: Milanesa o suprema
+  - 
+    name: Chorizo
+    price: 4.0
+    tag: Chorizo
+  - 
+    name: Chorizo con queso o huevo
+    price: 4.5
+    tag: Chorizo
+  - 
+    name: Chorizo royal
+    price: 5.0
+    tag: Chorizo
+  - 
+    name: Chorizo royal americano
+    price: 7.5
+    tag: Chorizo

@@ -2,7 +2,7 @@ name: El tío bigote
 last_update: ayer 
 time_open: -
 address: -
-price_range: -
+price_range: 3.0 - 5.0
 coordinates: 
   lat: -12.068601
   lng: -77.077535
@@ -14,28 +14,57 @@ tipos_menu:
     name: basico
     id: bs
     price: 4.5
-  - 
-    name: universitario
-    id: nv
-    price: 9.5
-  - 
-    name: ejecutivo 
-    id: ex 
-    price: 12.5
+
 carta: 
+  -
+    name: Hamburguesa de carne
+    price: 3.5
+    tag: Carne
   - 
-    name: Hamburguesa Royal
-    price: 5.0
-    tag: si la vale
+    name: Hamburguesa con queso o huevo
+    price: 4.0
+    tag: Carne
   - 
-    name: Hamburguesa Royal con Huevo
-    price: 5.0
-    tag: si la vale
+    name: Hamburguesa royal
+    price: 4.5
+    tag: Carne
   - 
-    name: Hamburguesa sin Carne
-    price: 5.0
-    tag: si la vale
+    name: Pollo deshilachado
+    price: 4.0
+    tag: Pollo
   - 
-    name: Hamburguesa de Carton
+    name: Pollo con queso o huevo
+    price: 4.5
+    tag: Pollo
+  - 
+    name: Pollo royal
     price: 5.0
-    tag: si la vale
+    tag: Pollo
+  - 
+    name: Milanesa
+    price: 4.0
+    tag: Milanesa
+  - 
+    name: Milanesa con queso o huevo
+    price: 4.5
+    tag: Milanesa
+  - 
+    name: Milanesa royal
+    price: 5.0
+    tag: Milanesa
+  - 
+    name: Chorizo
+    price: 4.0
+    tag: Chorizo
+  - 
+    name: Chorizo con queso o huevo
+    price: 4.5
+    tag: Chorizo
+  - 
+    name: Chorizo royal
+    price: 5.0
+    tag: Chorizo
+  - 
+    name: Hotdog
+    price: 3.0
+    tag: Hotdog
