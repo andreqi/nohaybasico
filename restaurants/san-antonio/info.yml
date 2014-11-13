@@ -1,0 +1,17 @@
+name: San Antonio Gustos y Mas
+last_update: ayer  
+time_open: L-D  11:30 a 4:30 y cena 7:00 a 10:00 pm
+address: Pasaje Encinas
+price_range: 6.00
+coordinates: 
+  lat: -12.0687022
+  lng: -77.0769097
+social_media:
+tipos_menu:
+  -
+    name: menu
+    id: mn
+    price: 6.00
+dishes: 
+  intro:
+  main:

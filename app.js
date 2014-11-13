@@ -100,6 +100,7 @@ function get_restaurant(id) {
 }
 
 function group_by(values, get_key) {
+  if (!values) return null;
   var grouped = {};
   values = values || [];
   for (var idx = 0, len = values.length; idx < len; idx++) {
@@ -125,6 +126,7 @@ function get_dish_preview(rest) {
   } else {
     dish_list = rest.carta;
   }
+  dish_list = dish_list || [];
   return dish_list.slice(1, 6);
 }
 function shuffle(o, size){ 
