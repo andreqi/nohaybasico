@@ -1,12 +1,12 @@
-name: Tio bigote
+name: Full Sanguchon
 last_update: ayer 
-time_open: de 10 a 12 y de lunes a viernes
-address: Jr. Costa Rica 146, Jesus Maria
-price_range: 4.5 - 12.5
+time_open: -
+address: -
+price_range: -
 coordinates: 
   lat: -11.9540293
   lng: -77.052672
-contact_msg: Contáctanos en 999-666-21
+contact_msg: -
 social_media:
   facebook: www.facebook.com/juanchi_kun 
   twitter: juanchicienta  
@@ -45,8 +45,8 @@ carta:
   - 
     name: Pan con Salchichon
     price: 5.0
-    tag: no la vale
+    tag: si la vale
   - 
     name: Salchichon solo
     price: 5.0
-    tag: no la vale
+    tag: si la vale

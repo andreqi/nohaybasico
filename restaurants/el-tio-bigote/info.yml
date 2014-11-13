@@ -1,0 +1,70 @@
+name: El tío bigote
+last_update: ayer 
+time_open: -
+address: -
+price_range: 3.0 - 5.0
+coordinates: 
+  lat: -12.068601
+  lng: -77.077535
+contact_msg: Contáctanos en 999-666-21
+social_media:
+  facebook: 
+tipos_menu: 
+  - 
+    name: basico
+    id: bs
+    price: 4.5
+
+carta: 
+  -
+    name: Hamburguesa de carne
+    price: 3.5
+    tag: Carne
+  - 
+    name: Hamburguesa con queso o huevo
+    price: 4.0
+    tag: Carne
+  - 
+    name: Hamburguesa royal
+    price: 4.5
+    tag: Carne
+  - 
+    name: Pollo deshilachado
+    price: 4.0
+    tag: Pollo
+  - 
+    name: Pollo con queso o huevo
+    price: 4.5
+    tag: Pollo
+  - 
+    name: Pollo royal
+    price: 5.0
+    tag: Pollo
+  - 
+    name: Milanesa
+    price: 4.0
+    tag: Milanesa
+  - 
+    name: Milanesa con queso o huevo
+    price: 4.5
+    tag: Milanesa
+  - 
+    name: Milanesa royal
+    price: 5.0
+    tag: Milanesa
+  - 
+    name: Chorizo
+    price: 4.0
+    tag: Chorizo
+  - 
+    name: Chorizo con queso o huevo
+    price: 4.5
+    tag: Chorizo
+  - 
+    name: Chorizo royal
+    price: 5.0
+    tag: Chorizo
+  - 
+    name: Hotdog
+    price: 3.0
+    tag: Hotdog

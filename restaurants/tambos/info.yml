@@ -1,27 +1,27 @@
-name: Da Gusto
+name: Tambos
 last_update: ayer 
-time_open: Lunes a Sábado de 12pm a 5pm
-address: Av. Mariano Cornejo 2286, Pueblo Libre
-price_range: 4.0 - 12.0
+time_open: Lunes a Sábado de 11.30am a 9pm , cena 6.30pm a 10.30pm
+address: Avenida Universitaria, Pueblo Libre
+price_range: TODO
 coordinates: 
-  lat: -12.068178
-  lng: -77.076751
-contact_msg: Contáctanos en (01) 7355375
+  lat: -12.068076
+  lng: -77.077604
+contact_msg: 'Contáctanos en 564-7053'
 social_media:
-  facebook: https://www.facebook.com/pages/Da-Gusto/339419042845152?fref=ts
+  facebook: 
 tipos_menu: 
   - 
-    name: Menu completo
-    id: mc
-    price: 11.0
+    name: basico
+    id: bs
+    price: 4.5
   - 
-    name: Plato de fondo
-    id: fo
-    price: 10.0
+    name: universitario
+    id: nv
+    price: 9.5
   - 
-    name: Entrada
-    id: en 
-    price: 4.0
+    name: ejecutivo 
+    id: ex 
+    price: 12.5
 dishes: 
   intro:
     - 
@@ -132,4 +132,5 @@ dishes:
       name: Torta de Chocolate
       in_menu:
         - ex
-carta:
+carta: 
+
