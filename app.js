@@ -72,7 +72,9 @@ app.set('view engine', 'jade');
 function get_restaurants(callback) {
   fs.readdir('./restaurants', function(err, files) {
     var rests = files.filter(function(name) {return name[0] != '.'});
-    var payback = rests.map(get_restaurant);
+    var payback = rests.map(get_restaurant).filter(function(rest) {
+      return rest.display == undefined || rest.display == true;
+    });
     callback(shuffle(payback));
   });
 }
@@ -123,6 +125,8 @@ function get_dish_preview(rest) {
   var dish_list = [];
   if (has_menu(rest)) {
     dish_list = rest.dishes.main;
+    dish_list = dish_list || [];
+    dish_list = dish_list.concat(rest.dishes.intro)
   } else {
     dish_list = rest.carta;
   }
