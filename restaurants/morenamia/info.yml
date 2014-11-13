@@ -1,9 +1,9 @@
-display: false
+display: true
 name: Morena Mía
 last_update: ayer 
 time_open: Lunes a domingo de 11am a 6pm
 address: Av. Marina Cornejo 2038 -2042 (ex-28 de Julio) Pueblo Libre
-price_range: Por actualizar
+price_range: 10 - 15
 coordinates: 
   lat: -12.067812
   lng: -77.0742381
@@ -12,25 +12,62 @@ social_media:
   facebook: https://www.facebook.com/pages/MORENA-MIA/148974938498156
 tipos_menu: 
   - 
-    name: '-'
-    id: bs
-    price: 4.5
+    name: 'menu'
+    id: me
+    price: 10
+  - 
+    name: 'combos'
+    id: co
+    price: 15
 dishes: 
   intro:
     - 
-      name: '-'
+      name: 'Cebiche pescado'
       in_menu: 
-        - nv
+        - co
+    - 
+      name: 'Cebiche mixto'
+      in_menu: 
+        - co
+    - 
+      name: 'Choritos a la chalaca'
+      in_menu: 
+        - co
   main:
     - 
-      name: '-'
+      name: 'Adobo de pollo'
       in_menu: 
-        - nv
+        - me
+    - 
+      name: 'Cau cau criollo'
+      in_menu: 
+        - me
+    - 
+      name: 'Macarrones con lomito de pollo'
+      in_menu: 
+        - me
+    - 
+      name: 'Arroz a la cubana con higado encebollado'
+      in_menu: 
+        - me
+    - 
+      name: 'Pescado frito'
+      in_menu: 
+        - me
+    - 
+      name: 'Arroz con mariscos'
+      in_menu: 
+        - co
+    - 
+      name: 'Chaufa de mariscos'
+      in_menu: 
+        - co
   extras: 
     -
-      name: '-'
+      name: 'Refresco'
       in_menu:
-        - bs
+        - me
+        - co
 carta: 
   - 
     name: 1/4 Pollo al cilindro + papa + ensalada
