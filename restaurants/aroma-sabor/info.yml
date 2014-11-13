@@ -2,7 +2,7 @@ name: Aroma & Sabor
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 5pm , cena 6.30pm a 10.30pm
 address: Av. Mariano Cornejo 2285, Pueblo Libre
-price_range: No actualizado
+price_range: Por actualizar
 coordinates: 
   lat: -12.068483
   lng: -77.076901
@@ -17,19 +17,7 @@ tipos_menu:
     price: 4.5
 dishes: 
   intro:
-    - 
-      name: '-'
-      in_menu: 
-        - nv
   main:
-    - 
-      name: '-'
-      in_menu:
-      - nv 
   extras: 
-    -
-      name: '-'
-      in_menu:
-        - nv
 carta: 
 

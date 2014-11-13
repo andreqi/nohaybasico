@@ -24,18 +24,6 @@ tipos_menu:
     price: 4.0
 dishes: 
   intro:
-    - 
-      name: '-'
-      in_menu: 
-        - en
   main:
-    - 
-      name: '-'
-      in_menu: 
-        - fo
   extras: 
-    -
-      name: Refresco
-      in_menu:
-        - mc
 carta:
