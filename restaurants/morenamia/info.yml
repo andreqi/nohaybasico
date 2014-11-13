@@ -1,0 +1,73 @@
+name: Morena Mía
+last_update: ayer 
+time_open: Lunes a domingo de 11am a 6pm
+address: Av. Marina Cornejo 2038 -2042 (ex-28 de Julio) Pueblo Libre
+price_range: TODO
+coordinates: 
+  lat: -11.9540293
+  lng: -77.052672
+contact_msg: Contáctanos en 564-3044 / 564-7177
+social_media:
+  facebook: https://www.facebook.com/pages/MORENA-MIA/148974938498156
+tipos_menu: 
+  - 
+    name: basico
+    id: bs
+    price: 4.5
+  - 
+    name: universitario
+    id: nv
+    price: 9.5
+  - 
+    name: ejecutivo 
+    id: ex 
+    price: 12.5
+dishes: 
+  intro:
+    - 
+      name: Ceviche
+      in_menu: 
+        - nv
+        - ex
+    -
+      name: Papa a la Ocopa
+      in_menu:
+        - bs
+        - nv
+  main:
+    - 
+      name: Aji de Gallina
+      in_menu: 
+        - nv
+        - ex
+    - 
+      name: Tallarin Saltado
+      in_menu: 
+        - bs
+    - 
+      name: Tallarin Saltado
+      in_menu: 
+        - bs
+    - 
+      name: Tallarin Saltado
+      in_menu: 
+        - bs
+  extras: 
+    -
+      name: Chicha Morada
+      in_menu:
+        - bs
+        - ex
+carta: 
+  - 
+    name: 1/4 Pollo al cilindro + papa + ensalada
+    price: 15.0
+    tag: 'Viernes, Sabado y Domingo'
+  - 
+    name: Chancho 250gr al cilindro + papa + ensalada
+    price: 18.0
+    tag: 'Viernes, Sabado y Domingo'
+  - 
+    name: 1/4 Pollo + Chancho 250 gr. al cilindro + papa + ensalada
+    price: 25.0
+    tag: 'Viernes, Sabado y Domingo'
