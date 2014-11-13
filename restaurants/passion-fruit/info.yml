@@ -1,0 +1,174 @@
+name: Passion & Fruit
+last_update: ayer 
+time_open: Lunes a Viernes desde las 10:00am
+address: Av. Mariano cornejo 2249 Pueblo libre 
+price_range: 3.00 - 7.00
+coordinates: 
+  lat: -12.0683142
+  lng: -77.0764172
+contact_msg: Contactanos al 6083654
+social_media:
+  facebook: https://www.facebook.com/PassionyFruit 
+tipos_menu:
+  -
+    name: Muffin
+    id: mf
+    price: -
+  -
+    name: Cupcake
+    id: ck
+    price: 5.00
+  - 
+    name: Helados 
+    id: hl    
+    price: 6.00
+  -
+    name: Yogurt
+    id: yg
+    price: 7.00 
+dishes:
+  main: 
+    -
+      name: Muffin de Vainilla con chips
+      in_menu:
+        - mf
+    -
+      name: Muffin de Plátano y pecanas 
+      in_menu:
+        - mf
+    -
+      name: Brownie marmoleado con cheese cream
+      in_menu:
+        - ck
+    -
+      name: Cupcake de Oreo
+      in_menu:
+        - ck
+    -
+      name: Cupcake de Chocolate
+      in_menu:
+        - ck
+    -
+      name: Cupcake de Tres leches
+      in_menu:
+        - ck
+    -
+      name: Cupcake Devil's food
+      in_menu:
+        - ck
+    -
+      name: Cupcake Selva negra
+      in_menu:
+        - ck
+    -
+      name: Cupcake Nutella
+      in_menu:
+        - ck
+    -
+      name: Cupcake de Fresa
+      in_menu:
+        - ck
+    -
+      name: Cupcake de Plátano
+      in_menu:
+        - ck
+    -
+      name: Yogurt griego
+      in_menu: 
+        - yg
+    - 
+      name: Helado de Chocolate 
+      in_menu: 
+        - hl
+    - 
+      name: Helado de Maracuyá 
+      in_menu: 
+        - hl
+    - 
+      name: Helado de Limon 
+      in_menu: 
+        - hl
+    - 
+      name: Helado de Menta c/chips 
+      in_menu: 
+        - hl
+    - 
+      name: Helado de Fresa 
+      in_menu: 
+        - hl
+    - 
+      name: Helado de Vainilla 
+      in_menu: 
+        - hl
+    - 
+      name: Helado de Nueces 
+      in_menu: 
+        - hl
+carta: 
+  - 
+    name: Chocolate Caliente
+    price: 6.00
+    tag: Bebidas Calienes
+  - 
+    name: Chocolate Caliente con marshamllows
+    price: 7.00
+    tag: Bebidas Calienes
+  - 
+    name: Multicafe
+    price: 2.50
+    tag: Bebidas Calienes
+  - 
+    name: Infusiones
+    price: 3.50
+    tag: Bebidas Calienes
+  - 
+    name: Helado 1 Bola
+    price: 3.00
+    tag: Helados Artesanales
+  - 
+    name: Helado 1 Bola con brownie
+    price: 6.00
+    tag: Helados Artesanales
+  - 
+    name: Helado 2 Bola
+    price: 5.00
+    tag: Helados Artesanales
+  - 
+    name: Helado 3 Bola
+    price: 7.00
+    tag: Helados Artesanales
+  - 
+    name: Cupcake price: 5.00
+    tag: Cupcakes
+  - 
+    name: Caja 6 unidades (cupcake)
+    price: 29.00
+    tag: Cupcakes
+  - 
+    name: Caja 100 unidades (cupcake)
+    price: 470.00
+    tag: Cupcakes
+  - 
+    name: 100 unidades con envase individual 
+    price: 485.00
+    tag: Cupcakes
+  - 
+    name: Milkshake
+    price: 8.00
+    tag: Bebidas Frías
+  - 
+    name: Limonada
+    price: 3.50
+    tag: Bebidas Frías
+  - 
+    name: Nectar de Fruta
+    price: 2.80
+    tag: Bebidas Frías
+  - 
+    name: Gaseosa
+    price: 2.50
+    tag: Bebidas Frías
+  - 
+    name: Agua
+    price: 2.50
+    tag: Bebidas Frías

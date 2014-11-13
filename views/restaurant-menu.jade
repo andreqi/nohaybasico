@@ -13,9 +13,11 @@ block content
               - dishBlock = {}
               - dishBlock.name = name
               - dishBlock.dishes = dishes 
-              include menu-block
+              if dishes
+                include menu-block
+            - var main_name = restaurant.dishes.intro ? 'Segundos' : 'Hoy'; 
             +menu_section('Entradas', restaurant.dishes.intro)
-            +menu_section('Segundos', restaurant.dishes.main)
+            +menu_section(main_name, restaurant.dishes.main)
             +menu_section('Refrescos y/o postre', restaurant.dishes.extras)
 
       div(class='3u')
