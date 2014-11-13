@@ -1,14 +1,15 @@
-name: Da Gusto
+name: Aroma & Sabor
 last_update: ayer 
-time_open: Lunes a Sábado de 12pm a 5pm
-address: Av. Mariano Cornejo 2286, Pueblo Libre
+time_open: Lunes a Sábado de 11.30am a 5pm , cena 6.30pm a 10.30pm
+address: Av. Mariano Cornejo 2285, Pueblo Libre
 price_range: TODO
 coordinates: 
-  lat: -12.068178
-  lng: -77.076751
-contact_msg: Contáctanos en (01) 7355375
+  lat: -12.068483
+  lng: -77.076901
+contact_msg: 'Contáctanos en 4605759 / 950645668 / #950645668'
 social_media:
-  facebook: https://www.facebook.com/pages/Da-Gusto/339419042845152?fref=ts
+  facebook: https://www.facebook.com/aromaisabor
+  twitter: https://twitter.com/aromaisabor
 tipos_menu: 
   - 
     name: basico
@@ -134,6 +135,6 @@ dishes:
         - ex
 carta: 
   - 
-    name: plato carta 1
+    name: SACAR
     price: 12.4
-    tag: Pueblo Libre
+    tag: SACAR

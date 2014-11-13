@@ -1,0 +1,65 @@
+name: Pucsito
+last_update: ayer 
+time_open: L-V de 8.30am a 5pm - 7pm a 9pm, S-D 9am - 5pm
+address: Av. Universitaria 1607
+price_range: 6
+coordinates: 
+  lat: -12.068178
+  lng: -77.076751
+contact_msg: Contáctanos en 997934915 / 993394492
+social_media:
+  facebook: 
+tipos_menu: 
+  - 
+    name: universitario
+    id: nv
+    price: 6
+dishes: 
+  intro:
+    - 
+      name: Sopa de Casa
+      in_menu: 
+        - nv
+    -
+      name: Solterito de Queso
+      in_menu:
+        - nv
+    -
+      name: Papa a la Huancaína
+      in_menu:
+        - nv
+  main:
+    - 
+      name: Pachamanca de carne
+      in_menu: 
+        - nv
+    - 
+      name: Ají de Gallina
+      in_menu: 
+        - nv
+    - 
+      name: Arroz con chancho
+      in_menu: 
+        - nv
+    - 
+      name: Pescado frito c/ensalada
+      in_menu: 
+        - nv
+    - 
+      name: Seco de pollo
+      in_menu: 
+        - nv
+    - 
+      name: Milanesa con papas
+      in_menu: 
+        - nv
+  extras: 
+    -
+      name: Refresco
+      in_menu:
+        - nv
+carta: 
+  - 
+    name: plato carta 1
+    price: 12.4
+    tag: Pueblo Libre

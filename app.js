@@ -95,7 +95,7 @@ function get_restaurant(id) {
   info.grouped_by_carta = group_by(info.carta, function(e) {
     return e.tag;
   });
-  console.log(info.grouped_by_carta);
+  //console.log(info.grouped_by_carta);
   return info;
 }
 

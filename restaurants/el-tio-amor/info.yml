@@ -1,0 +1,41 @@
+name: El tío amor
+last_update: ayer 
+time_open: -
+address: -
+price_range: 4.5 - 12.5
+coordinates: 
+  lat: -12.068592
+  lng: -77.077468
+contact_msg: -
+social_media:
+  facebook: 
+tipos_menu: 
+  - 
+    name: basico
+    id: bs
+    price: 4.5
+  - 
+    name: universitario
+    id: nv
+    price: 9.5
+  - 
+    name: ejecutivo 
+    id: ex 
+    price: 12.5
+carta: 
+  - 
+    name: Hamburguesa Royal
+    price: 5.0
+    tag: si la vale
+  - 
+    name: Hamburguesa Royal con Huevo
+    price: 5.0
+    tag: si la vale
+  - 
+    name: Hamburguesa sin Carne
+    price: 5.0
+    tag: si la vale
+  - 
+    name: Hamburguesa de Carton
+    price: 5.0
+    tag: si la vale
