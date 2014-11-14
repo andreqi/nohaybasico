@@ -1,4 +1,4 @@
-display: false
+display: true
 name: San Antonio Gustos y Más
 last_update: ayer  
 time_open: L-D  11:30 a 4:30 y cena 7:00 a 10:00 pm
@@ -16,11 +16,11 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa de semola
+      name: Sopa de Pollo
       in_menu:
         - mn
     - 
-      name: Ocopa
+      name: Causa de Pollo
       in_menu: 
         - mn
     - 
@@ -29,24 +29,24 @@ dishes:
         - mn
   main:
     -
-      name: Pollo al Horno
+      name: Estofado con pollo
       in_menu:
         - mn   
     -
-      name: Pavita al Vino
+      name: Olluquito con carne
       in_menu:
         - mn   
     -
-      name: Arvejitas Partidas con Pescado Frito 
+      name: Seco de carne
       in_menu:
         - mn   
     -
-      name: Churrasco a la Chorrillana
+      name: Chulleta a la Vasca a la Chorrillana
       in_menu:
         - mn   
   extras:
     - 
-      name: Emoliente 
+      name: Yerba Luisa 
       in_menu:
         - mn
     
