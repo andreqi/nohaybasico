@@ -7,28 +7,34 @@ block content
     - map[menu.id] = colors[index]
   .container
     .row
-      div(class='7u -1u')
-          ul
-            mixin menu_section(name, dishes)
-              - dishBlock = {}
-              - dishBlock.name = name
-              - dishBlock.dishes = dishes 
-              if dishes
-                include menu-block
-            - var main_name = restaurant.dishes.intro ? 'Segundos' : 'Hoy'; 
-            +menu_section('Entradas', restaurant.dishes.intro)
-            +menu_section(main_name, restaurant.dishes.main)
-            +menu_section('Refrescos y/o postre', restaurant.dishes.extras)
+      if restaurant.display 
+        div(class='7u -1u')
+            ul
+              mixin menu_section(name, dishes)
+                - dishBlock = {}
+                - dishBlock.name = name
+                - dishBlock.dishes = dishes 
+                if dishes
+                  include menu-block
+              - var main_name = restaurant.dishes.intro ? 'Segundos' : 'Hoy'; 
+              +menu_section('Entradas', restaurant.dishes.intro)
+              +menu_section(main_name, restaurant.dishes.main)
+              +menu_section('Refrescos y/o postre', restaurant.dishes.extras)
 
-      div(class='3u')
-        .box
-          header
-            h3 Menus
-          .row
-            ul.menu-price
-              each menu in restaurant.tipos_menu
-                li(class='block-left-right')
-                  div(class='pull-left')
-                    span(class='tag #{map[menu.id]}') #{menu.id}
-                    span #{menu.name}
-                  div(class='pull-right') S/. #{menu.price}
+        div(class='3u')
+          .box
+            header
+              h3 Menus
+            .row
+              ul.menu-price
+                each menu in restaurant.tipos_menu
+                  li(class='block-left-right')
+                    div(class='pull-left')
+                      span(class='tag #{map[menu.id]}') #{menu.id}
+                      span #{menu.name}
+                    div(class='pull-right') S/. #{menu.price}
+      else
+        div(class='12u')
+          .box
+            header
+              h3 El menu aún no ha sido actualizado );

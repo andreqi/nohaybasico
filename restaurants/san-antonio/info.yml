@@ -1,5 +1,5 @@
-display: true
-name: San Antonio Gustos y Mas
+display: false
+name: San Antonio Gustos y Más
 last_update: ayer  
 time_open: L-D  11:30 a 4:30 y cena 7:00 a 10:00 pm
 address: Pasaje Encinas
@@ -10,7 +10,7 @@ coordinates:
 social_media:
 tipos_menu:
   -
-    name: '-'
+    name: menu
     id: mn
     price: 6.00
 dishes: 
@@ -37,7 +37,7 @@ dishes:
       in_menu:
         - mn   
     -
-      name: Alverjitas Partidas con Pescado Frito 
+      name: Arvejitas Partidas con Pescado Frito 
       in_menu:
         - mn   
     -
