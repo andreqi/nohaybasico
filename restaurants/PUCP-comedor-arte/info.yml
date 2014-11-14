@@ -1,4 +1,4 @@
-display: false
+display: true
 name: PUCP Comedor arte
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 6pm
@@ -30,33 +30,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada mixta
+      name: Ensalada de tomates
       in_menu: 
         - be
     - 
-      name: Ensalada fresca
+      name: Ensalada mixta
       in_menu: 
         - me
   main:
     - 
-      name: Carne a la reina, yuca, arroz
+      name: Pescado frito, puré, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Albóndigas a las finas hierbas, papa, arroz
+      name: Carbonada de res, yuca, arroz
       in_menu: 
         - me
     - 
-      name: Carapulcra con cerdo, salsa criolla, arroz
+      name: Pollo al jugo, lentejas, arroz
       in_menu: 
         - me
     - 
-      name: Estofado de pollo, papa, arroz
-      in_menu: 
-        - ba
-    - 
-      name: Tortilla de verduras, arroz
+      name: Lentejas guisadas, arroz
       in_menu: 
         - ec
   extras:
@@ -75,7 +71,7 @@ dishes:
         - ec
         - me
     - 
-      name: Piña almíbar
+      name: Ensalada de frutas 
       in_menu:
         - me
 carta: 
