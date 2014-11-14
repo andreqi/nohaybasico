@@ -1,0 +1,47 @@
+display: false
+name: El arbolito
+last_update: ayer 
+time_open: Lunes a Viernes 9am a 10pm Sábados de 9am a 5pm
+address: Avenida Universitaria 1757
+price_range: -
+coordinates: 
+  lat: -12.067104
+  lng: -77.077632
+contact_msg: Contacto en (51-1) 564-8102
+social_media:
+  facebook: 'https://www.facebook.com/pages/El-Arbolito-Restaurante-Naturista/164255087049670?ref=ts&fref=ts'
+tipos_menu: 
+  - 
+    name: 'menú de día'
+    id: di
+    price: 3.6
+  - 
+    name: 'menú especial'
+    id: es
+    price: 1.5
+dishes: 
+  intro:
+    - 
+      name: ''
+      in_menu: 
+        - 
+    - 
+      name: ''
+      in_menu: 
+        - 
+  main:
+    - 
+      name: ''
+      in_menu: 
+        - 
+  extras:
+    -
+      name: ''
+      in_menu: 
+        - 
+    - 
+      name: Postre
+      in_menu:
+        - di
+carta: 
+
