@@ -86,7 +86,7 @@ function get_restaurant(id) {
     info = YAML.load(path);
   } catch (ex) {
     info = YAML.load('./restaurants/.ejemplo/info.yml');
-    info.name = id;
+    info.name = id + 'gg';
   }
   var coords = info.coordinates;
   info.bannerURL = '/restaurants/banner/' + id;

@@ -1,0 +1,112 @@
+display: true
+name: La Farola
+last_update: ayer 
+time_open:  L-S 12pm
+price_range: 9
+coordinates: 
+  lat: -12.0658947
+  lng: -77.0778565
+social_media:
+carta: 
+  - 
+    name: Pizza Americana
+    price: 6.50
+    tag: Pizza
+  - 
+    name: Pizza Arequipeña
+    price: 6.50
+    tag: Pizza
+  - 
+    name: Pizza de Cabanosi
+    price: 7.00
+    tag: Pizza
+  - 
+    name: Pizza Hawaiana
+    price: 7.00
+    tag: Pizza
+  - 
+    name: Pizza de Champiñones
+    price: 7.50
+    tag: Pizza
+  - 
+    name: Pizza Italiana
+    price: 7.50
+    tag: Pizza
+  - 
+    name: Pizza Tropical
+    price: 7.50
+    tag: Pizza
+  - 
+    name: Pizza Veneciana
+    price: 8.00
+    tag: Pizza
+  - 
+    name: Pizza de Pollo
+    price: 8.00
+    tag: Pizza
+  - 
+    name: Pizza Española
+    price: 8.00
+    tag: Pizza
+  - 
+    name: Pizza Can-cun
+    price: 8.00
+    tag: Pizza
+  - 
+    name: Pizza Alemana
+    price: 8.00
+    tag: Pizza
+  - 
+    name: Pizza Bahamas
+    price: 8.50
+    tag: Pizza
+  - 
+    name: Pizza Romana
+    price: 8.50
+    tag: Pizza
+  - 
+    name: Pizza Continental
+    price: 9.00
+    tag: Pizza
+  - 
+    name: Pizza California
+    price: 9.00
+    tag: Pizza
+  - 
+    name: Pizza Rusa
+    price: 9.00
+    tag: Pizza
+  - 
+    name: Pizza Africana
+    price: 9.00
+    tag: Pizza
+  - 
+    name: Pizza Arabe
+    price: 9.00
+    tag: Pizza
+  - 
+    name: Pizza New York 
+    price: 9.00
+    tag: Pizza
+  - 
+    name: Pizza Farola
+    price: 10.00
+    tag: Pizza
+  - 
+    name: Ravioles de carne
+    price: 13.00
+    tag: Ravioles
+  - 
+    name: Lasagna de carne con salsa Bechame
+    price: 13.00
+    tag: Lasagna
+  - 
+    name: Spaguetti en salsa de carne
+    price: 13.00
+    tag: Spaguetti
+  - 
+    name: Rigattoni en salsa de pollo en trozos
+    price: 13.00
+    tag: Rigattoni
+
+

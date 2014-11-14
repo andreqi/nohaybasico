@@ -14,7 +14,7 @@ tipos_menu:
   -
     name: Muffin
     id: mf
-    price: -
+    price: 4.00
   -
     name: Cupcake
     id: ck
@@ -30,43 +30,19 @@ tipos_menu:
 dishes:
   main: 
     -
-      name: Muffin de Vainilla con chips
-      in_menu:
-        - mf
-    -
-      name: Muffin de Plátano y pecanas 
-      in_menu:
-        - mf
-    -
-      name: Brownie marmoleado con cheese cream
-      in_menu:
+     name: Cupcake de Nutella
+     in_menu:
         - ck
     -
       name: Cupcake de Oreo
       in_menu:
         - ck
     -
-      name: Cupcake de Chocolate
+      name: Cupcake de Chocovainilla
       in_menu:
         - ck
     -
-      name: Cupcake de Tres leches
-      in_menu:
-        - ck
-    -
-      name: Cupcake Devil's food
-      in_menu:
-        - ck
-    -
-      name: Cupcake Selva negra
-      in_menu:
-        - ck
-    -
-      name: Cupcake Nutella
-      in_menu:
-        - ck
-    -
-      name: Cupcake de Fresa
+      name: Cupcake Happy Day
       in_menu:
         - ck
     -
@@ -78,33 +54,13 @@ dishes:
       in_menu: 
         - yg
     - 
-      name: Helado de Chocolate 
+      name: Muffins vainilla con chips
       in_menu: 
-        - hl
+        - mf
     - 
-      name: Helado de Maracuyá 
+      name: Brownie marmoleado
       in_menu: 
-        - hl
-    - 
-      name: Helado de Limon 
-      in_menu: 
-        - hl
-    - 
-      name: Helado de Menta c/chips 
-      in_menu: 
-        - hl
-    - 
-      name: Helado de Fresa 
-      in_menu: 
-        - hl
-    - 
-      name: Helado de Vainilla 
-      in_menu: 
-        - hl
-    - 
-      name: Helado de Nueces 
-      in_menu: 
-        - hl
+        - ck
 carta: 
   - 
     name: Chocolate Caliente
