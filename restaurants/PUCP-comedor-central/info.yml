@@ -1,4 +1,4 @@
-display: false
+display: true
 name: PUCP Comedor central
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 6pm
@@ -34,37 +34,33 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada de verde
+      name: Ensalada fresca
       in_menu: 
         - be
     - 
-      name: Huevo en salsa de ají
+      name: Ensalada oriental
       in_menu: 
         - me
   main:
     - 
-      name: Carne a la reina, yuca, arroz
+      name: Lomito de hígado, lentejas, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Mondonguito a la italiana, arroz
+      name: Tallarines al pesto, pollo dorado
       in_menu: 
         - me
     - 
-      name: Pescado al limón, legumbres, arroz
+      name: Cerdo con piña, verduras, arroz
       in_menu: 
         - me
     - 
-      name: Cerdo en miel de kion, papa, arroz
-      in_menu: 
-        - ba
-    - 
-      name: Huevo frito y arroz
+      name: Frijoles guisados, arroz
       in_menu: 
         - ec
     - 
-      name: Carne vegetal en miel de kion, papa, arroz
+      name: Lomito vegetal, lentejas, arroz
       in_menu: 
         - ve
   extras:
@@ -84,7 +80,7 @@ dishes:
         - ec
         - me
     - 
-      name: Delicia de fruta
+      name: Budín de sémola
       in_menu:
         - me
 carta: 

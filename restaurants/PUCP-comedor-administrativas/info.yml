@@ -1,4 +1,4 @@
-display: false
+display: true
 name: PUCP Comedor administrativas
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 6pm
@@ -30,33 +30,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada de tomates 
+      name: Ensalada variada
       in_menu: 
         - be
     - 
-      name: Ensalada festiva
+      name: Huevo en salsa golf
       in_menu: 
         - me
   main:
     - 
-      name: Bistec de hígado, alverjita verde, arroz
+      name: Carne a la campesina, camote, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pescado al perejil, papa, arroz
+      name: Pollo en salsa de brócoli, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Tallarines a la huancaína, con filete de pollo a la plancha
+      name: Lomito de hígado, papas fritas, arroz
       in_menu: 
         - me
     - 
-      name: Estofado de pollo, papa, arroz
-      in_menu: 
-        - ba
-    - 
-      name: Alverjita verde, arroz
+      name: Arroz chaufa
       in_menu: 
         - ec
   extras:
@@ -75,7 +71,7 @@ dishes:
         - ec
         - me
     - 
-      name: Manzana al horno
+      name: Gelatina frutada
       in_menu:
         - me
 carta: 

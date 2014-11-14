@@ -1,4 +1,4 @@
-display: false
+display: true
 name: El arbolito
 last_update: ayer 
 time_open: Lunes a Viernes 9am a 10pm Sábados de 9am a 5pm
@@ -14,34 +14,52 @@ tipos_menu:
   - 
     name: 'menú de día'
     id: di
-    price: 3.6
+    price: -
   - 
     name: 'menú especial'
     id: es
-    price: 1.5
+    price: -
 dishes: 
   intro:
     - 
-      name: ''
+      name: Anticucho vegetariano
       in_menu: 
-        - 
+        - di
     - 
-      name: ''
+      name: Ensalada fresca
       in_menu: 
-        - 
+        - di
+    - 
+      name: Sopa de casa
+      in_menu: 
+        - di
   main:
     - 
-      name: ''
+      name: Bisteck en salsa de espinaca 
       in_menu: 
-        - 
+        - di
+    - 
+      name: Sudado de pescadovel
+      in_menu: 
+        - di
+    - 
+      name: Lomo saltado
+      in_menu: 
+        - es
+    - 
+      name: Tortilla de brócoli
+      in_menu: 
+        - es
   extras:
     -
-      name: ''
+      name: 'Chicha morada o refresco de maracuyá.'
       in_menu: 
-        - 
+        - di
+        - es
     - 
-      name: Postre
+      name: Postre yogurt
       in_menu:
         - di
+        - es
 carta: 
 

@@ -1,4 +1,4 @@
-display: false
+display: true
 name: PUCP Comedor letras
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 6pm
@@ -34,37 +34,33 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada fresca
+      name: Salpicón de verduras
       in_menu: 
         - be
     - 
-      name: Escabeche de vegetales
+      name: Ensalada campesina
       in_menu: 
         - me
   main:
     - 
-      name: Pescado en salsa de rocoto, yuca, arroz
+      name: Tallarines a la primavera con pollo dorado
       in_menu: 
         - ba
         - be
     - 
-      name: Pollo adobado, arveja verde, arroz
+      name: Pescado en salsa perejil, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Pastel de carne, papa al perejil, arroz
+      name: Pollo al horno, puré, arroz
       in_menu: 
         - me
     - 
-      name: Cerdo en miel de kion, papa, arroz
-      in_menu: 
-        - ba
-    - 
-      name: Alverjita verde, arroz
+      name: Tortilla de verduras, arroz
       in_menu: 
         - ec
     - 
-      name: Albóndiga vegetal en salsa de rocoto, yuca, arroz
+      name: Tallarines a la primavera con hamburguesa vegetal
       in_menu: 
         - ve
   extras:
@@ -84,7 +80,7 @@ dishes:
         - ec
         - me
     - 
-      name: Macedonia de frutas
+      name: Piña encanelada
       in_menu:
         - me
 carta: 
