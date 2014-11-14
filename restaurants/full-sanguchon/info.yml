@@ -1,26 +1,814 @@
-display: false
+display: true
 name: Full Sanguchon
-last_update: ayer 
-time_open: -
-price_range: -
+last_update:  4-12
+time_open: Lunes a Sábado de 12pm a 8pm
+price_range: 4 - 11
 coordinates: 
   lat: -12.0660017
   lng: -77.0778415
-contact_msg: -
 social_media:
-tipos_menu: 
-  - 
-    name: basico
-    id: bs
-    price: 4.5
-  - 
-    name: universitario
-    id: nv
-    price: 9.5
-  - 
-    name: ejecutivo 
-    id: ex 
-    price: 12.5
-dishes:
-  main:
 carta: 
+  - 
+    name: Papaya
+    price: 4.5
+    tag: Jugos
+  - 
+    name: Piña
+    price: 4.0
+    tag: Jugos
+  - 
+    name: Fresa
+    price: 5.0
+    tag: Jugos
+  - 
+    name: Platano c/ leche
+    price: 4.0
+    tag: Jugos
+  - 
+    name: Papaya c/ leche
+    price: 5.0
+    tag: Jugos
+  - 
+    name: Fresa c/ leche
+    price: 6.0
+    tag: Jugos
+  - 
+    name: Especial
+    price: 6.0
+    tag: Jugos
+  - 
+    name: Especial
+    price: 6.0
+    tag: Jugos
+  - 
+    name: Hamburguesa + 2 quesos + 2 jamones + 2 vasos de jugo
+    price: 11.0
+    tag: Ofertas
+  - 
+    name: Suprema + 2 quesos + 2 vasos de jugo
+    price: 11.0
+    tag: Ofertas
+  - 
+    name: Hot dog + 2 quesos + 2 vasos de jugo
+    price: 9.5
+    tag: Ofertas
+  - 
+    name: Chorizo + 2 quesos + 2 vasos de jugo
+    price: 10.5
+    tag: Ofertas
+  - 
+    name: Enchilada de pollo + 2 vasos de jugo
+    price: 12.0
+    tag: Ofertas
+  - 
+    name: Enchilada de chorizo + 2 vasos de jugo
+    price: 10.5
+    tag: Ofertas
+  - 
+    name: Filete + chorizo + huevo
+    price: 11.0
+    tag: Ofertas
+  - 
+    name: Hamburguesa + chorizo + 2 quesos + gaseosa mediana
+    price: 11.0
+    tag: Ofertas
+  - 
+    name: Campechano
+    price: 11.5
+    tag: Ofertas
+  - 
+    name: Pavo c/ lechon
+    price: 13.0
+    tag: Especiales
+  - 
+    name: Pavo c/ pollo
+    price: 12.0
+    tag: Especiales
+  - 
+    name: Pavo c/ milanesa
+    price: 12.0
+    tag: Especiales
+  - 
+    name: Pavo c/ chuleta
+    price: 11.0
+    tag: Especiales
+  - 
+    name: Lechon c/ pollo
+    price: 11.0
+    tag: Especiales
+  - 
+    name: Lechon c/ milanesa
+    price: 10.0
+    tag: Especiales
+  - 
+    name: Chuleta c/ pollo
+    price: 10.0
+    tag: Especiales
+  - 
+    name: Choripollo
+    price: 10.0
+    tag: Especiales
+  - 
+    name: Sandwich Campechano (1 milanesa + 2 quesos + 2 jamones + 2 lomitos + 1 huevo)
+    price: 11.5
+    tag: Sandwich
+  - 
+    name: Combazo (1 suprema + 2 hot dog + 2 quesos + 4 tocinos + 1 huevo + 3 rodajas de piña + 1 gaseosa mediana)
+    price: 6.0
+    tag: Sandwich
+  - 
+    name: Super sanguchón (1 hamburguesa + 2 quesos + 2 jamones + 4 tocinos + 1 huevo + 2 hot dog)
+    price: 12.0
+    tag: Sandwich
+  - 
+    name: Sandwich pizza (3 jamones + 3 quesos + 4 salames + tomate + oregano + salsa pizzera)
+    price: 7.5
+    tag: Sandwich
+  - 
+    name: Hot dog + 2 quesos + rodajas de piña
+    price: 8.0
+    tag: Sandwich hawayanos
+  - 
+    name: Hamburguesa + 2 quesos + rodajas de piña
+    price: 8.5
+    tag: Sandwich hawayanos
+  - 
+    name: Chuleta + 2 quesos + rodajas de piña
+    price: 8.5
+    tag: Sandwich hawayanos
+  - 
+    name: Pollo + 2 quesos + rodajas de piña
+    price: 10.0
+    tag: Sandwich hawayanos
+  - 
+    name: Filete + 2 quesos + rodajas de piña
+    price: 10.0
+    tag: Sandwich hawayanos
+  - 
+    name: Suprema + 2 quesos + rodajas de piña
+    price: 10.0
+    tag: Sandwich hawayanos
+  - 
+    name: Milanesa + 2 quesos + rodajas de piña
+    price: 10.0
+    tag: Sandwich hawayanos
+  - 
+    name: Pavo + 2 quesos + rodajas de piña
+    price: 10.0
+    tag: Sandwich hawayanos
+  - 
+    name: Lechon + 2 quesos + rodajas de piña
+    price: 10.0
+    tag: Sandwich hawayanos
+  - 
+    name: Hot dog + 2 quesos + 2 jamones
+    price: 8.0
+    tag: Sandwich tradicionales
+  - 
+    name: Hot dog + 2 quesos + 2 lomitos
+    price: 8.0
+    tag: Sandwich tradicionales
+  - 
+    name: Hot dog + 2 quesos + 4 tocinos
+    price: 8.0
+    tag: Sandwich tradicionales
+  - 
+    name: Hot dog + 2 jamones + 1 huevo
+    price: 8.0
+    tag: Sandwich tradicionales
+  - 
+    name: Hot dog + 2 jamones + 2 lomitos
+    price: 8.0
+    tag: Sandwich tradicionales
+  - 
+    name: Hot dog + 2 jamones + 4 tocinos
+    price: 8.0
+    tag: Sandwich tradicionales
+  - 
+    name: Hot dog + 2 lomitos + 1 huevo
+    price: 8.0
+    tag: Sandwich tradicionales
+  - 
+    name: Hot dog + 2 lomitos + 4 tocinos
+    price: 8.0
+    tag: Sandwich tradicionales
+  - 
+    name: Hot dog + 4 tocinos + 1 huevo
+    price: 8.0
+    tag: Sandwich tradicionales
+  - 
+    name: Hot dog + 2 jamones
+    price: 7.0
+    tag: Sandwich tradicionales
+  - 
+    name: Hot dog + 2 lomitos
+    price: 7.0
+    tag: Sandwich tradicionales
+  - 
+    name: Hot dog + 4 tocinos
+    price: 7.0
+    tag: Sandwich tradicionales
+  - 
+    name: Hamburguesa + 2 quesos + 2 jamones
+    price: 8.5
+    tag: Sandwich tradicionales
+  - 
+    name: Hamburguesa + 2 quesos + 2 lomitos
+    price: 8.5
+    tag: Sandwich tradicionales
+  - 
+    name: Hamburguesa + 2 quesos + 4 tocinos
+    price: 8.5
+    tag: Sandwich tradicionales
+  - 
+    name: Hamburguesa + 2 jamones + 1 huevo
+    price: 8.5
+    tag: Sandwich tradicionales
+  - 
+    name: Hamburguesa + 2 jamones + 2 lomitos
+    price: 8.5
+    tag: Sandwich tradicionales
+  - 
+    name: Hamburguesa + 2 jamones + 4 tocinos
+    price: 8.5
+    tag: Sandwich tradicionales
+  - 
+    name: Hamburguesa + 2 lomitos + 1 huevo
+    price: 8.5
+    tag: Sandwich tradicionales
+  - 
+    name: Hamburguesa + 2 lomitos + 4 tocinos
+    price: 8.5
+    tag: Sandwich tradicionales
+  - 
+    name: Hamburguesa+ 4 tocinos + 1 huevo
+    price: 8.5
+    tag: Sandwich tradicionales
+  - 
+    name: Hamburguesa + 2 jamones
+    price: 7.5
+    tag: Sandwich tradicionales
+  - 
+    name: Hamburguesa + 2 lomitos
+    price: 7.5
+    tag: Sandwich tradicionales
+  - 
+    name: Hamburguesa + 4 tocinos
+    price: 7.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chorizo + 2 quesos + 2 jamones
+    price: 8.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chorizo + 2 quesos + 2 lomitos
+    price: 8.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chorizo + 2 quesos + 4 tocinos
+    price: 8.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chorizo + 2 jamones + 1 huevo
+    price: 8.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chorizo + 2 jamones + 2 lomitos
+    price: 8.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chorizo + 2 jamones + 4 tocinos
+    price: 8.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chorizo + 2 lomitos + 1 huevo
+    price: 8.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chorizo + 2 lomitos + 4 tocinos
+    price: 8.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chorizo + 4 tocinos + 1 huevo
+    price: 8.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chorizo + 2 jamones
+    price: 7.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chorizo + 2 lomitos
+    price: 7.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chorizo + 4 tocinos
+    price: 7.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chuleta + 2 quesos + 2 jamones
+    price: 9.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chuleta + 2 quesos + 2 lomitos
+    price: 9.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chuleta + 2 quesos + 4 tocinos
+    price: 9.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chuleta + 2 jamones + 2 lomitos
+    price: 9.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chuleta + 2 jamones + 4 tocinos
+    price: 9.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chuleta + 2 lomitos + 1 huevo
+    price: 9.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chuleta + 2 lomitos + 4 tocinos
+    price: 9.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chuleta + 4 tocinos + 1 huevo
+    price: 9.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chuleta + 2 jamones
+    price: 8.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chuleta + 2 lomitos
+    price: 8.5
+    tag: Sandwich tradicionales
+  - 
+    name: Chuleta + 4 tocinos
+    price: 8.5
+    tag: Sandwich tradicionales
+  - 
+    name: Suprema + 2 quesos + 2 jamones
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Suprema + 2 quesos + 2 lomitos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Suprema + 2 quesos + 4 tocinos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Suprema + 2 jamones + 1 huevo
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Suprema + 2 jamones + 2 lomitos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Suprema + 2 jamones + 4 tocinos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Suprema + 2 lomitos + 1 huevo
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Suprema + 2 lomitos + 4 tocinos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Suprema + 4 tocinos + 1 huevo
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Suprema + 2 jamones
+    price: 9.0
+    tag: Sandwich tradicionales
+  - 
+    name: Suprema + 2 lomitos
+    price: 9.0
+    tag: Sandwich tradicionales
+  - 
+    name: Suprema + 4 tocinos
+    price: 9.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pollo + 2 quesos + 2 jamones
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pollo + 2 quesos + 2 lomitos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pollo + 2 quesos + 4 tocinos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pollo + 2 jamones + 1 huevo
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pollo + 2 jamones + 2 lomitos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pollo + 2 jamones + 4 tocinos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pollo + 2 lomitos + 1 huevo
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pollo + 2 lomitos + 4 tocinos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pollo + 4 tocinos + 1 huevo
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pollo + 2 jamones
+    price: 9.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pollo + 2 lomitos
+    price: 9.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pollo + 4 tocinos
+    price: 9.0
+    tag: Sandwich tradicionales
+  - 
+    name: Milanesa + 2 quesos + 2 jamones
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Milanesa + 2 quesos + 2 lomitos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Milanesa + 2 quesos + 4 tocinos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Milanesa + 2 jamones + 1 huevo
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Milanesa + 2 jamones + 2 lomitos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Milanesa + 2 jamones + 4 tocinos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Milanesa + 2 lomitos + 1 huevo
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Milanesa + 2 lomitos + 4 tocinos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Milanesa + 4 tocinos + 1 huevo
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Milanesa + 2 jamones
+    price: 9.0
+    tag: Sandwich tradicionales
+  - 
+    name: Milanesa + 2 lomitos
+    price: 9.0
+    tag: Sandwich tradicionales
+  - 
+    name: Milanesa + 4 tocinos
+    price: 9.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pavo + 2 quesos + 2 jamones
+    price: 12.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pavo + 2 quesos + 2 lomitos
+    price: 12.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pavo + 2 quesos + 4 tocinos
+    price: 12.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pavo + 2 jamones + 1 huevo
+    price: 12.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pavo + 2 jamones + 2 lomitos
+    price: 12.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pavo + 2 jamones + 4 tocinos
+    price: 12.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pavo + 2 lomitos + 1 huevo
+    price: 12.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pavo + 2 lomitos + 4 tocinos
+    price: 12.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pavo + 4 tocinos + 1 huevo
+    price: 12.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pavo + 2 jamones
+    price: 11.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pavo + 2 lomitos
+    price: 11.0
+    tag: Sandwich tradicionales
+  - 
+    name: Pavo + 4 tocinos
+    price: 11.0
+    tag: Sandwich tradicionales
+  - 
+    name: Filete + 2 quesos + 2 jamones
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Filete + 2 quesos + 2 lomitos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Filete + 2 quesos + 4 tocinos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Filete + 2 jamones + 1 huevo
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Filete + 2 jamones + 2 lomitos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Filete + 2 jamones + 4 tocinos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Filete + 2 lomitos + 1 huevo
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Filete + 2 lomitos + 4 tocinos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Filete + 4 tocinos + 1 huevo
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Filete + 2 jamones
+    price: 9.0
+    tag: Sandwich tradicionales
+  - 
+    name: Filete + 2 lomitos
+    price: 9.0
+    tag: Sandwich tradicionales
+  - 
+    name: Filete + 4 tocinos
+    price: 9.0
+    tag: Sandwich tradicionales
+  - 
+    name: Lechon + 2 quesos + 2 jamones
+    price: 11.0
+    tag: Sandwich tradicionales
+  - 
+    name: Lechon + 2 quesos + 2 lomitos
+    price: 11.0
+    tag: Sandwich tradicionales
+  - 
+    name: Lechon + 2 quesos + 4 tocinos
+    price: 11.0
+    tag: Sandwich tradicionales
+  - 
+    name: Lechon + 2 jamones + 1 huevo
+    price: 11.0
+    tag: Sandwich tradicionales
+  - 
+    name: Lechon + 2 jamones + 2 lomitos
+    price: 11.0
+    tag: Sandwich tradicionales
+  - 
+    name: Lechon + 2 jamones + 4 tocinos
+    price: 11.0
+    tag: Sandwich tradicionales
+  - 
+    name: Lechon + 2 lomitos + 1 huevo
+    price: 11.0
+    tag: Sandwich tradicionales
+  - 
+    name: Lechon + 2 lomitos + 4 tocinos
+    price: 11.0
+    tag: Sandwich tradicionales
+  - 
+    name: Lechon + 4 tocinos + 1 huevo
+    price: 11.0
+    tag: Sandwich tradicionales
+  - 
+    name: Lechon + 2 jamones
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Lechon + 2 lomitos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Lechon + 4 tocinos
+    price: 10.0
+    tag: Sandwich tradicionales
+  - 
+    name: Hot dog + 2 quesos
+    price: 7.0
+    tag: Sandwich mixtos
+  - 
+    name: Hot dog + 1 huevo
+    price: 7.0
+    tag: Sandwich mixtos
+  - 
+    name: Hamburguesa + 2 quesos
+    price: 7.5
+    tag: Sandwich mixtos
+  - 
+    name: Hamburguesa + 1 huevo
+    price: 7.5
+    tag: Sandwich mixtos
+  - 
+    name: Chorizo + 2 quesos
+    price: 7.5
+    tag: Sandwich mixtos
+  - 
+    name: Chorizo + 1 huevo
+    price: 7.5
+    tag: Sandwich mixtos
+  - 
+    name: Chuleta + 2 quesos
+    price: 8.5
+    tag: Sandwich mixtos
+  - 
+    name: Chuleta + 1 huevo
+    price: 8.5
+    tag: Sandwich mixtos
+  - 
+    name: Pollo + 2 quesos
+    price: 9.0
+    tag: Sandwich mixtos
+  - 
+    name: Pollo + 1 huevo
+    price: 9.0
+    tag: Sandwich mixtos
+  - 
+    name: Filete + 2 quesos
+    price: 9.0
+    tag: Sandwich mixtos
+  - 
+    name: Filete + 1 huevo
+    price: 9.0
+    tag: Sandwich mixtos
+  - 
+    name: Suprema + 2 quesos
+    price: 9.0
+    tag: Sandwich mixtos
+  - 
+    name: Suprema + 1 huevo
+    price: 9.0
+    tag: Sandwich mixtos
+  - 
+    name: Milanesa + 2 quesos
+    price: 9.0
+    tag: Sandwich mixtos
+  - 
+    name: Milanesa + 1 huevo
+    price: 9.0
+    tag: Sandwich mixtos
+  - 
+    name: Pavo + 2 quesos
+    price: 11.0
+    tag: Sandwich mixtos
+  - 
+    name: Pavo + 1 huevo
+    price: 11.0
+    tag: Sandwich mixtos
+  - 
+    name: Lechon + 2 quesos
+    price: 10.0
+    tag: Sandwich mixtos
+  - 
+    name: Lechon + 1 huevo
+    price: 10.0
+    tag: Sandwich mixtos
+  - 
+    name: Jamon + 2 quesos
+    price: 7.5
+    tag: Sandwich mixtos
+  - 
+    name: Jamon + 1 huevo
+    price: 7.5
+    tag: Sandwich mixtos
+  - 
+    name: Lomito + 2 quesos
+    price: 8.5
+    tag: Sandwich mixtos
+  - 
+    name: Lomito + 1 huevo
+    price: 8.5
+    tag: Sandwich mixtos
+  - 
+    name: Queso + 1 huevo
+    price: 7.0
+    tag: Sandwich mixtos
+  - 
+    name: Hot dog + 2 quesos + 1 huevo
+    price: 8.0
+    tag: Sandwich royal
+  - 
+    name: Hamburguesa + 2 quesos + 1 huevo
+    price: 8.5
+    tag: Sandwich royal
+  - 
+    name: Chorizo + 2 quesos + 1 huevo
+    price: 8.5
+    tag: Sandwich royal
+  - 
+    name: Chuleta + 2 quesos + 1 huevo
+    price: 9.5
+    tag: Sandwich royal
+  - 
+    name: Pollo + 2 quesos + 1 huevo
+    price: 10.0
+    tag: Sandwich royal
+  - 
+    name: Filete + 2 quesos + 1 huevo
+    price: 10.0
+    tag: Sandwich royal
+  - 
+    name: Suprema + 2 quesos + 1 huevo
+    price: 10.0
+    tag: Sandwich royal
+  - 
+    name: Milanesa + 2 quesos + 1 huevo
+    price: 10.0
+    tag: Sandwich royal
+  - 
+    name: Pavo + 2 quesos + 1 huevo
+    price: 12.0
+    tag: Sandwich royal
+  - 
+    name: Lechon + 2 quesos + 1 huevo
+    price: 11.0
+    tag: Sandwich royal
+  - 
+    name: Combo 1 (2 jamones + 2 quesos + 1 huevo + 2 vasos de jugo)
+    price: 9.0
+    tag: Combos
+  - 
+    name: Combo 2 (2 lomitos + 2 quesos + 1 huevo + 1 gaseosa mediana)
+    price: 8.5
+    tag: Combos
+  - 
+    name: Combo 3 (1 hamburguesa + 2 quesos + 4 tiras de tocino)
+    price: 8.0
+    tag: Combos
+  - 
+    name: Combo 4 (1 chorizo + 1 gaseosa mediana)
+    price: 7.0
+    tag: Combos
+  - 
+    name: Combo 5 (1 chuleta + 2 quesos + 1 gaseosa mediana)
+    price: 9.0
+    tag: Combos
+  - 
+    name: Combo 6 (Sandwich pizza + 1 gaseosa mediana)
+    price: 9.5
+    tag: Combos
+  - 
+    name: Combo 7 (1 milanesa + 2 quesos + 2 vasos de jugo)
+    price: 10.5
+    tag: Combos
+  - 
+    name: Combo 8 (1 hamburguesa + 2 hot dog + 1 huevo + 1 gaseosa mediana)
+    price: 10.5
+    tag: Combos
+  - 
+    name: Combo 9 (Suprema + 2 quesos + 2 jamones)
+    price: 9.5
+    tag: Combos
