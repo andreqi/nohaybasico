@@ -3,7 +3,7 @@ name: El arbolito
 last_update: ayer 
 time_open: Lunes a Viernes 9am a 10pm Sábados de 9am a 5pm
 address: Avenida Universitaria 1757
-price_range: -
+price_range: 9 - 14
 coordinates: 
   lat: -12.067104
   lng: -77.077632
@@ -25,14 +25,17 @@ dishes:
       name: Anticucho vegetariano
       in_menu: 
         - di
+        - es
     - 
       name: Ensalada fresca
       in_menu: 
         - di
+        - es
     - 
       name: Sopa de casa
       in_menu: 
         - di
+        - es
   main:
     - 
       name: Bisteck en salsa de espinaca 
