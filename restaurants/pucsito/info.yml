@@ -1,4 +1,4 @@
-display: false
+display: true
 name: Pucsito
 last_update: ayer 
 time_open: L-V de 8.30am a 5pm - 7pm a 9pm, S-D 9am - 5pm
@@ -18,40 +18,40 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa de Casa
+      name: Sopa de carne c/morón
       in_menu: 
         - nv
     -
-      name: Solterito de Queso
+      name: Causa con pollo
       in_menu:
         - nv
     -
-      name: Papa a la Huancaína
+      name: Ensalada fresca
       in_menu:
         - nv
   main:
     - 
-      name: Pachamanca de carne
+      name: Frejoles c/seco de carne
       in_menu: 
         - nv
     - 
-      name: Ají de Gallina
+      name: Pollo al ají colorado
       in_menu: 
         - nv
     - 
-      name: Arroz con chancho
+      name: Adobo de chancho
       in_menu: 
         - nv
     - 
-      name: Pescado frito c/ensalada
-      in_menu: 
-        - nv
-    - 
-      name: Seco de pollo
+      name: Pollo a la cacerola
       in_menu: 
         - nv
     - 
       name: Milanesa con papas
+      in_menu: 
+        - nv
+    - 
+      name: Chanfainita
       in_menu: 
         - nv
   extras: 
