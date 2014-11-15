@@ -1,4 +1,4 @@
-display: true
+display: false
 name: El arbolito
 last_update: ayer 
 time_open: Lunes a Viernes 9am a 10pm Sábados de 9am a 5pm
@@ -14,11 +14,11 @@ tipos_menu:
   - 
     name: 'menú de día'
     id: di
-    price: -
+    price: 9
   - 
     name: 'menú especial'
     id: es
-    price: -
+    price: 14
 dishes: 
   intro:
     - 

@@ -34,29 +34,25 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada fresca
+      name: Causa a la criolla
       in_menu: 
         - be
     - 
-      name: Ensalada oriental
+      name: Ensalada mixta
       in_menu: 
         - me
   main:
     - 
-      name: Lomito de hígado, lentejas, arroz
+      name: Hamburguesa picante, legumbres, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Tallarines al pesto, pollo dorado
+      name: Pollo a la coca cola, papa, arroz
       in_menu: 
         - me
     - 
-      name: Cerdo con piña, verduras, arroz
-      in_menu: 
-        - me
-    - 
-      name: Frijoles guisados, arroz
+      name: Arroz chaufa
       in_menu: 
         - ec
     - 
@@ -80,7 +76,7 @@ dishes:
         - ec
         - me
     - 
-      name: Budín de sémola
+      name: Gelatina frutada
       in_menu:
         - me
 carta: 

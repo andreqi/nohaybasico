@@ -30,7 +30,7 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada variada
+      name: Ensalada César
       in_menu: 
         - be
     - 
@@ -39,20 +39,16 @@ dishes:
         - me
   main:
     - 
-      name: Carne a la campesina, camote, arroz
+      name: Picante de pollo, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pollo en salsa de brócoli, legumbres, arroz
+      name: Albóndiga al vino, papa, arroz
       in_menu: 
         - me
     - 
-      name: Lomito de hígado, papas fritas, arroz
-      in_menu: 
-        - me
-    - 
-      name: Arroz chaufa
+      name: Huevo frito, arroz
       in_menu: 
         - ec
   extras:
@@ -71,7 +67,7 @@ dishes:
         - ec
         - me
     - 
-      name: Gelatina frutada
+      name: Pudín
       in_menu:
         - me
 carta: 
