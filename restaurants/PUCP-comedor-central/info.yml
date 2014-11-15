@@ -3,7 +3,7 @@ name: PUCP Comedor central
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 6pm
 address: PUCP
-price_range: 1.5 - 7.5
+price_range: 1.5 - 6.7
 coordinates: 
   lat: -12.068076
   lng: -77.077604
@@ -30,7 +30,7 @@ tipos_menu:
   - 
     name: 'menú'
     id: me
-    price: 7.5
+    price: 6.7
 dishes: 
   intro:
     - 
