@@ -1,4 +1,9 @@
 /**main page**/
+.columns > * {
+  display: inline-block;
+  vertical-align: top;
+  float: none !important;
+}
 .box {
   margin-bottom: 1em !important;
 }
