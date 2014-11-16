@@ -1,0 +1,44 @@
+display: false
+name: Tia Cariño
+last_update: ayer  
+time_open: L-V 11:30 
+price_range: 7.00
+address: Pasaje Santa Nicerata
+coordinates: 
+  lat: -12.068156
+  lng: -77.0771613
+social_media:
+tipos_menu:
+  -
+    name: menu
+    id: mn
+    price: 7.00
+dishes: 
+  intro:
+    - 
+      name: Ensalada de Palta
+      in_menu:
+        - mn
+    - 
+      name: Caldo de Pollo
+      in_menu: 
+        - mn
+  main:
+    -
+      name: Frejoles con seco a la norteña
+      in_menu:
+        - mn   
+    -
+      name: Milanesa con arroz y ensalada
+      in_menu:
+        - mn   
+    -
+      name: Pollo al Ají
+      in_menu:
+        - mn   
+  extras:
+    - 
+      name: Agua de Yerba 
+      in_menu:
+        - mn
+    

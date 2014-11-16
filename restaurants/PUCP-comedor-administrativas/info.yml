@@ -1,9 +1,9 @@
-display: false
+display: true
 name: PUCP Comedor administrativas
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 6pm
 address: PUCP
-price_range: 1.5 - 7.5
+price_range: 1.5 - 6.7
 coordinates: 
   lat: -12.068076
   lng: -77.077604
@@ -26,37 +26,29 @@ tipos_menu:
   - 
     name: 'menú'
     id: me
-    price: 7.5
+    price: 6.7
 dishes: 
   intro:
     - 
-      name: Ensalada de tomates 
+      name: Ensalada César
       in_menu: 
         - be
     - 
-      name: Ensalada festiva
+      name: Huevo en salsa golf
       in_menu: 
         - me
   main:
     - 
-      name: Bistec de hígado, alverjita verde, arroz
+      name: Picante de pollo, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pescado al perejil, papa, arroz
+      name: Albóndiga al vino, papa, arroz
       in_menu: 
         - me
     - 
-      name: Tallarines a la huancaína, con filete de pollo a la plancha
-      in_menu: 
-        - me
-    - 
-      name: Estofado de pollo, papa, arroz
-      in_menu: 
-        - ba
-    - 
-      name: Alverjita verde, arroz
+      name: Huevo frito, arroz
       in_menu: 
         - ec
   extras:
@@ -75,7 +67,7 @@ dishes:
         - ec
         - me
     - 
-      name: Manzana al horno
+      name: Pudín
       in_menu:
         - me
 carta: 

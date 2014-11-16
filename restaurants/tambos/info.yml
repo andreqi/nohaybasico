@@ -1,4 +1,4 @@
-display: false
+display: true
 name: Tambos
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 9pm , cena 6.30pm a 10.30pm
@@ -16,37 +16,37 @@ tipos_menu:
     id: ej
     price: 8.5
   - 
-    name: 'universitario'
-    id: un
-    price: 7.5
-  - 
     name: 'económico'
     id: ec
+    price: 7.5
+  - 
+    name: 'universitario'
+    id: un
     price: 6.5
 dishes: 
   intro:
     - 
-      name: Sopa crema de arverjas
+      name: Sopa de casa
       in_menu: 
         - ej
-        - un
+        - ec
     - 
-      name: Ocopa arequipeña
+      name: Huevo en salsa golf
       in_menu: 
         - ej
-        - un
+        - ec
     - 
       name: Tamales con salsa criolla
       in_menu: 
         - ej
-        - un
+        - ec
   main:
     - 
-      name: Filete de pollo + p. fritas + ens.
+      name: Filete de pescado con p. doradas y salsa criolla
       in_menu: 
         - ej
     - 
-      name: Asado de res con puré
+      name: Suprema de pollo con p. fritas y ens.
       in_menu: 
         - ej
     - 
@@ -58,23 +58,18 @@ dishes:
       in_menu: 
         - ej
     - 
-      name: Pollo saltado + p. fritas
+      name: Lomito de pollo a la jardinero
       in_menu: 
         - un
         - ec
     - 
-      name: Frejol con seco de res
-      in_menu: 
-        - un
-        - ec
-    - 
-      name: Arroz a la cubana
+      name: Seco de res con camote o papa
       in_menu: 
         - un
         - ec
   extras:
     - 
-      name: 'Maracuya'
+      name: 'Manzanilla'
       in_menu: 
         - ej
         - un
@@ -83,6 +78,5 @@ dishes:
       name: 'Postre'
       in_menu: 
         - ej
-        - un
 carta: 
 
