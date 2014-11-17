@@ -26,9 +26,8 @@ progress[value]::-moz-progress-bar {
   left: 0;
   position: absolute;
   text-align: center;
-  top: 0;
   width: 100%;
-  margin-top: 3px;
+  margin-top: 1px;
 }
 .columns > * {
   display: inline-block;
