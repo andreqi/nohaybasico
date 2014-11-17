@@ -9,6 +9,10 @@ app.listen(port);
 
 var days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado'];
 
+app.get('/no-menu', function(req, res) {
+  res.render('no-menu');
+});
+
 app.get('/', function(req, res) {
   var date = new Date();
   var day = days[date.getDay()];
@@ -16,6 +20,7 @@ app.get('/', function(req, res) {
     res.render('main', {
       data: data,
       cur_day: day,
+      no_menu: true
     });
   });
 });
