@@ -3,7 +3,7 @@ name: PUCP Comedor arte
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 6pm
 address: PUCP
-price_range: 1.5 - 7.5
+price_range: 1.5 - 6.7
 coordinates: 
   lat: -12.070290 
   lng: -77.079787
@@ -26,33 +26,29 @@ tipos_menu:
   - 
     name: 'menú'
     id: me
-    price: 7.5
+    price: 6.7
 dishes: 
   intro:
     - 
-      name: Ensalada de tomates
+      name: Salpicón de verduras
       in_menu: 
         - be
     - 
-      name: Ensalada mixta
+      name: Ensalada variada
       in_menu: 
         - me
   main:
     - 
-      name: Pescado frito, puré, arroz
+      name: Pollo al romero, papa, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Carbonada de res, yuca, arroz
+      name: Tallarines a lo Alfredo con jamón
       in_menu: 
         - me
     - 
-      name: Pollo al jugo, lentejas, arroz
-      in_menu: 
-        - me
-    - 
-      name: Lentejas guisadas, arroz
+      name: Tallarines al tuco
       in_menu: 
         - ec
   extras:
@@ -71,7 +67,7 @@ dishes:
         - ec
         - me
     - 
-      name: Ensalada de frutas 
+      name: Mandarina
       in_menu:
         - me
 carta: 

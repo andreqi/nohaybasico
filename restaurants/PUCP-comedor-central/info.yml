@@ -3,7 +3,7 @@ name: PUCP Comedor central
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 6pm
 address: PUCP
-price_range: 1.5 - 7.5
+price_range: 1.5 - 6.7
 coordinates: 
   lat: -12.070474
   lng: -77.081494
@@ -30,33 +30,29 @@ tipos_menu:
   - 
     name: 'menú'
     id: me
-    price: 7.5
+    price: 6.7
 dishes: 
   intro:
     - 
-      name: Ensalada fresca
+      name: Causa a la criolla
       in_menu: 
         - be
     - 
-      name: Ensalada oriental
+      name: Ensalada mixta
       in_menu: 
         - me
   main:
     - 
-      name: Lomito de hígado, lentejas, arroz
+      name: Hamburguesa picante, legumbres, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Tallarines al pesto, pollo dorado
+      name: Pollo a la coca cola, papa, arroz
       in_menu: 
         - me
     - 
-      name: Cerdo con piña, verduras, arroz
-      in_menu: 
-        - me
-    - 
-      name: Frijoles guisados, arroz
+      name: Arroz chaufa
       in_menu: 
         - ec
     - 
@@ -80,7 +76,7 @@ dishes:
         - ec
         - me
     - 
-      name: Budín de sémola
+      name: Gelatina frutada
       in_menu:
         - me
 carta: 

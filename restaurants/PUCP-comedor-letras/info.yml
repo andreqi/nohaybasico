@@ -3,7 +3,7 @@ name: PUCP Comedor letras
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 6pm
 address: PUCP
-price_range: 1.5 - 7.5
+price_range: 1.5 - 6.7
 coordinates: 
   lat: -12.068480
   lng: -77.079788
@@ -30,39 +30,31 @@ tipos_menu:
   - 
     name: 'menú'
     id: me
-    price: 7.5
+    price: 6.7
 dishes: 
   intro:
     - 
-      name: Salpicón de verduras
+      name: Ensalada verde
       in_menu: 
         - be
     - 
-      name: Ensalada campesina
+      name: Ensalada multicolor
       in_menu: 
         - me
   main:
     - 
-      name: Tallarines a la primavera con pollo dorado
+      name: Cerdo al horno, puré, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pescado en salsa perejil, legumbres, arroz
+      name: Pollo a la cerveza, papa, arroz
       in_menu: 
         - me
     - 
-      name: Pollo al horno, puré, arroz
-      in_menu: 
-        - me
-    - 
-      name: Tortilla de verduras, arroz
+      name: Puré, arroz
       in_menu: 
         - ec
-    - 
-      name: Tallarines a la primavera con hamburguesa vegetal
-      in_menu: 
-        - ve
   extras:
     - 
       name: 'Pan'
@@ -80,7 +72,7 @@ dishes:
         - ec
         - me
     - 
-      name: Piña encanelada
+      name: Espuma de fruta
       in_menu:
         - me
 carta: 

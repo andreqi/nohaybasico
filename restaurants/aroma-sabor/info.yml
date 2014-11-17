@@ -19,15 +19,15 @@ tipos_menu:
 dishes: 
   intro: 
     - 
-      name: Menestrón
+      name: Aguadito
       in_menu: 
         - me
     - 
-      name: Ocopa
+      name: Salchipapa
       in_menu: 
         - me
     - 
-      name: Ensalada tricolor
+      name: Ensalada mixta
       in_menu: 
         - me
     - 
@@ -36,35 +36,35 @@ dishes:
         - me
   main:
     - 
-      name: Pachamanca a la olla
+      name: Asado de res con puré
       in_menu: 
         - me
     - 
-      name: Estofado de res
+      name: Pollo al vino
       in_menu: 
         - me
     - 
-      name: Pollo al maní
+      name: Arroz con chancho
       in_menu: 
         - me
     - 
-      name: Macarrones con carne molida
+      name: Lomo saltado
       in_menu: 
         - me
     - 
-      name: Pollo al sillao
+      name: Seco de res con frejoles
       in_menu: 
         - me
     - 
-      name: Bisteck encebollado
+      name: Pollo dorado con p. dorada + ens.
       in_menu: 
         - me
     - 
-      name: Pollo frito con menestras más salsa criolla
+      name: Filete de pollo con menestras
       in_menu: 
         - me
     - 
-      name: Hamburguesa + p. fritas + ens.
+      name: Pollo frito + p. fritas + ens.
       in_menu: 
         - me
   extras: 

@@ -18,32 +18,32 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa de carne c/morón
+      name: Sopa de pollo
       in_menu: 
         - nv
     -
-      name: Causa con pollo
+      name: Tamalito
       in_menu:
         - nv
     -
-      name: Ensalada fresca
+      name: Huevo a la rusa
       in_menu:
         - nv
   main:
     - 
-      name: Frejoles c/seco de carne
+      name: Arroz con chancho
       in_menu: 
         - nv
     - 
-      name: Pollo al ají colorado
+      name: Adobo de pollo
       in_menu: 
         - nv
     - 
-      name: Adobo de chancho
+      name: Pollo al limón
       in_menu: 
         - nv
     - 
-      name: Pollo a la cacerola
+      name: Carne a la norteña
       in_menu: 
         - nv
     - 
@@ -51,7 +51,7 @@ dishes:
       in_menu: 
         - nv
     - 
-      name: Chanfainita
+      name: Brócoli con pollo
       in_menu: 
         - nv
   extras: 

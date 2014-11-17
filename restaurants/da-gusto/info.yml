@@ -26,12 +26,12 @@ tipos_menu:
 dishes: 
   intro:
     -
-      name: Sopa de pollo
+      name: Sopa a la minuta
       in_menu: 
         - mc
         - en
     -
-      name: Papa a la huancaina
+      name: Huelo a la rusa
       in_menu: 
         - mc
         - en
@@ -42,17 +42,17 @@ dishes:
         - en
   main:
     -
-      name: Lentejas con adobo de res
+      name: Frejoles con seco
       in_menu: 
         - mc
         - fo    
     -
-      name: Pollo al horno
+      name: Pollo al vino
       in_menu: 
         - mc
         - fo    
     -
-      name: Enrollado de pollo
+      name: Lechón a la cerveza
       in_menu: 
         - mc
         - fo    
@@ -82,4 +82,5 @@ dishes:
       in_menu:
         - mc
         - fo
+        - en
 carta:

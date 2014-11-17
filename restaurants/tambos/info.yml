@@ -26,12 +26,12 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa menestron
+      name: Sopa de casa
       in_menu: 
         - ej
         - ec
     - 
-      name: Yuca con queso
+      name: Huevo en salsa golf
       in_menu: 
         - ej
         - ec
@@ -42,11 +42,11 @@ dishes:
         - ec
   main:
     - 
-      name: Pollo al horno con puré
+      name: Filete de pescado con p. doradas y salsa criolla
       in_menu: 
         - ej
     - 
-      name: Churrasco + p.fritas + ens.
+      name: Suprema de pollo con p. fritas y ens.
       in_menu: 
         - ej
     - 
@@ -58,23 +58,18 @@ dishes:
       in_menu: 
         - ej
     - 
-      name: Pollo a la española
+      name: Lomito de pollo a la jardinero
       in_menu: 
         - un
         - ec
     - 
-      name: Talarrín saltado con carne
-      in_menu: 
-        - un
-        - ec
-    - 
-      name: Trigo guisado con pollo
+      name: Seco de res con camote o papa
       in_menu: 
         - un
         - ec
   extras:
     - 
-      name: 'Maracuya'
+      name: 'Manzanilla'
       in_menu: 
         - ej
         - un

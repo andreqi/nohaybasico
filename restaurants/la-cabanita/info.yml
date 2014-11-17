@@ -2,7 +2,7 @@ display: false
 name: La Cabañita
 last_update: ayer 
 time_open:  L-S 11.30am a 10pm / D 12pm 5pm
-price_range: 4.5 - 12.5
+price_range: 6.0 - 15.0
 coordinates: 
   lat: -12.0663155
   lng: -77.0778057
@@ -10,10 +10,112 @@ contact_msg: Contáctanos en nuestro local
 social_media:
 tipos_menu: 
   - 
-    name: '-'
-    id: bs
-    price: 4.5
+    name: 'económico'
+    id: ec
+    price: 6.0
+  - 
+    name: 'especial'
+    id: es
+    price: -
+  - 
+    name: 'Ejecutivo criollo'
+    id: cr
+    price: -
+  - 
+    name: 'Ejecutivo marino'
+    id: ma
+    price: -
 dishes: 
   intro:
+    -
+      name: Caldo de pollo
+      in_menu:
+        - ec
+        - es
+        - cr
+        - ma
+    -
+      name: Alitas al tamarindo
+      in_menu:
+        - ec
+        - es
+        - cr
+        - ma
+    -
+      name: Ensalada César
+      in_menu:
+        - ec
+        - es
+        - cr
+        - ma
+    -
+      name: Tequeños
+      in_menu:
+        - ec
+        - es
+        - cr
+        - ma
+    -
+      name: Cebiche mixto + S/. 3
+      in_menu:
+        - ec
+        - es
+        - cr
+        - ma
   main:
+    -
+      name: Cordon blue con p. fritas y ensalada mixta
+      in_menu:
+        - ec
+    -
+      name: Cau cau criollo
+      in_menu:
+        - ec
+    -
+      name: Lomito al jugo con frejoles
+      in_menu:
+        - ec
+    -
+      name: Pollo a la Vasca con papa sancochada
+      in_menu:
+        - es
+    -
+      name: Pescado encebollado con frejoles
+      in_menu:
+        - es
+    -
+      name: Adobo de pollo
+      in_menu:
+        - es
+    -
+      name: Pechuga de pollo crispy con p. fritas y ens.
+      in_menu:
+        - cr
+    -
+      name: Churrasco encebollado 
+      in_menu:
+        - cr
+    -
+      name: Aeropuerto de pollo (chifa)
+      in_menu:
+        - cr
+    -
+      name: Guisado de pescado
+      in_menu:
+        - ma
+    -
+      name: Pescado ensalsa demariscos
+      in_menu:
+        - ma
+    -
+      name: Mariscos a la chiclayana
+      in_menu:
+        - ma    
   extras: 
+    -
+      name: Refresco
+      in_menu:
+        - ec
+        - es
+        - cr
+        - ma
