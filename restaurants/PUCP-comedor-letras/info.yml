@@ -1,4 +1,4 @@
-display: false
+display: true
 name: PUCP Comedor letras
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 6pm
@@ -26,7 +26,7 @@ tipos_menu:
   - 
     name: 'básico + entrada'
     id: be
-    price: 5.1
+    price: 5.2
   - 
     name: 'menú'
     id: me
@@ -34,27 +34,35 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada verde
+      name: Solterito
       in_menu: 
         - be
     - 
-      name: Ensalada multicolor
+      name: Ensalada mixta 
       in_menu: 
         - me
   main:
     - 
-      name: Cerdo al horno, puré, arroz
+      name: Pollo al pimiento, ensalada italiana, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pollo a la cerveza, papa, arroz
+      name: Hígado apanado, panamitos guisados, arroz
       in_menu: 
         - me
     - 
-      name: Puré, arroz
+      name: Tallarín saltado criollo con carne
+      in_menu: 
+        - me
+    - 
+      name: Panamitos guisados, arroz 
       in_menu: 
         - ec
+    - 
+      name: Albóndiga vegetal al pimiento, ensalada italiana, arroz
+      in_menu:
+        - ve
   extras:
     - 
       name: 'Pan'
@@ -72,7 +80,7 @@ dishes:
         - ec
         - me
     - 
-      name: Espuma de fruta
+      name: Ensalada de fruta
       in_menu:
         - me
 carta: 

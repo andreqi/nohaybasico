@@ -1,4 +1,4 @@
-display: false
+display: true
 name: PUCP Comedor administrativas
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 6pm
@@ -22,7 +22,7 @@ tipos_menu:
   - 
     name: 'básico + entrada'
     id: be
-    price: 5.1
+    price: 5.2
   - 
     name: 'menú'
     id: me
@@ -30,21 +30,25 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada César
+      name: Ensalada fresca
       in_menu: 
         - be
     - 
-      name: Huevo en salsa golf
+      name: Ocopa
       in_menu: 
         - me
   main:
     - 
-      name: Picante de pollo, arroz
+      name: Pescado en salsa de perejil, papa, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Albóndiga al vino, papa, arroz
+      name: Escabeche de pollo, camote, arroz
+      in_menu: 
+        - me
+    - 
+      name: Carne a la mostaza, legumbres, arroz
       in_menu: 
         - me
     - 
@@ -67,7 +71,7 @@ dishes:
         - ec
         - me
     - 
-      name: Pudín
+      name: Compota de membrillo
       in_menu:
         - me
 carta: 

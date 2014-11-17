@@ -1,4 +1,4 @@
-display: false
+display: true
 name: PUCP Comedor arte
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 6pm
@@ -22,7 +22,7 @@ tipos_menu:
   - 
     name: 'básico + entrada'
     id: be
-    price: 5.1
+    price: 5.2
   - 
     name: 'menú'
     id: me
@@ -30,25 +30,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Salpicón de verduras
+      name: Huevo en salsa golf
       in_menu: 
         - be
     - 
-      name: Ensalada variada
+      name: Ensalada verde
       in_menu: 
         - me
   main:
     - 
-      name: Pollo al romero, papa, arroz
+      name: Arroz a la chiclayana con cerdo
       in_menu: 
         - ba
         - be
     - 
-      name: Tallarines a lo Alfredo con jamón
+      name: Pollo al ají, papa, arroz
       in_menu: 
         - me
     - 
-      name: Tallarines al tuco
+      name: Pescado frito, yuca, arroz
+      in_menu: 
+        - me
+    - 
+      name: Puré, arroz
       in_menu: 
         - ec
   extras:
@@ -67,7 +71,7 @@ dishes:
         - ec
         - me
     - 
-      name: Mandarina
+      name: Mousse de fruta 
       in_menu:
         - me
 carta: 

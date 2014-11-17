@@ -1,4 +1,4 @@
-display: false
+display: true
 name: PUCP Comedor central
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 6pm
@@ -26,7 +26,7 @@ tipos_menu:
   - 
     name: 'básico + entrada'
     id: be
-    price: 5.1
+    price: 5.2
   - 
     name: 'menú'
     id: me
@@ -34,21 +34,25 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Causa a la criolla
+      name: Ensalada mixta
       in_menu: 
         - be
     - 
-      name: Ensalada mixta
+      name: Ensalada festiva
       in_menu: 
         - me
   main:
     - 
-      name: Hamburguesa picante, legumbres, arroz
+      name: Picante de carne, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pollo a la coca cola, papa, arroz
+      name: Pescado apanado, ensalada mixta, arroz
+      in_menu: 
+        - me
+    - 
+      name: Pollo al vino, papa ,arroz
       in_menu: 
         - me
     - 
@@ -56,7 +60,7 @@ dishes:
       in_menu: 
         - ec
     - 
-      name: Lomito vegetal, lentejas, arroz
+      name: Picante de carne vegetal, arroz 
       in_menu: 
         - ve
   extras:
@@ -76,7 +80,7 @@ dishes:
         - ec
         - me
     - 
-      name: Gelatina frutada
+      name: Fruta
       in_menu:
         - me
 carta: 
