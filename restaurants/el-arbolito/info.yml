@@ -1,4 +1,4 @@
-display: false
+display: true
 name: El arbolito
 last_update: ayer 
 time_open: Lunes a Viernes 9am a 10pm Sábados de 9am a 5pm
@@ -22,7 +22,7 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name:  Pastel de papas
+      name:  Causa bicolor
       in_menu: 
         - di
         - es
@@ -32,25 +32,25 @@ dishes:
         - di
         - es
     - 
-      name: Chupe de verduras
+      name: Sancochado
       in_menu: 
         - di
         - es
   main:
     - 
-      name: Locro de zapallo con bisteckvel
+      name: Guiso de lentejas vegetariano
       in_menu: 
         - di
     - 
-      name: Guiso de garbanzo 
+      name: Pollovel a la naranja
       in_menu: 
         - di
     - 
-      name: Espagueti al pesto con suprema
+      name: Bisteckvel arrebozado
       in_menu: 
         - es
     - 
-      name: Tortilla de vainitas
+      name: Espagueti a la bolognesa
       in_menu: 
         - es
   extras:
@@ -64,5 +64,8 @@ dishes:
       in_menu:
         - di
         - es
+carta: 
+
+- es
 carta: 
 
