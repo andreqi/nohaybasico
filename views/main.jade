@@ -17,7 +17,9 @@ block content
       .12u
         section
           header.major#menus 
-            h2 Menus
-          div(class='columns row')
-            each rest in restaurants
+            h2
+              progress(max='#{data.total}', value='#{data.perc}')
+              span.progress-value #{data.perc}/#{data.total}
+          .row
+            each rest in data.restaurants
               include restaurant

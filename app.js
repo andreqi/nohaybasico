@@ -14,7 +14,7 @@ app.get('/', function(req, res) {
   var day = days[date.getDay()];
   get_restaurants(function(data) {
     res.render('main', {
-      restaurants: data,
+      data: data,
       cur_day: day,
     });
   });
@@ -79,10 +79,17 @@ app.set('view engine', 'jade');
 function get_restaurants(callback) {
   fs.readdir('./restaurants', function(err, files) {
     var rests = files.filter(function(name) {return name[0] != '.'});
+    var mainObj = {}
+    mainObj.total = rests.length;
+    mainObj.perc = 0;
     var payback = rests.map(get_restaurant).filter(function(rest) {
+      if (rest.display) {
+        mainObj.perc++;
+      }
       return rest.display == undefined || rest.display == true;
     });
-    callback(shuffle(payback));
+    mainObj.restaurants = shuffle(payback);
+    callback(mainObj);
   });
 }
 
@@ -104,7 +111,6 @@ function get_restaurant(id) {
   info.grouped_by_carta = group_by(info.carta, function(e) {
     return e.tag;
   });
-  //console.log(info.grouped_by_carta);
   return info;
 }
 
