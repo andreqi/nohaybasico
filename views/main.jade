@@ -18,8 +18,9 @@ block content
         section
           header.major#menus 
             h2
+              - perc = ((data.perc /data.total) * 100).toFixed(0)
               progress(max='#{data.total}', value='#{data.perc}')
-              span.progress-value #{data.perc}/#{data.total}
+              span.progress-value #{perc} %
           .row
             each rest in data.restaurants
               include restaurant
