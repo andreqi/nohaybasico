@@ -6,6 +6,7 @@ progress[value] {
     -moz-appearance: none;
         appearance: none;
   border: none;
+  background-color: black;
 }
 progress[value]::-webkit-progress-value {
   background-color: #d52349;  
