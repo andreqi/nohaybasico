@@ -1,4 +1,4 @@
-display: false
+display: true
 name: Tambos
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 9pm , cena 6.30pm a 10.30pm
@@ -26,12 +26,12 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa de casa
+      name: Caldo de pollo
       in_menu: 
         - ej
         - ec
     - 
-      name: Huevo en salsa golf
+      name: Tequeños con guacamole
       in_menu: 
         - ej
         - ec
@@ -42,11 +42,11 @@ dishes:
         - ec
   main:
     - 
-      name: Filete de pescado con p. doradas y salsa criolla
+      name: Pollo al horno con ensalada rusa
       in_menu: 
         - ej
     - 
-      name: Suprema de pollo con p. fritas y ens.
+      name: Bisteck apanado con p. fritas y ens.
       in_menu: 
         - ej
     - 
@@ -58,18 +58,23 @@ dishes:
       in_menu: 
         - ej
     - 
-      name: Lomito de pollo a la jardinero
+      name: Lentejas con filete de pollo
       in_menu: 
         - un
         - ec
     - 
-      name: Seco de res con camote o papa
+      name: Estofado de res
+      in_menu: 
+        - un
+        - ec
+    - 
+      name: Arroz chaufa con wantan
       in_menu: 
         - un
         - ec
   extras:
     - 
-      name: 'Manzanilla'
+      name: 'Refresco'
       in_menu: 
         - ej
         - un
