@@ -2,9 +2,10 @@
 
 progress[value] {
   vertical-align: middle;
-  height: 40px;
   -webkit-appearance: none;
-   appearance: none;
+    -moz-appearance: none;
+        appearance: none;
+  border: none;
 }
 progress[value]::-webkit-progress-value {
   background-color: #d52349;  
@@ -14,13 +15,20 @@ progress[value]::-webkit-progress-bar {
   border-radius: 2px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
+progress[value]::-moz-progress-bar { 
+  color: black;
+  background-color: #d52349;
+  border-radius: 2px; 
+  background-size: 35px 20px, 100% 100%, 100% 100%; 
+}
 .progress-value {
   color: white;
+  left: 0;
   position: absolute;
   text-align: center;
-  left: 0;
+  top: 0;
   width: 100%;
-  top: 5px;
+  margin-top: 3px;
 }
 .columns > * {
   display: inline-block;
