@@ -8,7 +8,7 @@ block title
         header
           h2 No hay básico
           p 
-            Checkea que puedes comer cerca hoy 
+            | Checkea que puedes comer cerca hoy 
             b #{cur_day}
 
 block content
@@ -18,8 +18,9 @@ block content
         section
           header.major#menus 
             h2
+              - perc = ((data.perc /data.total) * 100).toFixed(0)
               progress(max='#{data.total}', value='#{data.perc}')
-              span.progress-value #{data.perc}/#{data.total}
-          .row
+              span.progress-value #{perc} %
+          div(class='row columns')
             each rest in data.restaurants
               include restaurant

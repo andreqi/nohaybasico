@@ -22,36 +22,36 @@ dishes:
       in_menu: 
         - nv
     -
-      name: Tamalito
+      name: Ensalada mixta
       in_menu:
         - nv
     -
-      name: Huevo a la rusa
+      name: Papa a la huancaína
       in_menu:
         - nv
   main:
     - 
-      name: Arroz con chancho
+      name: Lenteja con saltado de carne
       in_menu: 
         - nv
     - 
-      name: Adobo de pollo
+      name: Pollo a la naranja
       in_menu: 
         - nv
     - 
-      name: Pollo al limón
+      name: Adobo de chancho
       in_menu: 
         - nv
     - 
-      name: Carne a la norteña
+      name: Seco de res
       in_menu: 
         - nv
     - 
-      name: Milanesa con papas
+      name: Milanesa con papas fritas
       in_menu: 
         - nv
     - 
-      name: Brócoli con pollo
+      name: Arroz con pollo
       in_menu: 
         - nv
   extras: 
