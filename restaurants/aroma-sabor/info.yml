@@ -1,4 +1,4 @@
-display: false
+display: true
 name: Aroma & Sabor
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 5pm , cena 6.30pm a 10.30pm
@@ -19,15 +19,15 @@ tipos_menu:
 dishes: 
   intro: 
     - 
-      name: Aguadito
+      name: Sopa de pollo con kion
       in_menu: 
         - me
     - 
-      name: Salchipapa
+      name: Papa a la huancaína
       in_menu: 
         - me
     - 
-      name: Ensalada mixta
+      name: Ensalada tricolor
       in_menu: 
         - me
     - 
@@ -36,15 +36,7 @@ dishes:
         - me
   main:
     - 
-      name: Asado de res con puré
-      in_menu: 
-        - me
-    - 
-      name: Pollo al vino
-      in_menu: 
-        - me
-    - 
-      name: Arroz con chancho
+      name: Tallarines rojos con pollo
       in_menu: 
         - me
     - 
@@ -52,19 +44,27 @@ dishes:
       in_menu: 
         - me
     - 
-      name: Seco de res con frejoles
+      name: Seco de pollo con frejoles
       in_menu: 
         - me
     - 
-      name: Pollo dorado con p. dorada + ens.
+      name: Malaya dorada + papa dorada + ens.
       in_menu: 
         - me
     - 
-      name: Filete de pollo con menestras
+      name: Arroz chaufa con milanesa
       in_menu: 
         - me
     - 
-      name: Pollo frito + p. fritas + ens.
+      name: Asado de res con puré
+      in_menu: 
+        - me
+    - 
+      name: Chicharrón de pescado con yuca frita + salsa criolla.
+      in_menu: 
+        - me
+    - 
+      name: 
       in_menu: 
         - me
   extras: 
