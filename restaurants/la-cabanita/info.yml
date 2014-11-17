@@ -1,4 +1,4 @@
-display: false
+display: true
 name: La Cabañita
 last_update: ayer 
 time_open:  L-S 11.30am a 10pm / D 12pm 5pm
@@ -16,40 +16,37 @@ tipos_menu:
   - 
     name: 'especial'
     id: es
-    price: -
+    price: 7.0
   - 
     name: 'Ejecutivo criollo'
     id: cr
-    price: -
+    price: 8.0
   - 
     name: 'Ejecutivo marino'
     id: ma
-    price: -
+    price: 9.0
+  - 
+    name: 'Ejecutivo marino'
+    id: ma
+    price: 10.0
 dishes: 
   intro:
     -
-      name: Caldo de pollo
+      name: Caldo de gallina
       in_menu:
         - ec
         - es
         - cr
         - ma
     -
-      name: Alitas al tamarindo
+      name: Ensalada tibia al horno
       in_menu:
         - ec
         - es
         - cr
         - ma
     -
-      name: Ensalada César
-      in_menu:
-        - ec
-        - es
-        - cr
-        - ma
-    -
-      name: Tequeños
+      name: Bombitas de carne
       in_menu:
         - ec
         - es
@@ -64,51 +61,51 @@ dishes:
         - ma
   main:
     -
-      name: Cordon blue con p. fritas y ensalada mixta
+      name: Milanesa con p. fritas y ens.
       in_menu:
         - ec
     -
-      name: Cau cau criollo
+      name: Carne mechada con lentejas
       in_menu:
         - ec
     -
-      name: Lomito al jugo con frejoles
+      name: Cau-cau de pollo
       in_menu:
         - ec
     -
-      name: Pollo a la Vasca con papa sancochada
+      name: Pachamanca de pollo
       in_menu:
         - es
     -
-      name: Pescado encebollado con frejoles
+      name: Pescado frito con lentejas
       in_menu:
         - es
     -
-      name: Adobo de pollo
+      name: Hígado saltado con lentejas
       in_menu:
         - es
     -
-      name: Pechuga de pollo crispy con p. fritas y ens.
+      name: Pechuga de pollo a la carbonara con p.fritas
       in_menu:
         - cr
     -
-      name: Churrasco encebollado 
+      name: Chancho asado con camotes
       in_menu:
         - cr
     -
-      name: Aeropuerto de pollo (chifa)
+      name: Chuleta con tamarindo y p. fritas
       in_menu:
         - cr
     -
-      name: Guisado de pescado
+      name: Pescado saltado
       in_menu:
         - ma
     -
-      name: Pescado ensalsa demariscos
+      name: Mariscos a lo alfredo
       in_menu:
         - ma
     -
-      name: Mariscos a la chiclayana
+      name: Filete de pescado a la carbonara
       in_menu:
         - ma    
   extras: 
