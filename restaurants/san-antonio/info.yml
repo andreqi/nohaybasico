@@ -1,4 +1,4 @@
-display: false
+display: true
 name: San Antonio Gustos y Más
 last_update: ayer  
 time_open: L-D  11:30 a 4:30 y cena 7:00 a 10:00 pm
@@ -20,7 +20,7 @@ dishes:
       in_menu:
         - mn
     - 
-      name: Causa de Pollo
+      name: Crema de Verduras
       in_menu: 
         - mn
     - 
@@ -29,19 +29,19 @@ dishes:
         - mn
   main:
     -
-      name: Estofado con pollo
+      name: Aji de gallina 
       in_menu:
         - mn   
     -
-      name: Olluquito con carne
+      name: Lentejitas con Pescado
       in_menu:
         - mn   
     -
-      name: Seco de carne
+      name: Picante de carne
       in_menu:
         - mn   
     -
-      name: Chulleta a la Vasca a la Chorrillana
+      name: Seco de pollo
       in_menu:
         - mn   
   extras:
