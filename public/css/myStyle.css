@@ -1,4 +1,5 @@
 /**main page**/
+
 progress[value] {
   -webkit-appearance: none;
    appearance: none;
@@ -14,12 +15,11 @@ progress[value]::-webkit-progress-bar {
   left: 0;
   width: 100%;
 }
-/*progress[value]::-webkit-progress-value::before {
-  content: 'ggg';
-  position: absolute;
-  right: 0;
-  top: -125%;
-}*/
+.columns > * {
+  display: inline-block;
+  vertical-align: top;
+  float: none !important;
+}
 .box {
   margin-bottom: 1em !important;
 }

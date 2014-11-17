@@ -7,9 +7,16 @@ var YAML = require('yamljs');
 var port = 4321;
 app.listen(port);
 
+var days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado'];
+
 app.get('/', function(req, res) {
+  var date = new Date();
+  var day = days[date.getDay()];
   get_restaurants(function(data) {
-    res.render('main', {data: data});
+    res.render('main', {
+      data: data,
+      cur_day: day,
+    });
   });
 });
 
