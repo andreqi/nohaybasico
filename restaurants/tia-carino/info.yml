@@ -1,4 +1,4 @@
-display: false
+display: true
 name: Tia Cariño
 last_update: ayer  
 time_open: L-V 11:30 
@@ -16,29 +16,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada de Palta
+      name: Papa a la Hancaina
       in_menu:
         - mn
     - 
-      name: Caldo de Pollo
+      name: Sopa de Carne
       in_menu: 
         - mn
   main:
     -
-      name: Frejoles con seco a la norteña
+      name: Arroz a la jardinera de pollo
       in_menu:
         - mn   
     -
-      name: Milanesa con arroz y ensalada
+      name: Lentejas con lomo
       in_menu:
         - mn   
     -
-      name: Pollo al Ají
+      name: Estofado de carne 
       in_menu:
         - mn   
   extras:
     - 
-      name: Agua de Yerba 
+      name: Refresco de carambola
       in_menu:
         - mn
     
