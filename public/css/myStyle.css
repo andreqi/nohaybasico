@@ -1,4 +1,20 @@
 /**main page**/
+progress[value] {
+  -webkit-appearance: none;
+   appearance: none;
+}
+.progress-value {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  width: 100%;
+}
+/*progress[value]::-webkit-progress-value::before {
+  content: 'ggg';
+  position: absolute;
+  right: 0;
+  top: -125%;
+}*/
 .box {
   margin-bottom: 1em !important;
 }
