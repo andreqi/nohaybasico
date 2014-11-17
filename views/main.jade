@@ -7,7 +7,9 @@ block title
       section#banner
         header
           h2 No hay básico
-          p Checkea que puedes comer hoy cerca
+          p 
+            Checkea que puedes comer cerca hoy 
+            b #{cur_day}
 
 block content
   .container
@@ -16,6 +18,6 @@ block content
         section
           header.major#menus 
             h2 Menus
-          .row
+          div(class='columns row')
             each rest in restaurants
               include restaurant
