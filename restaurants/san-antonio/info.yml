@@ -16,11 +16,11 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa de Pollo
+      name: Menestrón
       in_menu:
         - mn
     - 
-      name: Crema de Verduras
+      name: Papa a la Huancaína 
       in_menu: 
         - mn
     - 
@@ -29,24 +29,24 @@ dishes:
         - mn
   main:
     -
-      name: Aji de gallina 
+      name: Locro con milanesa 
       in_menu:
         - mn   
     -
-      name: Lentejitas con Pescado
+      name: Churrasco a la parrilla
       in_menu:
         - mn   
     -
-      name: Picante de carne
+      name: Estofado de carne
       in_menu:
         - mn   
     -
-      name: Seco de pollo
+      name: Pollo al maní
       in_menu:
         - mn   
   extras:
     - 
-      name: Yerba Luisa 
+      name: Cevada
       in_menu:
         - mn
     
