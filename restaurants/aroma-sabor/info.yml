@@ -19,15 +19,15 @@ tipos_menu:
 dishes: 
   intro: 
     - 
-      name: Sopa de pollo con kion
+      name: Sopa de pollo con sémola
       in_menu: 
         - me
     - 
-      name: Papa a la huancaína
+      name: Tequeños con guacamole
       in_menu: 
         - me
     - 
-      name: Ensalada tricolor
+      name: Ensalada mixta
       in_menu: 
         - me
     - 
@@ -36,35 +36,35 @@ dishes:
         - me
   main:
     - 
-      name: Tallarines rojos con pollo
+      name: Tallarines verde con bisteck
       in_menu: 
         - me
     - 
-      name: Lomo saltado
+      name: Bisteck con p. fritas
       in_menu: 
         - me
     - 
-      name: Seco de pollo con frejoles
+      name: Arroz a la cubana
       in_menu: 
         - me
     - 
-      name: Malaya dorada + papa dorada + ens.
+      name: Filete de tollo con menestras
       in_menu: 
         - me
     - 
-      name: Arroz chaufa con milanesa
+      name: Pollo a la cocacola
       in_menu: 
         - me
     - 
-      name: Asado de res con puré
+      name: Estofado de res
       in_menu: 
         - me
     - 
-      name: Chicharrón de pescado con yuca frita + salsa criolla.
+      name: Ají de gallina
       in_menu: 
         - me
     - 
-      name: 
+      name: Olluquito con carne
       in_menu: 
         - me
   extras: 
