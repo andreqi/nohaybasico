@@ -6,10 +6,16 @@ block title
       include title
       section#banner
         header
-          h2 No hay básico
-          p 
-            | Checkea que puedes comer cerca hoy 
-            b #{cur_day}
+          if !menu_active
+            h2 Vuelve pronto 
+            p
+              | Estamos recogiendo nuestro básico.
+              | Volveremos con los menús más tarde.  
+          else 
+            h2 No hay básico
+            p 
+              | Checkea que puedes comer cerca hoy 
+              b #{cur_day}
 
 block content
   .container
@@ -17,10 +23,13 @@ block content
       .12u
         section
           header.major#menus 
-            h2
-              - perc = ((data.perc /data.total) * 100).toFixed(0)
-              progress(max='#{data.total}', value='#{data.perc}')
-              span.progress-value #{perc} %
+            if !menu_active
+              h2 Los menús actualizados ya vienen
+            else
+              h2
+                - perc = ((data.perc /data.total) * 100).toFixed(0)
+                progress(max='#{data.total}', value='#{data.perc}')
+                span.progress-value #{perc} %
           div(class='row columns')
             each rest in data.restaurants
               include restaurant

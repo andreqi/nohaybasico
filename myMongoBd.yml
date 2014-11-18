@@ -1,0 +1,50 @@
+is_menu_active: true
+menus:
+  -
+    name: PUCP-comedor-administrativas
+    is_updated: true
+  -
+    name: PUCP-comedor-arte
+    is_updated: true
+  -
+    name: PUCP-comedor-central
+    is_updated: true
+  -
+    name: PUCP-comedor-letras
+    is_updated: true
+  -
+    name: aroma-sabor
+    is_updated: true
+  -
+    name: da-gusto
+    is_updated: true
+  -
+    name: el-arbolito
+    is_updated: true
+  -
+    name: el-saborcito
+    is_updated: true
+  -
+    name: elos
+    is_updated: true
+  -
+    name: karis
+    is_updated: true
+  -
+    name: la-cabanita
+    is_updated: true
+  -
+    name: morenamia
+    is_updated: true
+  -
+    name: pucsito
+    is_updated: true
+  -
+    name: san-antonio
+    is_updated: true
+  -
+    name: tambos
+    is_updated: true
+  -
+    name: tia-carino
+    is_updated: true
