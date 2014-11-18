@@ -6,7 +6,7 @@ block title
       include title
       section#banner
         header
-          if no_menu
+          if !menu_active
             h2 Vuelve pronto 
             p
               | Estamos recogiendo nuestro básico.
@@ -23,7 +23,7 @@ block content
       .12u
         section
           header.major#menus 
-            if no_menu
+            if !menu_active
               h2 Los menús actualizados ya vienen
             else
               h2

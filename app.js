@@ -9,18 +9,15 @@ app.listen(port);
 
 var days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado'];
 
-app.get('/no-menu', function(req, res) {
-  res.render('no-menu');
-});
-
 app.get('/', function(req, res) {
   var date = new Date();
   var day = days[date.getDay()];
   get_restaurants(function(data) {
+    var info = loadBd();
     res.render('main', {
       data: data,
       cur_day: day,
-      no_menu: true
+      menu_active: info.is_menu_active
     });
   });
 });
@@ -38,6 +35,12 @@ app.get('/:id', function(req, res) {
 app.get('/:id/menu', function(req, res) {
   var id = req.params.id;
   var restaurant = get_restaurant(id);
+  var bd = loadBd();
+  for (var i = bd.menus.length - 1; i >= 0; i--) {
+    if (bd.menus[i].name == id) {
+      restaurant.display = bd.menus[i].is_updated;
+    }
+  };
   // render restaurant
   res.render('restaurant-menu', {
     restaurant: restaurant,
@@ -87,12 +90,14 @@ function get_restaurants(callback) {
     var mainObj = {}
     mainObj.total = rests.length;
     mainObj.perc = 0;
+
     var payback = rests.map(get_restaurant).filter(function(rest) {
       if (rest.display) {
         mainObj.perc++;
       }
       return rest.display == undefined || rest.display == true;
     });
+    
     mainObj.restaurants = shuffle(payback);
     callback(mainObj);
   });
@@ -151,11 +156,17 @@ function get_dish_preview(rest) {
   dish_list = dish_list || [];
   return dish_list.slice(1, 6);
 }
+
 function shuffle(o, size){ 
   for(var j, x, i = o.length; i; 
     j = Math.floor(Math.random() * i), 
     x = o[--i], o[i] = o[j], o[j] = x);
   return o;
 };
+
+function loadBd() {
+  var myBDPath = './myMongoBd.yml';
+  return YAML.load(myBDPath);
+}
 
 console.log('Listenning '+port);
