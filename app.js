@@ -91,7 +91,17 @@ function get_restaurants(callback) {
     mainObj.total = rests.length;
     mainObj.perc = 0;
 
+    var menus = loadBd().menus;
+    var status = {};
+    for (var i = menus.length - 1; i >= 0; i--) {
+      status[menus[i].name] = menus[i].is_updated;
+    };
+
     var payback = rests.map(get_restaurant).filter(function(rest) {
+      rest.display = true;
+      if (rest.homeID in status) {
+        rest.display = status[rest.homeID];
+      }
       if (rest.display) {
         mainObj.perc++;
       }
