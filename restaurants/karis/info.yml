@@ -3,10 +3,10 @@ name: Karis
 last_update: 12/11/2014 
 time_open: de 10 a 5 y de lunes a viernes
 address: -
-price_range: 5 - 16
+price_range: -
 coordinates: 
-  lat: -12.070752
-  lng: -77.075195
+  lat: -12.067617
+  lng: -77.077672
 contact_msg: -
 social_media:
   facebook: #
