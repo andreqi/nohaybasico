@@ -43,6 +43,18 @@ progress[value]::-moz-progress-bar {
   clear: both;
   width: 100%;
 }
+.button.small img{
+  padding-right: 5px;
+}
+
+.button.small {
+  margin: 0px;
+  padding: 0.05em 0.5em !important;
+  font-weight: 300;
+  width: auto;
+  position: relative;
+}
+
 .info {
   margin-bottom: 5px;
   margin-top: 15px;

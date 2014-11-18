@@ -1,6 +1,10 @@
 var request = require('request');
 var env = require('./env.js');
 
+function formatCoord(coord) {
+  return '('+ coord.lat + ',' + coord.lng + ')';
+}
+
 var getTimesFromPucp = function (lat, lng) {
   var url = 'http://maps.googleapis.com/maps/api/directions/json?' +
             'sensor=false&mode=walking';    
@@ -12,7 +16,8 @@ var getTimesFromPucp = function (lat, lng) {
                 'origin='+formatCoord({lat: lat, lng: lng}), 
                 'destination='+formatCoord(coordsPuerta[idx])
                ].join('&'), function(error, res, body) {
-        console.log(body);           
+        var ans = JSON.parse(body);
+        console.log(ans.routes[0].legs[0].duration.text);
       }); 
   }
 };
@@ -22,7 +27,7 @@ module.exports.getTimesFromPucp = getTimesFromPucp;
 module.exports.createReadStream = function(lat, lng, imgSize, zoom){
   var url = 'https://maps.googleapis.com/maps/api/staticmap?center=(' + lat + 
             ',' + lng +')&key=' + env.GMAPS_KEY;
-  var markers = 'markers=|(' + lat + ',' + lng + ')';
+  var markers = 'markers=|' + formatCoord({lat: lat, lng: lng});
   var defaultSize = imgSize || {width: 600, height: 300};  
   var size = 'size=' + defaultSize.width + 'x' + defaultSize.height;
   var zoom = 'zoom=' + (zoom || 16);

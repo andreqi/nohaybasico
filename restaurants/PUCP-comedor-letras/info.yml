@@ -1,5 +1,6 @@
 display: true
 name: PUCP Comedor letras
+walking_time: 7 mins
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 6pm
 address: PUCP
