@@ -23,7 +23,7 @@ menus:
     is_updated: true
   -
     name: el-saborcito
-    is_updated: false
+    is_updated: true
   -
     name: elos
     is_updated: false
@@ -35,19 +35,19 @@ menus:
     is_updated: true
   -
     name: morenamia
-    is_updated: false
+    is_updated: true
   -
     name: pucsito
     is_updated: false
   -
     name: san-antonio
-    is_updated: false
+    is_updated: true
   -
     name: tambos
     is_updated: true
   -
     name: tia-carino
-    is_updated: false
+    is_updated: true
   - 
     name: pizza-hut
     is_updated: true

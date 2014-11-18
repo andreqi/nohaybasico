@@ -14,5 +14,33 @@ tipos_menu:
     price: 6.00
 dishes: 
   intro:
+     -
+      name: Ensalada mixta
+      in_menu: 
+        - mn
+     -
+      name: Tequeños
+      in_menu: 
+        - mn
+     -
+      name: Caldo de gallina
+      in_menu: 
+        - mn
   main:
+     -
+      name: Seco de cordero con fejoles
+      in_menu: 
+        - mn
+     -
+      name: Pescado frito con fejoles
+      in_menu: 
+        - mn
+     -
+      name: Arroz con pollo
+      in_menu: 
+        - mn
   extras: 
+     -
+      name: Refresco 
+      in_menu: 
+        - mn
