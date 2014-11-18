@@ -22,7 +22,7 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name:  Causa bicolor
+      name: Ensalada de macarrones
       in_menu: 
         - di
         - es
@@ -32,25 +32,25 @@ dishes:
         - di
         - es
     - 
-      name: Sancochado
+      name: Shambar
       in_menu: 
         - di
         - es
   main:
     - 
-      name: Guiso de lentejas vegetariano
+      name: Bisteckvel a la jardinera
       in_menu: 
         - di
     - 
-      name: Pollovel a la naranja
+      name: Pepián de choclo con bisteckvel
       in_menu: 
         - di
     - 
-      name: Bisteckvel arrebozado
+      name: Arroz chaufa con plátano
       in_menu: 
         - es
     - 
-      name: Espagueti a la bolognesa
+      name: Tortilla de espárragos
       in_menu: 
         - es
   extras:
