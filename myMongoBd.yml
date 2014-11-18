@@ -48,3 +48,6 @@ menus:
   -
     name: tia-carino
     is_updated: false
+  - 
+    name: pizza-hut
+    is_updated: true
