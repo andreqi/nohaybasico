@@ -87,7 +87,7 @@ app.set('view engine', 'jade');
 function get_restaurants(callback) {
   fs.readdir('./restaurants', function(err, files) {
     var rests = files.filter(function(name) {return name[0] != '.'});
-    var mainObj = {}
+    var mainObj = {};
     mainObj.total = rests.length;
     mainObj.perc = 0;
 
@@ -125,6 +125,7 @@ function get_restaurant(id) {
   var coords = info.coordinates;
   info.bannerURL = '/restaurants/banner/' + id;
   info.homeID = id;
+  console.log(id);
   info.dish_preview = get_dish_preview(info);
   info.mapsURL = coords ? 
     mapsAPI.getMapsRedirectURL(coords.lat, coords.lng) : '';
@@ -159,12 +160,15 @@ function get_dish_preview(rest) {
   if (has_menu(rest)) {
     dish_list = rest.dishes.main;
     dish_list = dish_list || [];
-    dish_list = dish_list.concat(rest.dishes.intro)
+    var dish_intro = rest.dishes.intro || [];
+    dish_list = dish_list.concat(dish_intro);
   } else {
     dish_list = rest.carta;
   }
   dish_list = dish_list || [];
-  return dish_list.slice(1, 6);
+  console.log(dish_list);
+  console.log(dish_list.slice(0, 5));
+  return dish_list.slice(0, 5);
 }
 
 function shuffle(o, size){ 
