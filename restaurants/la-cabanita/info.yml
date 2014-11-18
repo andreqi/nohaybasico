@@ -26,8 +26,8 @@ tipos_menu:
     id: ma
     price: 9.0
   - 
-    name: 'Ejecutivo marino'
-    id: ma
+    name: 'Segundo frituras'
+    id: fr
     price: 10.0
 dishes: 
   intro:
@@ -38,6 +38,7 @@ dishes:
         - es
         - cr
         - ma
+        - fr
     -
       name: Papa a la huancaína
       in_menu:
@@ -45,6 +46,7 @@ dishes:
         - es
         - cr
         - ma
+        - fr
     -
       name: Ensalada mixta
       in_menu:
@@ -56,10 +58,19 @@ dishes:
         - es
         - cr
         - ma
+        - fr
     -
-      name: Cebiche mixto + S/. 3
+      name: Cebiche + S/. 3
       in_menu:
         - cr
+    -
+      name: Tequeños 
+      in_menu:
+        - fr
+    -
+      name: Cebiche + S/. 5
+      in_menu:
+        - fr
   main:
     -
       name: Milanesa con p. fritas y ens.
@@ -109,6 +120,42 @@ dishes:
       name: Huevera a la chorrillana
       in_menu:
         - ma    
+    -
+      name: Arroz con pato
+      in_menu:
+        - fr
+    -
+      name: Cabrito a la norteña con yuca
+      in_menu:
+        - fr
+    -
+      name: Lomo saltado
+      in_menu:
+        - fr
+    -
+      name: Pollo saltado
+      in_menu:
+        - fr
+    -
+      name: Tallarin saltado de pollo o carne
+      in_menu:
+        - fr
+    -
+      name: Arroz chaufa de pollo o carne
+      in_menu:
+        - fr
+    -
+      name: Bisteck a la parrila con p.fritas + ens.
+      in_menu:
+        - fr
+    -
+      name: Pechufa de pollo a la plancha + p.fritas + ens.
+      in_menu:
+        - fr
+    -
+      name: Pechuga de pollo al vapor con vegetales
+      in_menu:
+        - fr
   extras: 
     -
       name: Refresco
