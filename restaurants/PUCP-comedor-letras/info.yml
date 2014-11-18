@@ -34,33 +34,33 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Solterito
+      name: Ensalada mixta
       in_menu: 
         - be
     - 
-      name: Ensalada mixta 
+      name: Jamón enrollado con verduras
       in_menu: 
         - me
   main:
     - 
-      name: Pollo al pimiento, ensalada italiana, arroz
+      name: Escabeche de pescado camote, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Hígado apanado, panamitos guisados, arroz
+      name: Pollo al kion con verduras chinas, arroz
       in_menu: 
         - me
     - 
-      name: Tallarín saltado criollo con carne
+      name: Lomito a la cacerola, papa arroz
       in_menu: 
         - me
     - 
-      name: Panamitos guisados, arroz 
+      name: Huevo frito, arroz
       in_menu: 
         - ec
     - 
-      name: Albóndiga vegetal al pimiento, ensalada italiana, arroz
+      name: Carne vegetal escabechada, camote, arroz
       in_menu:
         - ve
   extras:
@@ -80,7 +80,7 @@ dishes:
         - ec
         - me
     - 
-      name: Ensalada de fruta
+      name: Espuma de fresa
       in_menu:
         - me
 carta: 
