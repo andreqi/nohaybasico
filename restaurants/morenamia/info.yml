@@ -23,48 +23,52 @@ tipos_menu:
 dishes: 
   intro:
     - 
+      name: 'Palta Rellena'
+      in_menu: 
+        - me
+    - 
       name: 'Causa Limeña'
       in_menu: 
-        - co
-    - 
-      name: 'Yuquitas'
-      in_menu: 
-        - co
-    - 
-      name: 'Tequeños'
-      in_menu: 
-        - co
+        - me
     - 
       name: 'Ensalada'
       in_menu: 
-        - co
+        - me
+    - 
+      name: 'Yuquitas Fritas'
+      in_menu: 
+        - me
+    - 
+      name: 'Tequeños Rellenos'
+      in_menu: 
+        - me
+    - 
+      name: 'Ensalada'
+      in_menu: 
+        - me
     - 
       name: 'Papa a la Ocopa'
       in_menu: 
-        - co
+        - me
     - 
       name: 'Papa a la Huancaina'
       in_menu: 
-        - co
+        - me
   main:
     - 
-      name: 'Chicharron de pollo'
+      name: 'Tallarines Rojos con estofado y huancaina'
       in_menu: 
         - me
     - 
-      name: 'Arroz a la Jardinera'
+      name: 'Mondongito a la italiana con papas doradas'
       in_menu: 
         - me
     - 
-      name: 'Locro de Zapallo'
+      name: 'Arroz a la cubana con mollejita saltada'
       in_menu: 
         - me
     - 
-      name: 'Pescado a la Chorrillana'
-      in_menu: 
-        - me
-    - 
-      name: 'Pescado frito'
+      name: 'Lomito de pollo con frejoles o pure de papa'
       in_menu: 
         - me
   extras: 
@@ -72,7 +76,6 @@ dishes:
       name: 'Jugo de manzana'
       in_menu:
         - me
-        - co
 carta: 
   - 
     name: 1/4 Pollo al cilindro + papa + ensalada

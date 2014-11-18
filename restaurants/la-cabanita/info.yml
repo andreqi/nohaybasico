@@ -27,88 +27,136 @@ tipos_menu:
     id: ma
     price: 9.0
   - 
-    name: 'Ejecutivo marino'
-    id: ma
+    name: 'Segundo frituras'
+    id: fr
     price: 10.0
 dishes: 
   intro:
     -
-      name: Caldo de gallina
+      name: Sopa de frejoles
       in_menu:
         - ec
         - es
         - cr
         - ma
+        - fr
     -
-      name: Ensalada tibia al horno
+      name: Papa a la huancaína
       in_menu:
         - ec
         - es
         - cr
         - ma
+        - fr
     -
-      name: Bombitas de carne
+      name: Ensalada mixta
       in_menu:
         - ec
         - es
-        - cr
-        - ma
     -
-      name: Cebiche mixto + S/. 3
+      name: Alitas con tamarindo
       in_menu:
-        - ec
         - es
         - cr
         - ma
+        - fr
+    -
+      name: Cebiche + S/. 3
+      in_menu:
+        - cr
+    -
+      name: Tequeños 
+      in_menu:
+        - fr
+    -
+      name: Cebiche + S/. 5
+      in_menu:
+        - fr
   main:
     -
       name: Milanesa con p. fritas y ens.
       in_menu:
         - ec
     -
-      name: Carne mechada con lentejas
+      name: Carapulcra de lechón
       in_menu:
         - ec
     -
-      name: Cau-cau de pollo
+      name: Picante de carne
       in_menu:
         - ec
     -
-      name: Pachamanca de pollo
+      name: Macarrones en salsa de carne
       in_menu:
         - es
     -
-      name: Pescado frito con lentejas
+      name: Escabeche de polo con camote
       in_menu:
         - es
     -
-      name: Hígado saltado con lentejas
+      name: Pollo asado con puré
       in_menu:
         - es
     -
-      name: Pechuga de pollo a la carbonara con p.fritas
+      name: Pechuga a la BBQ con p. fritas y ens.
       in_menu:
         - cr
     -
-      name: Chancho asado con camotes
+      name: Arroz chaufa de lechón agridulce
       in_menu:
         - cr
     -
-      name: Chuleta con tamarindo y p. fritas
+      name: Lomo saltado con champiñones
       in_menu:
         - cr
     -
-      name: Pescado saltado
+      name: Picante de mariscos
       in_menu:
         - ma
     -
-      name: Mariscos a lo alfredo
+      name: Filete de pescado a la meniere
       in_menu:
         - ma
     -
-      name: Filete de pescado a la carbonara
+      name: Huevera a la chorrillana
       in_menu:
         - ma    
+    -
+      name: Arroz con pato
+      in_menu:
+        - fr
+    -
+      name: Cabrito a la norteña con yuca
+      in_menu:
+        - fr
+    -
+      name: Lomo saltado
+      in_menu:
+        - fr
+    -
+      name: Pollo saltado
+      in_menu:
+        - fr
+    -
+      name: Tallarin saltado de pollo o carne
+      in_menu:
+        - fr
+    -
+      name: Arroz chaufa de pollo o carne
+      in_menu:
+        - fr
+    -
+      name: Bisteck a la parrila con p.fritas + ens.
+      in_menu:
+        - fr
+    -
+      name: Pechufa de pollo a la plancha + p.fritas + ens.
+      in_menu:
+        - fr
+    -
+      name: Pechuga de pollo al vapor con vegetales
+      in_menu:
+        - fr
   extras: 
     -
       name: Refresco

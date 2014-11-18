@@ -1,21 +1,16 @@
-display: true
-name: PUCP Comedor letras
-walking_time: 7 mins
+display: false
+name: Elos
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 6pm
 address: PUCP
 price_range: 1.5 - 6.7
 coordinates: 
-  lat: -12.068480
-  lng: -77.079788
+  lat: -12.071407 
+  lng: -77.079447
 contact_msg: -
 social_media:
   facebook: 
 tipos_menu: 
-  - 
-    name: 'vegetariano'
-    id: ve
-    price: 3.6
   - 
     name: 'económico'
     id: ec
@@ -35,35 +30,31 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada mixta
+      name: Ensalada fresca
       in_menu: 
         - be
     - 
-      name: Jamón enrollado con verduras
+      name: Ocopa
       in_menu: 
         - me
   main:
     - 
-      name: Escabeche de pescado camote, arroz
+      name: Pescado en salsa de perejil, papa, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pollo al kion con verduras chinas, arroz
+      name: Escabeche de pollo, camote, arroz
       in_menu: 
         - me
     - 
-      name: Lomito a la cacerola, papa arroz
+      name: Carne a la mostaza, legumbres, arroz
       in_menu: 
         - me
     - 
       name: Huevo frito, arroz
       in_menu: 
         - ec
-    - 
-      name: Carne vegetal escabechada, camote, arroz
-      in_menu:
-        - ve
   extras:
     - 
       name: 'Pan'
@@ -75,13 +66,12 @@ dishes:
     - 
       name: 'Refresco o Leche'
       in_menu: 
-        - ve
         - ba
         - be
         - ec
         - me
     - 
-      name: Espuma de fresa
+      name: Compota de membrillo
       in_menu:
         - me
 carta: 

@@ -35,33 +35,33 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada mixta
+      name: Ensalada griega
       in_menu: 
         - be
     - 
-      name: Ensalada festiva
+      name: Ensalada griega
       in_menu: 
         - me
   main:
     - 
-      name: Picante de carne, arroz
+      name: Bistec de hígado, ensalada de lentejas, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pescado apanado, ensalada mixta, arroz
+      name: Carne a la norteña ,yuca, arroz
       in_menu: 
         - me
     - 
-      name: Pollo al vino, papa ,arroz
+      name: Cerdo al romero, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Arroz chaufa
+      name: Lentejas guisadas, arroz
       in_menu: 
         - ec
     - 
-      name: Picante de carne vegetal, arroz 
+      name: Lomito vegetal, ensalada de lentejas, arroz
       in_menu: 
         - ve
   extras:
@@ -81,7 +81,7 @@ dishes:
         - ec
         - me
     - 
-      name: Fruta
+      name: Mouse de fruta
       in_menu:
         - me
 carta: 

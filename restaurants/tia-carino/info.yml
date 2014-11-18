@@ -17,29 +17,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Papa a la Hancaina
+      name: Ensalada de fideos
       in_menu:
         - mn
     - 
-      name: Sopa de Carne
+      name: Sopa de pollo
       in_menu: 
         - mn
   main:
     -
-      name: Arroz a la jardinera de pollo
+      name: Pollo con champiñones 
       in_menu:
         - mn   
     -
-      name: Lentejas con lomo
+      name: Malaya dorada
       in_menu:
         - mn   
     -
-      name: Estofado de carne 
+      name: Locro con pescado frito 
       in_menu:
         - mn   
   extras:
     - 
-      name: Refresco de carambola
+      name: Refresco de cocona
       in_menu:
         - mn
     

@@ -27,12 +27,12 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Caldo de pollo
+      name: Sopa de sémola
       in_menu: 
         - ej
         - ec
     - 
-      name: Tequeños con guacamole
+      name: Papa a la huancaína
       in_menu: 
         - ej
         - ec
@@ -43,11 +43,11 @@ dishes:
         - ec
   main:
     - 
-      name: Pollo al horno con ensalada rusa
+      name: Milanesa con p. fritas y ens.
       in_menu: 
         - ej
     - 
-      name: Bisteck apanado con p. fritas y ens.
+      name: Tacu tacu con bisteck
       in_menu: 
         - ej
     - 
@@ -59,17 +59,17 @@ dishes:
       in_menu: 
         - ej
     - 
-      name: Lentejas con filete de pollo
+      name: Arroz con pollo
       in_menu: 
         - un
         - ec
     - 
-      name: Estofado de res
+      name: Malaya dorada con yuca
       in_menu: 
         - un
         - ec
     - 
-      name: Arroz chaufa con wantan
+      name: Tortilla de verduras
       in_menu: 
         - un
         - ec

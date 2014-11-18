@@ -31,29 +31,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Huevo en salsa golf
+      name: Ensalada Kentucky
       in_menu: 
         - be
     - 
-      name: Ensalada verde
+      name: Ensalada fresca
       in_menu: 
         - me
   main:
     - 
-      name: Arroz a la chiclayana con cerdo
+      name: Fricasé de pollo, legumbres, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pollo al ají, papa, arroz
+      name: Hígado a la parrilla, frijoles, arroz
       in_menu: 
         - me
     - 
-      name: Pescado frito, yuca, arroz
+      name: Adobo de res, camote, arroz
       in_menu: 
         - me
     - 
-      name: Puré, arroz
+      name: Frijoles guisados, arroz
       in_menu: 
         - ec
   extras:
@@ -72,7 +72,7 @@ dishes:
         - ec
         - me
     - 
-      name: Mousse de fruta 
+      name: Ensalada de frutas
       in_menu:
         - me
 carta: 

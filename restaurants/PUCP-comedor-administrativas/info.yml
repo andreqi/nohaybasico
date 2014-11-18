@@ -31,29 +31,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada fresca
+      name: Salpicón de verduras
       in_menu: 
         - be
     - 
-      name: Ocopa
+      name: Huevo relleno
       in_menu: 
         - me
   main:
     - 
-      name: Pescado en salsa de perejil, papa, arroz
+      name: Estofado de carne, papa, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Escabeche de pollo, camote, arroz
+      name: Mondonguito a la italiana, arroz
       in_menu: 
         - me
     - 
-      name: Carne a la mostaza, legumbres, arroz
+      name: Tallarines al pesto, pollo al horno
       in_menu: 
         - me
     - 
-      name: Huevo frito, arroz
+      name: Tallarines al pesto 
       in_menu: 
         - ec
   extras:
@@ -72,7 +72,7 @@ dishes:
         - ec
         - me
     - 
-      name: Compota de membrillo
+      name: Fantasía de gelatina
       in_menu:
         - me
 carta: 
