@@ -3,3 +3,10 @@ node_modules
 .DS_Store
 env.js
 *.log
+
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
