@@ -18,24 +18,24 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa de pollo
+      name: Huevo a la rusa
       in_menu: 
         - nv
     -
-      name: Ensalada mixta
+      name: Sopa de pollo
       in_menu:
         - nv
     -
-      name: Papa a la huancaína
+      name: Tequeños con guacamole
       in_menu:
         - nv
   main:
     - 
-      name: Lenteja con saltado de carne
+      name: Trigo guisado con pollo
       in_menu: 
         - nv
     - 
-      name: Pollo a la naranja
+      name: Estofado de pollo
       in_menu: 
         - nv
     - 
@@ -43,7 +43,7 @@ dishes:
       in_menu: 
         - nv
     - 
-      name: Seco de res
+      name: Carne a la norteña
       in_menu: 
         - nv
     - 
@@ -51,7 +51,7 @@ dishes:
       in_menu: 
         - nv
     - 
-      name: Arroz con pollo
+      name: Olluquitos con pollo
       in_menu: 
         - nv
   extras: 
