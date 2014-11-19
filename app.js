@@ -11,7 +11,12 @@ var log = require('./log/logger');
 var env = process.env.NODE_ENV || 'dev';
 var port = (env == 'pro') ? 4321: 4329; 
 
-mongoose.connect('mongodb://localhost/testnhb');
+mongoose.connect('mongodb://localhost/testnhb', function(err) {
+    if (err) {
+      console.log('errr', err);
+      throw err;
+    }
+});
 
 app.listen(port);
 
