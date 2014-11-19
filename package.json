@@ -3,10 +3,11 @@
   "dependencies": {
     "express": "*",
     "jade": "*",
-    "yamljs": "*",
-    "request": "*"
+    "mongoose": "^3.8.19",
+    "request": "*",
+    "yamljs": "*"
   },
   "scripts": {
-	"start": "node app.js"  	
+    "start": "node app.js"
   }
 }

@@ -36,3 +36,6 @@ exports.error = function(data){
 exports.info = function(data){
     log("INFO",data);
 };
+exports.getTime = function() {
+    return getDateTime();
+}

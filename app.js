@@ -3,25 +3,37 @@ var app = express();
 var mapsAPI = require('./mapsAPI.js');
 var fs = require('fs');
 var YAML = require('yamljs');
-var logger = require('./log/logger')
+
+var mongoose = require('mongoose');
+var modelLog = require('./models/log')
+var log = require('./log/logger');
 
 var env = process.env.NODE_ENV || 'dev';
 var port = (env == 'pro') ? 4321: 4329; 
 
+mongoose.connect('mongodb://localhost/test-nhb');
 app.listen(port);
 
 var days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado'];
 
 app.get('/', function(req, res) {
-  logger.info('pulpin detected');
   var date = new Date();
   var day = days[date.getDay()];
   get_restaurants(function(data) {
     var info = loadBd();
-    res.render('main', {
-      data: data,
-      cur_day: day,
-      menu_active: info.is_menu_active
+    var mLog = new modelLog({
+      data: 'pulpin detected',
+      time: log.getTime()
+    });
+    mLog.save(function(err,model) {
+      if(err) console.log(err);
+
+      res.render('main', {
+        data: data,
+        cur_day: day,
+        menu_active: info.is_menu_active
+      });
+
     });
   });
 });
@@ -133,7 +145,6 @@ function get_restaurant(id) {
   var coords = info.coordinates;
   info.bannerURL = '/restaurants/banner/' + id;
   info.homeID = id;
-  console.log(id);
   info.dish_preview = get_dish_preview(info);
   info.mapsURL = coords ? 
     mapsAPI.getMapsRedirectURL(coords.lat, coords.lng) : '';
@@ -174,8 +185,6 @@ function get_dish_preview(rest) {
     dish_list = rest.carta;
   }
   dish_list = dish_list || [];
-  console.log(dish_list);
-  console.log(dish_list.slice(0, 5));
   return dish_list.slice(0, 5);
 }
 
