@@ -4,7 +4,9 @@ var mapsAPI = require('./mapsAPI.js');
 var fs = require('fs');
 var YAML = require('yamljs');
 
-var port = 4321;
+var env = process.env.NODE_ENV || 'dev';
+var port = (env == 'pro') ? 4321: 1234; 
+
 app.listen(port);
 
 var days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado'];
@@ -183,4 +185,6 @@ function loadBd() {
   return YAML.load(myBDPath);
 }
 
-console.log('Listenning '+port);
+console.log("Environment " + env);
+console.log('Listenning '+ port);
+
