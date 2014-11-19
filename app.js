@@ -10,8 +10,9 @@ var log = require('./log/logger');
 
 var env = process.env.NODE_ENV || 'dev';
 var port = (env == 'pro') ? 4321: 1111; 
+var bd = (env == 'pro') ? 'nhb': 'testnhb';
 
-mongoose.connect('mongodb://localhost/testnhb', function(err) {
+mongoose.connect('mongodb://localhost/'+bd, function(err) {
     if (err) {
       console.log('errr', err);
       throw err;
