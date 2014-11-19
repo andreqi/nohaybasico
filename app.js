@@ -4,7 +4,9 @@ var mapsAPI = require('./mapsAPI.js');
 var fs = require('fs');
 var YAML = require('yamljs');
 
-var port = 4321;
+var env = process.env.NODE_ENV || 'dev';
+var port = (env == 'pro') ? 4321: 4329; 
+
 app.listen(port);
 
 var days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado'];
@@ -90,11 +92,15 @@ function get_restaurants(callback) {
     var mainObj = {};
     mainObj.total = rests.length;
     mainObj.perc = 0;
-
-    var menus = loadBd().menus;
+    var db = loadBd();
+    var menus = db.menus;
     var status = {};
     for (var i = menus.length - 1; i >= 0; i--) {
-      status[menus[i].name] = menus[i].is_updated;
+      if (!db.is_menu_active) {
+        status[menus[i].name] = false;
+      } else {
+        status[menus[i].name] = menus[i].is_updated;
+      }
     };
 
     var payback = rests.map(get_restaurant).filter(function(rest) {
@@ -183,4 +189,6 @@ function loadBd() {
   return YAML.load(myBDPath);
 }
 
-console.log('Listenning '+port);
+console.log("Environment " + env);
+console.log('Listenning '+ port);
+
