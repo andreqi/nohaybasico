@@ -34,33 +34,33 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada mixta
+      name: Mixtura de verduras
       in_menu: 
         - be
     - 
-      name: Jamón enrollado con verduras
+      name: Ensalada multicolor
       in_menu: 
         - me
   main:
     - 
-      name: Escabeche de pescado camote, arroz
+      name: Lomito de hígado, arveja verde, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pollo al kion con verduras chinas, arroz
+      name: Estofado de pollo, papa , arroz
       in_menu: 
         - me
     - 
-      name: Lomito a la cacerola, papa arroz
+      name: Asado a la italiana, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Huevo frito, arroz
+      name: Alverjita verde guisada, arroz
       in_menu: 
         - ec
     - 
-      name: Carne vegetal escabechada, camote, arroz
+      name: Lomito vegetal, arveja verde, arroz
       in_menu:
         - ve
   extras:
@@ -80,7 +80,7 @@ dishes:
         - ec
         - me
     - 
-      name: Espuma de fresa
+      name: Budín con miel
       in_menu:
         - me
 carta: 

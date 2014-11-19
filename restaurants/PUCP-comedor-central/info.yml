@@ -34,33 +34,33 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada griega
+      name: Antipasto de verduras
       in_menu: 
         - be
     - 
-      name: Ensalada griega
+      name: Salpicón de verduras
       in_menu: 
         - me
   main:
     - 
-      name: Bistec de hígado, ensalada de lentejas, arroz
+      name: Pollo a la mostaza, legumbres, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Carne a la norteña ,yuca, arroz
+      name: Pescado a la pimienta, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Cerdo al romero, legumbres, arroz
+      name: Tallarines a la boloñesa con carne molida
       in_menu: 
         - me
     - 
-      name: Lentejas guisadas, arroz
+      name: Tallarines al tuco
       in_menu: 
         - ec
     - 
-      name: Lomito vegetal, ensalada de lentejas, arroz
+      name: Carne vegetal a la mostaza, legumbres, arroz
       in_menu: 
         - ve
   extras:
@@ -80,7 +80,7 @@ dishes:
         - ec
         - me
     - 
-      name: Mouse de fruta
+      name: Compota de frutas
       in_menu:
         - me
 carta: 

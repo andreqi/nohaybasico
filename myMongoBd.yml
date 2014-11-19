@@ -1,17 +1,17 @@
-is_menu_active: false
+is_menu_active: true
 menus:
   -
     name: PUCP-comedor-administrativas
-    is_updated: false
+    is_updated: true
   -
     name: PUCP-comedor-arte
-    is_updated: false
+    is_updated: true
   -
     name: PUCP-comedor-central
-    is_updated: false
+    is_updated: true
   -
     name: PUCP-comedor-letras
-    is_updated: false
+    is_updated: true
   -
     name: aroma-sabor
     is_updated: false
@@ -20,7 +20,7 @@ menus:
     is_updated: false
   -
     name: el-arbolito
-    is_updated: false
+    is_updated: true
   -
     name: el-saborcito
     is_updated: false
@@ -50,4 +50,4 @@ menus:
     is_updated: false
   - 
     name: pizza-hut
-    is_updated: false
+    is_updated: true

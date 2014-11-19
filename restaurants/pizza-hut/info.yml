@@ -18,7 +18,10 @@ dishes:
   intro:
   main:
     -
-      name: Pizza alemana
+      name: >
+        Chicken primavera (Espirales finamente gratinados,
+        salsa a los alfredo, filete de pechuga de pollo marinado
+        en trozos, mezcla de vegetales y queso mozarella)
       in_menu:
         - hut
   extras: 

@@ -30,29 +30,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Salpicón de verduras
+      name: Ensalada mixta
       in_menu: 
         - be
     - 
-      name: Huevo relleno
+      name: Ensalada César
       in_menu: 
         - me
   main:
     - 
-      name: Estofado de carne, papa, arroz
+      name: Cerdo a la pachamanca, camote, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Mondonguito a la italiana, arroz
+      name: Pescado sudado, papa, arroz
       in_menu: 
         - me
     - 
-      name: Tallarines al pesto, pollo al horno
+      name: Pollo al romero, frijoles, arroz
       in_menu: 
         - me
     - 
-      name: Tallarines al pesto 
+      name: Frijoles guisados, arroz
       in_menu: 
         - ec
   extras:
@@ -71,7 +71,7 @@ dishes:
         - ec
         - me
     - 
-      name: Fantasía de gelatina
+      name: Ensalada de frutas
       in_menu:
         - me
 carta: 
