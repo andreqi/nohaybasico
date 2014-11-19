@@ -1,0 +1,28 @@
+name: Pizza hut
+last_update: ayer 
+time_open:  L-D todo el día
+address: Av. La marina 2010, San Miguel
+price_range: 15.0
+coordinates: 
+  lat: -12.077741
+  lng: -77.082880
+contact_msg: Contáctanos en 505-1111
+social_media:
+  facebook: https://www.facebook.com/pizzahutperu?fref=ts
+tipos_menu: 
+  - 
+    name: 'Hut del día'
+    id: hut
+    price: 15
+dishes: 
+  intro:
+  main:
+    -
+      name: Pizza alemana
+      in_menu:
+        - hut
+  extras: 
+    -
+      name: Bebida
+      in_menu:
+        - hut
