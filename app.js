@@ -90,11 +90,15 @@ function get_restaurants(callback) {
     var mainObj = {};
     mainObj.total = rests.length;
     mainObj.perc = 0;
-
-    var menus = loadBd().menus;
+    var db = loadBd();
+    var menus = db.menus;
     var status = {};
     for (var i = menus.length - 1; i >= 0; i--) {
-      status[menus[i].name] = menus[i].is_updated;
+      if (!db.is_menu_active) {
+        status[menus[i].name] = false;
+      } else {
+        status[menus[i].name] = menus[i].is_updated;
+      }
     };
 
     var payback = rests.map(get_restaurant).filter(function(rest) {
