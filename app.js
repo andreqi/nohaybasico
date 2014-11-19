@@ -9,7 +9,7 @@ var modelLog = require('./models/log')
 var log = require('./log/logger');
 
 var env = process.env.NODE_ENV || 'dev';
-var port = (env == 'pro') ? 4321: 4329; 
+var port = (env == 'pro') ? 4321: 1111; 
 
 mongoose.connect('mongodb://localhost/testnhb', function(err) {
     if (err) {
