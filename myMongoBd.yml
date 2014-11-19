@@ -41,13 +41,13 @@ menus:
     is_updated: true
   -
     name: san-antonio
-    is_updated: false
+    is_updated: true
   -
     name: tambos
     is_updated: false
   -
     name: tia-carino
-    is_updated: false
+    is_updated: true
   - 
     name: pizza-hut
     is_updated: true
