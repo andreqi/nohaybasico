@@ -11,7 +11,8 @@ var log = require('./log/logger');
 var env = process.env.NODE_ENV || 'dev';
 var port = (env == 'pro') ? 4321: 4329; 
 
-mongoose.connect('mongodb://localhost/test-nhb');
+mongoose.connect('mongodb://localhost/testnhb');
+
 app.listen(port);
 
 var days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado'];
