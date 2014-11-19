@@ -3,6 +3,7 @@ var app = express();
 var mapsAPI = require('./mapsAPI.js');
 var fs = require('fs');
 var YAML = require('yamljs');
+var logger = require('./log/logger')
 
 var env = process.env.NODE_ENV || 'dev';
 var port = (env == 'pro') ? 4321: 4329; 
@@ -12,6 +13,7 @@ app.listen(port);
 var days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado'];
 
 app.get('/', function(req, res) {
+  logger.info('pulpin detected');
   var date = new Date();
   var day = days[date.getDay()];
   get_restaurants(function(data) {
