@@ -5,7 +5,7 @@ var fs = require('fs');
 var YAML = require('yamljs');
 
 var env = process.env.NODE_ENV || 'dev';
-var port = (env == 'pro') ? 4321: 1234; 
+var port = (env == 'pro') ? 4321: 4329; 
 
 app.listen(port);
 
