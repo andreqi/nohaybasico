@@ -28,6 +28,11 @@ function getDateTime() {
 log = function(type,data){
     data.tipo = type;
     data.tiempo = getDateTime();
+    var ip = req.headers['x-forwarded-for'] || 
+     req.connection.remoteAddress || 
+     req.socket.remoteAddress ||
+     req.connection.socket.remoteAddress;
+    data.ip = ip;
     console.log(data);
 };
 exports.error = function(data){

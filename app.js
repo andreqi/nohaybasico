@@ -26,11 +26,17 @@ var days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sa
 app.get('/', function(req, res) {
   var date = new Date();
   var day = days[date.getDay()];
+  var ip = req.headers['x-forwarded-for'] || 
+     req.connection.remoteAddress || 
+     req.socket.remoteAddress ||
+     req.connection.socket.remoteAddress;
   get_restaurants(function(data) {
     var info = loadBd();
+    
     var mLog = new modelLog({
       data: 'pulpin detected',
-      time: log.getTime()
+      time: log.getTime(),
+      ip: ip
     });
     mLog.save(function(err,model) {
       if(err) console.log(err);

@@ -4,7 +4,8 @@ var mongoose = require('mongoose'),
 
 var logSchema = new Schema({
   data:  String,
-  time: String
+  time: String,
+  ip: String
 });
 
 var Log = module.exports = mongoose.model('Log', logSchema);
