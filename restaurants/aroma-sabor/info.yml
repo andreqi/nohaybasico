@@ -20,15 +20,15 @@ tipos_menu:
 dishes: 
   intro: 
     - 
-      name: Sopa de res
+      name: Sopa a la minuta
       in_menu: 
         - me
     - 
-      name: Ocopa 
+      name: Salpicón con pollo
       in_menu: 
         - me
     - 
-      name: Ensalada de verduras cocidas
+      name: Huevo a la rusa
       in_menu: 
         - me
     - 
@@ -37,35 +37,35 @@ dishes:
         - me
   main:
     - 
-      name: Arroz con pollo + salsa criolla
+      name: Asado de res con puré
       in_menu: 
         - me
     - 
-      name: Carapulcra con chancho
+      name: Pollo al sillao
       in_menu: 
         - me
     - 
-      name: Mechado de pollo
+      name: Seco de res con frejoles
       in_menu: 
         - me
     - 
-      name: Talarrin saltado
+      name: Pollo dorado con p. dorada + ens.
       in_menu: 
         - me
     - 
-      name: Pollo a la mostaza
+      name: Arroz chaufa con milanesa
       in_menu: 
         - me
     - 
-      name: Cau cau
+      name: Picante de carne
       in_menu: 
         - me
     - 
-      name: Pollo frito con menestra
+      name: Filete de tollo con menestras
       in_menu: 
         - me
     - 
-      name: Hamburguesa con p. fritas + ens.
+      name: Pollo broaster con p. fritas + ens.
       in_menu: 
         - me
   extras: 
