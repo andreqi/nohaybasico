@@ -20,15 +20,15 @@ tipos_menu:
 dishes: 
   intro: 
     - 
-      name: Sopa de pollo con sémola
+      name: Sopa de res
       in_menu: 
         - me
     - 
-      name: Tequeños con guacamole
+      name: Ocopa 
       in_menu: 
         - me
     - 
-      name: Ensalada mixta
+      name: Ensalada de verduras cocidas
       in_menu: 
         - me
     - 
@@ -37,35 +37,35 @@ dishes:
         - me
   main:
     - 
-      name: Tallarines verde con bisteck
+      name: Arroz con pollo + salsa criolla
       in_menu: 
         - me
     - 
-      name: Bisteck con p. fritas
+      name: Carapulcra con chancho
       in_menu: 
         - me
     - 
-      name: Arroz a la cubana
+      name: Mechado de pollo
       in_menu: 
         - me
     - 
-      name: Filete de tollo con menestras
+      name: Talarrin saltado
       in_menu: 
         - me
     - 
-      name: Pollo a la cocacola
+      name: Pollo a la mostaza
       in_menu: 
         - me
     - 
-      name: Estofado de res
+      name: Cau cau
       in_menu: 
         - me
     - 
-      name: Ají de gallina
+      name: Pollo frito con menestra
       in_menu: 
         - me
     - 
-      name: Olluquito con carne
+      name: Hamburguesa con p. fritas + ens.
       in_menu: 
         - me
   extras: 

@@ -24,49 +24,40 @@ tipos_menu:
 dishes: 
   intro: 
     -
-      name: Palta con verduras
+      name: Tamal de pollo
       in_menu: 
         - mn
         - mc
     -
-      name: Salpicón
+      name: Causa con verduras y pollo
       in_menu: 
         - mn
         - mc
     -
-      name: Ocopa
+      name: Ensalada mixta
       in_menu: 
         - mn
         - mc
     -
-      name: Ensalada Mixta
-      in_menu: 
-        - mn
-        - mc
-    -
-      name: Sopa de casa
+      name: Aguadito de pollo
       in_menu: 
         - mn
         - mc
   main:
     -
-      name: Estofado de pollo con puré o lentejas
+      name: Escabeche de pollo
       in_menu: 
         - mn
     -
-      name: Pollo a la mostaza con papas
+      name: Asado con puré ó arvejitas partidas
       in_menu: 
         - mn
     -
-      name: Olluquitos con carne    
+      name: Mondonguito a la italiana
       in_menu: 
         - mn
     -
-      name: Pollo al orégano con papas
-      in_menu: 
-        - mn
-    -
-      name: Arroz Tapado, plátano y huevo frito
+      name: Chicharrón de pollo con puré ó arvejitas partidas
       in_menu: 
         - mn
     -
@@ -89,12 +80,12 @@ dishes:
       name: Pollo saltado
       in_menu: 
         - mc
+  extras:
     -
-      name: Refresco de Manzana
+      name: Refresco de Maracuyá
       in_menu: 
         - mn
         - mc
-  extras:
     -
       name: Incluye Postre
       in_menu: 

@@ -23,7 +23,7 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada de macarrones
+      name: Ocopa arequipeña
       in_menu: 
         - di
         - es
@@ -33,25 +33,25 @@ dishes:
         - di
         - es
     - 
-      name: Shambar
+      name: Sopa de morón
       in_menu: 
         - di
         - es
   main:
     - 
-      name: Bisteckvel a la jardinera
+      name: Adobo con fréjol panamito
       in_menu: 
         - di
     - 
-      name: Pepián de choclo con bisteckvel
+      name: Seco norteño vegetariano
       in_menu: 
         - di
     - 
-      name: Arroz chaufa con plátano
+      name: Espagueti al pesto con plátano
       in_menu: 
         - es
     - 
-      name: Tortilla de espárragos
+      name: Bisteckvel con puré y arroz
       in_menu: 
         - es
   extras:

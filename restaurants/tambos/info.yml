@@ -27,12 +27,12 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa de sémola
+      name: Sopa cazuela de res
       in_menu: 
         - ej
         - ec
     - 
-      name: Papa a la huancaína
+      name: Palta la jardinera
       in_menu: 
         - ej
         - ec
@@ -43,11 +43,11 @@ dishes:
         - ec
   main:
     - 
-      name: Milanesa con p. fritas y ens.
+      name: Arroz árabe con pollo al horno
       in_menu: 
         - ej
     - 
-      name: Tacu tacu con bisteck
+      name: Bisteck enrollado con jamón y queso
       in_menu: 
         - ej
     - 
@@ -59,17 +59,17 @@ dishes:
       in_menu: 
         - ej
     - 
-      name: Arroz con pollo
+      name: Tallarines verdes con milanesa
       in_menu: 
         - un
         - ec
     - 
-      name: Malaya dorada con yuca
+      name: Pallares con pescado
       in_menu: 
         - un
         - ec
     - 
-      name: Tortilla de verduras
+      name: Vainita saltada de carne y huevo frito
       in_menu: 
         - un
         - ec

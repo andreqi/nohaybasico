@@ -31,29 +31,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada Kentucky
+      name: Ensalada griega
       in_menu: 
         - be
     - 
-      name: Ensalada fresca
+      name: Soufflé de verduras
       in_menu: 
         - me
   main:
     - 
-      name: Fricasé de pollo, legumbres, arroz
+      name: Seco de res, papa, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Hígado a la parrilla, frijoles, arroz
+      name: Pollo a la lombarda, papa, arroz
       in_menu: 
         - me
     - 
-      name: Adobo de res, camote, arroz
+      name: Cerdo al orégano, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Frijoles guisados, arroz
+      name: Huevo frito, arroz
       in_menu: 
         - ec
   extras:
@@ -72,7 +72,7 @@ dishes:
         - ec
         - me
     - 
-      name: Ensalada de frutas
+      name: Cóctel de frutas
       in_menu:
         - me
 carta: 

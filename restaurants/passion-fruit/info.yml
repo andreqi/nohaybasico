@@ -31,35 +31,35 @@ tipos_menu:
 dishes:
   main: 
     -
-     name: Cupcake de Nutella
+     name: Cupcake Red Velvet
      in_menu:
         - ck
     -
-      name: Cupcake de Oreo
+      name: Cupcake Chocovainilla
       in_menu:
         - ck
     -
-      name: Cupcake de Chocovainilla
+      name: Cupcake Boston Cream
       in_menu:
         - ck
     -
-      name: Cupcake Happy Day
+      name: Cupcake Vainilla
       in_menu:
         - ck
     -
-      name: Cupcake de Plátano
+      name: Cupcake Nutella
       in_menu:
         - ck
     -
-      name: Yogurt griego
+      name: Cupcake Ganache
       in_menu: 
         - yg
     - 
-      name: Muffins vainilla con chips
+      name: Empanada de Queso
       in_menu: 
-        - mf
+        -
     - 
-      name: Brownie marmoleado
+      name: Brownie 
       in_menu: 
         - ck
 carta: 
