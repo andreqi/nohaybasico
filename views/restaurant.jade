@@ -5,9 +5,9 @@ div(class='4u')
     header
       div.same-line
         h3.same-line #{rest.name}
-      div 
+      div.vertical-middle 
         span S/. #{rest.price_range}
-        a.pull-right(class='button small', href='#') 
+        a.pull-right(class='button small', href='/#{rest.homeID}/info') 
           img(src='/images/walking2.png')
           span #{rest.walking_time}
     .row
