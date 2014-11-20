@@ -1,5 +1,6 @@
 display: true
 name: PUCP Comedor central
+walking_time: 6 min
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 6pm
 address: PUCP

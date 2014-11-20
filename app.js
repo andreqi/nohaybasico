@@ -74,6 +74,7 @@ app.get('/:id/menu', function(req, res) {
 app.get('/:id/info', function(req, res) {
   var id = req.params.id;
   var restaurant = get_restaurant(id);
+  var coords = restaurant.coordinates;
   res.render('restaurant-info', {
     restaurant: restaurant,
     active_tab: 'info',
