@@ -33,7 +33,7 @@ tipos_menu:
 dishes: 
   intro:
     -
-      name: Casuela de pollo 
+      name: Sopa trujillana
       in_menu:
         - ec
         - es
@@ -41,7 +41,7 @@ dishes:
         - ma
         - fr
     -
-      name: Ensalada Timbal de palta
+      name: Causa de pollo
       in_menu:
         - ec
         - es
@@ -49,24 +49,18 @@ dishes:
         - ma
         - fr
     -
-      name: Lasagna Artesanal
+      name: Ensalada mixta
       in_menu:
         - ec
-        - es
-    -
-      name: Tequeños de aji de gallina 
-      in_menu:
         - es
         - cr
         - ma
         - fr
     -
-      name: Cebiche + S/. 3
+      name: Tequeños con langostinos
       in_menu:
         - cr
-    -
-      name: Tequeños 
-      in_menu:
+        - ma
         - fr
     -
       name: Cebiche + S/. 5
@@ -74,53 +68,61 @@ dishes:
         - fr
   main:
     -
-      name: Enrrollado de pollo con p. fritas y ens.
+      name: Milanesa de pollo con p. fritas y ens.
       in_menu:
         - ec
     -
-      name: Ají de gallina
+      name: Coliflor saltada con carne
       in_menu:
         - ec
     -
-      name: Piqueo Criollo 
+      name: Mollejita al ajo con menestra
       in_menu:
         - ec
     -
-      name: Pollo sureño con panamito
+      name: Arroz con pollo y zarza criolla
       in_menu:
         - es
     -
-      name: Seco de ternera con panamito
+      name: Pollo al limón con ajiaco
       in_menu:
         - es
     -
-      name: Pollo cantones con papa sancochada   
+      name: Pescado fritocon ajiaco
       in_menu:
         - es
     -
-      name: Pechuga a la meniere con p. fritas
+      name: Pechuga de pollo a lo alfredo
       in_menu:
         - cr
     -
-      name: Milanesa de pollo a lo pobre
+      name: Seco de cordero a la chiclayana
       in_menu:
         - cr
     -
-      name: Churrasco a la germana con p. fritas y ens.
+      name: Parrila gaucha: churrasco, chorizo, hot dog, ensalada
       in_menu:
         - cr
     -
-      name: Filete de pescado en salsa de ajo
+      name: Arroz chaufa con crujiente de pollo
+      in_menu:
+        - cr
+    -
+      name: Guisado de pescado
       in_menu:
         - ma
     -
-      name: Mariscos a la chiclayana
+      name: Mariscos a lo alfredo
       in_menu:
         - ma
     -
-      name: Chicharron de huevera
+      name: Pescado en salsa blanca
       in_menu:
-        - ma    
+        - ma
+    -
+      name: Huevera encebollada
+      in_menu:
+        - ma
     -
       name: Arroz con pato
       in_menu:
