@@ -17,32 +17,28 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Aguadito
+      name: Sopa de Choros
       in_menu:
         - mn
     - 
-      name: Ensalada Francesa 
+      name: Papa a la huancaina 
       in_menu: 
         - mn
     - 
       name: Ensalada de Verduras
       in_menu:
         - mn
-    - 
-      name: Crema de Pimiento
-      in_menu:
-        - mn
   main:
     -
-      name: Pollo al horno
+      name: Malaya al horno
       in_menu:
         - mn   
     -
-      name: Alverjita partida con lomito 
+      name: Ají de gallina 
       in_menu:
         - mn   
     -
-      name: Chuleta a la parrilla 
+      name: Adobo de chancho
       in_menu:
         - mn   
     -
@@ -51,7 +47,7 @@ dishes:
         - mn   
   extras:
     - 
-      name: Yerba Luisa
+      name: Refresco
       in_menu:
         - mn
     
