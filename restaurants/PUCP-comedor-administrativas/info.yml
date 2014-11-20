@@ -1,4 +1,5 @@
 display: true
+walking_time: 2 mins
 name: PUCP Comedor administrativas
 last_update: ayer 
 time_open: Lunes a Sábado de 11.30am a 6pm
@@ -30,29 +31,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada mixta
+      name: Antipasto de verduras
       in_menu: 
         - be
     - 
-      name: Ensalada César
+      name: Ensalada fresca
       in_menu: 
         - me
   main:
     - 
-      name: Cerdo a la pachamanca, camote, arroz
+      name: Tallarines a la napolitana con pollo
       in_menu: 
         - ba
         - be
     - 
-      name: Pescado sudado, papa, arroz
+      name: Arroz con pollo, salsa criolla
       in_menu: 
         - me
     - 
-      name: Pollo al romero, frijoles, arroz
+      name: Pescado a la reina, papa, arroz
       in_menu: 
         - me
     - 
-      name: Frijoles guisados, arroz
+      name: Puré, arroz
       in_menu: 
         - ec
   extras:
@@ -71,7 +72,7 @@ dishes:
         - ec
         - me
     - 
-      name: Ensalada de frutas
+      name: Mouse de fruta
       in_menu:
         - me
 carta: 

@@ -1,5 +1,6 @@
 display: true
 name: Pucsito
+walking_time: 7 mins
 last_update: ayer 
 time_open: L-V de 8.30am a 5pm - 7pm a 9pm, S-D 9am - 5pm
 address: Av. Universitaria 1607
@@ -18,32 +19,32 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Huevo a la rusa
+      name: Causa con atún
       in_menu: 
         - nv
     -
-      name: Sopa de pollo
+      name: Sopa de casa
       in_menu:
         - nv
     -
-      name: Tequeños con guacamole
+      name: Ensalada de brócoli
       in_menu:
         - nv
   main:
     - 
-      name: Trigo guisado con pollo
+      name: Locro con pescado frito
       in_menu: 
         - nv
     - 
-      name: Estofado de pollo
+      name: Arroz con chancho
       in_menu: 
         - nv
     - 
-      name: Adobo de chancho
+      name: Carne al maní
       in_menu: 
         - nv
     - 
-      name: Carne a la norteña
+      name: Pollo al vino
       in_menu: 
         - nv
     - 
@@ -51,7 +52,7 @@ dishes:
       in_menu: 
         - nv
     - 
-      name: Olluquitos con pollo
+      name: Picante de carne
       in_menu: 
         - nv
   extras: 

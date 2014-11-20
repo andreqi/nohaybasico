@@ -1,6 +1,7 @@
 display: true
 name: Tambos
 last_update: ayer 
+walking_time: 5 mins
 time_open: Lunes a Sábado de 11.30am a 9pm , cena 6.30pm a 10.30pm
 address: Avenida Universitaria, Pueblo Libre
 price_range: 6.5 - 8.5
@@ -26,12 +27,12 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa de sémola
+      name: Sopa morón
       in_menu: 
         - ej
         - ec
     - 
-      name: Papa a la huancaína
+      name: Huevo en 2 salsas
       in_menu: 
         - ej
         - ec
@@ -42,11 +43,11 @@ dishes:
         - ec
   main:
     - 
-      name: Milanesa con p. fritas y ens.
+      name: Filete de pescado con p. dorada y salsa criolla
       in_menu: 
         - ej
     - 
-      name: Tacu tacu con bisteck
+      name: Churrasco con p. fritas + ens.
       in_menu: 
         - ej
     - 
@@ -58,17 +59,17 @@ dishes:
       in_menu: 
         - ej
     - 
-      name: Arroz con pollo
+      name: Pollo al horno con puré
       in_menu: 
         - un
         - ec
     - 
-      name: Malaya dorada con yuca
+      name: Pollo a la strogonoff
       in_menu: 
         - un
         - ec
     - 
-      name: Tortilla de verduras
+      name: Mondonguito a la italiana
       in_menu: 
         - un
         - ec

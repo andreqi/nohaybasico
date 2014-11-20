@@ -1,6 +1,6 @@
 display: false
 name: Da Gusto
-last_uSpdate:  4-12
+walking_time: 5 mins
 time_open: Lunes a Sábado de 12pm a 5pm
 address: Av. Mariano Cornejo 2286, Pueblo Libre
 price_range: 4 - 11
@@ -31,8 +31,7 @@ dishes:
         - mc
         - en
     -
-      name: Ocopa
-
+      name: Huevo a la rusa
       in_menu: 
         - mc
         - en
@@ -43,17 +42,17 @@ dishes:
         - en
   main:
     -
-      name: Arvejas con asado
+      name: Garbanzos con pollo a la napolitana
       in_menu: 
         - mc
         - fo    
     -
-      name: Pollo al horno
+      name: Lechón al ají panca
       in_menu: 
         - mc
         - fo    
     -
-      name: Lomo saltado
+      name: Pollo al limón
       in_menu: 
         - mc
         - fo    

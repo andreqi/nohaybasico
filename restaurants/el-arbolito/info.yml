@@ -1,5 +1,6 @@
 display: true
 name: El arbolito
+walking_time: 7 mins
 last_update: ayer 
 time_open: Lunes a Viernes 9am a 10pm Sábados de 9am a 5pm
 address: Avenida Universitaria 1757
@@ -22,7 +23,7 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ocopa arequipeña
+      name: Ceviche de gluten con cocona
       in_menu: 
         - di
         - es
@@ -32,25 +33,25 @@ dishes:
         - di
         - es
     - 
-      name: Sopa de morón
+      name: Chupe de ollucos
       in_menu: 
         - di
         - es
   main:
     - 
-      name: Adobo con fréjol panamito
+      name: Estofado de pollovel
       in_menu: 
         - di
     - 
-      name: Seco norteño vegetariano
+      name: Guiso de trigo con bisteckvel
       in_menu: 
         - di
     - 
-      name: Espagueti al pesto con plátano
+      name: Tallarín saltado criollo
       in_menu: 
         - es
     - 
-      name: Bisteckvel con puré y arroz
+      name: Tortilla de verduras
       in_menu: 
         - es
   extras:
