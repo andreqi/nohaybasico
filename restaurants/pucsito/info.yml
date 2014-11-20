@@ -19,32 +19,32 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Huevo a la rusa
+      name: Causa con atún
       in_menu: 
         - nv
     -
-      name: Sopa de pollo
+      name: Sopa de casa
       in_menu:
         - nv
     -
-      name: Tequeños con guacamole
+      name: Ensalada de brócoli
       in_menu:
         - nv
   main:
     - 
-      name: Trigo guisado con pollo
+      name: Locro con pescado frito
       in_menu: 
         - nv
     - 
-      name: Estofado de pollo
+      name: Arroz con chancho
       in_menu: 
         - nv
     - 
-      name: Adobo de chancho
+      name: Carne al maní
       in_menu: 
         - nv
     - 
-      name: Carne a la norteña
+      name: Pollo al vino
       in_menu: 
         - nv
     - 
@@ -52,7 +52,7 @@ dishes:
       in_menu: 
         - nv
     - 
-      name: Olluquitos con pollo
+      name: Picante de carne
       in_menu: 
         - nv
   extras: 
