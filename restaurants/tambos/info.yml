@@ -27,12 +27,12 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa cazuela de res
+      name: Sopa morón
       in_menu: 
         - ej
         - ec
     - 
-      name: Palta la jardinera
+      name: Huevo en 2 salsas
       in_menu: 
         - ej
         - ec
@@ -43,11 +43,11 @@ dishes:
         - ec
   main:
     - 
-      name: Arroz árabe con pollo al horno
+      name: Filete de pescado con p. dorada y salsa criolla
       in_menu: 
         - ej
     - 
-      name: Bisteck enrollado con jamón y queso
+      name: Churrasco con p. fritas + ens.
       in_menu: 
         - ej
     - 
@@ -59,17 +59,17 @@ dishes:
       in_menu: 
         - ej
     - 
-      name: Tallarines verdes con milanesa
+      name: Pollo al horno con puré
       in_menu: 
         - un
         - ec
     - 
-      name: Pallares con pescado
+      name: Pollo a la strogonoff
       in_menu: 
         - un
         - ec
     - 
-      name: Vainita saltada de carne y huevo frito
+      name: Mondonguito a la italiana
       in_menu: 
         - un
         - ec
