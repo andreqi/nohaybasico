@@ -31,8 +31,7 @@ dishes:
         - mc
         - en
     -
-      name: Ensalada de fideos
-
+      name: Huevo a la rusa
       in_menu: 
         - mc
         - en
@@ -43,17 +42,17 @@ dishes:
         - en
   main:
     -
-      name: Frejol panamito con pollo enrollado
+      name: Garbanzos con pollo a la napolitana
       in_menu: 
         - mc
         - fo    
     -
-      name: Ají de gallina
+      name: Lechón al ají panca
       in_menu: 
         - mc
         - fo    
     -
-      name: Pollo al maracuyá
+      name: Pollo al limón
       in_menu: 
         - mc
         - fo    
