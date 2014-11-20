@@ -35,33 +35,33 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Mixtura de verduras
+      name: Ensalada fresca
       in_menu: 
         - be
     - 
-      name: Ensalada multicolor
+      name: Ensalada de betarragas
       in_menu: 
         - me
   main:
     - 
-      name: Lomito de hígado, arveja verde, arroz
+      name: Cerdo asado, legumbres, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Estofado de pollo, papa , arroz
+      name: Pollo a las finas hierbas, puré, arroz
       in_menu: 
         - me
     - 
-      name: Asado a la italiana, legumbres, arroz
+      name: Carne al vino, yuca, arroz
       in_menu: 
         - me
     - 
-      name: Alverjita verde guisada, arroz
+      name: Puré, arroz
       in_menu: 
         - ec
     - 
-      name: Lomito vegetal, arveja verde, arroz
+      name: Carne vegetal asada, legumbres, arroz
       in_menu:
         - ve
   extras:
@@ -81,7 +81,7 @@ dishes:
         - ec
         - me
     - 
-      name: Budín con miel
+      name: Manzana al horno
       in_menu:
         - me
 carta: 

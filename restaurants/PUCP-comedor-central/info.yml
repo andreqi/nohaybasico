@@ -35,33 +35,33 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Antipasto de verduras
+      name: Ensalada fresca
       in_menu: 
         - be
     - 
-      name: Salpicón de verduras
+      name: Ensalada Griega
       in_menu: 
         - me
   main:
     - 
-      name: Pollo a la mostaza, legumbres, arroz
+      name: Pescado en salsa de tamarindo, papa, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pescado a la pimienta, legumbres, arroz
+      name: Adobo de pollo, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Tallarines a la boloñesa con carne molida
+      name: Hígado a la plancha, alverjita verde, arroz
       in_menu: 
         - me
     - 
-      name: Tallarines al tuco
+      name: Alverjita verde guisada, arroz
       in_menu: 
         - ec
     - 
-      name: Carne vegetal a la mostaza, legumbres, arroz
+      name: Albóndiga vegetal en salsa de tamarindo, papa, arroz
       in_menu: 
         - ve
   extras:
@@ -81,7 +81,7 @@ dishes:
         - ec
         - me
     - 
-      name: Compota de frutas
+      name: Mandarina
       in_menu:
         - me
 carta: 
