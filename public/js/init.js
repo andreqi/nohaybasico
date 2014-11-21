@@ -6,39 +6,27 @@
 
 (function($) {
 
+  var breakpoints_desktop = {
+    'global':	{ range: '*', href: '/css/style.css' },
+    'desktop':	{ range: '737-', href: '/css/style-desktop.css', containers: 1200, grid: { gutters: 50 } },
+    '1000px':	{ range: '737-1200', href: '/css/style-1000px.css', containers: 960, grid: { gutters: 25 }, viewport: { width: 1024 } },
+    'mobile':	{ range: '-736', href: '/css/style-mobile.css', containers: '100%', grid: { collapse: true, gutters: 10 }, viewport: { scalable: false } }
+  };
+
+  var breakpoints_mobile = {
+    'global':	{ range: '*', href: '/css/style.css' },
+    'mobile':	{ range: '*', href: '/css/style-mobile.css', containers: '100%', grid: { collapse: true, gutters: 10 }, viewport: { scalable: false } }
+  };
+
+  var breakpoints = breakpoints_desktop;
+  if (/Motumbito-Labs/.test(navigator.userAgent)) {
+    breakpoints = breakpoints_mobile;
+  }
+
 	skel.init({
 		reset: 'full',
-		breakpoints: {
-			'global':	{ range: '*', href: '/css/style.css' },
-			'desktop':	{ range: '737-', href: '/css/style-desktop.css', containers: 1200, grid: { gutters: 50 } },
-			'1000px':	{ range: '737-1200', href: '/css/style-1000px.css', containers: 960, grid: { gutters: 25 }, viewport: { width: 1024 } },
-			'mobile':	{ range: '-736', href: '/css/style-mobile.css', containers: '100%', grid: { collapse: true, gutters: 10 }, viewport: { scalable: false } }
-		},
-		plugins: {
-      /*
-			layers: {
-				navPanel: {
-					hidden: true,
-					breakpoints: 'mobile',
-					position: 'top-left',
-					side: 'left',
-					animation: 'pushX',
-					width: '80%',
-					height: '100%',
-					clickToHide: true,
-					html: '<div data-action="navList" data-args="nav"></div>',
-					orientation: 'vertical'
-				},
-				titleBar: {
-					breakpoints: 'mobile',
-					position: 'top-left',
-					side: 'top',
-					height: 44,
-					width: '100%',
-					html: '<span class="toggle" data-action="toggleLayer" data-args="navPanel"></span><span class="title" data-action="copyHTML" data-args="logo"></span>'
-				} 
-			}*/
-		}
+		breakpoints: breakpoints,
+		plugins: {}
 	});
 
 	$(function() {
