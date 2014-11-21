@@ -49,7 +49,7 @@ app.get('/:id', function(req, res) {
   var id = req.params.id;
   var restaurant = get_restaurant(id);
   var mLog = new modelLog({
-      data: restaurant.name,
+      data: id,
       time: log.getTime()
     });
   mLog.save(function(err, model) {
