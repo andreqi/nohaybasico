@@ -35,33 +35,33 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada fresca
+      name: Causa limeña
       in_menu: 
         - be
     - 
-      name: Ensalada de betarragas
+      name: Ensalada festiva
       in_menu: 
         - me
   main:
     - 
-      name: Cerdo asado, legumbres, arroz
+      name: Carne al tomillo, salpicón de verduras, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pollo a las finas hierbas, puré, arroz
+      name: Cerdo Novo andino, papa, arroz
       in_menu: 
         - me
     - 
-      name: Carne al vino, yuca, arroz
+      name: Pescado al ajo, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Puré, arroz
+      name: Arroz chaufa
       in_menu: 
         - ec
     - 
-      name: Carne vegetal asada, legumbres, arroz
+      name: Carne vegetal al tomillo, salpicón de verduras, arroz
       in_menu:
         - ve
   extras:
@@ -81,7 +81,7 @@ dishes:
         - ec
         - me
     - 
-      name: Manzana al horno
+      name: Flan
       in_menu:
         - me
 carta: 

@@ -31,29 +31,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Antipasto de verduras
+      name: Ensalada de tomates
       in_menu: 
         - be
     - 
-      name: Ensalada fresca
+      name: Ensalada del huerto
       in_menu: 
         - me
   main:
     - 
-      name: Tallarines a la napolitana con pollo
+      name: Hígado a la parrilla, panamitos, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Arroz con pollo, salsa criolla
+      name: Carne a la española, legumbres , arroz
       in_menu: 
         - me
     - 
-      name: Pescado a la reina, papa, arroz
+      name: Pollo a la naranja, papa, arroz
       in_menu: 
         - me
     - 
-      name: Puré, arroz
+      name: Panamitos guisados, arroz
       in_menu: 
         - ec
   extras:
@@ -72,7 +72,7 @@ dishes:
         - ec
         - me
     - 
-      name: Mouse de fruta
+      name: Pudín
       in_menu:
         - me
 carta: 

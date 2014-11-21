@@ -35,33 +35,33 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada fresca
+      name: Papa en salsa de ají
       in_menu: 
         - be
     - 
-      name: Ensalada Griega
+      name: Ensalada verde
       in_menu: 
         - me
   main:
     - 
-      name: Pescado en salsa de tamarindo, papa, arroz
+      name: Pollo al horno, ensalada Kentucky, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Adobo de pollo, legumbres, arroz
+      name: Pescado florentina ,legumbres , arroz
       in_menu: 
         - me
     - 
-      name: Hígado a la plancha, alverjita verde, arroz
+      name: Pollo a la paisana, papa, arroz
       in_menu: 
         - me
     - 
-      name: Alverjita verde guisada, arroz
+      name: Huevo frito, arroz
       in_menu: 
         - ec
     - 
-      name: Albóndiga vegetal en salsa de tamarindo, papa, arroz
+      name: Milanesa vegetal, ensalada Kentucky, arroz
       in_menu: 
         - ve
   extras:
@@ -81,7 +81,7 @@ dishes:
         - ec
         - me
     - 
-      name: Mandarina
+      name: Gelatina bicolor
       in_menu:
         - me
 carta: 

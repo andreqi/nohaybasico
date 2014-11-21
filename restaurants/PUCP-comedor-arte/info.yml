@@ -31,29 +31,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada mixta
+      name: Ensalada fresca
       in_menu: 
         - be
     - 
-      name: Ensalada mixta con palta
+      name: Ensalada del chef
       in_menu: 
         - me
   main:
     - 
-      name: Cau cau a la limeña, arroz
+      name: Pescado en crema de rocoto, papa, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pescado salsa espárragos, papa, arroz
+      name: Estofado de res, camote, arroz
       in_menu: 
         - me
     - 
-      name: Hamburguesa picante, papa, arroz
+      name: Pollo al maní, papa, arroz
       in_menu: 
         - me
     - 
-      name: Arroz chaufa
+      name: Tortilla de verduras, arroz
       in_menu: 
         - ec
   extras:
@@ -72,7 +72,7 @@ dishes:
         - ec
         - me
     - 
-      name: Fantasía de gelatina
+      name: Budín de sémola
       in_menu:
         - me
 carta: 
