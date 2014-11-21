@@ -20,15 +20,15 @@ tipos_menu:
 dishes: 
   intro: 
     - 
-      name: Sopa a la minuta
+      name: Sopa de pollo con kión
       in_menu: 
         - me
     - 
-      name: Salpicón con pollo
+      name: Papa a la huancaína
       in_menu: 
         - me
     - 
-      name: Huevo a la rusa
+      name: Ensalada de brócoli
       in_menu: 
         - me
     - 
@@ -37,15 +37,15 @@ dishes:
         - me
   main:
     - 
-      name: Asado de res con puré
+      name: Tallarines rojos con pollo
       in_menu: 
         - me
     - 
-      name: Pollo al sillao
+      name: Estofado de pollo
       in_menu: 
         - me
     - 
-      name: Seco de res con frejoles
+      name: Chuleta de chancho con menestras
       in_menu: 
         - me
     - 
@@ -53,19 +53,19 @@ dishes:
       in_menu: 
         - me
     - 
-      name: Arroz chaufa con milanesa
+      name: Arroz chaufa de carne
       in_menu: 
         - me
     - 
-      name: Picante de carne
+      name: Pollo al maní
       in_menu: 
         - me
     - 
-      name: Filete de tollo con menestras
+      name: Apanado de tollo con menestras
       in_menu: 
         - me
     - 
-      name: Pollo broaster con p. fritas + ens.
+      name: Bisteck con p. fritas + ens.
       in_menu: 
         - me
   extras: 
