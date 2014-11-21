@@ -23,7 +23,7 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ceviche de gluten con cocona
+      name: Papa rellena
       in_menu: 
         - di
         - es
@@ -33,25 +33,25 @@ dishes:
         - di
         - es
     - 
-      name: Chupe de ollucos
+      name: Sopa de casa
       in_menu: 
         - di
         - es
   main:
     - 
-      name: Estofado de pollovel
+      name: Bisteckvel en salsa de champiñones
       in_menu: 
         - di
     - 
-      name: Guiso de trigo con bisteckvel
+      name: Pollovel a la mostaza
       in_menu: 
         - di
     - 
-      name: Tallarín saltado criollo
+      name: Tallarín con queso y mantequilla
       in_menu: 
         - es
     - 
-      name: Tortilla de verduras
+      name: Tortilla de vainitas
       in_menu: 
         - es
   extras:
@@ -65,8 +65,5 @@ dishes:
       in_menu:
         - di
         - es
-carta: 
-
-- es
 carta: 
 
