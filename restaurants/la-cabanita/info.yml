@@ -33,7 +33,7 @@ tipos_menu:
 dishes: 
   intro:
     -
-      name: Sopa trujillana
+      name: Chupín mixto
       in_menu:
         - ec
         - es
@@ -41,7 +41,7 @@ dishes:
         - ma
         - fr
     -
-      name: Causa de pollo
+      name: Crema de pollo brasa
       in_menu:
         - ec
         - es
@@ -57,7 +57,7 @@ dishes:
         - ma
         - fr
     -
-      name: Tequeños con langostinos
+      name: Tequeños de pollo
       in_menu:
         - cr
         - ma
@@ -68,59 +68,47 @@ dishes:
         - fr
   main:
     -
-      name: Milanesa de pollo con p. fritas y ens.
+      name: Mondonguito a la italiana
       in_menu:
         - ec
     -
-      name: Coliflor saltada con carne
+      name: Enrollado de pollo con p. fritas + ens.
       in_menu:
         - ec
     -
-      name: Mollejita al ajo con menestra
+      name: Pescado frito con pallares
       in_menu:
         - ec
     -
-      name: Arroz con pollo y zarza criolla
+      name: Pollo en punto brasa con p. fritas + ens.
       in_menu:
         - es
     -
-      name: Pollo al limón con ajiaco
+      name: Estofado de pollo con papa sancochada
       in_menu:
         - es
     -
-      name: Pescado fritocon ajiaco
-      in_menu:
-        - es
-    -
-      name: Pechuga de pollo a lo alfredo
+      name: Churrasco encebollado con p. fritas + ens.
       in_menu:
         - cr
     -
-      name: Seco de cordero a la chiclayana
+      name: Pechuga de pollo a la BBQ con p. fritas. + ens.
       in_menu:
         - cr
     -
-      name: Parrila gaucha: churrasco, chorizo, hot dog, ensalada
+      name: Chuleta asada con camote al horno
       in_menu:
         - cr
     -
-      name: Arroz chaufa con crujiente de pollo
-      in_menu:
-        - cr
-    -
-      name: Guisado de pescado
+      name: Seco de pescado
       in_menu:
         - ma
     -
-      name: Mariscos a lo alfredo
+      name: Mariscos a la diabla tipo picante de mariscos
       in_menu:
         - ma
     -
-      name: Pescado en salsa blanca
-      in_menu:
-        - ma
-    -
-      name: Huevera encebollada
+      name: Pescado en salsa napolitanacon papa sancochada
       in_menu:
         - ma
     -
