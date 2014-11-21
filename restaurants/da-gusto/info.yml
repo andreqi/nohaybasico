@@ -31,7 +31,7 @@ dishes:
         - mc
         - en
     -
-      name: Huevo a la rusa
+      name: Causa rellena
       in_menu: 
         - mc
         - en
@@ -42,17 +42,17 @@ dishes:
         - en
   main:
     -
-      name: Garbanzos con pollo a la napolitana
+      name: Frejoles con seco
       in_menu: 
         - mc
         - fo    
     -
-      name: Lechón al ají panca
+      name: Chuletas a la cerveza
       in_menu: 
         - mc
         - fo    
     -
-      name: Pollo al limón
+      name: Pollo al BBQ
       in_menu: 
         - mc
         - fo    
