@@ -27,12 +27,12 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa morón
+      name: Sopa carbonara
       in_menu: 
         - ej
         - ec
     - 
-      name: Huevo en 2 salsas
+      name: Anticuchos al plato con crema de rocoto
       in_menu: 
         - ej
         - ec
@@ -43,11 +43,11 @@ dishes:
         - ec
   main:
     - 
-      name: Filete de pescado con p. dorada y salsa criolla
+      name: Tallarines a la huancaína con churrasco
       in_menu: 
         - ej
     - 
-      name: Churrasco con p. fritas + ens.
+      name: Pollo enrollado con jamón y queso
       in_menu: 
         - ej
     - 
@@ -59,17 +59,17 @@ dishes:
       in_menu: 
         - ej
     - 
-      name: Pollo al horno con puré
+      name: Ají de pollo
       in_menu: 
         - un
         - ec
     - 
-      name: Pollo a la strogonoff
+      name: Seco de res con yuca
       in_menu: 
         - un
         - ec
     - 
-      name: Mondonguito a la italiana
+      name: Arroz a la cubana
       in_menu: 
         - un
         - ec
