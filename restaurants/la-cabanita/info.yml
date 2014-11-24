@@ -33,7 +33,7 @@ tipos_menu:
 dishes: 
   intro:
     -
-      name: Chupín mixto
+      name: Caldo de gallina
       in_menu:
         - ec
         - es
@@ -41,7 +41,7 @@ dishes:
         - ma
         - fr
     -
-      name: Crema de pollo brasa
+      name: Causa fusión
       in_menu:
         - ec
         - es
@@ -49,38 +49,40 @@ dishes:
         - ma
         - fr
     -
-      name: Ensalada mixta
+      name: Macarrones a la huancaína
       in_menu:
         - ec
-        - es
         - cr
         - ma
         - fr
     -
-      name: Tequeños de pollo
+      name: Tequeños de queso
       in_menu:
-        - cr
-        - ma
         - fr
+    -
+      name: Cebiche mixto + S/. 3
+      in_menu:
+        - es
+        - ma
     -
       name: Cebiche + S/. 5
       in_menu:
         - fr
   main:
     -
-      name: Mondonguito a la italiana
+      name: Picante de carne
       in_menu:
         - ec
     -
-      name: Enrollado de pollo con p. fritas + ens.
+      name: Milanesa de pollo + p.fritas
       in_menu:
         - ec
     -
-      name: Pescado frito con pallares
+      name: Enrollado de pollo + p.fritas. + ens.
       in_menu:
         - ec
     -
-      name: Pollo en punto brasa con p. fritas + ens.
+      name: Lechón asado con lentejas
       in_menu:
         - es
     -
@@ -96,29 +98,21 @@ dishes:
       in_menu:
         - cr
     -
-      name: Chuleta asada con camote al horno
+      name: Churrasco con tallarín verde
       in_menu:
         - cr
     -
-      name: Seco de pescado
+      name: Filete de pescado a la chorrillana
       in_menu:
         - ma
     -
-      name: Mariscos a la diabla tipo picante de mariscos
+      name: Chicharrón de pescado con lentejas
       in_menu:
         - ma
     -
-      name: Pescado en salsa napolitanacon papa sancochada
+      name: Mariscos a la diabla
       in_menu:
         - ma
-    -
-      name: Arroz con pato
-      in_menu:
-        - fr
-    -
-      name: Cabrito a la norteña con yuca
-      in_menu:
-        - fr
     -
       name: Lomo saltado
       in_menu:
