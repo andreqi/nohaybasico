@@ -26,12 +26,12 @@ tipos_menu:
 dishes: 
   intro:
     -
-      name: Sopa de pollo
+      name: Sopa fuchifú
       in_menu: 
         - mc
         - en
     -
-      name: Causa rellena
+      name: Ensalada de fideos
       in_menu: 
         - mc
         - en
@@ -42,17 +42,17 @@ dishes:
         - en
   main:
     -
-      name: Frejoles con seco
+      name: Lentejas con seco
       in_menu: 
         - mc
         - fo    
     -
-      name: Chuletas a la cerveza
+      name: Ají de gallina
       in_menu: 
         - mc
         - fo    
     -
-      name: Pollo al BBQ
+      name: Pollo 7 sabores
       in_menu: 
         - mc
         - fo    
