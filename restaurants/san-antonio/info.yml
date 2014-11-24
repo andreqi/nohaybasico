@@ -25,6 +25,7 @@ dishes:
       in_menu:
         - mn
   main:
+    -
       name: Picante de carne 
       in_menu:
         - mn   
@@ -41,4 +42,3 @@ dishes:
       name: Yerba Luisa
       in_menu:
         - mn
-    
