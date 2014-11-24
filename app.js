@@ -48,18 +48,11 @@ app.get('/', function(req, res) {
 app.get('/:id', function(req, res) {
   var id = req.params.id;
   var restaurant = get_restaurant(id);
-  var mLog = new modelLog({
-      data: id,
-      time: log.getTime()
-    });
-  mLog.save(function(err, model) {
-    if(err) console.log(err);
-    if (has_menu(restaurant)) {
+  if (has_menu(restaurant)) {
       res.redirect('/'+id+'/menu');
     } else {
       res.redirect('/'+id+'/carta');
     }
-  });
 });
 
 app.get('/:id/menu', function(req, res) {
