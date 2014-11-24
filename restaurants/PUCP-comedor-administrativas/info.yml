@@ -31,29 +31,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada de tomates
+      name: Ensalada fresca
       in_menu: 
         - be
     - 
-      name: Ensalada del huerto
+      name: Ensalada griega
       in_menu: 
         - me
   main:
     - 
-      name: Hígado a la parrilla, panamitos, arroz
+      name: Tallarines a la boloñesa con carne molida
       in_menu: 
         - ba
         - be
     - 
-      name: Carne a la española, legumbres , arroz
+      name: Adobo de cerdo, camote, arroz
       in_menu: 
         - me
     - 
-      name: Pollo a la naranja, papa, arroz
+      name: Pollo a la diabla, camote, arroz
       in_menu: 
         - me
     - 
-      name: Panamitos guisados, arroz
+      name: Tallarines al tuco
       in_menu: 
         - ec
   extras:
@@ -72,7 +72,7 @@ dishes:
         - ec
         - me
     - 
-      name: Pudín
+      name: Fruta
       in_menu:
         - me
 carta: 

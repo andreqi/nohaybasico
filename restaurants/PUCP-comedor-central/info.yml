@@ -35,33 +35,33 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Papa en salsa de ají
+      name: Ensalada mixta
       in_menu: 
         - be
     - 
-      name: Ensalada verde
+      name: Ensalada fresca con huevo
       in_menu: 
         - me
   main:
     - 
-      name: Pollo al horno, ensalada Kentucky, arroz
+      name: Pollo a la norteña, papa, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pescado florentina ,legumbres , arroz
+      name: Pescado a la menier, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Pollo a la paisana, papa, arroz
+      name: Carne al tomillo, papa, arroz
       in_menu: 
         - me
     - 
-      name: Huevo frito, arroz
+      name: Arroz chaufa
       in_menu: 
         - ec
     - 
-      name: Milanesa vegetal, ensalada Kentucky, arroz
+      name: Carne vegetal a la norteña, papa, arroz
       in_menu: 
         - ve
   extras:
@@ -81,7 +81,7 @@ dishes:
         - ec
         - me
     - 
-      name: Gelatina bicolor
+      name: Fruta
       in_menu:
         - me
 carta: 

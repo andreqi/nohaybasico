@@ -35,25 +35,25 @@ dishes:
       in_menu: 
         - be
     - 
-      name: Ensalada del chef
+      name: Salpicón de verduras
       in_menu: 
         - me
   main:
     - 
-      name: Pescado en crema de rocoto, papa, arroz
+      name: Pollo a la norteña, papa, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Estofado de res, camote, arroz
+      name: Pescado sudado, yuca, arroz
       in_menu: 
         - me
     - 
-      name: Pollo al maní, papa, arroz
+      name: Carbonada de res, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Tortilla de verduras, arroz
+      name: Arroz chaufa
       in_menu: 
         - ec
   extras:
@@ -72,7 +72,7 @@ dishes:
         - ec
         - me
     - 
-      name: Budín de sémola
+      name: Mandarina
       in_menu:
         - me
 carta: 

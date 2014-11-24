@@ -35,33 +35,33 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Causa limeña
+      name: Ensalada mixta
       in_menu: 
         - be
     - 
-      name: Ensalada festiva
+      name: Tequeños con guacamole
       in_menu: 
         - me
   main:
     - 
-      name: Carne al tomillo, salpicón de verduras, arroz
+      name: Hígado en salsa de anticucho, lentejas, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Cerdo Novo andino, papa, arroz
+      name: Pollo al pimiento, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Pescado al ajo, legumbres, arroz
+      name: Pescado sudado, camote, arroz
       in_menu: 
         - me
     - 
-      name: Arroz chaufa
+      name: Lentejas guisadas, arroz
       in_menu: 
         - ec
     - 
-      name: Carne vegetal al tomillo, salpicón de verduras, arroz
+      name: Lomito vegetal, lentejas, arroz
       in_menu:
         - ve
   extras:
@@ -81,7 +81,7 @@ dishes:
         - ec
         - me
     - 
-      name: Flan
+      name: Fantasía de Gelatina
       in_menu:
         - me
 carta: 

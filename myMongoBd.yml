@@ -14,13 +14,13 @@ menus:
     is_updated: true
   -
     name: aroma-sabor
-    is_updated: true
+    is_updated: false
   -
     name: da-gusto
-    is_updated: true
+    is_updated: false
   -
     name: el-arbolito
-    is_updated: true
+    is_updated: false
   -
     name: el-saborcito
     is_updated: false
@@ -32,22 +32,22 @@ menus:
     is_updated: false
   -
     name: la-cabanita
-    is_updated: true
+    is_updated: false
   -
     name: morenamia
     is_updated: false
   -
     name: pucsito
-    is_updated: true
+    is_updated: false
   -
     name: san-antonio
     is_updated: false
   -
     name: tambos
-    is_updated: true
+    is_updated: false
   -
     name: tia-carino
     is_updated: false
   - 
     name: pizza-hut
-    is_updated: true
+    is_updated: false
