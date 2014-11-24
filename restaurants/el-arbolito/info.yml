@@ -23,7 +23,7 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Papa rellena
+      name: Causa limeña
       in_menu: 
         - di
         - es
@@ -33,25 +33,25 @@ dishes:
         - di
         - es
     - 
-      name: Sopa de casa
+      name: Cazuela de verduras
       in_menu: 
         - di
         - es
   main:
     - 
-      name: Bisteckvel en salsa de champiñones
+      name: Guiso de lentejas
       in_menu: 
         - di
     - 
-      name: Pollovel a la mostaza
+      name: Caigua rellena
       in_menu: 
         - di
     - 
-      name: Tallarín con queso y mantequilla
+      name: Arroz a la cubana
       in_menu: 
         - es
     - 
-      name: Tortilla de vainitas
+      name: Espagueti a la bolognesa
       in_menu: 
         - es
   extras:
