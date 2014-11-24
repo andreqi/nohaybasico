@@ -17,11 +17,7 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa de Choros
-      in_menu:
-        - mn
-    - 
-      name: Papa a la huancaina 
+      name: Causa 
       in_menu: 
         - mn
     - 
@@ -29,25 +25,20 @@ dishes:
       in_menu:
         - mn
   main:
-    -
-      name: Malaya al horno
+      name: Picante de carne 
       in_menu:
         - mn   
     -
-      name: Ají de gallina 
+      name: Seco de pollo
       in_menu:
         - mn   
     -
-      name: Adobo de chancho
-      in_menu:
-        - mn   
-    -
-      name: Cau cau 
+      name: Fricase de carne
       in_menu:
         - mn   
   extras:
     - 
-      name: Refresco
+      name: Yerba Luisa
       in_menu:
         - mn
     
