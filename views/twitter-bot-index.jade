@@ -32,11 +32,16 @@ block content
     .row
       .12u
         section
+          - var noMenus = restaurants.length == 0
+
           header.major#menus
             if !menu_active
               h2 Los menús actualizados ya vienen
+            else if noMenus
+              h2 Twitter Bot no encontró tu plato :(
             else
-              h2 Twitter Bot te recomienda estos restaurants                
-          div(class='row columns')
-            each rest in restaurants
-              include restaurant
+              h2 Twitter Bot te recomienda estos restaurants
+          if !noMenus 
+            div(class='row columns')
+              each rest in restaurants
+                include restaurant
