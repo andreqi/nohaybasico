@@ -23,4 +23,5 @@ div(class='4u')
             li.12u .
     footer
       - var redirect = rest.dishes ? 'menu' : 'carta';
-      a(class='button alt', href='#{rest.homeID}/#{redirect}') Ver más
+      - urlBegin = twitterBot || '/'
+      a(class='button alt', href='#{urlBegin}#{rest.homeID}/#{redirect}') Ver más

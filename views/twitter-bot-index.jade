@@ -1,0 +1,42 @@
+extends ./main-template.jade
+
+block title
+  #header-wrapper
+    #header
+      include title
+      section#banner
+        header
+          if !menu_active
+            h2 Vuelve pronto 
+            p
+              | Twitter Bot se encuentra recargando energías.
+              br
+              | Lo enchufaremos a las 11 am.
+          else 
+            h2 No hay básico
+            p 
+              | Twitter Bot sabe que hoy 
+              b #{cur_day}
+              br
+              |  quieres comer 
+              b #{dish}
+              |  . 
+              br
+              | Chequea los restaurants que encontramos
+              br
+              | para ti aquí abajo.
+              
+
+block content
+  .container
+    .row
+      .12u
+        section
+          header.major#menus
+            if !menu_active
+              h2 Los menús actualizados ya vienen
+            else
+              h2 Twitter Bot te recomienda estos restaurants                
+          div(class='row columns')
+            each rest in restaurants
+              include restaurant
