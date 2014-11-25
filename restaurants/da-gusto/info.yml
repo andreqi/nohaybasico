@@ -26,12 +26,12 @@ tipos_menu:
 dishes: 
   intro:
     -
-      name: Sopa fuchifú
+      name: Menestrón
       in_menu: 
         - mc
         - en
     -
-      name: Ensalada de fideos
+      name: Ensalada mixta
       in_menu: 
         - mc
         - en
@@ -42,17 +42,17 @@ dishes:
         - en
   main:
     -
-      name: Lentejas con seco
+      name: Arvejas con res entomatada
       in_menu: 
         - mc
         - fo    
     -
-      name: Ají de gallina
+      name: Pollo napolitana con puré
       in_menu: 
         - mc
         - fo    
     -
-      name: Pollo 7 sabores
+      name: Pollo al maracuyá
       in_menu: 
         - mc
         - fo    
