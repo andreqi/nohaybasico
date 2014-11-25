@@ -27,12 +27,12 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa caldilla de huevo
+      name: Jamón enrollado con verduras
       in_menu: 
         - ej
         - ec
     - 
-      name: Tequeños con guacamole
+      name: Sopa de crema de arvejas
       in_menu: 
         - ej
         - ec
@@ -43,11 +43,11 @@ dishes:
         - ec
   main:
     - 
-      name: Suprema de pollo + p.fritas + ens.
+      name: Pollo asado con ensalada primavera
       in_menu: 
         - ej
     - 
-      name: Asado de res con puré
+      name: Churrasco con p. fritas + ens.
       in_menu: 
         - ej
     - 
@@ -59,23 +59,28 @@ dishes:
       in_menu: 
         - ej
     - 
-      name: Lentejas con filete de pollo
+      name: Tallarines rojos con pollo
       in_menu: 
         - un
         - ec
     - 
-      name: Estofado de res con papa
+      name: Pollo al horno con p. fritas + ens
       in_menu: 
         - un
         - ec
     - 
-      name: Cau-cau criollo
+      name: Puré con bisteck apanado
+      in_menu: 
+        - un
+        - ec
+    - 
+      name: Arroz a la jardinera con carne al jugo
       in_menu: 
         - un
         - ec
   extras:
     - 
-      name: Refresco de hierba luisa
+      name: Refresco
       in_menu: 
         - ej
         - un
