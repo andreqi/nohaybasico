@@ -20,15 +20,15 @@ tipos_menu:
 dishes: 
   intro: 
     - 
-      name: Menestrón
+      name: Sopa de pollo con kión
       in_menu: 
         - me
     - 
-      name: Papa a la huancaína
+      name: Crema de rocoto
       in_menu: 
         - me
     - 
-      name: Causa rellena
+      name: Ensalada tricolor
       in_menu: 
         - me
     - 
@@ -37,35 +37,35 @@ dishes:
         - me
   main:
     - 
-      name: Asado de res con puré
+      name: Ají de gallina
       in_menu: 
         - me
     - 
-      name: Arroz con pollo + salsa criolla
+      name: Malaya dorada + papa dorada + salsa criolla
       in_menu: 
         - me
     - 
-      name: Estofado de res
+      name: Pollo a la mostaza
       in_menu: 
         - me
     - 
-      name: Macarrones con carne molida
+      name: Tallarín saltado con carne
       in_menu: 
         - me
     - 
-      name: Pollo a la coca cola
+      name: Arroz chaufa con milanesa
       in_menu: 
         - me
     - 
-      name: Mondonguito a la italiana
+      name: Churrasco al jugo con frejoles
       in_menu: 
         - me
     - 
-      name: Filete de toyo con menestras
+      name: Escabeche de toyo
       in_menu: 
         - me
     - 
-      name: Bisteck apanado con p. fritas + ens.
+      name: Pollo broaster con p. fritas + ens.
       in_menu: 
         - me
   extras: 
