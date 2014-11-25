@@ -19,40 +19,32 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Solterito de queso
+      name: Tamalitos
       in_menu: 
         - nv
     -
-      name: Sopa de carne
+      name: Sopa de choros
       in_menu:
         - nv
     -
-      name: Crema de rocoto
+      name: Causa con jamon 
       in_menu:
         - nv
   main:
     - 
-      name: Frejoles con seco de carne
+      name: Adobo de pollo
       in_menu: 
         - nv
     - 
-      name: Pollo al ají colorado
+      name: Caldo a la norteña 
       in_menu: 
         - nv
     - 
-      name: Adobo de chancho
+      name: Escabeche con pescado
       in_menu: 
         - nv
     - 
-      name: Pollo al sillao
-      in_menu: 
-        - nv
-    - 
-      name: Milanesa con papas fritas
-      in_menu: 
-        - nv
-    - 
-      name: Cau-cau de pollo
+      name: Patita con maní
       in_menu: 
         - nv
   extras: 
