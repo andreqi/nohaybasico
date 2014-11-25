@@ -35,33 +35,33 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada mixta
+      name: Ensalada de tomates
       in_menu: 
         - be
     - 
-      name: Tequeños con guacamole
+      name: Ensalada de habas
       in_menu: 
         - me
   main:
     - 
-      name: Hígado en salsa de anticucho, lentejas, arroz
+      name: Tallarín saltado criollo con cerdo
       in_menu: 
         - ba
         - be
     - 
-      name: Pollo al pimiento, legumbres, arroz
+      name: Cerdo al romero, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Pescado sudado, camote, arroz
+      name: Olluquito con carne, charqui, arroz
       in_menu: 
         - me
     - 
-      name: Lentejas guisadas, arroz
+      name: Tortilla de verduras, arroz
       in_menu: 
         - ec
     - 
-      name: Lomito vegetal, lentejas, arroz
+      name: Tallarín saltado criollo con carne vegetal
       in_menu:
         - ve
   extras:
@@ -81,7 +81,7 @@ dishes:
         - ec
         - me
     - 
-      name: Fantasía de Gelatina
+      name: Piña en almíbar
       in_menu:
         - me
 carta: 

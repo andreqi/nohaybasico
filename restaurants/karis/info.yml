@@ -24,12 +24,12 @@ tipos_menu:
 dishes: 
   intro: 
     -
-      name: Tamal de pollo
+      name: Ensalada rusa
       in_menu: 
         - mn
         - mc
     -
-      name: Causa con verduras y pollo
+      name: Tequeños
       in_menu: 
         - mn
         - mc
@@ -39,13 +39,21 @@ dishes:
         - mn
         - mc
     -
-      name: Aguadito de pollo
+      name: Sopa de sémola
       in_menu: 
         - mn
         - mc
   main:
     -
-      name: Escabeche de pollo
+      name: Pollo al orégano con papa
+      in_menu: 
+        - mn
+    -
+      name: Estofado de pollo, puré ó arvejitas partidas
+      in_menu: 
+        - mn
+    -
+      name: Ají de gallina
       in_menu: 
         - mn
     -
@@ -53,11 +61,7 @@ dishes:
       in_menu: 
         - mn
     -
-      name: Mondonguito a la italiana
-      in_menu: 
-        - mn
-    -
-      name: Chicharrón de pollo con puré ó arvejitas partidas
+      name: Pollo al siyao con papa
       in_menu: 
         - mn
     -

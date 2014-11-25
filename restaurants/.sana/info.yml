@@ -1,0 +1,39 @@
+name: Sana
+walking_time: 8 mins
+last_update: ayer 
+time_open: Mar-Sábado 12 - 4pm y 6pm - 9pm, Domingos 1pm - 6pm
+address: Av. Manuel Cipriano Dulanto 2047, Pueblo Libre
+price_range: 12
+coordinates: 
+  lat: -12.075020
+  lng: -77.079290
+contact_msg: Contacto en sana.vidavegana@gmail.com
+social_media:
+  facebook: 'https://www.facebook.com/SANAvidavegana?fref=ts'
+tipos_menu: 
+  - 
+    name: 'menú de día'
+    id: di
+    price: 12
+dishes: 
+  intro:
+    - 
+      name: Causa limeña
+      in_menu: 
+        - di
+    - 
+      name: Ensalada fresca
+      in_menu: 
+        - di
+  main:
+    - 
+      name: Guiso de lentejas
+      in_menu: 
+        - di
+  extras:
+    -
+      name: 'Chicha morada o refresco de maracuyá.'
+      in_menu: 
+        - di
+carta: 
+

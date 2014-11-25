@@ -31,29 +31,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada fresca
+      name: Papa en crema de ají
       in_menu: 
         - be
     - 
-      name: Ensalada griega
+      name: Antipasto de verduras
       in_menu: 
         - me
   main:
     - 
-      name: Tallarines a la boloñesa con carne molida
+      name: Pollo a la vizcaína, legumbres, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Adobo de cerdo, camote, arroz
+      name: Carne a la vasca, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Pollo a la diabla, camote, arroz
+      name: Pescado en salsa de poro, yuca ,arroz
       in_menu: 
         - me
     - 
-      name: Tallarines al tuco
+      name: Huevo frito, arroz
       in_menu: 
         - ec
   extras:
@@ -72,7 +72,7 @@ dishes:
         - ec
         - me
     - 
-      name: Fruta
+      name: Budín con miel
       in_menu:
         - me
 carta: 

@@ -35,33 +35,33 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada mixta
+      name: Ensalada fresca
       in_menu: 
         - be
     - 
-      name: Ensalada fresca con huevo
+      name: Jamón enrollado
       in_menu: 
         - me
   main:
     - 
-      name: Pollo a la norteña, papa, arroz
+      name: Carne al estragón, papa, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pescado a la menier, legumbres, arroz
+      name: Pollo a la coca cola, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Carne al tomillo, papa, arroz
+      name: Patita con maní, arroz
       in_menu: 
         - me
     - 
-      name: Arroz chaufa
+      name: Tortilla de verduras, arroz
       in_menu: 
         - ec
     - 
-      name: Carne vegetal a la norteña, papa, arroz
+      name: Carne vegetal al estragón, papa, arroz
       in_menu: 
         - ve
   extras:
@@ -81,7 +81,7 @@ dishes:
         - ec
         - me
     - 
-      name: Fruta
+      name: Fantasía de gelatina
       in_menu:
         - me
 carta: 

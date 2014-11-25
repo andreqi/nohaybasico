@@ -31,29 +31,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada fresca
+      name: Ensalada mixta
       in_menu: 
         - be
     - 
-      name: Salpicón de verduras
+      name: Ensalada mixta 
       in_menu: 
         - me
   main:
     - 
-      name: Pollo a la norteña, papa, arroz
+      name: Escabeche de pescado, camote, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pescado sudado, yuca, arroz
+      name: Tallarines al tuco con pollo
       in_menu: 
         - me
     - 
-      name: Carbonada de res, legumbres, arroz
+      name: Lomito de hígado, alverjita verde, arroz
       in_menu: 
         - me
     - 
-      name: Arroz chaufa
+      name: Alverjita verde, arroz
       in_menu: 
         - ec
   extras:
@@ -72,7 +72,7 @@ dishes:
         - ec
         - me
     - 
-      name: Mandarina
+      name: Ensalada de frutas
       in_menu:
         - me
 carta: 
