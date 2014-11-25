@@ -51,6 +51,6 @@ menus:
   - 
     name: pizza-hut
     is_updated: true
-- 
+  - 
     name: sana
     is_updated: true

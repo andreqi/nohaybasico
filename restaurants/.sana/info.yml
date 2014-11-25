@@ -1,0 +1,35 @@
+name: Sana
+walking_time: 8 mins
+last_update: ayer 
+time_open: Mar-Sábado 12 - 4pm y 6pm - 9pm, Domingos 1pm - 6pm
+address: Av. Manuel Cipriano Dulanto 2047, Pueblo Libre
+price_range: 12
+coordinates: 
+  lat: -12.075020
+  lng: -77.079290
+contact_msg: Contacto en sana.vidavegana@gmail.com
+social_media:
+  facebook: 'https://www.facebook.com/SANAvidavegana?fref=ts'
+tipos_menu: 
+  - 
+    name: 'menú de día'
+    id: di
+    price: 12
+dishes: 
+  intro:
+    - 
+      name: Crema de loche
+      in_menu: 
+        - di
+  main:
+    - 
+      name: Guiso de vegetales a la cúrcuma + arroz integral
+      in_menu: 
+        - di
+  extras:
+    -
+      name: 'Infusión de anís'
+      in_menu: 
+        - di
+carta: 
+
