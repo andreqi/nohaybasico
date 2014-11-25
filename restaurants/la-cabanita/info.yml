@@ -33,7 +33,7 @@ tipos_menu:
 dishes: 
   intro:
     -
-      name: Caldo de gallina
+      name: Sancochado
       in_menu:
         - ec
         - es
@@ -41,56 +41,50 @@ dishes:
         - ma
         - fr
     -
-      name: Causa fusión
+      name: Bolitas de carne
       in_menu:
         - ec
         - es
-        - cr
-        - ma
-        - fr
     -
-      name: Macarrones a la huancaína
+      name: Ensalada mixta
       in_menu:
         - ec
-        - cr
-        - ma
-        - fr
     -
       name: Tequeños de queso
       in_menu:
+        - cr
+        - ma
         - fr
     -
-      name: Cebiche mixto + S/. 3
+      name: Alitas en salsa de tamarindo
       in_menu:
         - es
+        - cr
         - ma
+        - fr
     -
       name: Cebiche + S/. 5
       in_menu:
         - fr
   main:
     -
-      name: Picante de carne
+      name: Mollejitas al jugo con panamito
       in_menu:
         - ec
     -
-      name: Milanesa de pollo + p.fritas
+      name: Pescado frito con panamito y zarza criolla
       in_menu:
         - ec
     -
-      name: Enrollado de pollo + p.fritas. + ens.
-      in_menu:
-        - ec
-    -
-      name: Lechón asado con lentejas
+      name: Pollo a leña con puré rústico
       in_menu:
         - es
     -
-      name: Estofado de pollo con papa sancochada
+      name: Sudado de pollo con panamito
       in_menu:
         - es
     -
-      name: Churrasco encebollado con p. fritas + ens.
+      name: Chicharrón de pollo con p. fritas + ens.
       in_menu:
         - cr
     -
@@ -98,7 +92,7 @@ dishes:
       in_menu:
         - cr
     -
-      name: Churrasco con tallarín verde
+      name: Pechuga de pollo a la napolitana con p.fritas + ens.
       in_menu:
         - cr
     -
@@ -106,11 +100,11 @@ dishes:
       in_menu:
         - ma
     -
-      name: Chicharrón de pescado con lentejas
+      name: Pachamanca de pescado con papa Sancochada
       in_menu:
         - ma
     -
-      name: Mariscos a la diabla
+      name: Mariscos en salsa de pachamanca
       in_menu:
         - ma
     -

@@ -18,21 +18,17 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Causa limeña
-      in_menu: 
-        - di
-    - 
-      name: Ensalada fresca
+      name: Crema de loche
       in_menu: 
         - di
   main:
     - 
-      name: Guiso de lentejas
+      name: Guiso de vegetales a la cúrcuma + arroz integral
       in_menu: 
         - di
   extras:
     -
-      name: 'Chicha morada o refresco de maracuyá.'
+      name: 'Infusión de anís'
       in_menu: 
         - di
 carta: 
