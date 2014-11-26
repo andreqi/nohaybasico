@@ -1,4 +1,4 @@
-is_menu_active: false
+is_menu_active: true
 menus:
   -
     name: PUCP-comedor-administrativas
