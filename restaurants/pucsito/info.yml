@@ -19,32 +19,40 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Tamalitos
+      name: Ocopa
       in_menu: 
         - nv
     -
-      name: Sopa de choros
+      name: Sopa de pollo
       in_menu:
         - nv
     -
-      name: Causa con jamon 
+      name: Tequeños
       in_menu:
         - nv
   main:
     - 
-      name: Adobo de pollo
+      name: Frejol panamito con pollo adobado
       in_menu: 
         - nv
     - 
-      name: Caldo a la norteña 
+      name: Seco de res
       in_menu: 
         - nv
     - 
-      name: Escabeche con pescado
+      name: Arroz a la jardinera
       in_menu: 
         - nv
     - 
-      name: Patita con maní
+      name: Adobo de chancho
+      in_menu: 
+        - nv
+    - 
+      name: Milanesa de pollo + p. fritas
+      in_menu: 
+        - nv
+    - 
+      name: Mondonguito a la italiana
       in_menu: 
         - nv
   extras: 
