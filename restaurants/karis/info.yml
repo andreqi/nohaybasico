@@ -24,12 +24,17 @@ tipos_menu:
 dishes: 
   intro: 
     -
-      name: Ensalada rusa
+      name: Palta con verduras
       in_menu: 
         - mn
         - mc
     -
-      name: Tequeños
+      name: Salpicón
+      in_menu: 
+        - mn
+        - mc
+    -
+      name: Papa a la huancaína
       in_menu: 
         - mn
         - mc
@@ -39,29 +44,29 @@ dishes:
         - mn
         - mc
     -
-      name: Sopa de sémola
+      name: Sancochado de res
       in_menu: 
         - mn
         - mc
   main:
     -
-      name: Pollo al orégano con papa
+      name: Pollo a la naranja con papa
       in_menu: 
         - mn
     -
-      name: Estofado de pollo, puré ó arvejitas partidas
+      name: Cau cau
       in_menu: 
         - mn
     -
-      name: Ají de gallina
+      name: Seco a la norteña con frejoles
       in_menu: 
         - mn
     -
-      name: Asado con puré ó arvejitas partidas
+      name: Pollo al horno con papa ó ensalada
       in_menu: 
         - mn
     -
-      name: Pollo al siyao con papa
+      name: Arroz con pollo
       in_menu: 
         - mn
     -
@@ -86,7 +91,7 @@ dishes:
         - mc
   extras:
     -
-      name: Refresco de Maracuyá
+      name: Refresco de Cocona
       in_menu: 
         - mn
         - mc
