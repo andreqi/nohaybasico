@@ -35,33 +35,33 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada fresca
+      name: Salpicón de verduras
       in_menu: 
         - be
     - 
-      name: Jamón enrollado
+      name: Ensalada mixta
       in_menu: 
         - me
   main:
     - 
-      name: Carne al estragón, papa, arroz
+      name: Pescado frito, legumbres, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pollo a la coca cola, legumbres, arroz
+      name: Cerdo al tomillo, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Patita con maní, arroz
+      name: Pollo al horno, fideos a la huancaína
       in_menu: 
         - me
     - 
-      name: Tortilla de verduras, arroz
+      name: Puré, arroz
       in_menu: 
         - ec
     - 
-      name: Carne vegetal al estragón, papa, arroz
+      name: Albóndiga vegetal, legumbres, arroz
       in_menu: 
         - ve
   extras:
@@ -81,7 +81,7 @@ dishes:
         - ec
         - me
     - 
-      name: Fantasía de gelatina
+      name: Mousse de fruta
       in_menu:
         - me
 carta: 
