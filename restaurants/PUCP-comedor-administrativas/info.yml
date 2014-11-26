@@ -31,29 +31,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Papa en crema de ají
+      name: Ensalada mixta
       in_menu: 
         - be
     - 
-      name: Antipasto de verduras
+      name: Salpicón de verduras
       in_menu: 
         - me
   main:
     - 
-      name: Pollo a la vizcaína, legumbres, arroz
+      name: Lomito de hígado, frijoles guisados, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Carne a la vasca, legumbres, arroz
+      name: Pollo a las finas hierbas, legumbres , arroz
       in_menu: 
         - me
     - 
-      name: Pescado en salsa de poro, yuca ,arroz
+      name: Carne a la jardinera, papa, arroz
       in_menu: 
         - me
     - 
-      name: Huevo frito, arroz
+      name: Frijoles guisados, arroz
       in_menu: 
         - ec
   extras:
@@ -72,7 +72,7 @@ dishes:
         - ec
         - me
     - 
-      name: Budín con miel
+      name: Gelatina batida
       in_menu:
         - me
 carta: 
