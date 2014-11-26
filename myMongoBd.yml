@@ -20,7 +20,7 @@ menus:
     is_updated: false
   -
     name: el-arbolito
-    is_updated: false
+    is_updated: true
   -
     name: el-saborcito
     is_updated: false
