@@ -31,29 +31,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada mixta
+      name: Ensalada griega
       in_menu: 
         - be
     - 
-      name: Ensalada mixta 
+      name: Ocopa
       in_menu: 
         - me
   main:
     - 
-      name: Escabeche de pescado, camote, arroz
+      name: Carapulca con cerdo, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Tallarines al tuco con pollo
+      name: Arroz con pollo, salsacriolla
       in_menu: 
         - me
     - 
-      name: Lomito de hígado, alverjita verde, arroz
+      name: Pescado al ajo, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Alverjita verde, arroz
+      name: Puré, arroz
       in_menu: 
         - ec
   extras:
@@ -72,7 +72,7 @@ dishes:
         - ec
         - me
     - 
-      name: Ensalada de frutas
+      name: Fantasía de gelatina
       in_menu:
         - me
 carta: 
