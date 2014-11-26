@@ -35,31 +35,27 @@ dishes:
      in_menu:
         - ck
     -
-      name: Cupcake Chocovainilla
+      name: Cupcake Pie de Limón
       in_menu:
         - ck
     -
-      name: Cupcake Boston Cream
+      name: Cupcake Tres Leches
       in_menu:
         - ck
     -
-      name: Cupcake Vainilla
+      name: Cupcake Sundae
       in_menu:
         - ck
     -
-      name: Cupcake Nutella
+      name: Cupcake Happy Day
       in_menu:
         - ck
     -
-      name: Cupcake Ganache
+      name: Cupcake Pie de Manzana
       in_menu: 
-        - yg
+        - ck
     - 
-      name: Empanada de Queso
-      in_menu: 
-        -
-    - 
-      name: Brownie 
+      name: Cupcake Chocomenta
       in_menu: 
         - ck
 carta: 
