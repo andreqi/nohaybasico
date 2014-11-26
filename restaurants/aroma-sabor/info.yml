@@ -20,15 +20,15 @@ tipos_menu:
 dishes: 
   intro: 
     - 
-      name: Sopa de pollo con kión
+      name: Sopa a la criolla
       in_menu: 
         - me
     - 
-      name: Crema de rocoto
+      name: Tequeños con guacamole 
       in_menu: 
         - me
     - 
-      name: Ensalada tricolor
+      name: Ensalada rusa
       in_menu: 
         - me
     - 
@@ -37,35 +37,31 @@ dishes:
         - me
   main:
     - 
-      name: Ají de gallina
+      name: Estofado de pollo con pure
       in_menu: 
         - me
     - 
-      name: Malaya dorada + papa dorada + salsa criolla
+      name: Pollo al sillao
       in_menu: 
         - me
     - 
-      name: Pollo a la mostaza
+      name: Carapulcra con chancho
       in_menu: 
         - me
     - 
-      name: Tallarín saltado con carne
+      name: Tacu tacu con milanesa
       in_menu: 
         - me
     - 
-      name: Arroz chaufa con milanesa
+      name: Pollo con champiñones
       in_menu: 
         - me
     - 
-      name: Churrasco al jugo con frejoles
+      name: Filete de tollo
       in_menu: 
         - me
     - 
-      name: Escabeche de toyo
-      in_menu: 
-        - me
-    - 
-      name: Pollo broaster con p. fritas + ens.
+      name: Hamburguesa con papas fritas
       in_menu: 
         - me
   extras: 
