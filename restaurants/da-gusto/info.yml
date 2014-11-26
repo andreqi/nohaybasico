@@ -26,12 +26,12 @@ tipos_menu:
 dishes: 
   intro:
     -
-      name: Menestrón
+      name: Sopa de pollo
       in_menu: 
         - mc
         - en
     -
-      name: Ensalada mixta
+      name: Pastel de fideos
       in_menu: 
         - mc
         - en
@@ -42,17 +42,17 @@ dishes:
         - en
   main:
     -
-      name: Arvejas con res entomatada
+      name: Trigo con lechón al ajillo
       in_menu: 
         - mc
         - fo    
     -
-      name: Pollo napolitana con puré
+      name: Lomo saltado
       in_menu: 
         - mc
         - fo    
     -
-      name: Pollo al maracuyá
+      name: Pollo al ajonjolí
       in_menu: 
         - mc
         - fo    
