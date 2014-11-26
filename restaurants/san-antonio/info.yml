@@ -17,12 +17,8 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa de carne 
+      name: Aguadito de pollo 
       in_menu: 
-        - mn
-    - 
-      name: Papa a la Huancaina
-      in_menu:
         - mn
     - 
       name: Ensalada de Verduras
@@ -30,19 +26,19 @@ dishes:
         - mn
   main:
     -
-      name: Aji de gallina 
+      name: Tallarines verdes con milanesa
       in_menu:
         - mn   
     -
-      name: Macarrones con carne
+      name: Frejol con pescado frito
       in_menu:
         - mn   
     -
-      name: Chuleta a la vasca
+      name: Pollo al maní 
       in_menu:
         - mn   
     -
-      name: Estofado de pollo
+      name: Caucau 
       in_menu:
         - mn   
   extras:
