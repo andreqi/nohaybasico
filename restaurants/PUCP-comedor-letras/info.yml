@@ -35,33 +35,33 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada de tomates
+      name: Ensalada fresca
       in_menu: 
         - be
     - 
-      name: Ensalada de habas
+      name: Ensalada arco iris
       in_menu: 
         - me
   main:
     - 
-      name: Tallarín saltado criollo con cerdo
+      name: Picante de carne, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Cerdo al romero, legumbres, arroz
+      name: Pescado en crema de rocoto, papa, arroz
       in_menu: 
         - me
     - 
-      name: Olluquito con carne, charqui, arroz
+      name: Pollo en salsa rosada, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Tortilla de verduras, arroz
+      name: Huevo frito, arroz
       in_menu: 
         - ec
     - 
-      name: Tallarín saltado criollo con carne vegetal
+      name: Picante de carne vegetal, arroz
       in_menu:
         - ve
   extras:
@@ -81,7 +81,7 @@ dishes:
         - ec
         - me
     - 
-      name: Piña en almíbar
+      name: Pudín de vainilla
       in_menu:
         - me
 carta: 
