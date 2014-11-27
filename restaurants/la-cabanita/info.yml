@@ -33,7 +33,7 @@ tipos_menu:
 dishes: 
   intro:
     -
-      name: Sopa de sémola
+      name: Sopa a la minuta
       in_menu:
         - ec
         - es
@@ -41,24 +41,24 @@ dishes:
         - ma
         - fr
     -
-      name: Crema de rocoto
+      name: Ensalada césar
       in_menu:
         - ec
         - es
-    -
-      name: Ensalada mixta
-      in_menu:
-        - ec
-    -
-      name: Lasagna
-      in_menu:
         - cr
         - ma
         - fr
     -
-      name: Tequeños de queso
+      name: Fideos con mayonesa
       in_menu:
+        - ec
         - es
+        - cr
+        - ma
+        - fr
+    -
+      name: Tequeños
+      in_menu:
         - cr
         - ma
         - fr
@@ -68,47 +68,51 @@ dishes:
         - fr
   main:
     -
-      name: Ají de gallina
+      name: Picante de carne
       in_menu:
         - ec
     -
-      name: Arroz tapado con plantano frito
+      name: Cau cau
       in_menu:
         - ec
     -
-      name: Pollo al horno con puré
+      name: Milanesa de pollo + p. fritas + ens.
+      in_menu:
+        - ec
+    -
+      name: Pollo al vino con papa sancochada
       in_menu:
         - es
     -
-      name: Pollo rústico horneado con p. fritas + ens.
+      name: Pollo al estilo americano con p. fritas
       in_menu:
         - es
     -
-      name: Escabeche de pescado
+      name: Chicharron de huevera con arroz
       in_menu:
         - es
     -
-      name: Chi Jau Kay con Arroz Chaufa
+      name: Pechuga de pollo a la florentina con papa sancochada
       in_menu:
         - cr
     -
-      name: Pechuga de pollo a la BBQ con p. fritas. + ens.
+      name: Pechuga a la germana con plátano y hot dog
       in_menu:
         - cr
     -
-      name: Arroz chaufa con pollo con tamarindo
+      name: Churrasco con p. fritas + ens.
       in_menu:
         - cr
     -
-      name: Filete de pescado a la chorrillana
+      name: Mariscos a la diabla
       in_menu:
         - ma
     -
-      name: Jalea mixta con arroz
+      name: Pescado en salsa de lomo
       in_menu:
         - ma
     -
-      name: Picante de mariscos
+      name: Pescado a la carbonara
       in_menu:
         - ma
     -
