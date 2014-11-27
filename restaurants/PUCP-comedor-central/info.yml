@@ -35,33 +35,33 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Salpicón de verduras
+      name: Ensalada verde
       in_menu: 
         - be
     - 
-      name: Ensalada mixta
+      name: Ensalada griega
       in_menu: 
         - me
   main:
     - 
-      name: Pescado frito, legumbres, arroz
+      name: Tallarines a la crema, con pollo dorado
       in_menu: 
         - ba
         - be
     - 
-      name: Cerdo al tomillo, legumbres, arroz
+      name: Pollo al pimiento, papa, arroz
       in_menu: 
         - me
     - 
-      name: Pollo al horno, fideos a la huancaína
+      name: Seco de res, yuca, arroz 
       in_menu: 
         - me
     - 
-      name: Puré, arroz
+      name: Tallarines a la crema
       in_menu: 
         - ec
     - 
-      name: Albóndiga vegetal, legumbres, arroz
+      name: Tallarines a la crema, con Hamburguesa vegetal
       in_menu: 
         - ve
   extras:
@@ -81,7 +81,7 @@ dishes:
         - ec
         - me
     - 
-      name: Mousse de fruta
+      name: Fruta
       in_menu:
         - me
 carta: 
