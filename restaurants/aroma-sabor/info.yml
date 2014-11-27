@@ -20,15 +20,15 @@ tipos_menu:
 dishes: 
   intro: 
     - 
-      name: Sopa a la criolla
+      name: Sopa de res
       in_menu: 
         - me
     - 
-      name: Tequeños con guacamole 
+      name: Ocopa
       in_menu: 
         - me
     - 
-      name: Ensalada rusa
+      name: Ensalada fresca con aliño o vinagretea
       in_menu: 
         - me
     - 
@@ -37,36 +37,36 @@ dishes:
         - me
   main:
     - 
-      name: Estofado de pollo con pure
+      name: Tallarines verdes con bisteck
       in_menu: 
         - me
     - 
-      name: Pollo al sillao
+      name: Pollo al maní
       in_menu: 
         - me
     - 
-      name: Carapulcra con chancho
+      name: Lomo saltado
       in_menu: 
         - me
     - 
-      name: Tacu tacu con milanesa
+      name: Arroz árabe con chancho
       in_menu: 
         - me
     - 
-      name: Pollo con champiñones
+      name: Pollo a la mostaza
       in_menu: 
         - me
     - 
-      name: Filete de tollo
+      name: Apanado de toyo con menestras
       in_menu: 
         - me
     - 
-      name: Hamburguesa con papas fritas
+      name: Bisteck con papas fritas + ens.
       in_menu: 
         - me
   extras: 
     - 
-      name: Refresco
+      name: Triple Refresco
       in_menu: 
         - me
 carta: 
