@@ -19,32 +19,32 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ocopa
+      name: Ensalada de fideos
       in_menu: 
         - nv
     -
-      name: Sopa de pollo
+      name: Aguadito de pollo
       in_menu:
         - nv
     -
-      name: Tequeños
+      name: Solterito de queso
       in_menu:
         - nv
   main:
     - 
-      name: Frejol panamito con pollo adobado
+      name: Adobo de carne
       in_menu: 
         - nv
     - 
-      name: Seco de res
+      name: Arroz con chancho
       in_menu: 
         - nv
     - 
-      name: Arroz a la jardinera
+      name: Pescado frito con ensalada
       in_menu: 
         - nv
     - 
-      name: Adobo de chancho
+      name: Seco de pollo
       in_menu: 
         - nv
     - 
@@ -52,7 +52,7 @@ dishes:
       in_menu: 
         - nv
     - 
-      name: Mondonguito a la italiana
+      name: Ají de gallina
       in_menu: 
         - nv
   extras: 
