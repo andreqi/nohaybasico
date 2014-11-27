@@ -35,33 +35,33 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada fresca
+      name: Causa a la criolla
       in_menu: 
         - be
     - 
-      name: Ensalada arco iris
+      name: Antipasto de verduras
       in_menu: 
         - me
   main:
     - 
-      name: Picante de carne, arroz
+      name: Pescado a la chalaca, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pescado en crema de rocoto, papa, arroz
+      name: Hígado encebollado, frijoles, arroz
       in_menu: 
         - me
     - 
-      name: Pollo en salsa rosada, legumbres, arroz
+      name: Ají de pollo, papa, huevo, arroz
       in_menu: 
         - me
     - 
-      name: Huevo frito, arroz
+      name: Puré, arroz
       in_menu: 
         - ec
     - 
-      name: Picante de carne vegetal, arroz
+      name: Hamburguesa vegetal, a la chalaca, arroz
       in_menu:
         - ve
   extras:
@@ -81,7 +81,7 @@ dishes:
         - ec
         - me
     - 
-      name: Pudín de vainilla
+      name: Ensalada de frutas 
       in_menu:
         - me
 carta: 
