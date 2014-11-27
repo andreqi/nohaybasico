@@ -18,17 +18,21 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Crema de loche
+      name: Sopa de verduras
+      in_menu: 
+        - di
+    - 
+      name: Ensalada fresca
       in_menu: 
         - di
   main:
     - 
-      name: Guiso de vegetales a la cúrcuma + arroz integral
+      name: Chaufa integral de vegetales con salsa oriental de chifa
       in_menu: 
         - di
   extras:
     -
-      name: 'Infusión de anís'
+      name: 'Infusión de jazmín'
       in_menu: 
         - di
 carta: 
