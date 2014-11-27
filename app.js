@@ -11,6 +11,7 @@ var log = require('./log/logger');
 var env = process.env.NODE_ENV || 'dev';
 var port = (env == 'pro') ? 4321: 1111; 
 var bd = (env == 'pro') ? 'nhb': 'testnhb';
+var rTwitterBot = require('./routes/twitterBot');
 
 mongoose.connect('mongodb://localhost/'+bd, function(err) {
     if (err) {
@@ -22,6 +23,9 @@ mongoose.connect('mongodb://localhost/'+bd, function(err) {
 app.listen(port);
 
 var days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado'];
+
+app.get('/tb/:dish/:restaurants', rTwitterBot.index);
+
 
 app.get('/', function(req, res) {
   var date = new Date();

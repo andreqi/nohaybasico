@@ -1,0 +1,106 @@
+var fs = require('fs');
+var YAML = require('yamljs');
+var mapsAPI = require('./../mapsAPI.js');
+
+function loadBd() {
+  var myBDPath = './myMongoBd.yml';
+  return YAML.load(myBDPath);
+}
+
+function get_dish_preview(rest) {
+  var dish_list = [];
+  if (has_menu(rest)) {
+    dish_list = rest.dishes.main;
+    dish_list = dish_list || [];
+    var dish_intro = rest.dishes.intro || [];
+    dish_list = dish_list.concat(dish_intro);
+  } else {
+    dish_list = rest.carta;
+  }
+  dish_list = dish_list || [];
+  return dish_list.slice(0, 5);
+}
+
+function has_menu(rest) {
+  return rest.dishes != undefined;
+}
+
+function shuffle(o, size){ 
+  for(var j, x, i = o.length; i; 
+    j = Math.floor(Math.random() * i), 
+    x = o[--i], o[i] = o[j], o[j] = x);
+  return o;
+};
+
+function get_restaurants_twitter(key, restaurants, callback) {
+  var rests = restaurants.split('|');
+  fs.readdir('./restaurants', function(err, files) {
+    var mainObj = {};
+    mainObj.total = rests.length;
+    mainObj.perc = 0;
+    var db = loadBd();
+    var menus = db.menus;
+    
+    var status = {};
+    for (var i = menus.length - 1; i >= 0; i--) {
+      if (!db.is_menu_active) {
+        status[menus[i].name] = false;
+      } else {
+        status[menus[i].name] = menus[i].is_updated;
+      }
+    };
+    var payback = rests.map(get_restaurant).filter(function(rest) {
+      rest.display = true;
+      if (rest.homeID in status) {
+        rest.display = status[rest.homeID];
+      }
+      if (rest.display) {
+        mainObj.perc++;
+      }
+
+      return rest.display == undefined || rest.display == true;
+    });
+    
+    mainObj.restaurants = shuffle(payback);
+    callback(mainObj);
+  });
+}
+
+function group_by(values, get_key) {
+  if (!values) return null;
+  var grouped = {};
+  values = values || [];
+  for (var idx = 0, len = values.length; idx < len; idx++) {
+    var val = values[idx];
+    var key = get_key(val);
+    if (grouped[key]) {
+      grouped[key].push(val);
+    } else {
+      grouped[key] = [val];
+    }
+  }
+  return grouped;
+}
+
+function get_restaurant(id) {
+  var path = './restaurants/' + id + '/info.yml';
+  var info;
+  try {
+    info = YAML.load(path);
+  } catch (ex) {
+    info = YAML.load('./restaurants/.ejemplo/info.yml');
+    info.name = id + 'gg';
+  }
+  var coords = info.coordinates;
+  info.bannerURL = '/restaurants/banner/' + id;
+  info.homeID = id;
+  info.dish_preview = get_dish_preview(info);
+  info.mapsURL = coords ? 
+    mapsAPI.getMapsRedirectURL(coords.lat, coords.lng) : '';
+  info.grouped_by_carta = group_by(info.carta, function(e) {
+    return e.tag;
+  });
+  return info;
+}
+
+exports.get_restaurants_twitter = get_restaurants_twitter;
