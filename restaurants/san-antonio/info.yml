@@ -17,32 +17,36 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Aguadito de pollo 
+      name: Sopa de sémola
       in_menu: 
         - mn
     - 
-      name: Ensalada de Verduras
+      name: Crema de rocoto
+      in_menu:
+        - mn
+    - 
+      name: Ensalada de Verduras 
       in_menu:
         - mn
   main:
     -
-      name: Tallarines verdes con milanesa
+      name: Pollo al horno 
       in_menu:
         - mn   
     -
-      name: Frejol con pescado frito
+      name: Lomo Saltado 
       in_menu:
         - mn   
     -
-      name: Pollo al maní 
+      name: Churrasco a la parrilla 
       in_menu:
         - mn   
     -
-      name: Caucau 
+      name: Pavita al vino 
       in_menu:
         - mn   
   extras:
     - 
-      name: Yerba Luisa
+      name: Manzanilla
       in_menu:
         - mn
