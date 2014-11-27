@@ -8,7 +8,6 @@ block title
         header
           - var h2Title = menu_active ? 'No hay básico': 'Vuelve pronto'
           h2 #{h2Title}
-          include android-nhb
           if !menu_active
             p
               | Estamos recogiendo nuestro básico. </br>
@@ -23,6 +22,7 @@ block title
               | aroma y sabor, dagusto, el saborcito, la cabañita, pucsito, 
               br
               | san antonio, tambos, etc.
+        include android-nhb
 
 block content
   .container
