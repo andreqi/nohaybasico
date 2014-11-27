@@ -31,29 +31,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada mixta
+      name: Ensalada Kentucky
       in_menu: 
         - be
     - 
-      name: Salpicón de verduras
+      name: Pionono de verduras
       in_menu: 
         - me
   main:
     - 
-      name: Lomito de hígado, frijoles guisados, arroz
+      name: Cerdo Novo andino, papa arroz 
       in_menu: 
         - ba
         - be
     - 
-      name: Pollo a las finas hierbas, legumbres , arroz
+      name: Pescado frito, ensalada fresca, arroz
       in_menu: 
         - me
     - 
-      name: Carne a la jardinera, papa, arroz
+      name: Fricasé de pollo , yuca, arroz
       in_menu: 
         - me
     - 
-      name: Frijoles guisados, arroz
+      name: Tortilla de verduras, arroz
       in_menu: 
         - ec
   extras:
@@ -72,7 +72,7 @@ dishes:
         - ec
         - me
     - 
-      name: Gelatina batida
+      name: Piña encanelada
       in_menu:
         - me
 carta: 
