@@ -1,5 +1,10 @@
 /**main page**/
 
+#android-app {
+  display: inherit;
+  height: 0px;
+}
+
 progress[value] {
   vertical-align: middle;
   -webkit-appearance: none;

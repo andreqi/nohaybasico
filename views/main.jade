@@ -6,13 +6,13 @@ block title
       include title
       section#banner
         header
+          - var h2Title = menu_active ? 'No hay básico': 'Vuelve pronto'
+          h2 #{h2Title}
           if !menu_active
-            h2 Vuelve pronto 
             p
               | Estamos recogiendo nuestro básico. </br>
               | Volveremos con los menús un poco antes de las 11am.  
           else 
-            h2 No hay básico
             p 
               | Checkea que puedes comer cerca hoy 
               b #{cur_day} .
@@ -22,6 +22,7 @@ block title
               | aroma y sabor, dagusto, el saborcito, la cabañita, pucsito, 
               br
               | san antonio, tambos, etc.
+        include android-nhb
 
 block content
   .container
