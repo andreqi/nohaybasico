@@ -23,7 +23,7 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Escabeche de berenjena
+      name: Suflé de verduras
       in_menu: 
         - di
         - es
@@ -33,25 +33,25 @@ dishes:
         - di
         - es
     - 
-      name: Crema de verduras
+      name: Sopa de morón
       in_menu: 
         - di
         - es
   main:
     - 
-      name: Aji de gallinavel
+      name: Arroz a la jardinera
       in_menu: 
         - di
     - 
-      name: Pollovel guisado
+      name: Seco norteño con frejoles
       in_menu: 
         - di
     - 
-      name: Arroz chaufa con plátano
+      name: Bisteckvel con puré
       in_menu: 
         - es
     - 
-      name: Tortilla de vainitas
+      name: Tallarín saltado criollo
       in_menu: 
         - es
   extras:

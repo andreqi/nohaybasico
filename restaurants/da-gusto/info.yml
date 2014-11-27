@@ -31,7 +31,7 @@ dishes:
         - mc
         - en
     -
-      name: Pastel de fideos
+      name: Papa a la huancaina
       in_menu: 
         - mc
         - en
@@ -42,17 +42,17 @@ dishes:
         - en
   main:
     -
-      name: Trigo con lechón al ajillo
+      name: Lentejas con pollo enrollado
       in_menu: 
         - mc
         - fo    
     -
-      name: Lomo saltado
+      name: Pollo con piña
       in_menu: 
         - mc
         - fo    
     -
-      name: Pollo al ajonjolí
+      name: Tallarines verdes con bistec
       in_menu: 
         - mc
         - fo    

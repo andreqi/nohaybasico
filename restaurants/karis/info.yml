@@ -24,49 +24,42 @@ tipos_menu:
 dishes: 
   intro: 
     -
-      name: Palta con verduras
+      name: Tamal de pollo
       in_menu: 
         - mn
         - mc
     -
-      name: Salpicón
-      in_menu: 
-        - mn
-        - mc
-    -
-      name: Papa a la huancaína
+      name: Causa con pollo y verduras
       in_menu: 
         - mn
         - mc
     -
       name: Ensalada mixta
       in_menu: 
-        - mn
         - mc
     -
-      name: Sancochado de res
+      name: Sopa de casa
       in_menu: 
-        - mn
         - mc
   main:
     -
-      name: Pollo a la naranja con papa
+      name: Pollo al vino con papa
       in_menu: 
         - mn
     -
-      name: Cau cau
+      name: Pachamanca de pollo
       in_menu: 
         - mn
     -
-      name: Seco a la norteña con frejoles
+      name: Olluquitos con carne
       in_menu: 
         - mn
     -
-      name: Pollo al horno con papa ó ensalada
+      name: Chicharrón de pollo, puré ó arvejitas partidas
       in_menu: 
         - mn
     -
-      name: Arroz con pollo
+      name: Arroz chaufa con pollo al siyao
       in_menu: 
         - mn
     -
@@ -91,7 +84,7 @@ dishes:
         - mc
   extras:
     -
-      name: Refresco de Cocona
+      name: Refresco de Manzana
       in_menu: 
         - mn
         - mc
