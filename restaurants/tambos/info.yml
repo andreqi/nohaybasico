@@ -27,12 +27,12 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Aguadito de pollo
+      name: Sopa de Sémola
       in_menu: 
         - ej
         - ec
     - 
-      name: Causa con atún
+      name: Ocopa a la arequipeña
       in_menu: 
         - ej
         - ec
@@ -43,11 +43,11 @@ dishes:
         - ec
   main:
     - 
-      name: Milanesa de pollo con papas fritas
+      name: Arroz árabe con pollo al horno
       in_menu: 
         - ej
     - 
-      name: Filete de pollo con p. fritas + ens.
+      name: Tallarines verdes con bisteck
       in_menu: 
         - ej
     - 
@@ -59,23 +59,23 @@ dishes:
       in_menu: 
         - ej
     - 
-      name: Pollo saltado 
+      name: Locro de zapallo con milanesa de pollo
       in_menu: 
         - un
         - ec
     - 
-      name: Pollo al horno con p. fritas + ens
+      name: Frejoles panamitos con pescado
       in_menu: 
         - un
         - ec
     - 
-      name: Malaya dorada
+      name: Olluquito con carne
       in_menu: 
         - un
         - ec
   extras:
     - 
-      name: Refresco
+      name: Refresco de manzana
       in_menu: 
         - ej
         - un
