@@ -20,15 +20,15 @@ tipos_menu:
 dishes: 
   intro: 
     - 
-      name: Sopa de res
+      name: Caldo de pollo
       in_menu: 
         - me
     - 
-      name: Ocopa
+      name: Tequeños con guacamole
       in_menu: 
         - me
     - 
-      name: Ensalada fresca con aliño o vinagretea
+      name: Salpicón de pollo
       in_menu: 
         - me
     - 
@@ -37,31 +37,35 @@ dishes:
         - me
   main:
     - 
-      name: Tallarines verdes con bisteck
+      name: Tallarines rojos con pollo
       in_menu: 
         - me
     - 
-      name: Pollo al maní
+      name: Estofado de res
       in_menu: 
         - me
     - 
-      name: Lomo saltado
+      name: Filete de pollo
       in_menu: 
         - me
     - 
-      name: Arroz árabe con chancho
+      name: Arroz chaufa con carne
       in_menu: 
         - me
     - 
-      name: Pollo a la mostaza
+      name: Saltado de pollo
       in_menu: 
         - me
     - 
-      name: Apanado de toyo con menestras
+      name: Bisteck encebollado
       in_menu: 
         - me
     - 
-      name: Bisteck con papas fritas + ens.
+      name: Picante de carne
+      in_menu: 
+        - me
+    - 
+      name: Milanesa con papas fritas + ens.
       in_menu: 
         - me
   extras: 
