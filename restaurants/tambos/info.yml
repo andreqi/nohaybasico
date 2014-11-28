@@ -27,27 +27,27 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa de Sémola
+      name: Sopa menestrón
       in_menu: 
         - ej
         - ec
     - 
-      name: Ocopa a la arequipeña
+      name: Yucas con queso
       in_menu: 
         - ej
         - ec
     - 
-      name: Tamales con salsa criolla
+      name: Tamal con salsa criolla
       in_menu: 
         - ej
         - ec
   main:
     - 
-      name: Arroz árabe con pollo al horno
+      name: Filete de pollo + p. fritas
       in_menu: 
         - ej
     - 
-      name: Tallarines verdes con bisteck
+      name: Tacu tacu con bisteck
       in_menu: 
         - ej
     - 
@@ -59,23 +59,23 @@ dishes:
       in_menu: 
         - ej
     - 
-      name: Locro de zapallo con milanesa de pollo
+      name: Pollo al horno con puré
       in_menu: 
         - un
         - ec
     - 
-      name: Frejoles panamitos con pescado
+      name: Lomito de res a la jardinera
       in_menu: 
         - un
         - ec
     - 
-      name: Olluquito con carne
+      name: Arroz a la cubana
       in_menu: 
         - un
         - ec
   extras:
     - 
-      name: Refresco de manzana
+      name: Refresco de emoliente
       in_menu: 
         - ej
         - un
