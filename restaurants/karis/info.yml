@@ -24,42 +24,53 @@ tipos_menu:
 dishes: 
   intro: 
     -
-      name: Tamal de pollo
+      name: Pastel de acelga
       in_menu: 
         - mn
         - mc
     -
-      name: Causa con pollo y verduras
+      name: Ocopa
+      in_menu: 
+        - mn
+        - mc
+    -
+      name: Yuquita rellena
       in_menu: 
         - mn
         - mc
     -
       name: Ensalada mixta
       in_menu: 
+        - mn
         - mc
     -
-      name: Sopa de casa
+      name: Sopa de gallina
       in_menu: 
+        - mn
         - mc
   main:
     -
-      name: Pollo al vino con papa
+      name: Escabeche de pollo con camote
       in_menu: 
         - mn
     -
-      name: Pachamanca de pollo
+      name: Pollo con champiñones con papa
       in_menu: 
         - mn
     -
-      name: Olluquitos con carne
+      name: Tallarines verdes con milanesa
       in_menu: 
         - mn
     -
-      name: Chicharrón de pollo, puré ó arvejitas partidas
+      name: Estofado de pollo con papa
       in_menu: 
         - mn
     -
-      name: Arroz chaufa con pollo al siyao
+      name: Pescado frito con arvejitas partidas
+      in_menu: 
+        - mn
+    -
+      name: Pollo broaster con puré ó ensalada
       in_menu: 
         - mn
     -
@@ -84,7 +95,7 @@ dishes:
         - mc
   extras:
     -
-      name: Refresco de Manzana
+      name: Refresco de Membrillo
       in_menu: 
         - mn
         - mc

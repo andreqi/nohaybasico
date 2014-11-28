@@ -1,4 +1,4 @@
-is_menu_active: false
+is_menu_active: true
 menus:
   -
     name: PUCP-comedor-administrativas
@@ -22,11 +22,8 @@ menus:
     name: el-arbolito
     is_updated: false
   -
-    name: el-saborcito
-    is_updated: false
-  -
     name: karis
-    is_updated: false
+    is_updated: true
   -
     name: la-cabanita
     is_updated: false 
@@ -47,4 +44,4 @@ menus:
     is_updated: true
   - 
     name: sana
-    is_updated: false
+    is_updated: true

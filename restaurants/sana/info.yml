@@ -3,7 +3,7 @@ walking_time: 8 mins
 last_update: ayer 
 time_open: Mar-Sábado 12 - 4pm y 6pm - 9pm, Domingos 1pm - 6pm
 address: Av. Manuel Cipriano Dulanto 2047, Pueblo Libre
-price_range: 12
+price_range: 10
 coordinates: 
   lat: -12.075020
   lng: -77.079290
@@ -14,7 +14,7 @@ tipos_menu:
   - 
     name: 'menú de día'
     id: di
-    price: 12
+    price: 10
 dishes: 
   intro:
     - 
@@ -27,12 +27,12 @@ dishes:
         - di
   main:
     - 
-      name: Chaufa integral de vegetales con salsa oriental de chifa
+      name: Puré de espinaca c/ saltado de vegetales c/ arroz a la cúrcuma
       in_menu: 
         - di
   extras:
     -
-      name: 'Infusión de jazmín'
+      name: 'Mate de hierbas'
       in_menu: 
         - di
 carta: 
