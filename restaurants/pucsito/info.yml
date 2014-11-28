@@ -19,32 +19,32 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada de fideos
+      name: Papa a la huancaína
       in_menu: 
         - nv
     -
-      name: Aguadito de pollo
+      name: Sopa menestrón
       in_menu:
         - nv
     -
-      name: Solterito de queso
+      name: Salpicón de pollo
       in_menu:
         - nv
   main:
     - 
-      name: Adobo de carne
+      name: Frejoles con seco de carne
       in_menu: 
         - nv
     - 
-      name: Arroz con chancho
+      name: Pollo al ají colorado
       in_menu: 
         - nv
     - 
-      name: Pescado frito con ensalada
+      name: Escabeche de pollo
       in_menu: 
         - nv
     - 
-      name: Seco de pollo
+      name: Adobo de chancho
       in_menu: 
         - nv
     - 
@@ -52,7 +52,7 @@ dishes:
       in_menu: 
         - nv
     - 
-      name: Ají de gallina
+      name: Vainitas con pollo
       in_menu: 
         - nv
   extras: 

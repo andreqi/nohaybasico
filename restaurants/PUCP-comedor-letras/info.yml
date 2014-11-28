@@ -35,33 +35,33 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Causa a la criolla
+      name: Salpicón de verduras
       in_menu: 
         - be
     - 
-      name: Antipasto de verduras
+      name: Ensalada mixta
       in_menu: 
         - me
   main:
     - 
-      name: Pescado a la chalaca, arroz
+      name: Pollo alverjado, camote, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Hígado encebollado, frijoles, arroz
+      name: Carne al vino, legumbres arroz
       in_menu: 
         - me
     - 
-      name: Ají de pollo, papa, huevo, arroz
+      name: Tallarines al tuco con pollo
       in_menu: 
         - me
     - 
-      name: Puré, arroz
+      name: Tallarines al tuco
       in_menu: 
         - ec
     - 
-      name: Hamburguesa vegetal, a la chalaca, arroz
+      name: Carne vegetal alverjada, camote, arroz
       in_menu:
         - ve
   extras:
@@ -81,7 +81,7 @@ dishes:
         - ec
         - me
     - 
-      name: Ensalada de frutas 
+      name: Manzana al horno
       in_menu:
         - me
 carta: 

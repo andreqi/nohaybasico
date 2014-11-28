@@ -35,33 +35,33 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada verde
+      name: Antipasto de verduras
       in_menu: 
         - be
     - 
-      name: Ensalada griega
+      name: Antipasto de verduras
       in_menu: 
         - me
   main:
     - 
-      name: Tallarines a la crema, con pollo dorado
+      name: Hígado a la parrilla, alverjita verde, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pollo al pimiento, papa, arroz
+      name: Pollo al pomodoro, camote, arroz
       in_menu: 
         - me
     - 
-      name: Seco de res, yuca, arroz 
+      name: Pescado a la vasca, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Tallarines a la crema
+      name: Alverjita verde, arroz
       in_menu: 
         - ec
     - 
-      name: Tallarines a la crema, con Hamburguesa vegetal
+      name: Lomito vegetal, alverjita verde, arroz
       in_menu: 
         - ve
   extras:
@@ -81,7 +81,7 @@ dishes:
         - ec
         - me
     - 
-      name: Fruta
+      name: Queque marmoleado
       in_menu:
         - me
 carta: 

@@ -31,29 +31,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Huevo en salsa golf
+      name: Causa a la criolla
       in_menu: 
         - be
     - 
-      name: Solterito
+      name: Ensalada campesina
       in_menu: 
         - me
   main:
     - 
-      name: Hígado apanado, papa en crema de ají arroz
+      name: Carne a la pimienta, legumbres, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Carne a la cazadora, legumbres, arroz
+      name: Pollo a la cacerola , yuca, arroz
       in_menu: 
         - me
     - 
-      name: Pollo en salsa de ají, papa arroz
+      name: Cerdo asado con piña, papa, arroz
       in_menu: 
         - me
     - 
-      name: Panamitos guisados, arroz
+      name: Tortilla de verduras, arroz
       in_menu: 
         - ec
   extras:
@@ -72,7 +72,7 @@ dishes:
         - ec
         - me
     - 
-      name: Cóctel de frutas
+      name: Budín con miel
       in_menu:
         - me
 carta: 

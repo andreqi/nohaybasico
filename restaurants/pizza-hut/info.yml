@@ -20,7 +20,7 @@ dishes:
   main:
     -
       name: >
-        Pizza Hawaiana 
+        Spaguetti Bolognesa
       in_menu:
         - hut
   extras: 

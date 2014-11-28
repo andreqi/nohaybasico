@@ -31,29 +31,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada Kentucky
+      name: Ensalada variada
       in_menu: 
         - be
     - 
-      name: Pionono de verduras
+      name: Papa a la huancaína
       in_menu: 
         - me
   main:
     - 
-      name: Cerdo Novo andino, papa arroz 
+      name: Pescado a la chorrillana, papa, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pescado frito, ensalada fresca, arroz
+      name: Pollo al horno, ensalada mixta, arroz
       in_menu: 
         - me
     - 
-      name: Fricasé de pollo , yuca, arroz
+      name: Lengua estofada, yuca, arroz
       in_menu: 
         - me
     - 
-      name: Tortilla de verduras, arroz
+      name: Arroz chaufa
       in_menu: 
         - ec
   extras:
@@ -72,7 +72,7 @@ dishes:
         - ec
         - me
     - 
-      name: Piña encanelada
+      name: Pudín
       in_menu:
         - me
 carta: 
