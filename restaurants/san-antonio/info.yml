@@ -17,11 +17,11 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa de sémola
+      name: Menestrón
       in_menu: 
         - mn
     - 
-      name: Crema de rocoto
+      name: Ocopa
       in_menu:
         - mn
     - 
@@ -30,23 +30,23 @@ dishes:
         - mn
   main:
     -
-      name: Pollo al horno 
+      name: Locro con Milanesa
       in_menu:
         - mn   
     -
-      name: Lomo Saltado 
+      name: Mondongito a la italiana
       in_menu:
         - mn   
     -
-      name: Churrasco a la parrilla 
+      name: Pollo al punto
       in_menu:
         - mn   
     -
-      name: Pavita al vino 
+      name: Chuleta a la parrilla
       in_menu:
         - mn   
   extras:
     - 
-      name: Manzanilla
+      name: Cevada
       in_menu:
         - mn
