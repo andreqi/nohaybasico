@@ -33,7 +33,7 @@ tipos_menu:
 dishes: 
   intro:
     -
-      name: Sopa a la minuta
+      name: Sopa chilena con frejoles
       in_menu:
         - ec
         - es
@@ -41,7 +41,7 @@ dishes:
         - ma
         - fr
     -
-      name: Ensalada césar
+      name: Causa MiPerú con pollo
       in_menu:
         - ec
         - es
@@ -49,7 +49,7 @@ dishes:
         - ma
         - fr
     -
-      name: Fideos con mayonesa
+      name: Ensalada mixta
       in_menu:
         - ec
         - es
@@ -68,11 +68,11 @@ dishes:
         - fr
   main:
     -
-      name: Picante de carne
+      name: Carapulcra de lechón
       in_menu:
         - ec
     -
-      name: Cau cau
+      name: Olluquito con carne
       in_menu:
         - ec
     -
@@ -80,39 +80,35 @@ dishes:
       in_menu:
         - ec
     -
-      name: Pollo al vino con papa sancochada
+      name: Seco de pollo con frejoles
       in_menu:
         - es
     -
-      name: Pollo al estilo americano con p. fritas
+      name: Arroz chaufa con pollo en punto brasa
       in_menu:
         - es
     -
-      name: Chicharron de huevera con arroz
-      in_menu:
-        - es
-    -
-      name: Pechuga de pollo a la florentina con papa sancochada
+      name: Pechuga de pollo en salsa roja con embutidos y papa
       in_menu:
         - cr
     -
-      name: Pechuga a la germana con plátano y hot dog
+      name: Lomo saltado con champiñones
       in_menu:
         - cr
     -
-      name: Churrasco con p. fritas + ens.
+      name: Tallarín verde con pollo al horno
       in_menu:
         - cr
     -
-      name: Mariscos a la diabla
+      name: Seco de pescado con papa sancochada
       in_menu:
         - ma
     -
-      name: Pescado en salsa de lomo
+      name: Mariscos a la chiclayana
       in_menu:
         - ma
     -
-      name: Pescado a la carbonara
+      name: Filete de pescado en salsa roja con embutidos
       in_menu:
         - ma
     -
