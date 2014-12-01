@@ -27,12 +27,12 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa menestrón
+      name: Sopa crema de espárragos
       in_menu: 
         - ej
         - ec
     - 
-      name: Yucas con queso
+      name: Palta a la jardinera
       in_menu: 
         - ej
         - ec
@@ -43,11 +43,11 @@ dishes:
         - ec
   main:
     - 
-      name: Filete de pollo + p. fritas
+      name: Pollo al horno con puré
       in_menu: 
         - ej
     - 
-      name: Tacu tacu con bisteck
+      name: Churrasco con papas fritas + ens.
       in_menu: 
         - ej
     - 
@@ -59,23 +59,23 @@ dishes:
       in_menu: 
         - ej
     - 
-      name: Pollo al horno con puré
+      name: Alverjita con pollo al jugo
       in_menu: 
         - un
         - ec
     - 
-      name: Lomito de res a la jardinera
+      name: Tallarines rojos con asado
       in_menu: 
         - un
         - ec
     - 
-      name: Arroz a la cubana
+      name: Tortilla de verduras
       in_menu: 
         - un
         - ec
   extras:
     - 
-      name: Refresco de emoliente
+      name: Refresco
       in_menu: 
         - ej
         - un
