@@ -24,17 +24,12 @@ tipos_menu:
 dishes: 
   intro: 
     -
-      name: Pastel de acelga
+      name: Choclo con queso
       in_menu: 
         - mn
         - mc
     -
-      name: Ocopa
-      in_menu: 
-        - mn
-        - mc
-    -
-      name: Yuquita rellena
+      name: Papa a la huancaína
       in_menu: 
         - mn
         - mc
@@ -44,33 +39,29 @@ dishes:
         - mn
         - mc
     -
-      name: Sopa de gallina
+      name: Sopa de casa
       in_menu: 
         - mn
         - mc
   main:
     -
-      name: Escabeche de pollo con camote
+      name: Pollo al maní con papa
       in_menu: 
         - mn
     -
-      name: Pollo con champiñones con papa
+      name: Pescado frito con lentejas
       in_menu: 
         - mn
     -
-      name: Tallarines verdes con milanesa
+      name: Pollo a la naranja con papa
       in_menu: 
         - mn
     -
-      name: Estofado de pollo con papa
+      name: Malaya frita con lentejas
       in_menu: 
         - mn
     -
-      name: Pescado frito con arvejitas partidas
-      in_menu: 
-        - mn
-    -
-      name: Pollo broaster con puré ó ensalada
+      name: Arroz a la jardinera con pollo al horno
       in_menu: 
         - mn
     -
@@ -95,7 +86,7 @@ dishes:
         - mc
   extras:
     -
-      name: Refresco de Membrillo
+      name: Refresco de Chicha morada
       in_menu: 
         - mn
         - mc

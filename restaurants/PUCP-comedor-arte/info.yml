@@ -31,29 +31,25 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Causa a la criolla
+      name: Ensalada fresca
       in_menu: 
         - be
     - 
-      name: Ensalada campesina
+      name: Ensalada Griega
       in_menu: 
         - me
   main:
     - 
-      name: Carne a la pimienta, legumbres, arroz
+      name: Carne a la vizcaína, papa, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pollo a la cacerola , yuca, arroz
+      name: Pescado a la florentina, papa, arroz
       in_menu: 
         - me
     - 
-      name: Cerdo asado con piña, papa, arroz
-      in_menu: 
-        - me
-    - 
-      name: Tortilla de verduras, arroz
+      name: Huevo frito, arroz
       in_menu: 
         - ec
   extras:
@@ -72,7 +68,7 @@ dishes:
         - ec
         - me
     - 
-      name: Budín con miel
+      name: Gelatina frutada
       in_menu:
         - me
 carta: 

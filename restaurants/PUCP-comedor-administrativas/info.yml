@@ -31,29 +31,25 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada variada
+      name: Antipasto de verduras
       in_menu: 
         - be
     - 
-      name: Papa a la huancaína
+      name: Ensalada mixta con huevo
       in_menu: 
         - me
   main:
     - 
-      name: Pescado a la chorrillana, papa, arroz
+      name: Cau cau a la limeña, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pollo al horno, ensalada mixta, arroz
+      name: Seco de res, frijoles, arroz
       in_menu: 
         - me
     - 
-      name: Lengua estofada, yuca, arroz
-      in_menu: 
-        - me
-    - 
-      name: Arroz chaufa
+      name: Frijoles guisado, arroz
       in_menu: 
         - ec
   extras:
@@ -72,7 +68,7 @@ dishes:
         - ec
         - me
     - 
-      name: Pudín
+      name: Fruta
       in_menu:
         - me
 carta: 

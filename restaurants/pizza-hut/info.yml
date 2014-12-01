@@ -20,7 +20,7 @@ dishes:
   main:
     -
       name: >
-        Spaguetti Bolognesa
+        Lasagna Bolognesa
       in_menu:
         - hut
   extras: 
