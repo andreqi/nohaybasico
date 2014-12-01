@@ -33,7 +33,7 @@ tipos_menu:
 dishes: 
   intro:
     -
-      name: Sopa chilena con frejoles
+      name: Caldo de gallina
       in_menu:
         - ec
         - es
@@ -41,7 +41,7 @@ dishes:
         - ma
         - fr
     -
-      name: Causa MiPerú con pollo
+      name: Causa norteña
       in_menu:
         - ec
         - es
@@ -63,52 +63,59 @@ dishes:
         - ma
         - fr
     -
+      name: Cebiche + S/. 3
+      in_menu:
+        - ec
+        - es
+        - cr
+        - ma
+    -
       name: Cebiche + S/. 5
       in_menu:
         - fr
   main:
     -
-      name: Carapulcra de lechón
+      name: Milanesa de pollo con p.fritas + ens.
       in_menu:
         - ec
     -
-      name: Olluquito con carne
+      name: Seco de res con menestra
       in_menu:
         - ec
     -
-      name: Milanesa de pollo + p. fritas + ens.
+      name: Carapulcra de pollo
       in_menu:
         - ec
     -
-      name: Seco de pollo con frejoles
+      name: Macarrones al pesto con trozos de pollo
       in_menu:
         - es
     -
-      name: Arroz chaufa con pollo en punto brasa
+      name: Pescado saltado con lentejas
       in_menu:
         - es
     -
-      name: Pechuga de pollo en salsa roja con embutidos y papa
+      name: Pechuga de pollo en salsa de ostión
       in_menu:
         - cr
     -
-      name: Lomo saltado con champiñones
+      name: Churrasco con jamón y queso
       in_menu:
         - cr
     -
-      name: Tallarín verde con pollo al horno
+      name: Arroz chaufa mar y tierra
       in_menu:
         - cr
     -
-      name: Seco de pescado con papa sancochada
+      name: Picante de mariscos
       in_menu:
         - ma
     -
-      name: Mariscos a la chiclayana
+      name: Guisado de pescado
       in_menu:
         - ma
     -
-      name: Filete de pescado en salsa roja con embutidos
+      name: Filete de pescado al orégano
       in_menu:
         - ma
     -
