@@ -20,11 +20,11 @@ tipos_menu:
 dishes: 
   intro: 
     - 
-      name: Caldo de pollo
+      name: Sopa de pollo con kión
       in_menu: 
         - me
     - 
-      name: Tequeños con guacamole
+      name: Crema de rocoto
       in_menu: 
         - me
     - 
@@ -37,35 +37,35 @@ dishes:
         - me
   main:
     - 
-      name: Tallarines rojos con pollo
+      name: Tallarines verdes con bisteck
       in_menu: 
         - me
     - 
-      name: Estofado de res
+      name: Pollo a la mostaza
       in_menu: 
         - me
     - 
-      name: Filete de pollo
+      name: Asado de res con puré
       in_menu: 
         - me
     - 
-      name: Arroz chaufa con carne
+      name: Pollo a la coca cola
       in_menu: 
         - me
     - 
-      name: Saltado de pollo
+      name: Arroz chaufa con milanesa
       in_menu: 
         - me
     - 
-      name: Bisteck encebollado
+      name: Chuleta de chancho con menestras
       in_menu: 
         - me
     - 
-      name: Picante de carne
+      name: Olluquito con carne
       in_menu: 
         - me
     - 
-      name: Milanesa con papas fritas + ens.
+      name: Chicharrón de pescado + yucas fritas + ensalada criolla
       in_menu: 
         - me
   extras: 
