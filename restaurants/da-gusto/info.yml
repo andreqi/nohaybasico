@@ -31,7 +31,7 @@ dishes:
         - mc
         - en
     -
-      name: Papa a la huancaina
+      name: Ensalada mixta
       in_menu: 
         - mc
         - en
@@ -42,17 +42,17 @@ dishes:
         - en
   main:
     -
-      name: Lentejas con pollo enrollado
+      name: Arvejas con adobo
       in_menu: 
         - mc
         - fo    
     -
-      name: Pollo con piña
+      name: Locro con napolitana
       in_menu: 
         - mc
         - fo    
     -
-      name: Tallarines verdes con bistec
+      name: Pollo al ajonjolí
       in_menu: 
         - mc
         - fo    
