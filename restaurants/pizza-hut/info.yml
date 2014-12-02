@@ -20,7 +20,8 @@ dishes:
   main:
     -
       name: >
-        Lasagna Bolognesa
+        Pizza alemana (salchicha alemana, tocino, jamón y
+          queso mozzarella)
       in_menu:
         - hut
   extras: 

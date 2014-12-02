@@ -27,12 +27,12 @@ dishes:
         - di
   main:
     - 
-      name: Puré de espinaca c/ saltado de vegetales c/ arroz a la cúrcuma
+      name: Garbanzos mediterráneos c/ vegetales al olivo servido c/ arroz integral
       in_menu: 
         - di
   extras:
     -
-      name: 'Mate de hierbas'
+      name: 'Infusión de hierba'
       in_menu: 
         - di
 carta: 

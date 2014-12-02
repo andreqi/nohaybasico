@@ -31,25 +31,25 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Antipasto de verduras
+      name: Mixtura de verduras
       in_menu: 
         - be
     - 
-      name: Ensalada mixta con huevo
+      name: Ensalada César
       in_menu: 
         - me
   main:
     - 
-      name: Cau cau a la limeña, arroz
+      name: Tallarines al pesto con pollo
       in_menu: 
         - ba
         - be
     - 
-      name: Seco de res, frijoles, arroz
+      name: Pescado en salsa de rocoto, papa, arroz
       in_menu: 
         - me
     - 
-      name: Frijoles guisado, arroz
+      name: Tallarines al pesto
       in_menu: 
         - ec
   extras:
@@ -68,7 +68,7 @@ dishes:
         - ec
         - me
     - 
-      name: Fruta
+      name: Manzana al horno
       in_menu:
         - me
 carta: 

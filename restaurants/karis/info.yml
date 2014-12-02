@@ -24,12 +24,12 @@ tipos_menu:
 dishes: 
   intro: 
     -
-      name: Choclo con queso
+      name: Tamal de pollo
       in_menu: 
         - mn
         - mc
     -
-      name: Papa a la huancaína
+      name: Causa con atún
       in_menu: 
         - mn
         - mc
@@ -39,29 +39,33 @@ dishes:
         - mn
         - mc
     -
-      name: Sopa de casa
+      name: Menestrón
       in_menu: 
         - mn
         - mc
   main:
     -
-      name: Pollo al maní con papa
+      name: Pollo a la mostaza con papa
       in_menu: 
         - mn
     -
-      name: Pescado frito con lentejas
+      name: Estofado de pollo con puré ó arvejitas partidas
       in_menu: 
         - mn
     -
-      name: Pollo a la naranja con papa
+      name: Chanfainita
       in_menu: 
         - mn
     -
-      name: Malaya frita con lentejas
+      name: Pollo al siyao con papa
       in_menu: 
         - mn
     -
-      name: Arroz a la jardinera con pollo al horno
+      name: Arroz tapado, plátano y huevo frito
+      in_menu: 
+        - mn
+    -
+      name: Milanesa con puré ó arvejitas
       in_menu: 
         - mn
     -
@@ -86,7 +90,7 @@ dishes:
         - mc
   extras:
     -
-      name: Refresco de Chicha morada
+      name: Refresco de Manzana
       in_menu: 
         - mn
         - mc

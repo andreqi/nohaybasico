@@ -35,29 +35,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada de tomates
+      name: Ensalada fresca
       in_menu: 
         - be
     - 
-      name: Ensalada tricolor
+      name: Arrolladitos primavera
       in_menu: 
         - me
   main:
     - 
-      name: Cerdo al romero, camote, arroz
+      name: Pescado a la norteña, yuca, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pollo en salsa de hierbas, papa al perejil, arroz
+      name: Carne al estragón, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Tortilla de verduras, arroz
+      name: Arroz chaufa
       in_menu: 
         - ec
     - 
-      name: Carne vegetal al romero, camote, arroz
+      name: Carne vegetal a la norteña, yuca, arroz
       in_menu:
         - ve
   extras:
@@ -77,7 +77,7 @@ dishes:
         - ec
         - me
     - 
-      name: Pudín
+      name: Espuma de fruta
       in_menu:
         - me
 carta: 

@@ -31,25 +31,25 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada fresca
+      name: Ensalada mixta
       in_menu: 
         - be
     - 
-      name: Ensalada Griega
+      name: Ensalada rusa
       in_menu: 
         - me
   main:
     - 
-      name: Carne a la vizcaína, papa, arroz
+      name: Anticucho de hígado, arveja verde, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pescado a la florentina, papa, arroz
+      name: Pollo en salsa de brócoli, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Huevo frito, arroz
+      name: Arveja verde guisada, arroz
       in_menu: 
         - ec
   extras:
@@ -68,7 +68,7 @@ dishes:
         - ec
         - me
     - 
-      name: Gelatina frutada
+      name: Mousse de fruta
       in_menu:
         - me
 carta: 
