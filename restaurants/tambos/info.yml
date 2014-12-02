@@ -27,12 +27,12 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa crema de espárragos
+      name: Sopa casuela de res
       in_menu: 
         - ej
         - ec
     - 
-      name: Palta a la jardinera
+      name: Papa a la huancaína
       in_menu: 
         - ej
         - ec
@@ -43,11 +43,11 @@ dishes:
         - ec
   main:
     - 
-      name: Pollo al horno con puré
+      name: Milanesa de pollo con p. fritas + ens.
       in_menu: 
         - ej
     - 
-      name: Churrasco con papas fritas + ens.
+      name: Bisteck enrollado con jamón y queso
       in_menu: 
         - ej
     - 
@@ -59,17 +59,17 @@ dishes:
       in_menu: 
         - ej
     - 
-      name: Alverjita con pollo al jugo
+      name: Arroz con pollo
       in_menu: 
         - un
         - ec
     - 
-      name: Tallarines rojos con asado
+      name: Carapulcra de cerdo
       in_menu: 
         - un
         - ec
     - 
-      name: Tortilla de verduras
+      name: Arroz a la cubana
       in_menu: 
         - un
         - ec
