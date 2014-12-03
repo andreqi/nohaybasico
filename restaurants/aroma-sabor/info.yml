@@ -20,15 +20,15 @@ tipos_menu:
 dishes: 
   intro: 
     - 
-      name: Sopa de pollo con kión
+      name: Menestrón
       in_menu: 
         - me
     - 
-      name: Tequeños con guacamole
+      name: Papa a la huancaína
       in_menu: 
         - me
     - 
-      name: Solterito
+      name: Ensalada tricolor
       in_menu: 
         - me
     - 
@@ -37,35 +37,35 @@ dishes:
         - me
   main:
     - 
-      name: Lomo saltado
+      name: Arroz con pollo + salsa criolla
       in_menu: 
         - me
     - 
-      name: Ají de gallina
+      name: Seco de res
       in_menu: 
         - me
     - 
-      name: Macarrones con carne molida
+      name: Estofado de pollo
       in_menu: 
         - me
     - 
-      name: Arroz a la cubana
+      name: Tallarines a lo alfredo
       in_menu: 
         - me
     - 
-      name: Pollo al maní
+      name: Pollo al vino
       in_menu: 
         - me
     - 
-      name: Picante de carne
+      name: Malaya dorada + p. dorada+ salsa criolla
       in_menu: 
         - me
     - 
-      name: Sudado de pescado
+      name: Filete de toyo con menestras
       in_menu: 
         - me
     - 
-      name: Hamburguesa + p. fritas + ensalada
+      name: Pollo broaster + p. fritas + ensalada
       in_menu: 
         - me
   extras: 

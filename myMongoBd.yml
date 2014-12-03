@@ -14,7 +14,7 @@ menus:
     is_updated: true
   -
     name: aroma-sabor
-    is_updated: false
+    is_updated: true
   -
     name: da-gusto
     is_updated: false
