@@ -23,7 +23,7 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Solterito arequipeño
+      name: Ensalada multicolor
       in_menu: 
         - di
         - es
@@ -33,25 +33,25 @@ dishes:
         - di
         - es
     - 
-      name: Aguadito de pollovel
+      name: Sancochado
       in_menu: 
         - di
         - es
   main:
     - 
-      name: Guiso de lentejas vegetarianas
+      name: Ajiaco de olluco con bisteckvel
       in_menu: 
         - di
     - 
-      name: Pollovel a la mostaza
+      name: Seco limeño vegetariano
       in_menu: 
         - di
     - 
-      name: Arroz a la cubana
+      name: Bisteckvel con puré
       in_menu: 
         - es
     - 
-      name: Espagueti a la bolognesa
+      name: Arroz chaufa con plátano
       in_menu: 
         - es
   extras:

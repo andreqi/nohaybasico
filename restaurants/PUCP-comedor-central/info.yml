@@ -35,29 +35,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada de tomates
+      name: Ensalada mixta
       in_menu: 
         - be
     - 
-      name: Ensalada del chef
+      name: Ensalada mixta
       in_menu: 
         - me
   main:
     - 
-      name: Carne estofada, papa, arroz
+      name: Tallarines a la crema con pollo
       in_menu: 
         - ba
         - be
     - 
-      name: Hígado en salsa de anticucho, papa, arroz
+      name: Pescado al ajo, yuca, arroz
       in_menu: 
         - me
     - 
-      name: Tortilla de verduras, arroz
+      name: Tallarines a la crema
       in_menu: 
         - ec
     - 
-      name: Carne vegetal estofada, papa, arroz
+      name: Tallarines a la crema con carne vegetal
       in_menu: 
         - ve
   extras:
@@ -77,7 +77,7 @@ dishes:
         - ec
         - me
     - 
-      name: Delicia de fruta
+      name: Budín con miel
       in_menu:
         - me
 carta: 

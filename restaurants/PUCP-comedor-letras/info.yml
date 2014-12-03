@@ -35,29 +35,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada fresca
+      name: Tequeños con palta
       in_menu: 
         - be
     - 
-      name: Arrolladitos primavera
+      name: Ensalada de panamitos
       in_menu: 
         - me
   main:
     - 
-      name: Pescado a la norteña, yuca, arroz
+      name: Carne a la vasca, legumbres, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Carne al estragón, legumbres, arroz
+      name: Hígado apanado, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Arroz chaufa
+      name: Huevo frito, arroz
       in_menu: 
         - ec
     - 
-      name: Carne vegetal a la norteña, yuca, arroz
+      name: Albóndiga vegetal a la vasca, legumbres, arroz
       in_menu:
         - ve
   extras:
@@ -77,7 +77,7 @@ dishes:
         - ec
         - me
     - 
-      name: Espuma de fruta
+      name: Fruta
       in_menu:
         - me
 carta: 

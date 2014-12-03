@@ -1,4 +1,4 @@
-is_menu_active: false
+is_menu_active: true
 menus:
   -
     name: PUCP-comedor-administrativas
@@ -14,16 +14,16 @@ menus:
     is_updated: true
   -
     name: aroma-sabor
-    is_updated: true
-  -
-    name: da-gusto
-    is_updated: true
-  -
-    name: el-arbolito
     is_updated: false
   -
-    name: karis
+    name: da-gusto
+    is_updated: false
+  -
+    name: el-arbolito
     is_updated: true
+  -
+    name: karis
+    is_updated: false
   -
     name: la-cabanita
     is_updated: false
@@ -35,7 +35,7 @@ menus:
     is_updated: false
   -
     name: tambos
-    is_updated: true
+    is_updated: false
   -
     name: tia-carino
     is_updated: false

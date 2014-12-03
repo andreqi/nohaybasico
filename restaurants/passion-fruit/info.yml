@@ -31,31 +31,31 @@ tipos_menu:
 dishes:
   main: 
     -
-     name: Cupcake Red Velvet
-     in_menu:
-        - ck
-    -
-      name: Cupcake Pie de Limón
+      name: Cupcake canela y manzana
       in_menu:
         - ck
     -
-      name: Cupcake Tres Leches
+      name: Cupcake S'more
       in_menu:
         - ck
     -
-      name: Cupcake Sundae
+      name: Cupcake Red velvet
       in_menu:
         - ck
     -
-      name: Cupcake Happy Day
+      name: Cupcake jengibre
       in_menu:
         - ck
     -
-      name: Cupcake Pie de Manzana
+      name: Cupcake panetón
+      in_menu:
+        - ck
+    -
+      name: Cupcake Hot chocolate
       in_menu: 
         - ck
     - 
-      name: Cupcake Chocomenta
+      name: Cupcake selva negra
       in_menu: 
         - ck
 carta: 

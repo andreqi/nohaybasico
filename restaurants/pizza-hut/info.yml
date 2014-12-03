@@ -20,8 +20,9 @@ dishes:
   main:
     -
       name: >
-        Pizza alemana (salchicha alemana, tocino, jamón y
-          queso mozzarella)
+        Chicken primavera (Espirales finamente gratinados, salsaa lo
+          Alfredo, filete de pechuga de pollo marinado en trozos, mezcla
+          de vegetales y queso mozzarella)
       in_menu:
         - hut
   extras: 

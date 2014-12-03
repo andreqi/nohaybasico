@@ -27,12 +27,12 @@ dishes:
         - di
   main:
     - 
-      name: Garbanzos mediterráneos c/ vegetales al olivo servido c/ arroz integral
+      name: Picante de vegetales con trigo graneado
       in_menu: 
         - di
   extras:
     -
-      name: 'Infusión de hierba'
+      name: 'Mate de hierbas'
       in_menu: 
         - di
 carta: 

@@ -31,25 +31,25 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Mixtura de verduras
+      name: Ensalada oriental
       in_menu: 
         - be
     - 
-      name: Ensalada César
+      name: Ocopa
       in_menu: 
         - me
   main:
     - 
-      name: Tallarines al pesto con pollo
+      name: Cerdo al mensi, verduras chinas, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pescado en salsa de rocoto, papa, arroz
+      name: Pollo asado con tocino, legumbres, arroz
       in_menu: 
         - me
     - 
-      name: Tallarines al pesto
+      name: Arroz chaufa
       in_menu: 
         - ec
   extras:
@@ -68,7 +68,7 @@ dishes:
         - ec
         - me
     - 
-      name: Manzana al horno
+      name: Pudín de chocolate
       in_menu:
         - me
 carta: 
