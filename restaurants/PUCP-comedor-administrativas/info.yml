@@ -31,25 +31,25 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada oriental
+      name: Papa en crema de rocoto
       in_menu: 
         - be
     - 
-      name: Ocopa
+      name: Ensalada fresca
       in_menu: 
         - me
   main:
     - 
-      name: Cerdo al mensi, verduras chinas, arroz
+      name: Carne al tomillo, legumbres, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pollo asado con tocino, legumbres, arroz
+      name: Cerdo al horno, puré, arroz
       in_menu: 
         - me
     - 
-      name: Arroz chaufa
+      name: Puré, arroz
       in_menu: 
         - ec
   extras:
@@ -68,7 +68,7 @@ dishes:
         - ec
         - me
     - 
-      name: Pudín de chocolate
+      name: Mazamorra morada
       in_menu:
         - me
 carta: 

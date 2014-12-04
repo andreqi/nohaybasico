@@ -39,25 +39,25 @@ dishes:
       in_menu: 
         - be
     - 
-      name: Ensalada mixta
+      name: Ensalada Griega
       in_menu: 
         - me
   main:
     - 
-      name: Tallarines a la crema con pollo
+      name: Pescado en salsa picante, papa, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Pescado al ajo, yuca, arroz
+      name: Tallarines al pomodoro con pollo 
       in_menu: 
         - me
     - 
-      name: Tallarines a la crema
+      name: Huevo frito, arroz 
       in_menu: 
         - ec
     - 
-      name: Tallarines a la crema con carne vegetal
+      name: Albóndigas en salsa picante, papa, arroz
       in_menu: 
         - ve
   extras:
@@ -77,7 +77,7 @@ dishes:
         - ec
         - me
     - 
-      name: Budín con miel
+      name: Carlota de piña
       in_menu:
         - me
 carta: 

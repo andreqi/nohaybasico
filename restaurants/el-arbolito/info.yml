@@ -23,7 +23,7 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada multicolor
+      name: Ceviche de gluten y cocona
       in_menu: 
         - di
         - es
@@ -33,25 +33,25 @@ dishes:
         - di
         - es
     - 
-      name: Sancochado
+      name: Sopa de morón
       in_menu: 
         - di
         - es
   main:
     - 
-      name: Ajiaco de olluco con bisteckvel
+      name: Estofado de pollovel
       in_menu: 
         - di
     - 
-      name: Seco limeño vegetariano
+      name: Bisteckvel en salsa de espárragos
       in_menu: 
         - di
     - 
-      name: Bisteckvel con puré
+      name: Tallarín saltado criollo
       in_menu: 
         - es
     - 
-      name: Arroz chaufa con plátano
+      name: Tortilla de verduras
       in_menu: 
         - es
   extras:

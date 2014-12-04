@@ -18,7 +18,7 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa de verduras
+      name: Crema de verduras
       in_menu: 
         - di
     - 
@@ -27,12 +27,12 @@ dishes:
         - di
   main:
     - 
-      name: Picante de vegetales con trigo graneado
+      name: Arroz al culantro acompañado de huancaína vegana
       in_menu: 
         - di
   extras:
     -
-      name: 'Mate de hierbas'
+      name: 'Infusión de menta'
       in_menu: 
         - di
 carta: 

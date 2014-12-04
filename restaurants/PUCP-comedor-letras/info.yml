@@ -35,29 +35,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Tequeños con palta
+      name: Solterito 
       in_menu: 
         - be
     - 
-      name: Ensalada de panamitos
+      name: Tomate relleno con verduras
       in_menu: 
         - me
   main:
     - 
-      name: Carne a la vasca, legumbres, arroz
+      name: Lomito de hígado, frijoles, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Hígado apanado, legumbres, arroz
+      name: Pescado a la menier, papa al perejil, arroz
       in_menu: 
         - me
     - 
-      name: Huevo frito, arroz
+      name: Frijoles guisado, arroz
       in_menu: 
         - ec
     - 
-      name: Albóndiga vegetal a la vasca, legumbres, arroz
+      name: Lomito vegetal, frijoles, arroz
       in_menu:
         - ve
   extras:
@@ -77,7 +77,7 @@ dishes:
         - ec
         - me
     - 
-      name: Fruta
+      name: Fantasía de gelatina
       in_menu:
         - me
 carta: 

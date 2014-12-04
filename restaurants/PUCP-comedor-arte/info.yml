@@ -31,25 +31,25 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Papa a la huancaína
+      name: Salpicón de verduras
       in_menu: 
         - be
     - 
-      name: Ensalada festiva
+      name: Huevo a la rusa
       in_menu: 
         - me
   main:
     - 
-      name: Pescado a la chalaca, arroz
+      name: Fricasé de pollo, legumbres, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Tallarines a la primavera con carne asada
+      name: Mondonguito a la italiana, arroz
       in_menu: 
         - me
     - 
-      name: Tallarines al tuco
+      name: Tortilla de verduras, arroz
       in_menu: 
         - ec
   extras:
@@ -68,7 +68,7 @@ dishes:
         - ec
         - me
     - 
-      name: Cóctel de fruta
+      name: Arroz zambito
       in_menu:
         - me
 carta: 
