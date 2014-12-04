@@ -20,9 +20,7 @@ dishes:
   main:
     -
       name: >
-        Chicken primavera (Espirales finamente gratinados, salsaa lo
-          Alfredo, filete de pechuga de pollo marinado en trozos, mezcla
-          de vegetales y queso mozzarella)
+       Pizza Hawaiana
       in_menu:
         - hut
   extras: 
