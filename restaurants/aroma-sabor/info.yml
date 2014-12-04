@@ -20,15 +20,15 @@ tipos_menu:
 dishes: 
   intro: 
     - 
-      name: Menestrón
+      name: Sopa de pollo con sémola
       in_menu: 
         - me
     - 
-      name: Papa a la huancaína
+      name: Chicharrón de calamar
       in_menu: 
         - me
     - 
-      name: Ensalada tricolor
+      name: Palta rellena
       in_menu: 
         - me
     - 
@@ -37,35 +37,35 @@ dishes:
         - me
   main:
     - 
-      name: Arroz con pollo + salsa criolla
+      name: Tallarines rojos con pollo
       in_menu: 
         - me
     - 
-      name: Seco de res
+      name: Asado de res con puré
       in_menu: 
         - me
     - 
-      name: Estofado de pollo
+      name: Carapulcra con chancho
       in_menu: 
         - me
     - 
-      name: Tallarines a lo alfredo
+      name: Pollo a la coca cola
       in_menu: 
         - me
     - 
-      name: Pollo al vino
+      name: Arroz chaufa con carne
       in_menu: 
         - me
     - 
-      name: Malaya dorada + p. dorada+ salsa criolla
+      name: Pollo con champiñones
       in_menu: 
         - me
     - 
-      name: Filete de toyo con menestras
+      name: Apanado de toyo con menestras
       in_menu: 
         - me
     - 
-      name: Pollo broaster + p. fritas + ensalada
+      name: Milanesa de pollo + p. fritas + ensalada
       in_menu: 
         - me
   extras: 
