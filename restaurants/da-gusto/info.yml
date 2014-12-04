@@ -31,7 +31,7 @@ dishes:
         - mc
         - en
     -
-      name: Ensalada mixta
+      name: Papa a la huancaina
       in_menu: 
         - mc
         - en
@@ -42,25 +42,20 @@ dishes:
         - en
   main:
     -
-      name: Arvejas con adobo
+      name: Arroz con pollo
       in_menu: 
         - mc
         - fo    
     -
-      name: Locro con napolitana
+      name: Lentejas con bistec
       in_menu: 
         - mc
         - fo    
     -
-      name: Pollo al ajonjolí
+      name: Pollo al sillao
       in_menu: 
         - mc
-        - fo    
-    -
-      name: Milanesa con papas fritas
-      in_menu: 
-        - mc
-        - fo    
+        - fo 
     -
       name: Filete a la plancha con arroz 
       in_menu: 
