@@ -35,29 +35,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ensalada mixta
+      name: Ensalada fresca
       in_menu: 
         - be
     - 
-      name: Ensalada Griega
+      name: Ensalada americana
       in_menu: 
         - me
   main:
     - 
-      name: Pescado en salsa picante, papa, arroz
+      name: Hígado a la parrilla, panamitos guisados, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Tallarines al pomodoro con pollo 
+      name: Carne a la cazadora, papa, arroz
       in_menu: 
         - me
     - 
-      name: Huevo frito, arroz 
+      name: Panamitos guisado, arroz
       in_menu: 
         - ec
     - 
-      name: Albóndigas en salsa picante, papa, arroz
+      name: Lomito vegetal, panamitos guisados, arroz
       in_menu: 
         - ve
   extras:
@@ -77,7 +77,7 @@ dishes:
         - ec
         - me
     - 
-      name: Carlota de piña
+      name: Compota de membrillo
       in_menu:
         - me
 carta: 
