@@ -31,25 +31,25 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Salpicón de verduras
+      name: Wantan con tamarindo
       in_menu: 
         - be
     - 
-      name: Huevo a la rusa
+      name: Ensalada tropical
       in_menu: 
         - me
   main:
     - 
-      name: Fricasé de pollo, legumbres, arroz
+      name: Cerdo asado, puré, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Mondonguito a la italiana, arroz
+      name: Pollo a la cazadora, papa arroz 
       in_menu: 
         - me
     - 
-      name: Tortilla de verduras, arroz
+      name: Puré, arroz
       in_menu: 
         - ec
   extras:
@@ -68,7 +68,7 @@ dishes:
         - ec
         - me
     - 
-      name: Arroz zambito
+      name: Manzana al horno
       in_menu:
         - me
 carta: 

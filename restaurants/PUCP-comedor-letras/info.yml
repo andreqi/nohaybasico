@@ -35,29 +35,29 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Solterito 
+      name: Ensalada mixta
       in_menu: 
         - be
     - 
-      name: Tomate relleno con verduras
+      name: Wantan con tamarindo
       in_menu: 
         - me
   main:
     - 
-      name: Lomito de hígado, frijoles, arroz
+      name: Tallarines al tuco con pollo
       in_menu: 
         - ba
         - be
     - 
-      name: Pescado a la menier, papa al perejil, arroz
+      name: Cerdo al sillau, verduras chinas, arroz
       in_menu: 
         - me
     - 
-      name: Frijoles guisado, arroz
+      name: Tallarines al tuco
       in_menu: 
         - ec
     - 
-      name: Lomito vegetal, frijoles, arroz
+      name: Tallarines al tuco con carne vegetal
       in_menu:
         - ve
   extras:
@@ -77,7 +77,7 @@ dishes:
         - ec
         - me
     - 
-      name: Fantasía de gelatina
+      name: Frutas con miel
       in_menu:
         - me
 carta: 

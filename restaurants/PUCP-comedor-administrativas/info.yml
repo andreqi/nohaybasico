@@ -31,25 +31,25 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Papa en crema de rocoto
+      name: Ensalada variada 
       in_menu: 
         - be
     - 
-      name: Ensalada fresca
+      name: Ensalada de betarragas
       in_menu: 
         - me
   main:
     - 
-      name: Carne al tomillo, legumbres, arroz
+      name: Escabeche de pescado , camote, arroz
       in_menu: 
         - ba
         - be
     - 
-      name: Cerdo al horno, puré, arroz
+      name: Lomito de hígado, papa frita , arroz
       in_menu: 
         - me
     - 
-      name: Puré, arroz
+      name: Tortilla de verduras, arroz
       in_menu: 
         - ec
   extras:
@@ -68,7 +68,7 @@ dishes:
         - ec
         - me
     - 
-      name: Mazamorra morada
+      name: Mousse de fruta
       in_menu:
         - me
 carta: 
