@@ -31,7 +31,7 @@ dishes:
         - mc
         - en
     -
-      name: Papa a la huancaina
+      name: Leche de tigre
       in_menu: 
         - mc
         - en
@@ -40,19 +40,29 @@ dishes:
       in_menu: 
         - mc
         - en
+    -
+      name: Ensalada de fideos
+      in_menu: 
+        - mc
+        - en
   main:
     -
-      name: Arroz con pollo
+      name: Frejoles con seco
       in_menu: 
         - mc
         - fo    
     -
-      name: Lentejas con bistec
+      name: Chuleta a la cerveza
       in_menu: 
         - mc
         - fo    
     -
-      name: Pollo al sillao
+      name: Pollo 7 sabores
+      in_menu: 
+        - mc
+        - fo 
+    -
+      name: Lomo saltado
       in_menu: 
         - mc
         - fo 

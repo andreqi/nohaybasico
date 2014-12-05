@@ -23,7 +23,7 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Ceviche de gluten y cocona
+      name: Tamal vegetariano
       in_menu: 
         - di
         - es
@@ -33,25 +33,25 @@ dishes:
         - di
         - es
     - 
-      name: Sopa de morón
+      name: Chupe de habas
       in_menu: 
         - di
         - es
   main:
     - 
-      name: Estofado de pollovel
+      name: Arroz árabe
       in_menu: 
         - di
     - 
-      name: Bisteckvel en salsa de espárragos
+      name: Bisteckvel con puré 
       in_menu: 
         - di
     - 
-      name: Tallarín saltado criollo
+      name: Albóndiga a la parmesana
       in_menu: 
         - es
     - 
-      name: Tortilla de verduras
+      name: Tortilla de vainitas
       in_menu: 
         - es
   extras:

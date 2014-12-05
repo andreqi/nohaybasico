@@ -18,7 +18,7 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Crema de verduras
+      name: Sopa de verduras
       in_menu: 
         - di
     - 
@@ -27,12 +27,12 @@ dishes:
         - di
   main:
     - 
-      name: Arroz al culantro acompañado de huancaína vegana
-      in_menu: 
+      name: Hamburguesas veganas c/ papitas salteada y guarnición de vegetales
+      in_menu:
         - di
   extras:
     -
-      name: 'Infusión de menta'
+      name: 'Mix herbal con linaza'
       in_menu: 
         - di
 carta: 
