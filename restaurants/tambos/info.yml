@@ -27,12 +27,12 @@ tipos_menu:
 dishes: 
   intro:
     - 
-      name: Sopa caldo de pollo
+      name: Sopa juliana
       in_menu: 
         - ej
         - ec
     - 
-      name: Papa rellena
+      name: Causa con atún
       in_menu: 
         - ej
         - ec
@@ -43,11 +43,11 @@ dishes:
         - ec
   main:
     - 
-      name: Pescado a la plancha + p. dorada + salsa criolla
+      name: Pollo enrollado con jamón y queso
       in_menu: 
         - ej
     - 
-      name: Bisteck apanado con p. fritas + ens.
+      name: Tacu tacu con churrasco
       in_menu: 
         - ej
     - 
@@ -59,17 +59,17 @@ dishes:
       in_menu: 
         - ej
     - 
-      name: Pachamanca de pollo
+      name: Aji de pollo
       in_menu: 
         - un
         - ec
     - 
-      name: Lomito strogonoff
+      name: Seco de res a la chiclayana
       in_menu: 
         - un
         - ec
     - 
-      name: Vainita saltada de res con huevo frito
+      name: Pollo con piña
       in_menu: 
         - un
         - ec
