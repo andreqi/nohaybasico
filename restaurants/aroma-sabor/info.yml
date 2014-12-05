@@ -20,15 +20,15 @@ tipos_menu:
 dishes: 
   intro: 
     - 
-      name: Sopa de pollo con sémola
+      name: Sopa a la minuta
       in_menu: 
         - me
     - 
-      name: Chicharrón de calamar
+      name: Ocopa
       in_menu: 
         - me
     - 
-      name: Palta rellena
+      name: Ensalada rusa
       in_menu: 
         - me
     - 
@@ -37,35 +37,35 @@ dishes:
         - me
   main:
     - 
-      name: Tallarines rojos con pollo
+      name: Tallarines verdes con bisteck
       in_menu: 
         - me
     - 
-      name: Asado de res con puré
+      name: Mechado de pollo
       in_menu: 
         - me
     - 
-      name: Carapulcra con chancho
+      name: Churrasco al jugo con menestras
       in_menu: 
         - me
     - 
-      name: Pollo a la coca cola
+      name: Pollo al sillao
       in_menu: 
         - me
     - 
-      name: Arroz chaufa con carne
+      name: Arroz tapado
       in_menu: 
         - me
     - 
-      name: Pollo con champiñones
+      name: Cau cau
       in_menu: 
         - me
     - 
-      name: Apanado de toyo con menestras
+      name: Pollo frito con menestras
       in_menu: 
         - me
     - 
-      name: Milanesa de pollo + p. fritas + ensalada
+      name: Bisteck + p. fritas + ensalada
       in_menu: 
         - me
   extras: 
