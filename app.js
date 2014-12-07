@@ -212,6 +212,7 @@ function loadBd() {
   return YAML.load(myBDPath);
 }
 
+console.log("No hay basico");
 console.log("Environment " + env);
 console.log('Listenning '+ port);
 
