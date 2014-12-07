@@ -23,6 +23,14 @@ app.listen(port);
 
 var days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado'];
 
+app.set('views', __dirname + '/views');
+app.set('view engine', 'jade');
+app.use(express.static(__dirname + '/public'));
+
+app.get('*', function(req, res) {
+  res.render('offline', {});
+});
+
 app.get('/', function(req, res) {
   var date = new Date();
   var day = days[date.getDay()];
@@ -103,10 +111,6 @@ app.get('/restaurant/map/:id', function(req, res) {
       16)
     .pipe(res);
 });
-
-app.use(express.static(__dirname + '/public'));
-app.set('views', __dirname + '/views');
-app.set('view engine', 'jade');
 
 function get_restaurants(callback) {
   fs.readdir('./restaurants', function(err, files) {

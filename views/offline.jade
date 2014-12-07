@@ -1,0 +1,27 @@
+extends ./main-template.jade
+
+block title
+  #header-wrapper
+    #header
+      include title
+      section#banner
+        header
+          h2 No hay saldo
+          p
+            | Nos quedamos sin saldo para llamar 
+            br
+            | a los restaurants ☹ . Volveremos el 
+            br
+            |siguiente ciclo con más saldo y 
+            br
+            | nuevos cambios
+        include android-nhb
+
+block content
+  .container
+    .row
+      .12u
+        section
+          header.major#menus 
+            h2 Los menús actualizados ya vienen el siguiente ciclo :)
+            
