@@ -1,6 +1,6 @@
 // juanchi++
 var express = require('express'); 
-var Components = require('./app/constants/Components');
+var Components = require('./app/constants/components');
 var app = express(); 
 var mapsAPI = require('./mapsAPI.js');
 var fs = require('fs');
