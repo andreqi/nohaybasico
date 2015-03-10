@@ -1,6 +1,8 @@
 // juanchi++
+var nodejsx = require('node-jsx').install();
 var express = require('express'); 
 var Components = require('./app/constants/components');
+var view_engine = require('./app/app');
 var app = express(); 
 var mapsAPI = require('./mapsAPI.js');
 var fs = require('fs');
@@ -48,6 +50,9 @@ app.get('/', function(req, res) {
         cur_day: day,
         menu_active: info.is_menu_active,
         props: props,
+        component: view_engine.start(
+          JSON.parse(props)
+        ),
       });
 
     });
@@ -102,6 +107,9 @@ app.get('/:id/galeria', function(req, res) {
     restaurant: restaurant,
     active_tab: 'galeria',
     props: props,
+    component: view_engine.start(
+      JSON.parse(props)
+    ),
   });
 });
 
