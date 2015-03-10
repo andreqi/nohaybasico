@@ -28,10 +28,6 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.use(express.static(__dirname + '/public'));
 
-app.get('*', function(req, res) {
-  res.render('offline', {});
-});
-
 app.get('/', function(req, res) {
   var date = new Date();
   var day = days[date.getDay()];
@@ -44,7 +40,7 @@ app.get('/', function(req, res) {
     mLog.save(function(err,model) {
       if(err) console.log(err);
 
-      res.render('main', {
+      res.render('landing/main', {
         data: data,
         cur_day: day,
         menu_active: info.is_menu_active
@@ -74,7 +70,7 @@ app.get('/:id/menu', function(req, res) {
     }
   };
   // render restaurant
-  res.render('restaurant-menu', {
+  res.render('restaurant/menu', {
     restaurant: restaurant,
     active_tab: 'menu',
   });
@@ -84,7 +80,7 @@ app.get('/:id/info', function(req, res) {
   var id = req.params.id;
   var restaurant = get_restaurant(id);
   var coords = restaurant.coordinates;
-  res.render('restaurant-info', {
+  res.render('restaurant/info', {
     restaurant: restaurant,
     active_tab: 'info',
   });
@@ -93,7 +89,7 @@ app.get('/:id/info', function(req, res) {
 app.get('/:id/carta', function(req, res) {
   var id = req.params.id;
   var restaurant = get_restaurant(id);
-  res.render('restaurant-dishes', {
+  res.render('restaurant/dishes', {
     restaurant: restaurant,
     active_tab: 'carta',
   });
