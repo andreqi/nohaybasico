@@ -1,4 +1,4 @@
-extends ./main-template.jade
+extends ../main-template.jade
 
 block title
   #header-wrapper
@@ -37,6 +37,8 @@ block content
                 - perc = ((data.perc /data.total) * 100).toFixed(0)
                 progress(max='#{data.total}', value='#{data.perc}')
                 span.progress-value #{perc} %
+          div(class='row columns')
+            include ../component-wrapper
           div(class='row columns')
             each rest in data.restaurants
               include restaurant

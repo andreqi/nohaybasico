@@ -5,9 +5,28 @@
     "jade": "*",
     "mongoose": "^3.8.19",
     "request": "*",
-    "yamljs": "*"
+    "yamljs": "*",
+    "immutable": "*",
+    "node-jsx": "*",
+    "lodash": "*",
+    "passport": "*", 
+    "passport-facebook": "*", 
+    "browserify": "*",
+    "node-jsx": "*",
+    "react": "*",
+    "reactify": "*"
   },
   "scripts": {
-    "start": "node app.js"
+    "build-js": "mkdir -p public && browserify app/app.js --standalone Application --debug --outfile public/bundle.js",
+    "build-css": "",
+    "build": "npm run build-js && npm run build-css",
+    "start": "node app.js",
+    "web": "npm run build && npm start",
+    "dev": "nodemon --exec \"npm run web\" --ignore public/bundle.js -e js,jsx,css"
+  },
+  "browserify": {
+    "transform": [
+      ["reactify", {"es6": true}]
+    ]
   }
 }
