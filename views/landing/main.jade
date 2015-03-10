@@ -38,5 +38,7 @@ block content
                 progress(max='#{data.total}', value='#{data.perc}')
                 span.progress-value #{perc} %
           div(class='row columns')
+            include ../component-wrapper
+          div(class='row columns')
             each rest in data.restaurants
               include restaurant

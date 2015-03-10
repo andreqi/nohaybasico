@@ -1,5 +1,6 @@
 // juanchi++
 var express = require('express'); 
+var Components = require('./app/constants/Components');
 var app = express(); 
 var mapsAPI = require('./mapsAPI.js');
 var fs = require('fs');
@@ -39,11 +40,14 @@ app.get('/', function(req, res) {
     });
     mLog.save(function(err,model) {
       if(err) console.log(err);
-
+      var props = JSON.stringify({
+          component: Components.RESTLIST,
+      });
       res.render('landing/main', {
         data: data,
         cur_day: day,
-        menu_active: info.is_menu_active
+        menu_active: info.is_menu_active,
+        props: props,
       });
 
     });
@@ -85,6 +89,23 @@ app.get('/:id/info', function(req, res) {
     active_tab: 'info',
   });
 });
+
+app.get('/:id/galeria', function(req, res) {
+  var id = req.params.id;
+  var restaurant = get_restaurant(id);
+  var coords = restaurant.coordinates;
+  var props = JSON.stringify({
+    component: Components.GALERIA,
+  });
+
+  res.render('restaurant/galeria', {
+    restaurant: restaurant,
+    active_tab: 'galeria',
+    props: props,
+  });
+});
+
+
 
 app.get('/:id/carta', function(req, res) {
   var id = req.params.id;
