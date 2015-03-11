@@ -9,10 +9,9 @@
     "immutable": "*",
     "node-jsx": "*",
     "lodash": "*",
-    "passport": "*", 
-    "passport-facebook": "*", 
+    "passport": "*",
+    "passport-facebook": "*",
     "browserify": "*",
-    "node-jsx": "*",
     "react": "*",
     "reactify": "*"
   },
@@ -26,7 +25,18 @@
   },
   "browserify": {
     "transform": [
-      ["reactify", {"es6": true}]
+      [
+        "reactify",
+        {
+          "es6": true
+        }
+      ]
     ]
+  },
+  "devDependencies": {
+    "chai": "^2.1.1",
+    "mocha": "^2.2.1",
+    "mocha-mongoose": "^1.0.3",
+    "mongodb": "^1.4.34"
   }
 }
