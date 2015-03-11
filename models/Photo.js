@@ -1,13 +1,14 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var ObjectId = Schema.ObjectId;
+var moment = require('moment');
 
 var PhotoSchema = new Schema({
   picture: String,
   totalVotes: {type: Number, default: 0},
-  timeToShow: {type: Date, default: Date.now},
+  showTime: {type: Date, default: Date.now},
   createdAt: {type: Date, default: Date.now},
-  createBy: {type: ObjectId, ref: 'User'},
+  createdBy: {type: ObjectId, ref: 'User'},
   restaurant: {type: ObjectId, ref: 'Restaurant'},
   votes: [{
     vote: Number,
@@ -54,7 +55,24 @@ PhotoSchema.statics.voteDown = function(params, cb) {
 };
 
 PhotoSchema.statics.getPhotos = function(idRest, cb) {
-
+  var now = moment();
+  var today = moment().startOf('day');
+  var tomorrow = moment(today).add(1, 'days');
+  
+  var query = {
+    restaurant: idRest,
+    showTime: {
+      $gte: now.toDate(),
+      $lt: tomorrow.toDate()
+    }
+  };
+  var fields = {
+    picture: 1,
+    totalVotes: 1,
+    showTime: 1,
+    createdBy: 1
+  }
+  Photo.find(query, fields).sort('-totalVotes').exec(cb);
 }
 
 var Photo = module.exports = mongoose.model('Photo', PhotoSchema);

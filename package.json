@@ -1,19 +1,20 @@
 {
   "name": "nohaybasico.com",
   "dependencies": {
+    "browserify": "*",
     "express": "*",
-    "jade": "*",
-    "mongoose": "^3.8.19",
-    "request": "*",
-    "yamljs": "*",
     "immutable": "*",
-    "node-jsx": "*",
+    "jade": "*",
     "lodash": "*",
+    "moment": "^2.9.0",
+    "mongoose": "^3.8.19",
+    "node-jsx": "*",
     "passport": "*",
     "passport-facebook": "*",
-    "browserify": "*",
     "react": "*",
-    "reactify": "*"
+    "reactify": "*",
+    "request": "*",
+    "yamljs": "*"
   },
   "scripts": {
     "build-js": "mkdir -p public && browserify app/app.js --standalone Application --debug --outfile public/bundle.js",

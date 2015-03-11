@@ -1,9 +1,12 @@
 var dbURI    = 'mongodb://localhost/nohaybasicotest';
 var expect   = require('chai').expect;
+var moment = require('moment');
 var mongoose = require('mongoose');
+var clearDB  = require('mocha-mongoose')(dbURI);
+
 var User = require('../models/User');
 var Photo = require('../models/Photo');
-var clearDB  = require('mocha-mongoose')(dbURI);
+var Restaurant = require('../models/Restaurant');
 
 describe("Photo test", function() {
 
@@ -28,13 +31,13 @@ describe("Photo test", function() {
   it("create new Photo by User", function(done) {
     var params = {
       picture: 'img',
-      createBy: id
+      createdBy: id
     };
     new Photo(params).save(function(err, model) {
       expect(err).to.not.exist;
       expect(model).to.exist;
 
-      expect('' + model.createBy).to.equal(params.createBy);
+      expect('' + model.createdBy).to.equal(params.createdBy);
       done();
     })
     
@@ -96,6 +99,90 @@ describe("Photo test", function() {
 
       });
 
+    })
+  });
+
+  it("get photos from restaurant if not show time", function(done) {
+    new Restaurant({}).save(function(err, rest) {
+      expect(err).to.not.exist;
+
+      var params = {
+        createdBy: id,
+        restaurant: rest._id,
+        showTime: moment().subtract(1, 'm').toDate()
+      }
+
+      new Photo(params).save(function(err, newPhoto) {
+        expect(err).to.not.exist;
+
+        Photo.getPhotos(rest._id, function(err, model) {
+          expect(err).to.not.exist;
+          expect(model.length).to.equal(0);
+          done();
+        });
+
+      });
+
+    })
+  });
+
+  it("get photos from restaurant if show time", function(done) {
+    new Restaurant({}).save(function(err, rest) {
+      expect(err).to.not.exist;
+
+      var params = {
+        createdBy: id,
+        restaurant: rest._id,
+        showTime: moment().add(1, 'm').toDate()
+      }
+
+      new Photo(params).save(function(err, newPhoto) {
+        expect(err).to.not.exist;
+
+        Photo.getPhotos(rest._id, function(err, model) {
+          expect(err).to.not.exist;
+          expect(model.length).to.equal(1);
+          done();
+        });
+
+      });
+    })
+  });
+
+  it("get photos from restaurant if show time", function(done) {
+    new Restaurant({}).save(function(err, rest) {
+      expect(err).to.not.exist;
+
+      var params = {
+        createdBy: id,
+        restaurant: rest._id,
+        showTime: moment().add(1, 'm').toDate(),
+        totalVotes: 5
+      }
+
+      new Photo(params).save(function(err, newPhoto) {
+        expect(err).to.not.exist;
+
+        var params2 = {
+          createdBy: id,
+          restaurant: rest._id,
+          showTime: moment().add(1, 'm').toDate(),
+          totalVotes: 2
+        }
+
+        new Photo(params2).save(function(err, newPhoto) {
+          expect(err).to.not.exist;
+
+          Photo.getPhotos(rest._id, function(err, model) {
+            expect(err).to.not.exist;
+            expect(model.length).to.equal(2);
+            expect(model[0].totalVotes).to.be.above(model[1].totalVotes);
+            done();
+          });
+        });
+
+
+      });
     })
   });
 
