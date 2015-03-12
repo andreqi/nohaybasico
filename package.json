@@ -1,13 +1,16 @@
 {
   "name": "nohaybasico.com",
   "dependencies": {
+    "body-parser": "^1.12.0",
     "browserify": "*",
     "express": "*",
+    "fs": "0.0.2",
     "immutable": "*",
     "jade": "*",
     "lodash": "*",
     "moment": "^2.9.0",
     "mongoose": "^3.8.19",
+    "multer": "^0.1.8",
     "node-jsx": "*",
     "passport": "*",
     "passport-facebook": "*",
@@ -26,13 +29,19 @@
   },
   "browserify": {
     "transform": [
-      ["reactify", {"es6": true}]
+      [
+        "reactify",
+        {
+          "es6": true
+        }
+      ]
     ]
   },
   "devDependencies": {
     "chai": "^2.1.1",
     "mocha": "^2.2.1",
     "mocha-mongoose": "^1.0.3",
-    "mongodb": "^1.4.34"
+    "mongodb": "^1.4.34",
+    "q": "^1.2.0"
   }
 }

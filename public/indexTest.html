@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>test file upload</title>
+  </head>
+  <body>
+      <form id="uploadForm"
+          enctype="multipart/form-data"
+          action="/restaurant/54ff995ab0bccbb401bd3df8/photo"
+          method="post">
+      <input type="file" name="photo" />
+
+      <input type="submit" value="Upload Image" name="submit">
+    </form>
+  <form id="ggwp">
+    <input type = "text" id = "imageurl" >
+    <button>show</button>
+  </form>
+  <form id="delete">
+    <input type = "text" id = "del" >
+    <button>delete</button>
+  </form>
+  <img id="my_image" src="first.jpg"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
+  <script>
+
+  $('#uploadForm').submit(function(e) {
+      e.preventDefault();
+      $(this).ajaxSubmit({
+        error: function(xhr) {
+          status('Error: ' + xhr.status);
+        },
+
+        success: function(response) {
+          console.log(response);
+        }
+      });
+  });    
+  
+  $('#delete').on('submit', function(e) {
+    e.preventDefault();
+    var data = {path: $("#del").val()}
+    console.log(data);
+    var url = 
+    $.ajax({
+      type: 'POST',
+      url: '/restaurant/54ff995ab0bccbb401bd3df8/photo/delete',
+      data: JSON.stringify(data),
+      contentType: 'application/json; charset=UTF-8',
+      dataType: 'json',
+      success: function(res){
+        console.log(res);
+      },
+      error: function(jqXHR, textStatus, errorThrown ){
+      console.log({msg: errorThrown});
+      }
+    })
+  });
+
+  $('#ggwp').on('submit', function(e) {
+    
+    e.preventDefault();
+    var data = {name: $("#imageurl").val()}
+    $('#my_image').attr('src',data.name);
+    /*console.log(data);
+    $.ajax({
+      type: 'POST',
+      url: '/getUrl',
+      data: JSON.stringify(data),
+      contentType: 'application/json; charset=UTF-8',
+      dataType: 'json',
+      success: function(res){
+        console.log(res);
+        $('#my_image').attr('src',res.msg);
+      },
+      error: function(jqXHR, textStatus, errorThrown ){
+        console.log({msg: errorThrown});
+      }
+    })*/    
+  });
+  </script>
+  </body>
+</html>

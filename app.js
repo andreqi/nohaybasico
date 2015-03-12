@@ -1,26 +1,30 @@
 // juanchi++
 var nodejsx = require('node-jsx').install();
 var express = require('express'); 
-var Components = require('./app/constants/components');
-var view_engine = require('./app/app');
+
 var app = express(); 
-var mapsAPI = require('./mapsAPI.js');
 var fs = require('fs');
 var YAML = require('yamljs');
-
 var mongoose = require('mongoose');
+var bodyParser = require('body-parser');
+var multer = require('multer');
+
+var Components = require('./app/constants/components');
+var view_engine = require('./app/app');
+var mapsAPI = require('./mapsAPI.js');
 var modelLog = require('./models/log')
 var log = require('./log/logger');
+var PhotoRoute = require('./routes/PhotoRoute')
 
 var env = process.env.NODE_ENV || 'dev';
 var port = (env == 'pro') ? 4321: 1111; 
 var bd = (env == 'pro') ? 'nhb': 'testnhb';
 
 mongoose.connect('mongodb://localhost/'+bd, function(err) {
-    if (err) {
-      console.log('errr', err);
-      throw err;
-    }
+  if (err) {
+    console.log('errr', err);
+    throw err;
+  }
 });
 
 app.listen(port);
@@ -29,7 +33,29 @@ var days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sa
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
-app.use(express.static(__dirname + '/public'));
+app.use('/public', express.static(__dirname + '/public'));
+app.use(bodyParser.json());
+
+//manage files uploads
+app.use(multer({ dest: './public/uploads',
+ rename: function (fieldname, filename) {
+    return filename+Date.now();
+  },
+  onFileUploadStart: function (file) {
+    console.log(file.originalname + ' is starting ...');
+  },
+  onFileUploadComplete: function (file) {
+    console.log(file.fieldname + ' uploaded to  ' + file.path);
+  }
+}));
+
+app.get('/testUpload', function(req, res) {
+  res.sendFile(__dirname + '/public/indexTest.html')
+})
+
+app.post('/restaurant/:restId/photo', PhotoRoute.add);
+app.post('/restaurant/:restId/photo/delete', PhotoRoute.delete);
+
 
 app.get('/', function(req, res) {
   var date = new Date();

@@ -30,7 +30,7 @@ describe("Photo test", function() {
 
   it("create new Photo by User", function(done) {
     var params = {
-      picture: 'img',
+      path: 'img',
       createdBy: id
     };
     new Photo(params).save(function(err, model) {
@@ -45,7 +45,7 @@ describe("Photo test", function() {
 
   it("upvote photo, no votes", function(done) {
     var params = {
-      picture: 'img',
+      path: 'img',
       createBy: id
     };
     new Photo(params).save(function(err, model) {
@@ -70,7 +70,7 @@ describe("Photo test", function() {
 
   it("updown photo, update existing vote", function(done) {
     var params = {
-      picture: 'img',
+      path: 'img',
       createBy: id
     };
     new Photo(params).save(function(err, model) {

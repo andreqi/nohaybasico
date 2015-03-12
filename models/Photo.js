@@ -2,9 +2,10 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var ObjectId = Schema.ObjectId;
 var moment = require('moment');
+var fs = require('fs');
 
 var PhotoSchema = new Schema({
-  picture: String,
+  path: String,
   totalVotes: {type: Number, default: 0},
   showTime: {type: Date, default: Date.now},
   createdAt: {type: Date, default: Date.now},
@@ -54,6 +55,18 @@ PhotoSchema.statics.voteDown = function(params, cb) {
   Photo.vote(params, cb);
 };
 
+//params path, createdBy, restaurant [, showTime]
+PhotoSchema.statics.addPhoto = function(params, cb) {
+  new Photo(params).save(cb);
+};
+
+PhotoSchema.statics.removePhoto = function(path, cb) {
+  Photo.findOneAndRemove({path: path}, function(err) {
+    if (err) return console.log(err);
+    fs.unlink(path, cb);
+  })
+};
+
 PhotoSchema.statics.getPhotos = function(idRest, cb) {
   var now = moment();
   var today = moment().startOf('day');
@@ -67,7 +80,7 @@ PhotoSchema.statics.getPhotos = function(idRest, cb) {
     }
   };
   var fields = {
-    picture: 1,
+    path: 1,
     totalVotes: 1,
     showTime: 1,
     createdBy: 1
