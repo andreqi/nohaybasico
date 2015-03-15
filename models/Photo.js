@@ -94,7 +94,10 @@ PhotoSchema.statics.addPhoto = function(params, cb) {
 PhotoSchema.statics.removePhoto = function(path, cb) {
   Photo.findOneAndRemove({path: path}, function(err) {
     if (err) return cb(console.log(err));
-    fs.unlink(path, cb);
+    fs.unlink(path, function(err) {
+      if (err) return cb(console.log(err));
+      validateUpdated(params.restaurant, cb)
+    });
   })
 };
 
