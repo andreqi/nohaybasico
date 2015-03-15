@@ -22,7 +22,7 @@
     "build": "npm run build-js && npm run build-css",
     "start": "node app.js",
     "web": "npm run build && npm start",
-    "dev": "nodemon --exec \"npm run web\" --ignore public/bundle.js -e js,jsx,css"
+    "dev": "nodemon --exec \"npm run web\" --ignore public/bundle.js -e js,jsx"
   },
   "browserify": {
     "transform": [
