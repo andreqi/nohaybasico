@@ -1,13 +1,13 @@
 // juanchi++
 var nodejsx = require('node-jsx').install();
 var express = require('express'); 
-
-var app = express(); 
+var session = require("express-session");
 var fs = require('fs');
 var YAML = require('yamljs');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var multer = require('multer');
+var passport = require('passport');
 
 var Components = require('./app/constants/components');
 var view_engine = require('./app/app');
@@ -16,6 +16,7 @@ var modelLog = require('./models/log')
 var log = require('./log/logger');
 var PhotoRoute = require('./routes/PhotoRoute')
 
+var app = express(); 
 var env = process.env.NODE_ENV || 'dev';
 var port = (env == 'pro') ? 4321: 1111; 
 var bd = (env == 'pro') ? 'nhb': 'testnhb';
