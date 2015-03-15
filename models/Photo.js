@@ -4,6 +4,8 @@ var ObjectId = Schema.ObjectId;
 var moment = require('moment');
 var fs = require('fs');
 
+var Restaurant = require('./Restaurant');
+
 var PhotoSchema = new Schema({
   path: String,
   totalVotes: {type: Number, default: 0},
@@ -55,30 +57,50 @@ PhotoSchema.statics.voteDown = function(params, cb) {
   Photo.vote(params, cb);
 };
 
+function getQueryPhotos() {
+  var now = moment();
+  var today = moment().startOf('day');
+  var yesterday = moment(today).subtract(1, 'days');
+  
+  var query = {
+    showTime: {
+      $lt: now.toDate(),
+      $gte: yesterday.toDate()
+    }
+  };
+  return query;
+}
+
+function validateUpdated(idRest, cb) {
+  var query = getQueryPhotos();
+  query['restaurant'] =  idRest;
+  Photo.count(query, function(err, count) {
+    if (err) return cb(console.log(err));
+    Restaurant.updatedPhoto(idRest, count, cb);
+  });
+}
+
 //params path, createdBy, restaurant [, showTime]
 PhotoSchema.statics.addPhoto = function(params, cb) {
-  new Photo(params).save(cb);
+  new Photo(params).save(function(err, model) {
+    if (err) return cb(console.log(err));
+    validateUpdated(params.restaurant, function(err) {
+      if (err) return cb(console.log(err));
+      return cb(null, model);
+    })
+  });
 };
 
 PhotoSchema.statics.removePhoto = function(path, cb) {
   Photo.findOneAndRemove({path: path}, function(err) {
-    if (err) return console.log(err);
+    if (err) return cb(console.log(err));
     fs.unlink(path, cb);
   })
 };
 
 PhotoSchema.statics.getPhotos = function(idRest, cb) {
-  var now = moment();
-  var today = moment().startOf('day');
-  var tomorrow = moment(today).add(1, 'days');
-  
-  var query = {
-    restaurant: idRest,
-    showTime: {
-      $gte: now.toDate(),
-      $lt: tomorrow.toDate()
-    }
-  };
+  var query = getQueryPhotos();
+  query['restaurant'] =  idRest;
   var fields = {
     path: 1,
     totalVotes: 1,

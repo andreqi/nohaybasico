@@ -9,9 +9,9 @@ var Restaurant = require('../models/Restaurant');
 
 describe("Restaurant test", function() {
   var tasks = [
-    new Restaurant({name: 'r1'}).save(),
-    new Restaurant({name: 'r2'}).save(),
-    new Restaurant({name: 'r3', active: false}).save()
+    new Restaurant({name: 'r1', active: true}).save(),
+    new Restaurant({name: 'r2', active: true}).save(),
+    new Restaurant({name: 'r3'}).save()
   ];
 
   beforeEach(function(done) {

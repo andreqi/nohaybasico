@@ -20,8 +20,27 @@ var RestaurantSchema = new Schema({
   name: String,
   walkingTime: String,
   priceRange: String,
-  active: {type: Boolean, default: true}
+  active: {type: Boolean, default: false},
+  updated: {type: Boolean, default: false},
+  updateSource: {
+    facebook: {type: Boolean, default: false},
+    pulpinPhoto: {type: Boolean, default: false}
+  },
+  facebookPost: {
+    idPage: {type: String},
+    idPost: {type: String}
+  }
 });
+
+RestaurantSchema.statics.updatedPhoto = function(id, count, cb) {
+  Restaurant.findById(id, function(err, model) {
+    if (err) return cb(console.log(err));
+    model.updateSource.pulpinPhoto = count > 0;
+    model.updated = model.updateSource.facebook || 
+                  model.updateSource.pulpinPhoto;
+    model.save(cb);
+  });
+};
 
 RestaurantSchema.statics.getPreviewInfo = function(cb) {
   var query = {

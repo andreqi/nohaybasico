@@ -103,16 +103,16 @@ describe("Photo test", function() {
   });
 
   it("get photos from restaurant if not show time", function(done) {
-    new Restaurant({}).save(function(err, rest) {
+    new Restaurant().save(function(err, rest) {
       expect(err).to.not.exist;
 
       var params = {
         createdBy: id,
         restaurant: rest._id,
-        showTime: moment().subtract(1, 'm').toDate()
+        showTime: moment().add(1, 'm').toDate()
       }
 
-      new Photo(params).save(function(err, newPhoto) {
+      Photo.addPhoto(params, function(err, newPhoto) {
         expect(err).to.not.exist;
 
         Photo.getPhotos(rest._id, function(err, model) {
@@ -133,10 +133,10 @@ describe("Photo test", function() {
       var params = {
         createdBy: id,
         restaurant: rest._id,
-        showTime: moment().add(1, 'm').toDate()
+        showTime: moment().subtract(1, 'm').toDate()
       }
 
-      new Photo(params).save(function(err, newPhoto) {
+      Photo.addPhoto(params, function(err, newPhoto) {
         expect(err).to.not.exist;
 
         Photo.getPhotos(rest._id, function(err, model) {
@@ -156,7 +156,7 @@ describe("Photo test", function() {
       var params = {
         createdBy: id,
         restaurant: rest._id,
-        showTime: moment().add(1, 'm').toDate(),
+        showTime: moment().subtract(1, 'm').toDate(),
         totalVotes: 5
       }
 
@@ -166,7 +166,7 @@ describe("Photo test", function() {
         var params2 = {
           createdBy: id,
           restaurant: rest._id,
-          showTime: moment().add(1, 'm').toDate(),
+          showTime: moment().subtract(1, 'm').toDate(),
           totalVotes: 2
         }
 

@@ -25,4 +25,4 @@ exports.delete = function(req, res) {
       err: err
     });
   });
-}
+};
