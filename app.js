@@ -15,20 +15,18 @@ var mapsAPI = require('./mapsAPI.js');
 var modelLog = require('./models/log')
 var log = require('./log/logger');
 var PhotoRoute = require('./routes/PhotoRoute')
+var config = require('./env')
 
 var app = express(); 
-var env = process.env.NODE_ENV || 'dev';
-var port = (env == 'pro') ? 4321: 1111; 
-var bd = (env == 'pro') ? 'nhb': 'testnhb';
 
-mongoose.connect('mongodb://localhost/'+bd, function(err) {
+mongoose.connect(config.db, function(err) {
   if (err) {
     console.log('errr', err);
     throw err;
   }
 });
 
-app.listen(port);
+app.listen(config.port);
 
 var days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado'];
 
@@ -266,6 +264,7 @@ function loadBd() {
 }
 
 console.log("No hay basico");
-console.log("Environment " + env);
-console.log('Listenning '+ port);
+console.log("database", config.db);
+console.log("Environment " + config.env);
+console.log('Listenning '+ config.port);
 

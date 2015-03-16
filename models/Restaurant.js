@@ -26,9 +26,14 @@ var RestaurantSchema = new Schema({
     facebook: {type: Boolean, default: false},
     pulpinPhoto: {type: Boolean, default: false}
   },
+  shouldUpdate: {
+    facebook: {type: Boolean, default: false}
+  },
   facebookPost: {
+    pattern: {type: String},
     idPage: {type: String},
-    idPost: {type: String}
+    idPost: {type: String},
+    lastPost: {type: String}
   }
 });
 
@@ -37,7 +42,7 @@ RestaurantSchema.statics.updatedPhoto = function(id, count, cb) {
     if (err) return cb(console.log(err));
     model.updateSource.pulpinPhoto = count > 0;
     model.updated = model.updateSource.facebook || 
-                  model.updateSource.pulpinPhoto;
+                    model.updateSource.pulpinPhoto;
     model.save(cb);
   });
 };
@@ -55,6 +60,31 @@ RestaurantSchema.statics.getPreviewInfo = function(cb) {
   };
 
   Restaurant.find(query, fields).exec(cb);
+}
+
+RestaurantSchema.statics.getListMenuUpdater = function(cb) {
+  var query = {
+    active: true,
+    'shouldUpdate.facebook': true
+  };
+  var fields = {
+    facebookPost: 1,
+    _id: 1
+  }
+
+  Restaurant.find(query, fields).exec(cb);
+}
+
+RestaurantSchema.statics.updateFacebookMenu = function(id, data, cb) {
+  console.log('updateFacebookMenu', data);
+  Restaurant.findById(id, function(err, model){
+    if (err) return cb(err);
+    model.facebookPost = data;
+    model.updateSource.facebook = true;
+    model.updated = model.updateSource.facebook || 
+                    model.updateSource.pulpinPhoto;
+    model.save(cb);
+  });
 }
 
 var Restaurant = module.exports = mongoose.model('Restaurant', RestaurantSchema);
