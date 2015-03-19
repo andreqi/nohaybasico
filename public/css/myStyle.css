@@ -185,21 +185,109 @@ progress[value]::-moz-progress-bar {
   margin-top: -20px;
   margin-bottom: -20px;
   height: 350px;
-  background-color: red;
 }
 
 .restaurant-img .up-button{
   position: absolute;  
   bottom: 0;
   left: 0;
+  border-color: #A5DC86;
 }
+
+.up-button .line {
+  background-color: #A5DC86;
+}
+
+.up-button .line.long {
+  width: 35px;
+  right: 5px;
+  top: 25px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.up-button .line.short {
+  width: 16px;
+  left: 5px;
+  top: 30px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg)
+}
+
+.down-button .line {
+  background-color: #F27474;
+}
+
+.down-button .line.left {
+  width: 35px;
+  right: 8px;
+  top: 25px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.down-button .line.right {
+  width: 35px;
+  right: 8px;
+  top: 25px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.score {
+  position: absolute;
+  width: 55px;
+  bottom: -45px;
+  background: white;
+  padding: 0 10px 0 10px;
+  text-align: center;
+  border-radius: 10%;
+  border: 4px solid gray;
+}
+
+.restaurant-img img {
+  vertical-align: middle;
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+
 
 .restaurant-img .down-button{
   position: absolute;  
   bottom: 0;
   right: 0;
+  border-color: #F27474;
+}
+
+.rate-box .line {
+ position: absolute;
+ height: 5px;
+ width: 47px;
+ display: block;
+ top: 37px;
+ border-radius: 2px;
+}
+
+.rate-box {
+  margin: 10px;
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  border: 4px solid gray;
+  border-radius: 50%;
+  box-shadow: 0 0 3px #515151;;
+}
+
+.rate-box.active {
+  background-color: gray;
 }
 
 .add-more-images {
   text-align: center;
+}
+
+.submit-button {
+  width: 100%;
+  font-size: 50px;
 }

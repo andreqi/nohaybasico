@@ -1,7 +1,8 @@
 var React = require('react');
+var _ = require('lodash');
 
 var MenuImage = require('./MenuImage.jsx');
-var _ = require('lodash');
+var SubmitImage = require('./SubmitImage.jsx');
 
 var Galery = React.createClass({
   
@@ -22,8 +23,8 @@ var Galery = React.createClass({
     }
     return (
       <div className='row columns'>
+        <SubmitImage key='form' />
         {images}
-        <MenuImage key='form' />
         <div className='12u'> 
             <a className='12u button alt add-more-images'
                onClick={this.loadImages}>

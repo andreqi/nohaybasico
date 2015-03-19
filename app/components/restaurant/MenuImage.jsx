@@ -1,6 +1,6 @@
 var React = require('react');
 
-var RestaurantImageMenu = require('../RestaurantImageMenu.jsx');
+var RestaurantImageMenu = require('../image-rate/RestaurantImageMenu.jsx');
 
 var MenuImage = React.createClass({
   render: function () {
