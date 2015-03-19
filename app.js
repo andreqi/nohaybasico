@@ -69,6 +69,7 @@ app.get('/', function(req, res) {
       if(err) console.log(err);
       var props = JSON.stringify({
           component: Components.RESTLIST,
+          restaurants: data.restaurants,
       });
       res.render('landing/main', {
         data: data,
@@ -79,7 +80,6 @@ app.get('/', function(req, res) {
           JSON.parse(props)
         ),
       });
-
     });
   });
 });
