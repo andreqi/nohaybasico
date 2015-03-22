@@ -73,7 +73,7 @@ function doWork() {
     
     setInterval(function() {
       workHard(models);
-    }, 10000);
+    }, 60000);
   });  
 }
 

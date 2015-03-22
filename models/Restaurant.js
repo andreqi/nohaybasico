@@ -34,7 +34,8 @@ var RestaurantSchema = new Schema({
     idPage: {type: String},
     idPost: {type: String},
     lastPost: {type: String}
-  }
+  },
+  createdAt: {type: Date, default: Date.now}
 });
 
 RestaurantSchema.statics.updatedPhoto = function(id, count, cb) {

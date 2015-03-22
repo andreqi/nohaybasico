@@ -13,6 +13,7 @@
     "mongoose": "^3.8.19",
     "multer": "^0.1.8",
     "node-jsx": "*",
+    "nodemailer": "^1.3.2",
     "passport": "^0.2.1",
     "passport-facebook": "*",
     "react": "*",
