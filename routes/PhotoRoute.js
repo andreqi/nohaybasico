@@ -2,13 +2,12 @@ var Photo = require('../models/Photo')
 
 exports.add = function(req, res) {
   var path = req.files.photo.path;
-  var userId = '54ff995ab0bccbb401bd3df9';
   var params = {
-    createdBy: userId,
+    createdBy: req.user._id,
+    userName: req.user.userName,
     path: path,
     restaurant: req.params.restId
   }
-  console.log(params);
   Photo.addPhoto(params, function(err, model) {
     err = err || '';
     res.send({
@@ -26,3 +25,31 @@ exports.delete = function(req, res) {
     });
   });
 };
+
+exports.voteUp = function(req, res) {
+  Photo.voteUp({
+      path: req.body.path,
+      userId: req.user._id
+    },
+    function(err) {
+      err = err || '';
+      res.send({
+        err: err
+      }); 
+    }
+  )
+};
+
+exports.voteDown = function(req, res) {
+  Photo.voteDown({
+      path: req.body.path,
+      userId: req.user._id
+    },
+    function(err) {
+      err = err || '';
+      res.send({
+        err: err
+      }); 
+    }
+  )
+}

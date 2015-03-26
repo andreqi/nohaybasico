@@ -13,27 +13,29 @@ var PhotoSchema = new Schema({
   createdAt: {type: Date, default: Date.now},
   createdBy: {type: ObjectId, ref: 'User'},
   restaurant: {type: ObjectId, ref: 'Restaurant'},
+  restTagName: String,
+  userName: String,
   votes: [{
     vote: Number,
     user: {type: ObjectId, ref: 'User'}
   }]
 });
 
+// path: path photo, userId, vote: 1 / 0, 
 PhotoSchema.statics.vote = function(params, cb) {
-  
-  Photo.findOne({_id: params.id}, function(err, model) {
+  Photo.findOne({path: params.path}, function(err, model) {
     if (err) return cb(err);
 
     var i = 0;
     for (var len = model.votes.length; i < len; i++) {
-      
       if (model.votes[i].user.equals(params.userId)) {
         break;
       }
     };
     model.totalVotes += params.vote;
+
     if (i < len) {
-      model.totalVotes = -1*model.votes[i].vote;
+      model.totalVotes += -1 * model.votes[i].vote;
       model.votes[i].vote = params.vote;
     }
     else {
@@ -45,6 +47,7 @@ PhotoSchema.statics.vote = function(params, cb) {
     }
     model.save(cb);
   });
+  
 };
 
 PhotoSchema.statics.voteUp = function(params, cb) {
@@ -82,6 +85,7 @@ function validateUpdated(idRest, cb) {
 
 //params path, createdBy, restaurant [, showTime]
 PhotoSchema.statics.addPhoto = function(params, cb) {
+  params.path = '/' + params.path;
   new Photo(params).save(function(err, model) {
     if (err) return cb(console.log(err));
     validateUpdated(params.restaurant, function(err) {
@@ -108,7 +112,8 @@ PhotoSchema.statics.getPhotos = function(idRest, cb) {
     path: 1,
     totalVotes: 1,
     showTime: 1,
-    createdBy: 1
+    createdBy: 1,
+    userName: 1
   }
   Photo.find(query, fields).sort('-totalVotes').exec(cb);
 }

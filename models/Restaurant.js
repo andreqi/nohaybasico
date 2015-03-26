@@ -1,6 +1,8 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
+//var Photo = require('./Photo');
+
 var RestaurantSchema = new Schema({
   location: {
     coordinates: {
@@ -17,7 +19,8 @@ var RestaurantSchema = new Schema({
     workTime: String,
     msg: String
   },
-  name: String,
+  tagName: {type: String, required: true},
+  name: {type: String, required: true},
   walkingTime: String,
   priceRange: String,
   active: {type: Boolean, default: false},
@@ -38,7 +41,16 @@ var RestaurantSchema = new Schema({
   createdAt: {type: Date, default: Date.now}
 });
 
+RestaurantSchema.statics.findByTagName = function(tagName, cb) {
+  Restaurant.findOne({tagName: tagName}, cb);
+}
+
+RestaurantSchema.statics.getId = function(tagName, cb) {
+  Restaurant.findOne({tagName: tagName}, {_id: 1}, cb);
+}
+
 RestaurantSchema.statics.updatedPhoto = function(id, count, cb) {
+  console.log('id', id);
   Restaurant.findById(id, function(err, model) {
     if (err) return cb(console.log(err));
     model.updateSource.pulpinPhoto = count > 0;
@@ -63,6 +75,21 @@ RestaurantSchema.statics.getPreviewInfo = function(cb) {
   Restaurant.find(query, fields).exec(cb);
 }
 
+RestaurantSchema.statics.getPhotos = function(tagName, cb) {
+  Restaurant.findOne({tagName: tagName}, function(err, model) {
+    if (err) return cb(console.log(err));
+    var response = {
+      name: model.name
+    };
+    console.log('here ps', model._id)
+    mongoose.model('Photo').getPhotos(model._id, function(err, photos) {
+      if (err) return cb(console.log(err));
+      response['photos'] = photos;
+      cb(null, response);
+    });
+  })
+};
+
 RestaurantSchema.statics.getListMenuUpdater = function(cb) {
   var query = {
     active: true,
@@ -70,14 +97,14 @@ RestaurantSchema.statics.getListMenuUpdater = function(cb) {
   };
   var fields = {
     facebookPost: 1,
-    _id: 1
+    _id: 0,
+    tagName: 1
   }
 
   Restaurant.find(query, fields).exec(cb);
 }
 
 RestaurantSchema.statics.updateFacebookMenu = function(id, data, cb) {
-  console.log('updateFacebookMenu', data);
   Restaurant.findById(id, function(err, model){
     if (err) return cb(err);
     model.facebookPost = data;

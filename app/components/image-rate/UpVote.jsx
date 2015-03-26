@@ -8,16 +8,18 @@ var UpVote = React.createClass({
     return { score: 10 };
   },
 
+
   render: function () {
     return ( 
       <div className={this.getClass() +
                       ' up-button rate-box'}
-           onMouseDown={this.addActiveClass}
-           onMouseUp={this.removeActiveClass} >
+          onMouseDown={this.addActiveClass}
+          onMouseUp={this.removeActiveClass}
+          onClick = {this.props.onClick.bind(null, this)} >
+
         <span className='line short' />
         <span className='line long' />
-        <span className='score' 
-              onClick={this.doNothing}>
+        <span className='score' >
           {this.props.score}
         </span>
       </div>

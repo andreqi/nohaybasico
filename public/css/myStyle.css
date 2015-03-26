@@ -184,7 +184,11 @@ progress[value]::-moz-progress-bar {
   position: relative;
   margin-top: -20px;
   margin-bottom: -20px;
-  height: 350px;
+}
+
+.restaurant-img img {
+  width: 100%;
+  height: auto;
 }
 
 .restaurant-img .up-button{

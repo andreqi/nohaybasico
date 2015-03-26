@@ -1,4 +1,3 @@
-div
-  if props !== undefined && props !== null
-    script#props(type='application/json')!= props
-  div#component!= component
+if props !== undefined && props !== null
+  script#props(type='application/json')!= props
+div#component!= component

@@ -19,18 +19,25 @@ var Restaurant = React.createClass({
           </h3>
         </div>
         <div className='vertical-middle'>
-         <span>S/. {this.props.price_range}</span>
+          <span>S/. {this.props.priceRange}</span>
+          <a href="/el-tio-bigote/info" className = "pull-right button small"> 
+            <img src="public/images/walking2.png" />
+            <span>5 mins</span>
+          </a>
         </div> 
       </header>
     );
   },
 
   renderBody: function () {
-    var dishes = [];
-    if (this.state.view !== 'lista') {
+    var status = this.props.updated ? 'Menú listo': 'Pera ya viene';
+
+    /*if (this.state.view !== 'lista') {
       return <RestaurantImageMenu /> 
     }
-    for (var idx = 0; idx < 5; idx++) {
+
+    var dishes = [];
+    for (var idx = 0; idx < 5 && this.props.dish_preview; idx++) {
       var value = '';
       if (idx < this.props.dish_preview.length) {
         value = this.props.dish_preview[idx].name;
@@ -38,12 +45,10 @@ var Restaurant = React.createClass({
       dishes.push(
         <li key={idx} className='12u'>{value}</li>
       ); 
-    }
+    }*/
     return (
       <div className='row'>
-        <ul className='row dishes'>
-          {dishes}
-        </ul>
+        <div>{status}</div>
       </div>
     );
   },
@@ -54,11 +59,17 @@ var Restaurant = React.createClass({
   },
 
   renderFooter: function () {
-    var redirect = this.props.dishes ? 'menu' : 'carta';
+
+    //var redirect = this.props.dishes ? 'menu' : 'carta';
+    var redirect = 'galery';
     return (
       <footer>        
         <a className='button alt'
-           href={'/'+this.props.homeID+'/'+redirect}>
+           href={'/'+this.props.tagName+'/'+redirect}>
+           Ver más
+        </a>
+        <a className='button alt'
+           href={'/'+this.props.tagName+'/fbPreview'}>
            Ver más
         </a>
         <span>  </span>

@@ -8,9 +8,9 @@ var MenuImage = React.createClass({
       <div className='4u'>
         <section className='box'>
            <a className='image featured'>
-              <div className='box-separator' /> 
+              <div className='box-separator'/> 
            </a>
-           <RestaurantImageMenu />
+           <RestaurantImageMenu {...this.props} />
         </section>
       </div>
     );
