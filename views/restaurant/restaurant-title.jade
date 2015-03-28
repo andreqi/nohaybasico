@@ -4,10 +4,11 @@ h1
 nav#nav
   ul
     - var tabs = []
-    - restaurant.fbPreview ? tabs.push(['menu', 'fbPreview']): null;
-    - restaurant.dishes ? tabs.push(['menu', 'menu']) : null;  
-    - restaurant.carta  ? tabs.push(['carta', 'carta']) : null;
-    - tabs.push(['info', 'info']);
+    - restaurant.shouldUpdate.facebook ? tabs.push(['Menú', 'fbPreview']): null;
+    - restaurant.shouldUpdate.photos ? tabs.push(['Menú', 'galery']): null;
+    - restaurant.dishes ? tabs.push(['Menú', 'menu']) : null;  
+    - restaurant.carta  ? tabs.push(['Carta', 'carta']) : null;
+    - tabs.push(['Info', 'info']);
     each tab in tabs
       - var tabname = tab[0].charAt(0).toUpperCase() + tab[0].slice(1)
       - var liclass = tab[1] == active_tab ? 'current' : ''; 

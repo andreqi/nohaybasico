@@ -24,10 +24,10 @@ var getTimesFromPucp = function (lat, lng) {
 
 module.exports.getTimesFromPucp = getTimesFromPucp;
 
-module.exports.createReadStream = function(lat, lng, imgSize, zoom){
-  var url = 'https://maps.googleapis.com/maps/api/staticmap?center=(' + lat + 
-            ',' + lng +')&key=' + env.GMAPS_KEY;
-  var markers = 'markers=|' + formatCoord({lat: lat, lng: lng});
+module.exports.createReadStream = function(coords, imgSize, zoom){
+  var url = 'https://maps.googleapis.com/maps/api/staticmap?center=(' +
+             coords.lat + ',' + coords.lng +')&key=' + env.GMAPS_KEY;
+  var markers = 'markers=|' + formatCoord(coords);
   var defaultSize = imgSize || {width: 600, height: 300};  
   var size = 'size=' + defaultSize.width + 'x' + defaultSize.height;
   var zoom = 'zoom=' + (zoom || 16);
@@ -35,6 +35,6 @@ module.exports.createReadStream = function(lat, lng, imgSize, zoom){
   return request(url); 
 };    
 
-module.exports.getMapsRedirectURL = function (lat, lng) {
-  return 'http://maps.google.com/maps?q=' + lat + ',' + lng;
+module.exports.getMapsRedirectURL = function (coords) {
+  return 'http://maps.google.com/maps?q=' + coords.lat + ',' + coords.lng;
 } 

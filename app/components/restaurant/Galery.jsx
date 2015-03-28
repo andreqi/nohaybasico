@@ -24,6 +24,7 @@ var Galery = React.createClass({
   },
 
   showLogin: function() {
+    console.log('showLogin');
     this.setState({
       login: <Login />
     });
@@ -32,7 +33,7 @@ var Galery = React.createClass({
   loadImages: function () {
     var indexPhoto = this.state.indexPhoto;
     var images = this.state.images;
-    
+
     indexPhoto = this.state.indexPhoto + 2 <= images.length ? 
                   this.state.indexPhoto +2: images.length
     
@@ -64,7 +65,9 @@ var Galery = React.createClass({
     return (
       <div className='row columns'>
         {this.state.login}
-        <SubmitImage key='form' />
+        <SubmitImage key='form' 
+          idRest = {this.props.id} 
+          showLogin = {this.showLogin} />
         {images}
         <div className='12u'> 
             <a className='12u button alt add-more-images'

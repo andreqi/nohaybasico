@@ -15,8 +15,7 @@ exports.fbPreview = function(req, res) {
 
       var restaurant = {
         tagName: req.params.id,
-        name: model.name,
-        fbPreview: true
+        name: model.name
       }
 
       res.render('restaurant/fbPreview', {
@@ -28,4 +27,8 @@ exports.fbPreview = function(req, res) {
         )
       });
   });
+}
+
+exports.submitImage = function(req, res) {
+  
 }

@@ -30,7 +30,8 @@ var RestaurantSchema = new Schema({
     pulpinPhoto: {type: Boolean, default: false}
   },
   shouldUpdate: {
-    facebook: {type: Boolean, default: false}
+    facebook: {type: Boolean, default: false},
+    photos: {type: Boolean, default: false}
   },
   facebookPost: {
     pattern: {type: String},
@@ -50,7 +51,7 @@ RestaurantSchema.statics.getId = function(tagName, cb) {
 }
 
 RestaurantSchema.statics.updatedPhoto = function(id, count, cb) {
-  console.log('id', id);
+  
   Restaurant.findById(id, function(err, model) {
     if (err) return cb(console.log(err));
     model.updateSource.pulpinPhoto = count > 0;
@@ -79,9 +80,14 @@ RestaurantSchema.statics.getPhotos = function(tagName, cb) {
   Restaurant.findOne({tagName: tagName}, function(err, model) {
     if (err) return cb(console.log(err));
     var response = {
-      name: model.name
+      restaurant: {
+        tagName: tagName,
+        name: model.name,
+        id: model._id,
+        shouldUpdate: model.shouldUpdate
+      }
     };
-    console.log('here ps', model._id)
+    
     mongoose.model('Photo').getPhotos(model._id, function(err, photos) {
       if (err) return cb(console.log(err));
       response['photos'] = photos;
@@ -113,6 +119,25 @@ RestaurantSchema.statics.updateFacebookMenu = function(id, data, cb) {
                     model.updateSource.pulpinPhoto;
     model.save(cb);
   });
+}
+
+RestaurantSchema.statics.getFirstView = function(tagName, cb) {
+  Restaurant.findOne({tagName: tagName}, function(err, model) {
+    if (err) return cb(err);
+    /*var obj = {
+      fbPreview: model.updateSource.facebook,
+      galery: model.updateSource.pulpinPhoto,
+      dishes: model.dishes,
+      carta: model.carta
+    }*/
+    if (model.dishes) return cb(null, 'menu');
+    if (model.carta) return cb(null, 'carta');
+    if (model.shouldUpdate && model.shouldUpdate.facebook) 
+      return cb(null, 'fbPreview');
+    //if (model.updateSource.pulpinPhoto) 
+    return cb(null, 'galery');
+    //return cb(null,'info');
+  })
 }
 
 var Restaurant = module.exports = mongoose.model('Restaurant', RestaurantSchema);

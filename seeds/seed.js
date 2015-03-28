@@ -15,6 +15,9 @@ var restaurants = [
       },
       address: 'Av. Mariano Cornejo 2286, Pueblo Libre'
     },
+    shouldUpdate: {
+      photos: true
+    },
     contact: {
       social: {
         facebook: 'https://www.facebook.com/pages/Da-Gusto/339419042845152?fref=ts'

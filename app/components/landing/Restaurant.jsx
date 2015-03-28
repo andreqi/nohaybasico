@@ -11,6 +11,7 @@ var Restaurant = React.createClass({
   },
 
   renderHeader: function () {
+    var url = '/'+this.props.tagName+'/info';
     return (
       <header>
         <div className='same-line'>
@@ -20,7 +21,7 @@ var Restaurant = React.createClass({
         </div>
         <div className='vertical-middle'>
           <span>S/. {this.props.priceRange}</span>
-          <a href="/el-tio-bigote/info" className = "pull-right button small"> 
+          <a href={url} className = "pull-right button small"> 
             <img src="public/images/walking2.png" />
             <span>5 mins</span>
           </a>
@@ -29,54 +30,45 @@ var Restaurant = React.createClass({
     );
   },
 
-  renderBody: function () {
-    var status = this.props.updated ? 'Menú listo': 'Pera ya viene';
+  renderMenuReady: function() {
+    return (
+      <div>Menú esta listo :)</div>
+    )
+  },
 
-    /*if (this.state.view !== 'lista') {
-      return <RestaurantImageMenu /> 
+  renderMenuNotReady: function() {
+    if (this.props.shouldUpdate.facebook) {
+      return (
+        <div>El menú aún no se postea en fb :( </div>
+      )
     }
+    
+    return (
+      <div>
+        Ayúdanos y sube una foto del menú
+        <button>subir foto</button>
+      </div>
+    )
+  },
 
-    var dishes = [];
-    for (var idx = 0; idx < 5 && this.props.dish_preview; idx++) {
-      var value = '';
-      if (idx < this.props.dish_preview.length) {
-        value = this.props.dish_preview[idx].name;
-      }
-      dishes.push(
-        <li key={idx} className='12u'>{value}</li>
-      ); 
-    }*/
+  renderBody: function () {
+    var status = this.props.updated ? 
+      this.renderMenuReady(): this.renderMenuNotReady();
     return (
       <div className='row'>
-        <div>{status}</div>
+        {status}
       </div>
     );
   },
 
-  toggleView: function () {
-    var next = this.state.view == 'lista' ? 'img' : 'lista';  
-    this.setState({ view : next });
-  },
-
   renderFooter: function () {
-
-    //var redirect = this.props.dishes ? 'menu' : 'carta';
-    var redirect = 'galery';
+    
     return (
       <footer>        
         <a className='button alt'
-           href={'/'+this.props.tagName+'/'+redirect}>
+           href={'/'+this.props.tagName + '/view'} >
            Ver más
         </a>
-        <a className='button alt'
-           href={'/'+this.props.tagName+'/fbPreview'}>
-           Ver más
-        </a>
-        <span>  </span>
-        <a className='button alt' 
-           onClick={this.toggleView}>
-           { this.state.view == 'lista' ?  'Imagen' : 'Lista' }
-         </a>
       </footer>
     ); 
   },

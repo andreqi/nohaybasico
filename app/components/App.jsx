@@ -4,6 +4,7 @@ var Components = require('../constants/components');
 var Galery = require('./restaurant/Galery.jsx');
 var FbPreview = require('./restaurant/FbPreview.jsx');
 var RestaurantList = require('./landing/RestaurantList.jsx');
+var SubmitImage = require('./restaurant/SubmitImage.jsx');
 
 var App = React.createClass({
   render: function () {
@@ -14,6 +15,8 @@ var App = React.createClass({
         return <Galery {...this.props} />;
       case Components.FBPREVIEW: 
         return <FbPreview {...this.props} />;
+      case Components.SUBMITIMAGE: 
+        return <SubmitImage {...this.props} />;
       default: 
         return <div> Whoops </div>;
     }
