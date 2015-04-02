@@ -7,7 +7,8 @@ nav#nav
     - restaurant.shouldUpdate.facebook ? tabs.push(['Menú', 'fbPreview']): null;
     - restaurant.shouldUpdate.photos ? tabs.push(['Menú', 'galery']): null;
     - restaurant.dishes ? tabs.push(['Menú', 'menu']) : null;  
-    - restaurant.carta  ? tabs.push(['Carta', 'carta']) : null;
+    - restaurant.extras  ? tabs.push(['Carta', 'carta']) : null;
+    - tabs.push(['Contacto', 'contact']);
     - tabs.push(['Info', 'info']);
     each tab in tabs
       - var tabname = tab[0].charAt(0).toUpperCase() + tab[0].slice(1)

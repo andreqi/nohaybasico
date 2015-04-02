@@ -18,7 +18,11 @@ exports.add = function(req, res) {
 };
 
 exports.delete = function(req, res) {
-  Photo.removePhoto(req.body.path, function(err) {
+  var params = {
+    restaurant: req.params.restId,
+    path: req.body.path
+  }
+  Photo.removePhoto(params, function(err) {
     err = err || '';
     res.send({
       err: err
@@ -41,6 +45,7 @@ exports.voteUp = function(req, res) {
 };
 
 exports.voteDown = function(req, res) {
+  console.log('voteDown');
   Photo.voteDown({
       path: req.body.path,
       userId: req.user._id

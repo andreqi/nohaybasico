@@ -1,21 +1,13 @@
 var request = require('request');
-var mongoose = require('mongoose');
 
 var config = require('../env');
 var Restaurant = require('../models/Restaurant');
 
-mongoose.connect(config.db, function(err) {
-  if (err) {
-    console.log('err mongo connection', err);
-    throw err;
-  }
-});
-
 function saveData(newData) {
-  Restaurant.updateFacebookMenu(newData.id, newData.facebookPost,
+  Restaurant.updateFacebookMenu(newData._id, newData.facebookPost,
     function(err) {
       if (err) return console.log('save data', err);
-      console.log('ok');
+      console.log('fb updated', newData._id);
     }
   )
 }
@@ -67,7 +59,6 @@ function workHard(data) {
 }
 
 function doWork() {
-  
   Restaurant.getListMenuUpdater(function(err, models) {
     if (!models.length) return;
     
@@ -77,24 +68,9 @@ function doWork() {
   });  
 }
 
-function createRes() {
-  var params = {
-    name: 'rest1',
-    active: true,
-    updated: false,
-    shouldUpdate: {
-      facebook: true
-    },
-    facebookPost: {
-      pattern: 'MENÚ DEL DÍA',
-      idPage: '164255087049670',
-      idPost: ''
-    }
-  }
-  new Restaurant(params).save(function(err, done){
-    console.log(done);
-  })
+function start() {
+  console.log('MenuUpdater')
+  doWork();
 }
 
-doWork();
-//createRes();
+exports.start = start;

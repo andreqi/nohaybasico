@@ -5,8 +5,11 @@ var UserSchema = new Schema({
   provider_id: String,
   provider: String,
   name: String,
+  picture: String,
   createdAt: {type: Date, default: Date.now},
-  lastAccess: {type: Date, default: Date.now}
+  lastAccess: {type: Date, default: Date.now},
+  points: {type: Number, default: 0},
+  level: {type: Number, default: 1}
 });
 
 UserSchema.statics.findOrCreate = function(params, cb) {

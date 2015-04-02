@@ -1,5 +1,180 @@
-/**main page**/
+.popup div {
+  margin-bottom: 10px;
+}
 
+.loader {
+  color: black;
+  font-size: 1.9em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.loader img {
+  margin-left: 10px;
+}
+
+/** submit image **/
+
+.upload {
+  background-color:#fff;
+  border-radius:5px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  padding:3px 40px 3px 3px;
+  position:relative;
+  width: auto;
+}
+
+.upload:hover {
+  opacity:0.95;
+}
+
+.upload input[type="file"] {
+  bottom: 0;
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  left:0;
+  opacity: 0;
+  position:absolute;
+  top: 0;
+  width: 100%;
+}
+.upload .uploadButton {
+  
+  border-radius: 3px;
+  border: none;
+  box-sizing: content-box;
+  color: #FFF;
+  cursor:pointer;
+  height: 30px;
+  margin-right:15px;
+  padding:0 20px;
+  width: auto;
+}
+
+.upload .fileName {
+  font-family: Arial;
+  font-size:14px;
+}
+
+.upload + .uploadButton {
+  height:38px;
+}
+
+
+/** **/
+
+/**main page**/
+.contact .error {
+  color: red;
+}
+
+.contact .fields {
+  margin: 10px 0;
+}
+
+.contact .action-btns input {
+  margin: 0 10px;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.pull-right {
+  float: right;
+  margin-right: 10px;
+}
+
+.login, .logged {
+  margin: 10px 5px;
+  font-size: 20px;
+  height: 42px;
+  color: white;
+  overflow: hidden;
+}
+
+.nice-green {
+  background: #099369 !important;
+}
+
+.nice-green:hover {
+  background: #027250 !important;
+}
+
+.face {
+  margin: 0 4px;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.icomoon-smile {
+  color: #27ae60;
+}
+
+.icomoon-wondering {
+ color: #e67e22; 
+}
+
+.icomoon-sad {
+  color: #c0392b;
+}
+
+.login .text {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 500;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.login .social li a {
+  height: 40px;
+  width: 40px;
+}
+
+.login .social li a:before {
+  font-size: 1.5em; 
+}
+
+.login .social{
+  display: inline-block;
+  margin: 0 0;
+  vertical-align: top;
+}
+
+.logged *{
+  font-size: 30px;
+  color: white;
+}
+
+
+.logged .profile-picture, 
+.logged .profile-name {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right:10px;
+}
+
+/*
+.login .icon {
+  margin-right: 10px;
+  padding: 5px 6px;
+  cursor: pointer;
+  color: white;
+  min-width: 3em;
+  min-height: 3em;
+}
+
+.login .fa-facebook {
+  background: #3c5a98;
+}
+*/
 dialog::backdrop {
   position: fixed;
   top: 0;
@@ -179,6 +354,45 @@ progress[value]::-moz-progress-bar {
   white-space: nowrap;
 }
 
+.restaurant-img .author {
+  font-size: 1.2em;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.restaurant-img .author .name {
+  font-weight: 500;
+}
+
+/** votes **/
+.vote-down {
+  float: right;
+}
+
+.vote-up {
+  float: left;
+}
+
+.vote {
+  margin-top: 5px;
+  font-size: 2em;
+}
+
+.vote span {
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+.vote .icon{
+  cursor: pointer;
+}
+
+.vote.active .icon {
+  color: #e53359;
+}
+
+/** **/
+
 /* - checkmark -  */
 .circle {
   background: green;
@@ -199,7 +413,7 @@ progress[value]::-moz-progress-bar {
   width: 100%;
   height: auto;
 }
-
+/*
 .restaurant-img .up-button{
   position: absolute;  
   bottom: 0;
@@ -245,7 +459,7 @@ progress[value]::-moz-progress-bar {
   top: 25px;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-}
+}*/
 
 .score {
   position: absolute;
@@ -264,7 +478,7 @@ progress[value]::-moz-progress-bar {
   display: block;
   margin: auto;
 }
-
+/*
 
 .restaurant-img .down-button{
   position: absolute;  
@@ -294,7 +508,7 @@ progress[value]::-moz-progress-bar {
 
 .rate-box.active {
   background-color: gray;
-}
+}*/
 
 .add-more-images {
   text-align: center;

@@ -19,7 +19,10 @@ module.exports = (function() {
 
   var urls = {
     'voteUp': '/restaurant/<%= idRest %>/photo/voteUp',
-    'voteDown': '/restaurant/<%= idRest %>/photo/voteDown'
+    'voteDown': '/restaurant/<%= idRest %>/photo/voteDown',
+    'auth': '/auth',
+    'removePhoto': '/restaurant/<%= idRest %>/photo/delete',
+    'contact': '/contact'
   }
 
   return {
@@ -35,4 +38,3 @@ module.exports = (function() {
     }
   }
 })();
-

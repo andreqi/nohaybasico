@@ -3,7 +3,7 @@ var _ = require('lodash');
 
 var MenuImage = require('./MenuImage.jsx');
 var SubmitImage = require('./SubmitImage.jsx');
-var Login = require('../Login.jsx');
+var Api = require('../util/Api');
 
 var Galery = React.createClass({
   
@@ -16,6 +16,7 @@ var Galery = React.createClass({
       }
       photos[i].show = show;
     };
+    
     return {
       images: photos,
       login: null,
@@ -23,19 +24,24 @@ var Galery = React.createClass({
     }; 
   },
 
-  showLogin: function() {
-    console.log('showLogin');
+  removePhoto: function(idx) {
     this.setState({
-      login: <Login />
+      images: this.state.images.splice(idx, 0)
     });
+  },
+
+  renderPreUpload: function() {
+    return (
+      <button onClick = {this.validateAuth}>Subir imagen</button>
+    )
   },
 
   loadImages: function () {
     var indexPhoto = this.state.indexPhoto;
     var images = this.state.images;
 
-    indexPhoto = this.state.indexPhoto + 2 <= images.length ? 
-                  this.state.indexPhoto +2: images.length
+    indexPhoto = this.state.indexPhoto + 3 <= images.length ? 
+                  this.state.indexPhoto + 3: images.length
     
     if (indexPhoto > this.state.indexPhoto) {
       for (var i = 0; i < indexPhoto; i++) {
@@ -50,30 +56,34 @@ var Galery = React.createClass({
   },
 
   render: function () {
-    self = this;
+    _this = this;
     var images = this.state.images.map(function(image, i) {
       if (image.show) {
         return <MenuImage 
-          key = {i} {...image} 
-          idRest = {self.props.id} 
-          showLogin = {self.showLogin} />
+          key = {i} 
+          {...image} 
+          idx = {i} 
+          removePhoto= {_this.removePhoto} 
+          idRest = {_this.props.id} />
       }
     });
-    /*for (var idx = 0; idx < this.state.images; idx++) {
-      images.push(<MenuImage key={idx} {...this.state.images[i]}/>); 
-    }*/
+
     return (
+      <div className = 'container'>
       <div className='row columns'>
-        {this.state.login}
-        <SubmitImage key='form' 
-          idRest = {this.props.id} 
-          showLogin = {this.showLogin} />
-        {images}
-        <div className='12u'> 
-            <a className='12u button alt add-more-images'
-               onClick={this.loadImages}>
-                Cargar Más
-            </a>
+          {this.state.login}
+          <SubmitImage
+            userLog = {this.props.userLog}
+            idRest = {this.props.id} />
+          {images}
+
+
+          <div className='12u'> 
+              <a className='12u button alt add-more-images'
+                 onClick={this.loadImages}>
+                  Cargar Más
+              </a>
+          </div>
         </div>
       </div>
     ); 

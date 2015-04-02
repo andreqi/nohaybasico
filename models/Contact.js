@@ -4,10 +4,12 @@ var utils = require('../utils');
 
 var ContactSchema = new Schema({
   from: String,
+  user: String,
   subject: String,
   feel: String,
   body: String,
   type: String,
+  contactInfo: String,
   createdAt: {type: Date, default: Date.now}
 });
 

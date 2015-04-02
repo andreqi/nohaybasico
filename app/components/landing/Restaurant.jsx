@@ -15,38 +15,41 @@ var Restaurant = React.createClass({
     return (
       <header>
         <div className='same-line'>
-          <h3 className='same-line'>        
+          <h3 className='same-line'>
             {this.props.name}
           </h3>
         </div>
         <div className='vertical-middle'>
           <span>S/. {this.props.priceRange}</span>
-          <a href={url} className = "pull-right button small"> 
+          <a href={url} className = "pull-right button small">
             <img src="public/images/walking2.png" />
             <span>5 mins</span>
           </a>
-        </div> 
+        </div>
       </header>
     );
   },
 
   renderMenuReady: function() {
     return (
-      <div>Menú esta listo :)</div>
+      <div>Menú esta listo <i className = 'face icomoon-smile' /></div>
     )
   },
 
   renderMenuNotReady: function() {
     if (this.props.shouldUpdate.facebook) {
       return (
-        <div>El menú aún no se postea en fb :( </div>
+        <div>El menú aún no se postea en fb <i className = 'face icomoon-wondering' /> </div>
       )
     }
     
     return (
       <div>
-        Ayúdanos y sube una foto del menú
-        <button>subir foto</button>
+        Aún no tenemos menú <i className = 'face icomoon-sad' />
+        <a className='button small nice-green'
+          href={'/'+this.props.tagName + '/view'}>
+          Subir imagen
+        </a>
       </div>
     )
   },

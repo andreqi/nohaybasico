@@ -1,0 +1,15 @@
+if !user
+  div(class="login")
+    div(class="pull-right")
+      div.text Login
+      ul(class="social")
+        li
+          a(class="icon fa-facebook", href="/auth/facebook")
+        li
+          a(class="icon fa-twitter", href="/auth/twitter")
+else
+  div(class="logged")
+    div(class="pull-right")
+      img(class="profile-picture", src="#{user.picture}")
+      div(class="profile-name") #{user.name}
+      a(class="icon fa-sign-out", href="/logout", title="Cerrar sesión")

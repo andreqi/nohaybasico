@@ -1,0 +1,16 @@
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <defs>
+  <svg id="svg_1" height="32" width="32" viewBox="0 0 32 32">
+   <path d="m0,12v8h4v-8l-4,0z" transform="translate(2)"/>
+   <path d="m0,12v8h4v-8l-4,0z" transform="translate(8)"/>
+   <path d="m0,12v8h4v-8l-4,0z" transform="translate(14)"/>
+   <path d="m0,12v8h4v-8l-4,0z" transform="translate(20)"/>
+   <path d="m0,12v8h4v-8l-4,0z" transform="translate(26)"/>
+  </svg>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <use fill="#000000" x="0" y="0" transform="matrix(5,0,0,5,0,0) " id="svg_2" xlink:href="#svg_1"/>
+ </g>
+</svg>

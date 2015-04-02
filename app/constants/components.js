@@ -2,7 +2,8 @@ var Components = {
     RESTLIST: '/restaurant-list',
     GALERIA:  '/galery',
     FBPREVIEW: '/fbPreview',
-    SUBMITIMAGE: '/submitImage'
+    SUBMITIMAGE: '/submitImage',
+    CONTACT: '/contact'
 };
 
 module.exports = Components;

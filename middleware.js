@@ -12,8 +12,7 @@ var middleware = function(server) {
 
   server.use(session({
     secret: config.SESSION_KEY,
-    resave: false,
-    saveUninitialized: false
+    resave: true
   }));
   server.use(bodyParser.json());
   server.use(passport.initialize());
@@ -66,7 +65,8 @@ var middleware = function(server) {
       var user = {
         provider_id: profile.id,
         provider: profile.provider,
-        name: profile.displayName
+        name: profile.displayName,
+        picture: profile.photos[0].value
       };
       User.findOrCreate(user, function(err, model) {
         done(err, model);
@@ -79,7 +79,6 @@ var middleware = function(server) {
       passport.authenticate(strat, function(err, user, info){
         if (err) return next(err);
         if (!user) return console.log('wtf')
-
         req.logIn(user, function(err){
           if (err) return next(err);
           var redirectUrl = req.session.redirectUrl || '/';

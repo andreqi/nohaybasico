@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-//var Photo = require('./Photo');
+//updatesource -> change when it's updated
 
 var RestaurantSchema = new Schema({
   location: {
@@ -33,14 +33,33 @@ var RestaurantSchema = new Schema({
     facebook: {type: Boolean, default: false},
     photos: {type: Boolean, default: false}
   },
+  alwaysUpdate: {type: Boolean, default: false},
   facebookPost: {
     pattern: {type: String},
     idPage: {type: String},
     idPost: {type: String},
     lastPost: {type: String}
   },
-  createdAt: {type: Date, default: Date.now}
+  createdAt: {type: Date, default: Date.now},
+  dishes: String,
+  extras: String,
+  menuTypes: String
 });
+
+RestaurantSchema.statics.close = function(cb) {
+  var query = {
+    alwaysUpdate: false
+  };
+  var updatedFields = {
+    updated: false,
+    updateSource: {
+      pulpinPhoto: false,
+      facebook: false
+    }
+  }
+  var options = {multi: true};
+  Restaurant.update(query, updatedFields, options, cb);
+}
 
 RestaurantSchema.statics.findByTagName = function(tagName, cb) {
   Restaurant.findOne({tagName: tagName}, cb);
@@ -103,7 +122,7 @@ RestaurantSchema.statics.getListMenuUpdater = function(cb) {
   };
   var fields = {
     facebookPost: 1,
-    _id: 0,
+    _id: 1,
     tagName: 1
   }
 
@@ -117,21 +136,15 @@ RestaurantSchema.statics.updateFacebookMenu = function(id, data, cb) {
     model.updateSource.facebook = true;
     model.updated = model.updateSource.facebook || 
                     model.updateSource.pulpinPhoto;
-    model.save(cb);
+    model.save(cb); 
   });
 }
 
 RestaurantSchema.statics.getFirstView = function(tagName, cb) {
   Restaurant.findOne({tagName: tagName}, function(err, model) {
     if (err) return cb(err);
-    /*var obj = {
-      fbPreview: model.updateSource.facebook,
-      galery: model.updateSource.pulpinPhoto,
-      dishes: model.dishes,
-      carta: model.carta
-    }*/
     if (model.dishes) return cb(null, 'menu');
-    if (model.carta) return cb(null, 'carta');
+    if (model.extras) return cb(null, 'carta');
     if (model.shouldUpdate && model.shouldUpdate.facebook) 
       return cb(null, 'fbPreview');
     //if (model.updateSource.pulpinPhoto) 

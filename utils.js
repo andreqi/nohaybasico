@@ -17,7 +17,8 @@ var transporter = nodemailer.createTransport({
 
 exports.sendEmail = function(params, cb) {
   var subject = params.subject || '';
-  var body = params.body || '';
+  var body = (params.body + ' \n tipo '+ params.type + '\n feel:' +params.feel)
+              || '';
   var mailOptions = {
     from: "Nohaybasico <jcdevelopment1991@gmail.com>",
     to: "juanc.jara@pucp.pe",

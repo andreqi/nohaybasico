@@ -3,8 +3,17 @@ var Api = require('../util/Api');
 
 var UpVote = require('./UpVote.jsx');
 var DownVote = require('./DownVote.jsx');
+var Alert = require('../util/Alert');
 
 var RestaurantImageMenu = React.createClass({
+
+  getInitialState: function() {
+    return {
+      positiveVotes: this.props.positiveVotes,
+      negativeVotes: this.props.negativeVotes,
+      ownVote: this.props.ownVote
+    };
+  },
 
   vote: function(action) {
     var self = this;
@@ -12,8 +21,32 @@ var RestaurantImageMenu = React.createClass({
     Api.consume(action, data, {idRest: this.props.idRest}, 
       function(err, res) {
         if (err && err.code === 401) {
-          self.props.showLogin();
+          return Alert.login();
         }
+        var positiveVotes = self.state.positiveVotes;
+        var negativeVotes = self.state.negativeVotes;
+
+        if (self.state.ownVote && self.state.ownVote > 0) {
+          positiveVotes--;
+        }
+
+        if (self.state.ownVote && self.state.ownVote < 0) {
+          negativeVotes--;
+        }
+
+        if (action === 'voteUp') {
+          positiveVotes++;
+        }
+
+        if (action === 'voteDown') {
+          negativeVotes++;
+        }
+
+        self.setState({
+          positiveVotes: positiveVotes,
+          negativeVotes: negativeVotes,
+          ownVote: action === 'voteUp'? 1: -1
+        });
       }
     );
   },
@@ -26,11 +59,14 @@ var RestaurantImageMenu = React.createClass({
     this.vote('voteDown');
   },
 
-  remove: function() {
+  removePhoto: function() {
     var data = {path: this.props.path};
+    console.log('idx', this.props.idx)
+    var self = this;
     Api.consume('removePhoto', data, {idRest: this.props.idRest},
       function(err, res) {
-
+        console.log(res);
+        self.props.removePhoto(self.props.idx);
       }
     );
   },
@@ -38,16 +74,24 @@ var RestaurantImageMenu = React.createClass({
   render: function () {
     var remove = null;
     if (this.props.canDelete) {
-      remove = <div onClick = {this.remove} >x</div>
+      remove = <div onClick = {this.removePhoto} >x</div>
     }
-
     return (
       <div className='restaurant-img'>
-        {this.props.userName}
+        <div className='author'>
+          Gracias a
+          <span className = 'name'>{this.props.userName}</span>
+        </div>
         <img src = {this.props.path} />
         {remove}
-        <UpVote onClick = {this.voteUp} />
-        <DownVote onClick = {this.voteDown}/>
+        <UpVote 
+          onClick = {this.voteUp} 
+          active = {this.state.ownVote > 0}
+          score = {this.state.positiveVotes} />
+        <DownVote 
+          onClick = {this.voteDown}
+          active = {this.state.ownVote < 0}
+          score = {this.state.negativeVotes} />
       </div>
     ); 
   },

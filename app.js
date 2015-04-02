@@ -28,16 +28,23 @@ mongoose.connect(config.db, function(err) {
   }
 });
 
-var days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado'];
+var days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.use('/public', express.static(__dirname + '/public'));
 middleware(app);
 
+/*
 app.get('/testUpload', function(req, res) {
   res.sendFile(__dirname + '/public/indexTest.html')
 });
+*/
+
+function saveUrl(req, res, next) {
+  req.session.redirectUrl = req.url;
+  return next();
+}
 
 function isServiceAuth(req, res, next) {
   if (config.env === 'dev') {
@@ -47,18 +54,21 @@ function isServiceAuth(req, res, next) {
     };*/
   }
   if (req.isAuthenticated()) {
-    console.log('no error');
+    console.log('user log');
     return next();
   }
-  console.log('error');
+  console.log('ne log');
   return res.send(401, 'No authorized');
 }
 
-app.post('/error', function(req, res) {
-  console.log(req.body);
-  res.send({});
-})
+app.get('/contact',saveUrl,  LandingRoute.contact);
+app.get('/logout', LandingRoute.logout);
 
+app.post('/contact', LandingRoute.saveContact);
+
+app.post('/auth', isServiceAuth, function(req, res) {
+  res.send(200, 'OK');
+});
 app.post('/restaurant/:restId/photo',
          isServiceAuth, PhotoRoute.add);
 app.post('/restaurant/:restId/photo/voteDown',
@@ -69,27 +79,60 @@ app.post('/restaurant/:restId/photo/delete',
          isServiceAuth, PhotoRoute.delete);
 
 app.get('/:id/menu', function(req, res) {
-  var id = req.params.id;
-  var restaurant = get_restaurant(id);
-  var bd = loadBd();
-  for (var i = bd.menus.length - 1; i >= 0; i--) {
-    if (bd.menus[i].name == id) {
-      restaurant.display = bd.menus[i].is_updated;
+  Restaurant.findByTagName(req.params.id, 
+    function(err, restaurant) {
+      var rest = restaurant.toObject();
+      if (rest.dishes) {
+        rest.dishes = JSON.parse(rest.dishes);
+      }
+      if (rest.extras) {
+        rest.extras = true;
+      }
+      if (rest.menuTypes) {
+        rest.menuTypes = JSON.parse(rest.menuTypes);
+      }
+      res.render('restaurant/menu', {
+        restaurant: rest,
+        active_tab: 'menu',
+        user: req.user
+      });
     }
-  };
-  // render restaurant
-  res.render('restaurant/menu', {
-    restaurant: restaurant,
-    active_tab: 'menu',
-  });
+  );
 });
 
-app.get('/:id/info', function(req, res) {
-  
+app.get('/:id/contact', saveUrl, function(req, res) {
   Restaurant.findByTagName(req.params.id,
     function(err, restaurant) {
 
       var rest = restaurant.toObject();
+      if (rest.dishes) rest.dishes = true;
+      if (rest.extras) rest.extras = true;
+
+      var props = JSON.stringify({
+        component: Components.CONTACT,
+        tagName: req.params.id
+      });
+      res.render('restaurant/contact', {
+        restaurant: rest,
+        active_tab: 'contact',
+        user: req.user,
+        props: props,
+        component: view_engine.start(
+          JSON.parse(props)
+        )
+      });
+
+    }
+  );
+});
+
+app.get('/:id/info',saveUrl, function(req, res) {
+  Restaurant.findByTagName(req.params.id,
+    function(err, restaurant) {
+
+      var rest = restaurant.toObject();
+      if (rest.dishes) rest.dishes = true;
+      if (rest.extras) rest.extras = true;
       var coords = rest.location.coordinates
       rest.mapsURL = coords ? 
         mapsAPI.getMapsRedirectURL(coords) : '';  
@@ -97,23 +140,16 @@ app.get('/:id/info', function(req, res) {
       res.render('restaurant/info', {
         restaurant: rest,
         active_tab: 'info',
+        user: req.user,
       });
   });
   
 });
 
-app.get('/:id/fbPreview', LandingRoute.fbPreview);
+app.get('/:id/fbPreview',saveUrl,  LandingRoute.fbPreview);
 
-app.get('/:id/galery', function(req, res) {
+app.get('/:id/galery',saveUrl, function(req, res) {
   console.log('galery');
-  req.session.redirectUrl = req.url;
-  console.log('redirect', req.session.redirectUrl)
-  /*
-  req.user = {
-    _id: '55074c969818b6281627dd48',
-    userName: 'dude'
-  };*/
-
   Restaurant.getPhotos(req.params.id, function(err, rest) {
 
     if (req.user) {
@@ -122,13 +158,29 @@ app.get('/:id/galery', function(req, res) {
         temp.canDelete = (''+elem.createdBy) === req.user._id;
         return temp;
       });
+
+      for (var i = rest.photos.length - 1; i >= 0; i--) {
+        var vote = 0;
+        for (var j = rest.photos[i].votes.length - 1; j >= 0; j--) {
+          if (''+rest.photos[i].votes[j].user === req.user._id) {
+            vote = rest.photos[i].votes[j].vote;
+            break;
+          }
+        };
+        if (vote) {
+          rest.photos[i].ownVote = vote;
+        }
+        rest.photos[i].votes = null;        
+      };
+
     }
     
     var props = JSON.stringify({
       component: Components.GALERIA,
       tagName: req.params.id,
       id: rest.restaurant.id,
-      photos: rest.photos
+      photos: rest.photos,
+      userLog: req.isAuthenticated(),
     });
 
     var restaurant = rest.restaurant;
@@ -136,7 +188,9 @@ app.get('/:id/galery', function(req, res) {
     res.render('restaurant/galeria', {
       active_tab: 'galery',
       props: props,
+      user: req.user,
       restaurant: restaurant,
+      user: req.user,
       component: view_engine.start(
         JSON.parse(props)
       ),
@@ -145,15 +199,38 @@ app.get('/:id/galery', function(req, res) {
   });
 });
 
+function group_by(values, get_key) {
+  if (!values) return null;
+  var grouped = {};
+  values = values || [];
+  for (var idx = 0, len = values.length; idx < len; idx++) {
+    var val = values[idx];
+    var key = get_key(val);
+    if (grouped[key]) {
+      grouped[key].push(val);
+    } else {
+      grouped[key] = [val];
+    }
+  }
+  return grouped;
+}
 
 
-app.get('/:id/carta', function(req, res) {
-  var id = req.params.id;
-  var restaurant = get_restaurant(id);
-  res.render('restaurant/dishes', {
-    restaurant: restaurant,
-    active_tab: 'carta',
-  });
+app.get('/:id/carta',saveUrl,  function(req, res) {
+  Restaurant.findByTagName(req.params.id, function(err, model){
+    var rest = model.toObject();
+    var extras = JSON.parse(rest.extras);
+    rest.grouped_by_carta = group_by(extras, function(e) {
+      return e.tag;
+    });
+    rest.extras = true;
+    if (rest.dishes) rest.dishes = true;
+    res.render('restaurant/dishes', {
+      restaurant: rest,
+      active_tab: 'carta',
+      user: req.user
+    });
+  });  
 });
 
 app.get('/restaurant/map/:lat/:lng', function(req, res) {
@@ -175,8 +252,7 @@ app.get('/:id/view', function(req, res) {
   });
 });
 
-app.get('/', function(req, res) {
-  req.session.redirectUrl = req.url;
+app.get('/',saveUrl,  function(req, res) {
   var date = new Date();
   var day = days[date.getDay()];
   
@@ -188,11 +264,20 @@ app.get('/', function(req, res) {
         component: Components.RESTLIST,
         restaurants: data
     });
+    var summary = {
+      perc: 0,
+      total: data.length
+    }
+
+    for (var i = 0; i < data.length; i++) {
+      summary.perc += data[i].updated? 1: 0;
+    };
     res.render('landing/main', {
-      data: data,
+      data: summary,
       cur_day: day,
       menu_active: true,
       props: props,
+      user: req.user,
       component: view_engine.start(
         JSON.parse(props)
       ),
