@@ -74,7 +74,10 @@ var RestaurantImageMenu = React.createClass({
   render: function () {
     var remove = null;
     if (this.props.canDelete) {
-      remove = <div onClick = {this.removePhoto} >x</div>
+      remove = <div className = 'remove button' onClick = {this.removePhoto} >
+        <i className = 'icon fa-trash remove-photo' />
+        Eliminar foto
+      </div>
     }
     return (
       <div className='restaurant-img'>
@@ -83,7 +86,6 @@ var RestaurantImageMenu = React.createClass({
           <span className = 'name'>{this.props.userName}</span>
         </div>
         <img src = {this.props.path} />
-        {remove}
         <UpVote 
           onClick = {this.voteUp} 
           active = {this.state.ownVote > 0}
@@ -92,6 +94,7 @@ var RestaurantImageMenu = React.createClass({
           onClick = {this.voteDown}
           active = {this.state.ownVote < 0}
           score = {this.state.negativeVotes} />
+        {remove}
       </div>
     ); 
   },

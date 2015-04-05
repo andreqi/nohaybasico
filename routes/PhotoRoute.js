@@ -4,7 +4,7 @@ exports.add = function(req, res) {
   var path = req.files.photo.path;
   var params = {
     createdBy: req.user._id,
-    userName: req.user.userName,
+    userName: req.user.name,
     path: path,
     restaurant: req.params.restId
   }

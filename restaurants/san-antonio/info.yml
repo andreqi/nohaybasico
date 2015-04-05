@@ -1,52 +1,17 @@
-display: true
 name: San Antonio Gustos y Más
-walking_time: '5 mins'
-last_update: ayer  
-time_open: L-D  11:30 a 4:30 y cena 7:00 a 10:00 pm
-address: Pasaje Encinas
-price_range: 6.00
-coordinates: 
-  lat: -12.0687022
-  lng: -77.0769097
-social_media:
-tipos_menu:
-  -
-    name: menu
-    id: mn
-    price: 6.00
-dishes: 
-  intro:
-    - 
-      name: Menestrón
-      in_menu: 
-        - mn
-    - 
-      name: Ocopa
-      in_menu:
-        - mn
-    - 
-      name: Ensalada de Verduras 
-      in_menu:
-        - mn
-  main:
-    -
-      name: Locro con Milanesa
-      in_menu:
-        - mn   
-    -
-      name: Mondongito a la italiana
-      in_menu:
-        - mn   
-    -
-      name: Pollo al punto
-      in_menu:
-        - mn   
-    -
-      name: Chuleta a la parrilla
-      in_menu:
-        - mn   
-  extras:
-    - 
-      name: Cevada
-      in_menu:
-        - mn
+walkingTime: 5 mins
+priceRange: 9
+active: true
+location: 
+  coordinates: 
+    lat: -12.0687022
+    lng: -77.0769097
+  address: 'Pasaje Encinas'
+contact: 
+  social: 
+    facebook: https://www.facebook.com/aromaisabor
+    twitter: https://twitter.com/aromaisabor
+  workTime: ' L-D  11:30 a 4:30 y cena 7:00 a 10:00 pm'
+  msg: 'Contáctanos en el local'
+shouldUpdate:
+  photos: true

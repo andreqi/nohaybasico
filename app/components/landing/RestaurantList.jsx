@@ -15,7 +15,7 @@ var RestaurantList = React.createClass({
             <div className='same-line'>
               <h3 className='same-line'>
                 ¿No encuentras tu restaurant?
-              </h3>
+              </h3> 
             </div>
             <footer>        
               <a className='button alt'

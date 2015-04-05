@@ -2,7 +2,6 @@
 var nodejsx = require('node-jsx').install();
 var express = require('express'); 
 var fs = require('fs');
-var YAML = require('yamljs');
 var mongoose = require('mongoose');
 var middleware = require('./middleware');
 var _ = require('lodash');
@@ -18,6 +17,7 @@ var PhotoRoute = require('./routes/PhotoRoute')
 var config = require('./env')
 var Restaurant = require('./models/Restaurant');
 var Photo = require('./models/Photo');
+var util = require('./utils');
 
 var app = express(); 
 
@@ -34,12 +34,6 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.use('/public', express.static(__dirname + '/public'));
 middleware(app);
-
-/*
-app.get('/testUpload', function(req, res) {
-  res.sendFile(__dirname + '/public/indexTest.html')
-});
-*/
 
 function saveUrl(req, res, next) {
   req.session.redirectUrl = req.url;
@@ -60,7 +54,7 @@ function isServiceAuth(req, res, next) {
   console.log('ne log');
   return res.send(401, 'No authorized');
 }
-
+app.get('/contact/add', saveUrl, LandingRoute.addRestaurant);
 app.get('/contact',saveUrl,  LandingRoute.contact);
 app.get('/logout', LandingRoute.logout);
 
@@ -259,7 +253,7 @@ app.get('/',saveUrl,  function(req, res) {
   Restaurant.getPreviewInfo(function(err, data) {
     if (err) res.send({err: console.log(err)});
 
-    if(err) console.log(err);
+    data = util.suffle(data);
     var props = JSON.stringify({
         component: Components.RESTLIST,
         restaurants: data

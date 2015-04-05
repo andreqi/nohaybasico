@@ -35,4 +35,30 @@ UserSchema.statics.findOrCreate = function(params, cb) {
   });
 };
 
+var pointsAction = {vote: 30, upload: 200};
+
+UserSchema.statics.handlePoints = function(users, cb) {
+  for (id in users) {
+    var userPoints = {};
+    var points = 0;
+    users[id].forEach(function(action) {
+      if (action.type === 'vote') {
+        points += pointsAction.vote;
+      } else {
+        var likes = action.likes;
+        if (likes < 0) {
+          points -= 10 * likes;
+        }
+        if (likes >= 0) {
+          points += pointsAction.upload;
+        }
+        if (likes > 0) {
+          points += 10 * likes;
+        }
+      }
+    })
+    userPoints[id] = points > 0 ? points: 0;
+  }
+};
+
 var User = module.exports = mongoose.model('User', UserSchema);

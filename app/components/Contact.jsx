@@ -61,11 +61,11 @@ var Contact = React.createClass({
       })
       var self = this;
       Api.consume('contact', data, function(err, res) {
+        self.setState({loader: null})
         if (err || res.err) {
           return Alert.error('Información no pudo ser enviada. Intenta denuevo');
         }
         Alert.success('Información enviada');
-        self.setState({loader: null})
       })
     } else {
       this.setState({
@@ -87,6 +87,7 @@ var Contact = React.createClass({
   },
 
   render: function() {
+    var defaultRequest = this.props.typeRequest || 'Elegir';
     var optionsRequest = ['Elegir', 'Nuevo restaurante', 'Sugerencia',
                           'Error', 'Quiero apoyar', 'Otra cosa'];
     var backButton = <a href = '/' className = 'button' >Atrás</a>
@@ -114,7 +115,7 @@ var Contact = React.createClass({
               <select 
                 onChange={this.updateField.bind(null, 0)}
                 ref='selectRequest'
-                defaultValue='Elegir' >
+                defaultValue = {defaultRequest} >
                 {this.renderSelect(optionsRequest)}
               </select>
             </div>

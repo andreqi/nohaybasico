@@ -1,45 +1,14 @@
-display: true
 name: Tia Cariño
-walking_time: 6 mins
-last_update: ayer  
-time_open: L-V 11:30 
-price_range: 7.00
-address: Pasaje Santa Nicerata
-coordinates: 
-  lat: -12.068156
-  lng: -77.0771613
-social_media:
-tipos_menu:
-  -
-    name: menu
-    id: mn
-    price: 7.00
-dishes: 
-  intro:
-    - 
-      name: Tequeños
-      in_menu:
-        - mn
-    - 
-      name: Caldo de carne
-      in_menu: 
-        - mn
-  main:
-    -
-      name: Chanfainita
-      in_menu:
-        - mn   
-    -
-      name: Vainita Saltada
-      in_menu:
-        - mn   
-    -
-      name: Soufflé de pollo
-      in_menu:
-        - mn   
-  extras:
-    - 
-      name: Refresco de Carambola
-      in_menu:
-        - mn
-    
+walkingTime: 7 mins
+priceRange: 7
+active: true
+location: 
+  coordinates: 
+    lat: -12.068156
+    lng: -77.0771613
+  address: 'Pasaje Santa Nicerata'
+contact: 
+  workTime: 'L-V 11:30'
+  msg: 'Contáctanos en nuestro local'
+shouldUpdate:
+  photos: true

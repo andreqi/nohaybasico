@@ -1,75 +1,12 @@
-display: true
-walking_time: 2 mins
 name: PUCP Comedor administrativas
-last_update: ayer 
-time_open: Lunes a Sábado de 11.30am a 6pm
-address: PUCP
-price_range: 1.5 - 6.7
-coordinates: 
-  lat: -12.071407 
-  lng: -77.079447
-contact_msg: -
-social_media:
-  facebook: 
-tipos_menu: 
-  - 
-    name: 'económico'
-    id: ec
-    price: 1.5
-  - 
-    name: 'básico'
-    id: ba
-    price: 3.6
-  - 
-    name: 'básico + entrada'
-    id: be
-    price: 5.2
-  - 
-    name: 'menú'
-    id: me
-    price: 6.7
-dishes: 
-  intro:
-    - 
-      name: Ensalada variada 
-      in_menu: 
-        - be
-    - 
-      name: Ensalada de betarragas
-      in_menu: 
-        - me
-  main:
-    - 
-      name: Escabeche de pescado , camote, arroz
-      in_menu: 
-        - ba
-        - be
-    - 
-      name: Lomito de hígado, papa frita , arroz
-      in_menu: 
-        - me
-    - 
-      name: Tortilla de verduras, arroz
-      in_menu: 
-        - ec
-  extras:
-    - 
-      name: 'Pan'
-      in_menu: 
-        - ba
-        - be
-        - ec
-        - me
-    - 
-      name: 'Refresco o Leche'
-      in_menu: 
-        - ba
-        - be
-        - ec
-        - me
-    - 
-      name: Mousse de fruta
-      in_menu:
-        - me
-carta: 
-
+walkingTime: 2 mins
+priceRange: 1.5 - 6.7
+active: true
+location: 
+  coordinates: 
+    lat: -12.071407 
+    lng: -77.079447
+  address: PUCP
+contact: 
+  workTime: Lunes a Sábado de 11.30am a 6pm
+  msg: -

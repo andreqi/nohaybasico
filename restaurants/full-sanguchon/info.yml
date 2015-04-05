@@ -1,14 +1,17 @@
-display: true
 name: Full Sanguchon
-walking_time: 8 mins
-last_update:  4-12
-time_open: Lunes a Sábado de 12pm a 8pm
-price_range: 4 - 11
-coordinates: 
-  lat: -12.0660017
-  lng: -77.0778415
-social_media:
-carta: 
+walkingTime: 8 mins
+priceRange: 4 - 11
+active: true
+location: 
+  coordinates: 
+    lat: -12.0660017
+    lng: -77.0778415
+  address: 'Av. Universitaria'
+  workTime: 'Lunes a Sábado de 12pm a 8pm'
+  msg: '-'
+updated: true
+alwaysUpdate: true
+extras: 
   - 
     name: Papaya
     price: 4.5

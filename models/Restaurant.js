@@ -4,6 +4,12 @@ var Schema = mongoose.Schema;
 //updatesource -> change when it's updated
 
 var RestaurantSchema = new Schema({
+  tagName: {type: String, required: true},
+  name: {type: String, required: true},
+  walkingTime: String,
+  priceRange: String,
+  active: {type: Boolean, default: false},
+  updated: {type: Boolean, default: false},
   location: {
     coordinates: {
       lat: Number,
@@ -19,31 +25,25 @@ var RestaurantSchema = new Schema({
     workTime: String,
     msg: String
   },
-  tagName: {type: String, required: true},
-  name: {type: String, required: true},
-  walkingTime: String,
-  priceRange: String,
-  active: {type: Boolean, default: false},
-  updated: {type: Boolean, default: false},
-  updateSource: {
-    facebook: {type: Boolean, default: false},
-    pulpinPhoto: {type: Boolean, default: false}
-  },
+  alwaysUpdate: {type: Boolean, default: false},
   shouldUpdate: {
     facebook: {type: Boolean, default: false},
     photos: {type: Boolean, default: false}
   },
-  alwaysUpdate: {type: Boolean, default: false},
   facebookPost: {
     pattern: {type: String},
     idPage: {type: String},
     idPost: {type: String},
     lastPost: {type: String}
   },
-  createdAt: {type: Date, default: Date.now},
   dishes: String,
   extras: String,
-  menuTypes: String
+  menuTypes: String,
+  updateSource: {
+    facebook: {type: Boolean, default: false},
+    pulpinPhoto: {type: Boolean, default: false}
+  },
+  createdAt: {type: Date, default: Date.now}
 });
 
 RestaurantSchema.statics.close = function(cb) {

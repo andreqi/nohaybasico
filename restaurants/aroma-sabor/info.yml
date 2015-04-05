@@ -1,77 +1,21 @@
-display: true
-name: Aroma & Sabor
-walking_time: 5 mins
-last_update: ayer 
-time_open: Lunes a Sábado de 11.30am a 5pm , cena 6.30pm a 10.30pm
-address: Av. Mariano Cornejo 2285, Pueblo Libre
-price_range: 9
-coordinates: 
-  lat: -12.068483
-  lng: -77.076901
-contact_msg: 'Contáctanos en 4605759 / 950645668 / #950645668'
-social_media:
-  facebook: https://www.facebook.com/aromaisabor
-  twitter: https://twitter.com/aromaisabor
-tipos_menu: 
-  - 
-    name: menu
-    id: me
-    price: 9
-dishes: 
-  intro: 
-    - 
-      name: Sopa a la minuta
-      in_menu: 
-        - me
-    - 
-      name: Ocopa
-      in_menu: 
-        - me
-    - 
-      name: Ensalada rusa
-      in_menu: 
-        - me
-    - 
-      name: Ensalada fresca
-      in_menu: 
-        - me
-  main:
-    - 
-      name: Tallarines verdes con bisteck
-      in_menu: 
-        - me
-    - 
-      name: Mechado de pollo
-      in_menu: 
-        - me
-    - 
-      name: Churrasco al jugo con menestras
-      in_menu: 
-        - me
-    - 
-      name: Pollo al sillao
-      in_menu: 
-        - me
-    - 
-      name: Arroz tapado
-      in_menu: 
-        - me
-    - 
-      name: Cau cau
-      in_menu: 
-        - me
-    - 
-      name: Pollo frito con menestras
-      in_menu: 
-        - me
-    - 
-      name: Bisteck + p. fritas + ensalada
-      in_menu: 
-        - me
-  extras: 
-    - 
-      name: Triple Refresco
-      in_menu: 
-        - me
-carta: 
-
+name: 'Aroma & Sabor'
+walkingTime: 5 mins
+priceRange: 9
+active: true
+location: 
+  coordinates: 
+    lat: -12.068483
+    lng: -77.076901
+  address: 'Av. Mariano Cornejo 2285, Pueblo Libre'
+contact: 
+  social: 
+    facebook: https://www.facebook.com/aromaisabor
+    twitter: https://twitter.com/aromaisabor
+  workTime: 'Lunes a Sábado de 11.30am a 5pm , cena 6.30pm a 10.30pm'
+  msg: 'Contáctanos en 4605759 / 950645668 / #950645668'
+shouldUpdate:
+  facebook: true
+facebookPost:
+  pattern: ' '
+  idPage: '623960747635460'
+  idPost: ''

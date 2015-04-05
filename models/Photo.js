@@ -111,14 +111,12 @@ PhotoSchema.statics.addPhoto = function(params, cb) {
 PhotoSchema.statics.clean = function(cb) {
   var uploadBy = function(totalVotes) {
     return {
-      points: 100,
       type: 'upload',
       likes: totalVotes
     }
   };
   var voteBy = function() {
     return {
-      points: 30,
       type: 'vote'
     }
   };
@@ -153,7 +151,7 @@ PhotoSchema.statics.clean = function(cb) {
       cb(null, res)
     });
   });
-  //do things users users
+  //TODO do things users users
 }
 
 function removeFiles(path) {

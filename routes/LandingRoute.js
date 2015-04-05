@@ -51,6 +51,21 @@ exports.saveContact = function(req, res) {
   })
 };
 
+exports.addRestaurant = function(req, res) {
+  var props = JSON.stringify({
+    component: Components.CONTACT,
+    typeRequest: 'Nuevo restaurante'
+  });
+
+  res.render('landing/contact', {
+    user: req.user,
+    props: props,
+    component: view_engine.start(
+      JSON.parse(props)
+    )
+  })
+}
+
 exports.logout = function(req, res){
   var redirectUrl = req.session.redirectUrl || '/';
   console.log('logout', redirectUrl);

@@ -1,88 +1,14 @@
-display: true
 name: Tambos
-last_update: ayer 
-walking_time: 5 mins
-time_open: Lunes a Sábado de 11.30am a 9pm , cena 6.30pm a 10.30pm
-address: Avenida Universitaria, Pueblo Libre
-price_range: 6.5 - 8.5
-coordinates: 
-  lat: -12.068076
-  lng: -77.077604
-contact_msg: 'Contáctanos en 564-7053'
-social_media:
-  facebook: 
-tipos_menu: 
-  - 
-    name: 'ejecutivo'
-    id: ej
-    price: 8.5
-  - 
-    name: 'económico'
-    id: ec
-    price: 7.5
-  - 
-    name: 'universitario'
-    id: un
-    price: 6.5
-dishes: 
-  intro:
-    - 
-      name: Sopa juliana
-      in_menu: 
-        - ej
-        - ec
-    - 
-      name: Causa con atún
-      in_menu: 
-        - ej
-        - ec
-    - 
-      name: Tamal con salsa criolla
-      in_menu: 
-        - ej
-        - ec
-  main:
-    - 
-      name: Pollo enrollado con jamón y queso
-      in_menu: 
-        - ej
-    - 
-      name: Tacu tacu con churrasco
-      in_menu: 
-        - ej
-    - 
-      name: Lomo saltado de res
-      in_menu: 
-        - ej
-    - 
-      name: Lomo vegetariano
-      in_menu: 
-        - ej
-    - 
-      name: Aji de pollo
-      in_menu: 
-        - un
-        - ec
-    - 
-      name: Seco de res a la chiclayana
-      in_menu: 
-        - un
-        - ec
-    - 
-      name: Pollo con piña
-      in_menu: 
-        - un
-        - ec
-  extras:
-    - 
-      name: Refresco
-      in_menu: 
-        - ej
-        - un
-        - ec
-    - 
-      name: 'Postre'
-      in_menu: 
-        - ej
-carta: 
-
+walkingTime: 5 mins
+priceRange: 6.5 - 8.5
+active: true
+location: 
+  coordinates: 
+    lat: -12.068076
+    lng: -77.077604
+  address: 'Avenida Universitaria, Pueblo Libre'
+contact: 
+  workTime: 'Lunes a Sábado de 11.30am a 9pm'
+  msg: 'Contáctanos en 564-7053'
+shouldUpdate:
+  photos: true

@@ -1,4 +1,5 @@
-var nodemailer = require('nodemailer')
+var nodemailer = require('nodemailer');
+var config = require('./env');
 
 exports.suffle = function(arr) {
   for(var j, x, i = arr.length; i; 
@@ -10,8 +11,8 @@ exports.suffle = function(arr) {
 var transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-        user: "jcdevelopment1991@gmail.com",
-        pass: "recontragg703"
+        user: config.gmail.user,
+        pass: config.gmail.password
     }
 });
 
@@ -21,7 +22,7 @@ exports.sendEmail = function(params, cb) {
               || '';
   var mailOptions = {
     from: "Nohaybasico <jcdevelopment1991@gmail.com>",
-    to: "juanc.jara@pucp.pe",
+    to: config.gmail.to,
     subject: "Nohaybasico "+ subject,
     text: body,
     html: body

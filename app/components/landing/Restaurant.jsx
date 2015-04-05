@@ -23,7 +23,7 @@ var Restaurant = React.createClass({
           <span>S/. {this.props.priceRange}</span>
           <a href={url} className = "pull-right button small">
             <img src="public/images/walking2.png" />
-            <span>5 mins</span>
+            {this.props.walkingTime}
           </a>
         </div>
       </header>
@@ -54,6 +54,7 @@ var Restaurant = React.createClass({
     )
   },
 
+
   renderBody: function () {
     var status = this.props.updated ? 
       this.renderMenuReady(): this.renderMenuNotReady();
@@ -67,7 +68,7 @@ var Restaurant = React.createClass({
   renderFooter: function () {
     
     return (
-      <footer>        
+      <footer>
         <a className='button alt'
            href={'/'+this.props.tagName + '/view'} >
            Ver más

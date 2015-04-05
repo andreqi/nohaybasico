@@ -55,8 +55,21 @@ var Galery = React.createClass({
     });
   },
 
+  renderLoadMore: function(show) {
+    if (!show) return null;
+    return (
+      <div className='12u'> 
+        <a className='12u button alt add-more-images'
+           onClick={this.loadImages}>
+            Cargar Más
+        </a>
+      </div>
+    )
+  },
+
   render: function () {
     _this = this;
+    var loadMore = this.state.indexPhoto < this.state.images.length;
     var images = this.state.images.map(function(image, i) {
       if (image.show) {
         return <MenuImage 
@@ -76,14 +89,7 @@ var Galery = React.createClass({
             userLog = {this.props.userLog}
             idRest = {this.props.id} />
           {images}
-
-
-          <div className='12u'> 
-              <a className='12u button alt add-more-images'
-                 onClick={this.loadImages}>
-                  Cargar Más
-              </a>
-          </div>
+          {this.renderLoadMore(loadMore)}
         </div>
       </div>
     ); 

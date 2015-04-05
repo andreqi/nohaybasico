@@ -1,22 +1,18 @@
-display: true
 name: El tío amor
-walking_time: 5 mins
-last_update: ayer 
-time_open: Lunes a Viernes de 11.30am hasta las últimas, sábados 11.30am a 5pm 
-address: Av. Mariano Cornejo
-price_range: 4.0 - 7.5
-coordinates: 
-  lat: -12.068592
-  lng: -77.077468
-contact_msg: -
-social_media:
-  facebook: 
-tipos_menu: 
-  - 
-    name: basico
-    id: bs
-    price: 4.5
-carta: 
+walkingTime: 5 mins
+priceRange: 4 - 7.5
+active: true
+location: 
+  coordinates: 
+    lat: -12.068592
+    lng: -77.077468
+  address: 'Av. Mariano Cornejo'
+contact: 
+  workTime: 'Lunes a Viernes de 11.30am hasta las últimas, sábados 11.30am a 5pm'
+  msg: '-'
+updated: true
+alwaysUpdate: true
+extras: 
   - 
     name: Hamburguesa de carne
     price: 3.5

@@ -1,75 +1,12 @@
-display: true
-walking_time: 5 mins
 name: PUCP Comedor arte
-last_update: ayer 
-time_open: Lunes a Sábado de 11.30am a 6pm
-address: PUCP
-price_range: 1.5 - 6.7
-coordinates: 
-  lat: -12.070290 
-  lng: -77.079787
-contact_msg: -
-social_media:
-  facebook: 
-tipos_menu: 
-  - 
-    name: 'económico'
-    id: ec
-    price: 1.5
-  - 
-    name: 'básico'
-    id: ba
-    price: 3.6
-  - 
-    name: 'básico + entrada'
-    id: be
-    price: 5.2
-  - 
-    name: 'menú'
-    id: me
-    price: 6.7
-dishes: 
-  intro:
-    - 
-      name: Wantan con tamarindo
-      in_menu: 
-        - be
-    - 
-      name: Ensalada tropical
-      in_menu: 
-        - me
-  main:
-    - 
-      name: Cerdo asado, puré, arroz
-      in_menu: 
-        - ba
-        - be
-    - 
-      name: Pollo a la cazadora, papa arroz 
-      in_menu: 
-        - me
-    - 
-      name: Puré, arroz
-      in_menu: 
-        - ec
-  extras:
-    - 
-      name: 'Pan'
-      in_menu: 
-        - ba
-        - be
-        - ec
-        - me
-    - 
-      name: 'Refresco o Leche'
-      in_menu: 
-        - ba
-        - be
-        - ec
-        - me
-    - 
-      name: Manzana al horno
-      in_menu:
-        - me
-carta: 
-
+walkingTime: 5 mins
+priceRange: 1.5 - 6.7
+active: true
+location: 
+  coordinates: 
+    lat: -12.070290 
+    lng: -77.079787
+  address: PUCP
+contact: 
+  workTime: Lunes a Sábado de 11.30am a 6pm
+  msg: -

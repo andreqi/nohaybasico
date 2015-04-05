@@ -1,3 +1,42 @@
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot?-idfumx');
+  src:url('../fonts/icomoon.eot?#iefix-idfumx') format('embedded-opentype'),
+    url('../fonts/icomoon.woff?-idfumx') format('woff'),
+    url('../fonts/icomoon.ttf?-idfumx') format('truetype'),
+    url('../fonts/icomoon.svg?-idfumx#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icomoon-"], [class*=" icomoon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icomoon-smile:before {
+  content: "\eb50";
+}
+
+.icomoon-sad:before {
+  content: "\eb54";
+}
+
+.icomoon-wondering:before {
+  content: "\eb6a";
+}
+
+
+/***/
 .popup div {
   margin-bottom: 10px;
 }
@@ -362,6 +401,7 @@ progress[value]::-moz-progress-bar {
 }
 .restaurant-img .author .name {
   font-weight: 500;
+  margin-left: 5px;
 }
 
 /** votes **/
@@ -478,37 +518,14 @@ progress[value]::-moz-progress-bar {
   display: block;
   margin: auto;
 }
-/*
 
-.restaurant-img .down-button{
-  position: absolute;  
-  bottom: 0;
-  right: 0;
-  border-color: #F27474;
+.remove {
+  margin-top: 10px;
 }
 
-.rate-box .line {
- position: absolute;
- height: 5px;
- width: 47px;
- display: block;
- top: 37px;
- border-radius: 2px;
+.remove-photo {
+  margin-right: 5px;
 }
-
-.rate-box {
-  margin: 10px;
-  background-color: white;
-  height: 60px;
-  width: 60px;
-  border: 4px solid gray;
-  border-radius: 50%;
-  box-shadow: 0 0 3px #515151;;
-}
-
-.rate-box.active {
-  background-color: gray;
-}*/
 
 .add-more-images {
   text-align: center;
