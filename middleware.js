@@ -45,6 +45,7 @@ var middleware = function(server) {
       callbackURL: '/auth/facebook/callback'
     },
     function(accessToken, refreshToken, profile, done) {
+      console.log('fb profile', profile);
       var user = {
         provider_id : profile.id,
         provider: profile.provider,

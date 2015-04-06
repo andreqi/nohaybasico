@@ -1,4 +1,5 @@
 var request = require('request');
+var moment = require('moment');
 
 var config = require('../env');
 var Restaurant = require('../models/Restaurant');
@@ -7,7 +8,7 @@ function saveData(newData) {
   Restaurant.updateFacebookMenu(newData._id, newData.facebookPost,
     function(err) {
       if (err) return console.log('save data', err);
-      console.log('fb updated', newData._id);
+      console.log('fb updated', newData._id, moment().format('MMMM Do YYYY, h:mm:ss a'));
     }
   )
 }
@@ -21,7 +22,6 @@ function isValidMessage(message, pattern) {
 function handleRequest(data, lastData) {
   if (!data.length) return;
   if (data[0].id === lastData.facebookPost.lastPost) {
-    console.log('neh')
     return;
   }
   var i;
