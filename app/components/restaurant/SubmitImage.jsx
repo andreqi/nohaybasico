@@ -23,8 +23,8 @@ var SubmitImage = React.createClass({
     var self = this;
     var options = {
       error: function(err, f2, f3) {
+        self.setState({loader: null})
         if (err.status === 401) {
-          self.setState({loader: null})
           return Alert.login();
         }
         Alert.error();

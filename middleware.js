@@ -21,6 +21,7 @@ var middleware = function(server) {
   //manage files uploads
   server.use(multer({ dest: './public/uploads',
    rename: function (fieldname, filename) {
+      console.log('rename');
       return filename+Date.now();
     },
     onFileUploadStart: function (file) {

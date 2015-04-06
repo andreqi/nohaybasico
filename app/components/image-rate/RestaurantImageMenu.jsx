@@ -18,35 +18,36 @@ var RestaurantImageMenu = React.createClass({
   vote: function(action) {
     var self = this;
     var data = {path: this.props.path};
+    var positiveVotes = self.state.positiveVotes;
+    var negativeVotes = self.state.negativeVotes;
+
+    if (self.state.ownVote && self.state.ownVote > 0) {
+      positiveVotes--;
+    }
+
+    if (self.state.ownVote && self.state.ownVote < 0) {
+      negativeVotes--;
+    }
+
+    if (action === 'voteUp') {
+      positiveVotes++;
+    }
+
+    if (action === 'voteDown') {
+      negativeVotes++;
+    }
+
+    self.setState({
+      positiveVotes: positiveVotes,
+      negativeVotes: negativeVotes,
+      ownVote: action === 'voteUp'? 1: -1
+    });
     Api.consume(action, data, {idRest: this.props.idRest}, 
       function(err, res) {
         if (err && err.code === 401) {
           return Alert.login();
         }
-        var positiveVotes = self.state.positiveVotes;
-        var negativeVotes = self.state.negativeVotes;
-
-        if (self.state.ownVote && self.state.ownVote > 0) {
-          positiveVotes--;
-        }
-
-        if (self.state.ownVote && self.state.ownVote < 0) {
-          negativeVotes--;
-        }
-
-        if (action === 'voteUp') {
-          positiveVotes++;
-        }
-
-        if (action === 'voteDown') {
-          negativeVotes++;
-        }
-
-        self.setState({
-          positiveVotes: positiveVotes,
-          negativeVotes: negativeVotes,
-          ownVote: action === 'voteUp'? 1: -1
-        });
+        if (err) return Alert.error();    
       }
     );
   },
