@@ -1,6 +1,13 @@
 var React = require('react');
+var Loader = require('../util/Loader.jsx');
 
 var FbPreview = React.createClass({
+
+  componentDidMount: function() {
+    $('iframe').ready(function () {
+      console.log('ready')  
+    });
+  },
 
   render: function() {
     var fbPost = this.props.restaurant.facebookPost;
@@ -15,7 +22,9 @@ var FbPreview = React.createClass({
                   <div className='box-separator' /> 
                 </a>
                 <div className = "fb-post" 
-                  data-href = {url} />
+                  data-href = {url}>
+                </div>
+                <Loader msg = 'Cargando' />
             </section>
           </div>
         </div>

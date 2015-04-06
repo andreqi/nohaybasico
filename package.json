@@ -28,7 +28,9 @@
     "build": "npm run build-js && npm run build-css",
     "start": "node app.js",
     "web": "npm run build && npm start",
-    "dev": "nodemon --exec \"npm run web\" --ignore public/bundle.js -e js,jsx"
+    "dev": "nodemon --exec \"npm run web\" --ignore public/bundle.js -e js,jsx",
+    "deploy-pro": "gulp && NODE_ENV=pro forever start app.js && forever start ./tasks/index.js",
+    "deploy-test": "gulp && forever start app.js && forever start ./tasks/index.js"
   },
   "browserify": {
     "transform": [
@@ -41,8 +43,11 @@
     ]
   },
   "devDependencies": {
-    "cron": "*",
     "chai": "^2.1.1",
+    "cron": "*",
+    "gulp": "^3.8.11",
+    "gulp-minify-css": "^1.0.0",
+    "gulp-uglify": "^1.1.0",
     "mocha": "^2.2.1",
     "mocha-mongoose": "^1.0.3",
     "mongodb": "^1.4.34",

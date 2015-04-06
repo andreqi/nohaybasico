@@ -30,6 +30,21 @@ mongoose.connect(config.db, function(err) {
 
 var days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
 
+function isOpen() {
+  var date = new Date();
+  var day = days[date.getDay()];
+  var hour = date.getHours();
+  var minute = date.getMinutes();
+  var work = config.work;
+
+  if (day === 'Domingo') return false;
+  if (hour < work.open.hour && minute < work.open.minute)
+    return false;
+  if (hour > work.close.hour && minute > work.close.minute)
+    return false;
+  return true;
+}
+
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.use('/public', express.static(__dirname + '/public'));
@@ -247,15 +262,15 @@ app.get('/:id/view', function(req, res) {
 });
 
 app.get('/',saveUrl,  function(req, res) {
-  var date = new Date();
-  var day = days[date.getDay()];
+  var day = days[new Date().getDay()];
   
   Restaurant.getPreviewInfo(function(err, data) {
     if (err) res.send({err: console.log(err)});
-
+    var menu_active = isOpen();
     data = util.suffle(data);
     var props = JSON.stringify({
         component: Components.RESTLIST,
+        menuActive: menu_active,
         restaurants: data
     });
     var summary = {
@@ -269,7 +284,7 @@ app.get('/',saveUrl,  function(req, res) {
     res.render('landing/main', {
       data: summary,
       cur_day: day,
-      menu_active: true,
+      menu_active: menu_active,
       props: props,
       user: req.user,
       component: view_engine.start(

@@ -30,9 +30,15 @@ var RestaurantList = React.createClass({
   },
 
   render: function () {
+    var rests = this.props.restaurants;
+    if (!this.props.menu_active) {
+      rests = this.props.restaurants.filter(function(rest) {
+        return rest.alwaysUpdate;
+      });
+    }
     return (
       <div className='row columns'>
-      {_.map(this.props.restaurants, function (rest, idx) {
+      {_.map(rests, function (rest, idx) {
         return <Restaurant key={idx} {...rest} />;
       })}
       {this.renderAddContact()}
