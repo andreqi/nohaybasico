@@ -27,7 +27,7 @@ var SubmitImage = React.createClass({
         if (err.status === 401) {
           return Alert.login();
         }
-        Alert.error();
+        Alert.error('No se pudo subir la image. Intenta denuevo.');
       },
       success: function(response) {
         self.setState({loader: null})

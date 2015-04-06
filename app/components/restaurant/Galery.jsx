@@ -90,6 +90,7 @@ var Galery = React.createClass({
 
   renderLoadMore: function(show) {
     var addMoreButton = null;
+    console.log('addMoreButton', show);
     if (show) {
       addMoreButton = (
         <a className='-1u 7u button alt add-more-images'
