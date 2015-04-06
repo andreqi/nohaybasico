@@ -42,7 +42,8 @@ var middleware = function(server) {
   passport.use(new FacebookStrategy({
       clientID: config.facebook.id,
       clientSecret: config.facebook.secret,
-      callbackURL: '/auth/facebook/callback'
+      callbackURL: '/auth/facebook/callback',
+      profileFields: ['id', 'displayName', 'photos']
     },
     function(accessToken, refreshToken, profile, done) {
       console.log('fb profile', profile);
