@@ -4,11 +4,22 @@ var _ = require('lodash');
 var MenuImage = require('./MenuImage.jsx');
 var SubmitImage = require('./SubmitImage.jsx');
 var Api = require('../util/Api');
+var Alert = require('../util/Alert');
+var Loader = require('../util/Loader.jsx');
 
 var Galery = React.createClass({
   
   getInitialState: function () {
-    var photos = this.props.photos;
+    var photos = this.handlePhotos(this.props.photos);
+    return {
+      images: photos,
+      login: null,
+      loader: null,
+      indexPhoto: 2 < photos.length? 2: photos.length
+    }; 
+  },
+
+  handlePhotos: function(photos) {
     for (var i = 0, len = photos.length; i < len; i++) {
       var show = false;
       if (i < 2) {
@@ -16,17 +27,39 @@ var Galery = React.createClass({
       }
       photos[i].show = show;
     };
-    
-    return {
+    return photos;
+  },
+
+  handleUpdatedPhotos: function(photos) {
+    var images = this.handlePhotos(photos);
+    this.setState({
       images: photos,
-      login: null,
-      indexPhoto: 2 < photos.length? 2: photos.length
-    }; 
+      indexPhoto: 2 < images.length? 2: images.length 
+    });
+  },
+
+  updatePhotos: function() {
+    this.setState({
+      loader: <Loader msg = 'Actualizando fotos' /> 
+    });
+    var self = this;
+    Api.consume('updatePhotos', {}, {idRest: this.props.tagName},
+      function(err, res) {
+        self.setState({loader: null});
+        if (err) {
+          return Alert.error();
+        }
+        self.handleUpdatedPhotos(res.images);
+      }
+    )
   },
 
   removePhoto: function(idx) {
+    var images = this.state.images;
+    images.splice(idx, 1);
     this.setState({
-      images: this.state.images.splice(idx, 0)
+      images: images,
+      indexPhoto: this.state.indexPhoto - 1
     });
   },
 
@@ -56,13 +89,23 @@ var Galery = React.createClass({
   },
 
   renderLoadMore: function(show) {
-    if (!show) return null;
+    var addMoreButton = null;
+    if (show) {
+      addMoreButton = (
+        <a className='-1u 7u button alt add-more-images'
+           onClick={this.loadImages}>
+          Cargar Más
+        </a>
+      )
+    }
     return (
       <div className='12u'> 
-        <a className='12u button alt add-more-images'
-           onClick={this.loadImages}>
-            Cargar Más
+        <a className='3u button alt' 
+          onClick = {this.updatePhotos}>
+          <i className = 'icon fa-refresh' />
+          <span className = 'mar-left' >Actualizar fotos</span>
         </a>
+        {addMoreButton}
       </div>
     )
   },
@@ -89,6 +132,7 @@ var Galery = React.createClass({
             userLog = {this.props.userLog}
             idRest = {this.props.id} />
           {images}
+          {this.state.loader}
           {this.renderLoadMore(loadMore)}
         </div>
       </div>

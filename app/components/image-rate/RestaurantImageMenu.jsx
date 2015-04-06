@@ -61,11 +61,9 @@ var RestaurantImageMenu = React.createClass({
 
   removePhoto: function() {
     var data = {path: this.props.path};
-    console.log('idx', this.props.idx)
     var self = this;
     Api.consume('removePhoto', data, {idRest: this.props.idRest},
       function(err, res) {
-        console.log(res);
         self.props.removePhoto(self.props.idx);
       }
     );

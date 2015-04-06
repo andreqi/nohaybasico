@@ -31,7 +31,8 @@ var SubmitImage = React.createClass({
       },
       success: function(response) {
         self.setState({loader: null})
-        Alert.success('Imagen subida');
+        var msg = 'Imagen subida. Debes actualizar fotos para ver la imagen nueva';
+        Alert.success(msg);
       }
     }
 

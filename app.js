@@ -155,33 +155,43 @@ app.get('/:id/info',saveUrl, function(req, res) {
   
 });
 
+var managePhotos = function(rest, userId) {
+  rest.photos = rest.photos.map(function(elem) {
+    var temp = elem.toObject();
+    temp.canDelete = (''+elem.createdBy) === userId;
+    return temp;
+  });
+
+  for (var i = rest.photos.length - 1; i >= 0; i--) {
+    var vote = 0;
+    for (var j = rest.photos[i].votes.length - 1; j >= 0; j--) {
+      if (''+rest.photos[i].votes[j].user === userId) {
+        vote = rest.photos[i].votes[j].vote;
+        break;
+      }
+    };
+    if (vote) {
+      rest.photos[i].ownVote = vote;
+    }
+    rest.photos[i].votes = null;        
+  };
+}
+
 app.get('/:id/fbPreview',saveUrl,  LandingRoute.fbPreview);
 
-app.get('/:id/galery',saveUrl, function(req, res) {
-  console.log('galery');
+app.post('/:id/updatePhotos', function(req, res) {
   Restaurant.getPhotos(req.params.id, function(err, rest) {
-
     if (req.user) {
-      rest.photos = rest.photos.map(function(elem) {
-        var temp = elem.toObject();
-        temp.canDelete = (''+elem.createdBy) === req.user._id;
-        return temp;
-      });
+      managePhotos(rest, req.user._id);
+    }
+    res.send({images: rest.photos})
+  });
+});
 
-      for (var i = rest.photos.length - 1; i >= 0; i--) {
-        var vote = 0;
-        for (var j = rest.photos[i].votes.length - 1; j >= 0; j--) {
-          if (''+rest.photos[i].votes[j].user === req.user._id) {
-            vote = rest.photos[i].votes[j].vote;
-            break;
-          }
-        };
-        if (vote) {
-          rest.photos[i].ownVote = vote;
-        }
-        rest.photos[i].votes = null;        
-      };
-
+app.get('/:id/galery',saveUrl, function(req, res) {
+  Restaurant.getPhotos(req.params.id, function(err, rest) {
+    if (req.user) {
+      managePhotos(rest, req.user._id);
     }
     
     var props = JSON.stringify({
@@ -243,7 +253,6 @@ app.get('/:id/carta',saveUrl,  function(req, res) {
 });
 
 app.get('/restaurant/map/:lat/:lng', function(req, res) {
-  console.log('map');
   var coords = req.params;
   mapsAPI
     .createReadStream(

@@ -22,7 +22,8 @@ module.exports = (function() {
     'voteDown': '/restaurant/<%= idRest %>/photo/voteDown',
     'auth': '/auth',
     'removePhoto': '/restaurant/<%= idRest %>/photo/delete',
-    'contact': '/contact'
+    'contact': '/contact',
+    'updatePhotos': '/<%= idRest %>/updatePhotos'
   }
 
   return {
