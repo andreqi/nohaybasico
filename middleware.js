@@ -39,41 +39,31 @@ var middleware = function(server) {
     done(null, obj);
   });
 
+  var handleUser = function(token, tokenSecret, profile, done) {
+    var user = {
+      provider_id: profile.id,
+      provider: profile.provider,
+      name: profile.displayName,
+      picture: profile.photos[0].value
+    };
+    User.findOrCreate(user, function(err, model) {
+      done(err, model);
+    });
+  };
+
   passport.use(new FacebookStrategy({
       clientID: config.facebook.id,
       clientSecret: config.facebook.secret,
       callbackURL: '/auth/facebook/callback',
       profileFields: ['id', 'displayName', 'photos']
-    },
-    function(accessToken, refreshToken, profile, done) {
-      console.log('fb profile', profile);
-      var user = {
-        provider_id : profile.id,
-        provider: profile.provider,
-        name: profile.displayName
-      };
-      User.findOrCreate(user, function(err, model) {
-        done(err, model);
-      });
-    }
+    }, handleUser
   ));
 
   passport.use(new TwitterStrategy({
       consumerKey: config.twitter.id,
       consumerSecret: config.twitter.secret,
       callbackURL: '/auth/twitter/callback'
-    },
-    function(token, tokenSecret, profile, done) {
-      var user = {
-        provider_id: profile.id,
-        provider: profile.provider,
-        name: profile.displayName,
-        picture: profile.photos[0].value
-      };
-      User.findOrCreate(user, function(err, model) {
-        done(err, model);
-      });
-    }
+    }, handleUser
   ));
 
   var handleCallback = function handleCallback(strat) {
