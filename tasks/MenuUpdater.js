@@ -28,18 +28,40 @@ function handleRequest(data, lastData) {
   for (i = 0, len = data.length; i < len; i++) {
     if (isValidMessage(data[i].message, lastData.facebookPost.pattern)) {
       lastData.facebookPost.idPost = data[i].id.split('_')[1];
+      lastData.facebookPost.msg = data[i].message;
       break;
     }
   };
   if (i < len) {
     lastData.facebookPost.lastPost = data[0].id;
-    saveData(lastData);
+    if (lastData.facebookPost.getPicture) {
+      requestPicture(data[i].object_id,function(urlImg) {
+        lastData.facebookPost.urlImg = urlImg;
+        saveData(lastData);
+      });
+    }
+    else saveData(lastData);
   }
+}
+
+function requestPicture(object_id, cb) {
+  var urlPicture = 'https://graph.facebook.com/v2.2/'+object_id
+                  + '?picture&access_token='
+                  + config.facebook.id +'|' +config.facebook.secret;
+  request({
+    url: urlPicture,
+    method: "GET",
+    json: true
+  }, function(error, response, body) {
+      if (error) return console.log('requestPicture',object_id, error);
+      var idx = parseInt(body.images.length / 4, 10);
+      cb(body.images[idx].source);
+  });
 }
 
 function requestPosts(elem) {
   var urlPosts = 'https://graph.facebook.com/v2.2/' + elem.facebookPost.idPage
-    + '/posts?fields=id,message&access_token='
+    + '/posts?fields=id,message,object_id&access_token='
     + config.facebook.id +'|' +config.facebook.secret;
 
   request({
@@ -47,7 +69,7 @@ function requestPosts(elem) {
     method: "GET",
     json: true
   }, function (error, response, body){
-      if (error) return console.log('requestPosts', error);
+      if (error) return console.log('requestPosts',elem.facebookPost.idPage, error);
       handleRequest(body.data, elem);
   });
 }

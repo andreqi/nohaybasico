@@ -13,7 +13,8 @@ var mapsAPI = require('./mapsAPI.js');
 var modelLog = require('./models/log')
 var log = require('./log/logger');
 var LandingRoute = require('./routes/LandingRoute')
-var PhotoRoute = require('./routes/PhotoRoute')
+var PhotoRoute = require('./routes/PhotoRoute');
+var RestaurantRoute = require('./routes/RestaurantRoute')
 var config = require('./env')
 var Restaurant = require('./models/Restaurant');
 var Photo = require('./models/Photo');
@@ -30,13 +31,18 @@ mongoose.connect(config.db, function(err) {
 
 var days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
 
+function nextActiveDay() {
+  var nextIdx = new Date().getDay() + 1;
+  nextIdx = nextIdx == days.length ? 1: nextIdx;
+  return days[nextIdx];
+}
+
 function isOpen() {
   var date = new Date();
   var day = days[date.getDay()];
   var hour = date.getHours();
   var minute = date.getMinutes();
   var work = config.work;
-
   if (day === 'Domingo') return false;
   if (hour < work.open.hour && minute < work.open.minute)
     return false;
@@ -78,6 +84,13 @@ app.post('/contact', LandingRoute.saveContact);
 app.post('/auth', isServiceAuth, function(req, res) {
   res.send(200, 'OK');
 });
+
+app.post('/restaurant/getSample', RestaurantRoute.getSample);
+app.post('/restaurant/getAllTags', RestaurantRoute.getAllTags);
+app.post('/restaurant/:restId/getAllInfo', RestaurantRoute.getAllInfo);
+app.post('/restaurant/:restId/getSimpleMenu', RestaurantRoute.getSimpleMenu);
+app.post('/restaurant/:restId/updateSimpleMenu', RestaurantRoute.updateSimpleMenu);
+
 app.post('/restaurant/:restId/photo',
          isServiceAuth, PhotoRoute.add);
 app.post('/restaurant/:restId/photo/voteDown',
@@ -278,9 +291,10 @@ app.get('/',saveUrl,  function(req, res) {
     var menu_active = isOpen();
     data = util.suffle(data);
     var props = JSON.stringify({
-        component: Components.RESTLIST,
-        menuActive: menu_active,
-        restaurants: data
+      component: Components.RESTLIST,
+      menuActive: menu_active,
+      restaurants: data,
+      nextDay: nextActiveDay()
     });
     var summary = {
       perc: 0,

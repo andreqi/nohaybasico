@@ -19,3 +19,4 @@ facebookPost:
   pattern: ' '
   idPage: '623960747635460'
   idPost: ''
+  getPicture: true

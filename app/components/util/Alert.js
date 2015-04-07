@@ -16,7 +16,7 @@ module.exports = {
     '</div>';
 
     swal({
-      title: 'Login',
+      title: 'Logeate cachimbo',
       text: htmlData,
       html: true,
       showConfirmButton: false,

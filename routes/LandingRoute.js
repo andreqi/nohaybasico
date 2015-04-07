@@ -8,7 +8,6 @@ var view_engine = require('../app/app');
 exports.fbPreview = function(req, res) {
   Restaurant.findByTagName(req.params.id, 
     function(err, model){
-
       var restaurant = model.toObject();
       if (restaurant.dishes) restaurant.dishes = true;
       if (restaurant.extras) restaurant.extras = true;
@@ -17,7 +16,6 @@ exports.fbPreview = function(req, res) {
         component: Components.FBPREVIEW,
         restaurant: restaurant
       });
-
       res.render('restaurant/fbPreview', {
         active_tab: 'fbPreview',
         props: props,

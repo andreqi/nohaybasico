@@ -11,20 +11,20 @@ var FbPreview = React.createClass({
 
   render: function() {
     var fbPost = this.props.restaurant.facebookPost;
-    var url = 'https://www.facebook.com/'+ fbPost.idPage +
-                    '/posts/' + fbPost.idPost;
+    var img = null;
+    if (fbPost.urlImg) {
+      img = <img src ={fbPost.urlImg} />
+    }
     return (
       <div className='container'>
         <div className='row'>
-          <div className='-3u 6u'>
-            <section className='box'> 
+          <div className='-4u 4u'>
+            <section className='box fbPost'> 
                 <a className='image featured'>
                   <div className='box-separator' /> 
                 </a>
-                <div className = "fb-post" 
-                  data-href = {url}>
-                </div>
-                <Loader msg = 'Cargando' />
+                {fbPost.msg}
+                {img}
             </section>
           </div>
         </div>

@@ -31,10 +31,12 @@ var RestaurantSchema = new Schema({
     photos: {type: Boolean, default: false}
   },
   facebookPost: {
-    pattern: {type: String},
-    idPage: {type: String},
-    idPost: {type: String},
-    lastPost: {type: String}
+    pattern: String,
+    idPage: String,
+    lastPost: String,
+    getPicture: {type: Boolean, default: false},
+    urlImg: String,
+    msg: String
   },
   dishes: String,
   extras: String,
@@ -70,7 +72,6 @@ RestaurantSchema.statics.getId = function(tagName, cb) {
 }
 
 RestaurantSchema.statics.updatedPhoto = function(id, count, cb) {
-  
   Restaurant.findById(id, function(err, model) {
     if (err) return cb(console.log(err));
     model.updateSource.pulpinPhoto = count > 0;
@@ -79,6 +80,38 @@ RestaurantSchema.statics.updatedPhoto = function(id, count, cb) {
     model.save(cb);
   });
 };
+
+RestaurantSchema.statics.updateSimpleMenu = function(tagName, params, cb) {
+  Restaurant.findOne({tagName: tagName},function(err, model) {
+    if (err) cb(err);
+    if (!model) cb('no model found');
+    model.dishes = JSON.stringify(params.dishes);
+    model.extras = JSON.stringify(params.extras);
+    model.menuTypes = JSON.stringify(params.menuTypes);
+    model.updated = params.updated;
+    model.save(cb);
+  });
+}
+
+RestaurantSchema.statics.getSimpleMenu = function(tagName, cb) {
+  var fields = {
+    name: 1,
+    tagName: 1,
+    updated: 1,
+    menuTypes: 1,
+    dishes: 1,
+    extras: 1
+  }
+  Restaurant.findOne({tagName: tagName},fields, cb);
+};
+
+RestaurantSchema.statics.getAllInfo = function(tagName, cb) {
+  Restaurant.findOne({tagName: tagName}, cb);
+}
+
+RestaurantSchema.statics.getTagNames = function(cb) {
+  Restaurant.find({active: 1}, {tagName: 1}, cb);
+}
 
 RestaurantSchema.statics.getPreviewInfo = function(cb) {
   var query = {
@@ -147,10 +180,22 @@ RestaurantSchema.statics.getFirstView = function(tagName, cb) {
     if (model.extras) return cb(null, 'carta');
     if (model.shouldUpdate && model.shouldUpdate.facebook) 
       return cb(null, 'fbPreview');
+    if (model.shouldUpdate.photos)
+      return cb(null, 'galery');
     //if (model.updateSource.pulpinPhoto) 
-    return cb(null, 'galery');
-    //return cb(null,'info');
+    
+    return cb(null,'info');
   })
 }
+
+RestaurantSchema.statics.updateMenu = function(tagName, params, cb) {
+  Restaurant.findOne({tagName: tagName}, function(err, model) {
+    for (key in params) {
+      model[key] = params[key];
+    }
+    model.save(cb);
+  })
+}
+
 
 var Restaurant = module.exports = mongoose.model('Restaurant', RestaurantSchema);

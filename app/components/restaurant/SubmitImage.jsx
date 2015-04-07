@@ -67,6 +67,8 @@ var SubmitImage = React.createClass({
         encType = "multipart/form-data"
         method = "post"        
         onSubmit={this.handleSubmit}>
+          <div>No subas memes para eso existe el grupo PUCP, sino serás 
+          baneado o te subirán la boleta</div>
           <div className = {errorClass}>Selecciona archivo</div>
           <div className = 'upload'>
             <input 

@@ -31,9 +31,13 @@ var RestaurantList = React.createClass({
 
   render: function () {
     var rests = this.props.restaurants;
+    var self = this;
     if (!this.props.menuActive) {
-      rests = this.props.restaurants.filter(function(rest) {
-        return rest.alwaysUpdate;
+      rests = this.props.restaurants.map(function(rest) {
+        if (!rest.alwaysUpdate) {
+          rest.comeBack = self.props.nextDay;
+        }
+        return rest;
       });
     }
     return (

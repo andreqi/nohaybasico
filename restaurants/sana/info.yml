@@ -18,3 +18,4 @@ facebookPost:
   pattern: 'menú'
   idPage: '592480350770418'
   idPost: ''
+  getPicture: true

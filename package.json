@@ -29,8 +29,8 @@
     "start": "node app.js",
     "web": "npm run build && npm start",
     "dev": "nodemon --exec \"npm run web\" --ignore public/bundle.js -e js,jsx",
-    "deploy-pro": "gulp && NODE_ENV=pro forever start app.js && forever start ./tasks/index.js",
-    "deploy-test": "gulp && NODE_ENV=test forever start app.js && forever start ./tasks/index.js"
+    "deploy-pro": "build-js && gulp && NODE_ENV=pro forever start app.js && forever start ./tasks/index.js",
+    "deploy-test": "build-js && gulp && NODE_ENV=test forever start app.js && forever start ./tasks/index.js"
   },
   "browserify": {
     "transform": [

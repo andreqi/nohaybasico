@@ -42,22 +42,35 @@ var Restaurant = React.createClass({
         <div>El menú aún no se postea en fb <i className = 'face icomoon-wondering' /> </div>
       )
     }
+
+    if (this.props.shouldUpdate.photos) {
+      return (
+        <div>
+          Aún no tenemos menú <i className = 'face icomoon-sad' />
+          <a className='button small nice-green'
+            href={'/'+this.props.tagName + '/view'}>
+            Subir imagen
+          </a>
+        </div>
+      )  
+    }
     
     return (
-      <div>
-        Aún no tenemos menú <i className = 'face icomoon-sad' />
-        <a className='button small nice-green'
-          href={'/'+this.props.tagName + '/view'}>
-          Subir imagen
-        </a>
-      </div>
-    )
+        <div>El menú aún no lo pusimos <i className = 'face icomoon-sad' /> </div>
+      )
   },
 
 
   renderBody: function () {
-    var status = this.props.updated ? 
-      this.renderMenuReady(): this.renderMenuNotReady();
+    var status = (
+      <div>
+        Hoy no hay menú. Vuelve el {this.props.comeBack} <i className = 'face icomoon-tongue' />
+      </div>
+    );
+    if (!this.props.comeBack) {
+      status = this.props.updated ? 
+        this.renderMenuReady(): this.renderMenuNotReady();
+    }
     return (
       <div className='row'>
         {status}
