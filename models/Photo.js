@@ -2,8 +2,8 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var ObjectId = Schema.ObjectId;
 var moment = require('moment');
-var fs = require('fs');
 
+var utils = require('../utils');
 var Restaurant = require('./Restaurant');
 
 var PhotoSchema = new Schema({
@@ -154,18 +154,10 @@ PhotoSchema.statics.clean = function(cb) {
   //TODO do things users users
 }
 
-function removeFiles(path) {
-  fs.readdirSync(path)
-    .forEach(function(fileName) {
-      console.log(fileName);
-      fs.unlinkSync(path+'/'+fileName);
-    });
-}
-
 PhotoSchema.statics.removePhotos = function(cb) {
   Photo.remove({}, function(err, res){
     if (err) return cb(console.log(err));
-    removeFiles('../public/uploads');
+    utils.removeFiles('./public/uploads');
     cb(null);
   });
 };

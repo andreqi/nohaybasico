@@ -4,7 +4,7 @@ var Photo = require('../models/Photo');
 var Restaurant = require('../models/Restaurant');
 
 var time = '00 30 22 * * 1-6';
-//var time = '0 */2 * * * *';
+//var time = '0 */1 * * * *';
 
 var job = new CronJob({
   cronTime: time,

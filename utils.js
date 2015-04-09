@@ -1,4 +1,6 @@
 var nodemailer = require('nodemailer');
+var fs = require('fs');
+
 var config = require('./env');
 
 exports.suffle = function(arr) {
@@ -28,4 +30,12 @@ exports.sendEmail = function(params, cb) {
     html: body
   };
   transporter.sendMail(mailOptions, cb);
+}
+
+exports.removeFiles = function(path) {
+  fs.readdirSync(path)
+    .forEach(function(fileName) {
+      console.log('to be remove ',fileName);
+      fs.unlinkSync(path+'/'+fileName);
+    });
 }
