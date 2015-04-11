@@ -26,7 +26,10 @@ function handleRequest(data, lastData) {
   }
   var i;
   for (i = 0, len = data.length; i < len; i++) {
-    if (isValidMessage(data[i].message, lastData.facebookPost.pattern)) {
+    if (!data[i].message) {
+      console.log('message empty', lastData.facebookPost.idPage);
+    }
+    else if (isValidMessage(data[i].message, lastData.facebookPost.pattern)) {
       lastData.facebookPost.idPost = data[i].id.split('_')[1];
       lastData.facebookPost.msg = data[i].message;
       break;
