@@ -20,7 +20,7 @@ function isValidMessage(message, pattern) {
 }
 
 function handleRequest(data, lastData) {
-  if (!data.length) return;
+  if (!data || !data.length) return;
   if (data[0].id === lastData.facebookPost.lastPost) {
     return;
   }
