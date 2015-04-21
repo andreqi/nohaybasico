@@ -7,15 +7,15 @@
 (function($) {
 
   var breakpoints_desktop = {
-    'global':	{ range: '*', href: '/css/style.css' },
-    'desktop':	{ range: '737-', href: '/css/style-desktop.css', containers: 1200, grid: { gutters: 50 } },
-    '1000px':	{ range: '737-1200', href: '/css/style-1000px.css', containers: 960, grid: { gutters: 25 }, viewport: { width: 1024 } },
-    'mobile':	{ range: '-736', href: '/css/style-mobile.css', containers: '100%', grid: { collapse: true, gutters: 10 }, viewport: { scalable: false } }
+    'global':	{ range: '*', href: '/public/css/style.css' },
+    'desktop':	{ range: '737-', href: '/public/css/style-desktop.css', containers: 1200, grid: { gutters: 50 } },
+    '1000px':	{ range: '737-1200', href: '/public/css/style-1000px.css', containers: 960, grid: { gutters: 25 }, viewport: { width: 1024 } },
+    'mobile':	{ range: '-736', href: '/public/css/style-mobile.css', containers: '100%', grid: { collapse: true, gutters: 10 }, viewport: { scalable: false } }
   };
 
   var breakpoints_mobile = {
-    'global':	{ range: '*', href: '/css/style.css' },
-    'mobile':	{ range: '*', href: '/css/style-mobile.css', containers: '100%', grid: { collapse: true, gutters: 10 }, viewport: { scalable: false } }
+    'global':	{ range: '*', href: '/public/css/style.css' },
+    'mobile':	{ range: '*', href: '/public/css/style-mobile.css', containers: '100%', grid: { collapse: true, gutters: 10 }, viewport: { scalable: false } }
   };
 
   var breakpoints = breakpoints_desktop;

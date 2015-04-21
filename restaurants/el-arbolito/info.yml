@@ -1,69 +1,20 @@
-display: true
 name: El arbolito
-walking_time: 7 mins
-last_update: ayer 
-time_open: Lunes a Viernes 9am a 10pm Sábados de 9am a 5pm
-address: Avenida Universitaria 1757
-price_range: 9 - 14
-coordinates: 
-  lat: -12.067104
-  lng: -77.077632
-contact_msg: Contacto en (51-1) 564-8102
-social_media:
-  facebook: 'https://www.facebook.com/pages/El-Arbolito-Restaurante-Naturista/164255087049670?ref=ts&fref=ts'
-tipos_menu: 
-  - 
-    name: 'menú de día'
-    id: di
-    price: 9
-  - 
-    name: 'menú especial'
-    id: es
-    price: 14
-dishes: 
-  intro:
-    - 
-      name: Tamal vegetariano
-      in_menu: 
-        - di
-        - es
-    - 
-      name: Ensalada fresca
-      in_menu: 
-        - di
-        - es
-    - 
-      name: Chupe de habas
-      in_menu: 
-        - di
-        - es
-  main:
-    - 
-      name: Arroz árabe
-      in_menu: 
-        - di
-    - 
-      name: Bisteckvel con puré 
-      in_menu: 
-        - di
-    - 
-      name: Albóndiga a la parmesana
-      in_menu: 
-        - es
-    - 
-      name: Tortilla de vainitas
-      in_menu: 
-        - es
-  extras:
-    -
-      name: 'Chicha morada o refresco de maracuyá.'
-      in_menu: 
-        - di
-        - es
-    - 
-      name: Postre yogurt
-      in_menu:
-        - di
-        - es
-carta: 
-
+walkingTime: 7 mins
+priceRange: 9 - 14
+active: true
+location: 
+  coordinates: 
+    lat: -12.067104
+    lng: -77.077632
+  address: 'Avenida Universitaria 1757'
+contact: 
+  social: 
+    facebook: 'https://www.facebook.com/164255087049670'
+  workTime: 'Lunes a Viernes 9am a 10pm Sábados de 9am a 5pm'
+  msg: 'Contacto en (51-1) 564-8102'
+shouldUpdate:
+  facebook: true
+facebookPost:
+  pattern: 'MENÚ DEL DÍA'
+  idPage: '164255087049670'
+  idPost: ''

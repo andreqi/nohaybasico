@@ -3,14 +3,17 @@ h1
 
 nav#nav
   ul
-    - var tabs = ['galeria']
-    - restaurant.dishes ? tabs.push('menu') : null;  
-    - restaurant.carta  ? tabs.push('carta') : null;
-    - tabs.push('info');
+    - var tabs = []
+    - restaurant.shouldUpdate.facebook ? tabs.push(['Menú', 'fbPreview']): null;
+    - restaurant.shouldUpdate.photos ? tabs.push(['Menú', 'galery']): null;
+    - restaurant.dishes ? tabs.push(['Menú', 'menu']) : null;  
+    - restaurant.extras  ? tabs.push(['Carta', 'carta']) : null;
+    - tabs.push(['Comentario', 'contact']);
+    - tabs.push(['Info', 'info']);
     each tab in tabs
-      - var tabname = tab.charAt(0).toUpperCase() + tab.slice(1)
-      - var liclass = tab == active_tab ? 'current' : ''; 
+      - var tabname = tab[0].charAt(0).toUpperCase() + tab[0].slice(1)
+      - var liclass = tab[1] == active_tab ? 'current' : ''; 
       li(class='#{liclass}') 
-        a(href='/#{restaurant.homeID}/#{tab}') #{tabname}
+        a(href='/#{restaurant.tagName}/#{tab[1]}') #{tabname}
     li
       a(href='/#menus') Atrás

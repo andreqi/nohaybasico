@@ -1,20 +1,26 @@
 {
   "name": "nohaybasico.com",
   "dependencies": {
-    "express": "*",
-    "jade": "*",
-    "mongoose": "^3.8.19",
-    "request": "*",
-    "yamljs": "*",
-    "immutable": "*",
-    "node-jsx": "*",
-    "lodash": "*",
-    "passport": "*", 
-    "passport-facebook": "*", 
+    "body-parser": "^1.12.0",
     "browserify": "*",
+    "express": "*",
+    "express-session": "^1.10.3",
+    "fs": "0.0.2",
+    "immutable": "*",
+    "jade": "*",
+    "lodash": "*",
+    "moment": "^2.9.0",
+    "mongoose": "^3.8.19",
+    "multer": "^0.1.8",
     "node-jsx": "*",
+    "nodemailer": "^1.3.2",
+    "passport": "^0.2.1",
+    "passport-facebook": "*",
+    "passport-twitter": "*",
     "react": "*",
-    "reactify": "*"
+    "reactify": "*",
+    "request": "*",
+    "yamljs": "*"
   },
   "scripts": {
     "build-js": "mkdir -p public && browserify app/app.js --standalone Application --debug --outfile public/bundle.js",
@@ -22,11 +28,30 @@
     "build": "npm run build-js && npm run build-css",
     "start": "node app.js",
     "web": "npm run build && npm start",
-    "dev": "nodemon --exec \"npm run web\" --ignore public/bundle.js -e js,jsx,css"
+    "dev": "nodemon --exec \"npm run web\" --ignore public/bundle.js -e js,jsx",
+    "deploy-pro": "npm run build-js && gulp && NODE_ENV=pro forever start app.js && NODE_ENV=pro forever start ./tasks/index.js",
+    "deploy-dev": "npm run build-js && gulp && forever start app.js && forever start ./tasks/index.js",
+    "deploy-test": "npm run build-js && gulp && NODE_ENV=test forever start app.js && forever start ./tasks/index.js"
   },
   "browserify": {
     "transform": [
-      ["reactify", {"es6": true}]
+      [
+        "reactify",
+        {
+          "es6": true
+        }
+      ]
     ]
+  },
+  "devDependencies": {
+    "chai": "^2.1.1",
+    "cron": "*",
+    "gulp": "^3.8.11",
+    "gulp-minify-css": "^1.0.0",
+    "gulp-uglify": "^1.1.0",
+    "mocha": "^2.2.1",
+    "mocha-mongoose": "^1.0.3",
+    "mongodb": "^1.4.34",
+    "q": "^1.2.0"
   }
 }

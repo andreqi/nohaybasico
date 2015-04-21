@@ -1,23 +1,18 @@
-display: true
 name: El tío bigote
-walking_time: 5 mins 
-last_update: ayer 
-time_open: -
-address: -
-price_range: 3.0 - 5.0
-coordinates: 
-  lat: -12.068601
-  lng: -77.077535
-contact_msg: Contáctanos en 999-666-21
-social_media:
-  facebook: 
-tipos_menu: 
-  - 
-    name: basico
-    id: bs
-    price: 4.5
-
-carta: 
+walkingTime: 5 mins
+priceRange: 3 - 5
+active: true
+location: 
+  coordinates: 
+    lat: -12.068601
+    lng: -77.077535
+  address: 'Av. Mariano Cornejo'
+contact: 
+  workTime: ''
+  msg: '-'
+updated: true
+alwaysUpdate: true
+extras: 
   -
     name: Hamburguesa de carne
     price: 3.5

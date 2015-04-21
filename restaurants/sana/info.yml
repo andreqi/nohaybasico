@@ -1,39 +1,21 @@
 name: Sana
-walking_time: 8 mins
-last_update: ayer 
-time_open: Mar-Sábado 12 - 4pm y 6pm - 9pm, Domingos 1pm - 6pm
-address: Av. Manuel Cipriano Dulanto 2047, Pueblo Libre
-price_range: 10
-coordinates: 
-  lat: -12.075020
-  lng: -77.079290
-contact_msg: Contacto en sana.vidavegana@gmail.com
-social_media:
-  facebook: 'https://www.facebook.com/SANAvidavegana?fref=ts'
-tipos_menu: 
-  - 
-    name: 'menú de día'
-    id: di
-    price: 10
-dishes: 
-  intro:
-    - 
-      name: Sopa de verduras
-      in_menu: 
-        - di
-    - 
-      name: Ensalada fresca
-      in_menu: 
-        - di
-  main:
-    - 
-      name: Hamburguesas veganas c/ papitas salteada y guarnición de vegetales
-      in_menu:
-        - di
-  extras:
-    -
-      name: 'Mix herbal con linaza'
-      in_menu: 
-        - di
-carta: 
-
+walkingTime: 12 mins
+priceRange: 10
+active: true
+location: 
+  coordinates: 
+    lat: -12.075020
+    lng: -77.079290
+  address: 'Av. Manuel Cipriano Dulanto 2047, Pueblo Libre'
+contact: 
+  social: 
+    facebook: https://www.facebook.com/SANAvidavegana?fref=ts
+  workTime: 'Mar-Sábado 12 - 4pm y 6pm - 9pm, Domingos 1pm - 6pm'
+  msg: 'Contacto en sana.vidavegana@gmail.com'
+shouldUpdate:
+  facebook: true
+facebookPost:
+  pattern: 'menú'
+  idPage: '592480350770418'
+  idPost: ''
+  getPicture: true

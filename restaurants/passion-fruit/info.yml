@@ -1,17 +1,20 @@
-display: true
 name: Passion & Fruit
-walking_time: 5 mins
-last_update: ayer 
-time_open: Lunes a Viernes desde las 10:00am
-address: Av. Mariano cornejo 2249 Pueblo libre 
-price_range: 3.00 - 7.00
-coordinates: 
-  lat: -12.0683142
-  lng: -77.0764172
-contact_msg: Contactanos al 6083654
-social_media:
-  facebook: https://www.facebook.com/PassionyFruit 
-tipos_menu:
+walkingTime: 5 mins
+priceRange: 3 - 7
+active: true
+location: 
+  coordinates: 
+    lat: -12.0683142
+    lng: -77.0764172
+  address: 'Av. Mariano cornejo 2249 Pueblo libre'
+contact: 
+  social: 
+    facebook: https://www.facebook.com/PassionyFruit
+  workTime: 'Lunes a Viernes desde las 10:00am'
+  msg: 'Contactanos al 6083654'
+updated: true
+alwaysUpdate: true
+menuTypes:
   -
     name: Muffin
     id: mf
@@ -58,7 +61,7 @@ dishes:
       name: Cupcake selva negra
       in_menu: 
         - ck
-carta: 
+extras: 
   - 
     name: Chocolate Caliente
     price: 6.00

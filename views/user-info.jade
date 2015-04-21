@@ -1,0 +1,18 @@
+div.container
+  div.row
+    div(class = '4u text-center') 
+      a(href = '/', class = "title") No hay básico
+    div(class = "-3u 5u text-center")
+      if !user
+        div(class="login")
+          div.text Entra no seas cachimbo
+          ul(class="social")
+            li
+              a(class="icon fa-facebook", href="/auth/facebook")
+            li
+              a(class="icon fa-twitter", href="/auth/twitter")
+      else
+        div(class="logged")
+          img(class="profile-picture", src="#{user.picture}")
+          div(class="profile-name") #{user.name}
+          a(class="icon fa-sign-out", href="/logout", title="Cerrar sesión")

@@ -8,19 +8,19 @@ block content
             h3.info
               i(class='icon fa-clock-o')
               span Horario de atención
-            p #{restaurant.time_open}
+            p #{restaurant.contact.workTime}
             h3.info
               i(class='icon fa-map-marker')
               span Dirección
-            p #{restaurant.address}
+            p #{restaurant.location.address}
             a(class='view-google-maps', href='#{restaurant.mapsURL}', target='_blank') Ver en google maps  
             h3.info
               i(class='icon fa-phone')
               span Contacto
-            p #{restaurant.contact_msg}
+            p #{restaurant.contact.msg}
             footer
               - var socialLinks = [];
-              - var sm = restaurant.social_media;
+              - var sm = restaurant.contact.social;
               - sm && sm.facebook ? socialLinks.push({url: sm.facebook, icon: 'fa-facebook'} ): null;
               - sm && sm.twitter ? socialLinks.push({url: sm.twitter, icon: 'fa-twitter'} ): null;
               - sm && sm.instagram ? socialLinks.push({url: sm.instagram, icon: 'fa-instagram'} ): null;
@@ -35,4 +35,6 @@ block content
 
         .6u
           .box
-            img(class='img-responsive', src='/restaurant/map/#{restaurant.homeID}')
+            - var lat = restaurant.location.coordinates.lat;
+            - var lng = restaurant.location.coordinates.lng;
+            img(class='img-responsive', src='/restaurant/map/#{lat}/#{lng}')

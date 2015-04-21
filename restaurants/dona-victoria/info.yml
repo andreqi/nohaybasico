@@ -1,16 +1,19 @@
-display: true
 name: Doña Victoria
-walking_time: 5 mins
-last_update: ayer 
-time_open:  L-V 3pm a 10.30pm
-price_range: 5.0 - 8.0
-coordinates: 
-  lat: -12.0709446
-  lng: -77.0752511
-contact_msg: Llamanos al 669-7538
-social_media:
-  facebook: https://www.facebook.com/donavictoriasangucheria 
-carta: 
+walkingTime: 9 mins
+priceRange: 5 - 8.50
+active: true
+location: 
+  coordinates: 
+    lat: -12.0709446
+    lng: -77.0752511
+contact: 
+  social: 
+    facebook: https://www.facebook.com/donavictoriasangucheria
+  workTime: 'L-V 3pm a 10.30pm'
+  msg: 'Llamanos al 669-7538'
+updated: true
+alwaysUpdate: true
+extras: 
   - 
     name: Sanguche de Chicharrón
     price: 8.50
