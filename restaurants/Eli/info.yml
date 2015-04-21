@@ -1,0 +1,14 @@
+name: Eli
+walkingTime: 10 mins
+priceRange: -
+active: true
+location: 
+  coordinates: 
+    lat: -12.065025
+    lng: -77.076712
+  address: 'Calle Santa Eduviges 447 urbanización Pando 3ra etapa'
+contact: 
+  workTime: '-'
+  msg: 'Contáctanos en el local'
+shouldUpdate:
+  photos: true
